@@ -1,0 +1,1104 @@
+2015-11-01 00:21:43 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 00:21:43 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 00:21:43 INFO  TesterListener:27 - dbtest -- Test method skipped.
+2015-11-01 00:48:32 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 00:48:32 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 00:48:32 INFO  TesterListener:27 - dbtest -- Test method skipped.
+2015-11-01 00:51:59 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 00:51:59 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 00:51:59 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 00:52:14 ERROR DatabaseUtil:58 - Failed MySql connection: jdbc:sqlserver://172.18.2.15?user=magellan&password=magellan
+The TCP/IP connection to the host 172.18.2.15?user=magellan&password=magellan, port 1433 has failed. Error: "null. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+2015-11-01 00:52:14 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 00:52:14 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 00:52:14 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 00:52:14 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 00:52:14 INFO  PRBase:174 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 01:23:46 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 01:23:46 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 01:23:46 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 01:24:03 ERROR DatabaseUtil:58 - Failed MySql connection: jdbc:sqlserver://172.18.2.15;database=master;integratedSecurity=true;
+Login failed for user ''. The user is not associated with a trusted SQL Server connection. ClientConnectionId:93dfe291-17b8-47bc-b20a-5ba3a952534e
+2015-11-01 01:24:03 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 01:24:03 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 01:24:03 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 01:24:03 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 01:24:03 INFO  PRBase:174 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 01:31:28 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 01:31:28 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 01:31:28 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 01:31:33 ERROR DatabaseUtil:577 - SQLException: Login failed for user ''. The user is not associated with a trusted SQL Server connection. ClientConnectionId:c532f17e-050c-43c2-bcae-bd3a46700013
+SQLState: S0001
+VendorError: 18452
+2015-11-01 01:31:33 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 01:31:33 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 01:31:33 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 01:31:33 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 01:31:33 INFO  PRBase:175 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 10:47:43 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 10:47:43 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 10:47:43 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 10:48:00 ERROR DatabaseUtil:58 - Failed MySql connection: jdbc:sqlserver://;servername=172.18.2.15;integratedSecurity=true
+Login failed for user ''. The user is not associated with a trusted SQL Server connection. ClientConnectionId:53bb3861-da91-4201-af2a-5818bb6fc8c5
+2015-11-01 10:48:00 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 10:48:00 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 10:48:00 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 10:48:00 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 10:48:00 INFO  PRBase:175 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:01:21 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:01:21 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:01:21 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:01:26 ERROR DatabaseUtil:59 - Failed MySql connection: jdbc:sqlserver://;servername=172.18.2.15;integratedSecurity=true
+Login failed for user ''. The user is not associated with a trusted SQL Server connection. ClientConnectionId:a5a97c3e-e5f1-4a00-93fc-face7b9c63d7
+2015-11-01 11:01:26 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:01:26 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:01:26 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:01:26 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:01:26 INFO  PRBase:175 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:09:49 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:09:49 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:09:49 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:10:03 ERROR DatabaseUtil:60 - Failed MySql connection: jdbc:sqlserver://172.18.2.15username=magellanpassword=magellan
+The TCP/IP connection to the host 172.18.2.15username=magellanpassword=magellan, port 1433 has failed. Error: "null. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+2015-11-01 11:10:03 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:10:03 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:10:03 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:10:03 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:10:03 INFO  PRBase:175 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:10:51 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:10:51 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:10:51 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:11:05 ERROR DatabaseUtil:60 - Failed MySql connection: jdbc:sqlserver://172.18.2.15?username=magellan?password=magellan
+The TCP/IP connection to the host 172.18.2.15?username=magellan?password=magellan, port 1433 has failed. Error: "null. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+2015-11-01 11:11:05 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:11:05 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:11:05 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:11:05 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:11:05 INFO  PRBase:175 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:13:25 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:13:25 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:13:25 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:13:31 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:13:31 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:13:31 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:13:31 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:13:31 INFO  PRBase:175 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:32:54 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:32:54 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:32:54 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:32:59 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:32:59 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:32:59 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:32:59 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:32:59 INFO  PRBase:175 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:36:27 INFO  PRBase:133 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:36:27 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:36:27 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:36:33 INFO  PRBase:76 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:36:33 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:36:33 INFO  PRBase:83 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:36:33 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:36:33 INFO  PRBase:175 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:41:16 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:41:16 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:41:16 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:41:21 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:41:21 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:41:21 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:41:21 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:41:21 INFO  PRBase:178 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:47:01 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:47:01 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:47:01 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:47:06 ERROR DatabaseUtil:87 - Failed MySql execute statement: Invalid object name 'dbo.BuyOffer'.
+2015-11-01 11:47:06 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:47:06 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:47:06 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:47:06 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:47:06 INFO  PRBase:178 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:50:14 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:50:14 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:50:14 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:50:19 ERROR DatabaseUtil:87 - Failed MySql execute statement: Invalid object name 'dbo.BuyOffer'.
+2015-11-01 11:50:19 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:50:19 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:50:19 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:50:19 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:50:19 INFO  PRBase:178 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:54:51 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:54:51 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:54:51 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:54:57 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:54:57 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:54:57 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:54:57 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:54:57 INFO  PRBase:178 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 11:58:01 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 11:58:01 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 11:58:01 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 11:58:07 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:58:07 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 11:58:07 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:58:07 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 11:58:07 INFO  PRBase:178 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 12:29:19 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 12:29:19 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 12:29:19 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 12:29:25 INFO  DatabaseUtil:146 - Failed MySql print results,The column name usergroup is not valid.
+2015-11-01 12:29:25 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:29:25 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 12:29:25 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:29:25 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:29:25 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 12:39:12 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 12:39:12 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 12:39:12 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 12:39:18 INFO  DatabaseUtil:203 - Failed MySql getting row count,The requested operation is not supported on forward only result sets.
+2015-11-01 12:39:18 INFO  TesterListener:27 - dbtest -- Test method skipped.
+2015-11-01 12:42:23 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 12:42:23 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 12:42:23 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 12:42:29 INFO  DatabaseUtil:146 - Failed MySql print results,The column name usergroup is not valid.
+2015-11-01 12:42:29 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:42:29 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 12:42:29 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:42:29 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:42:29 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 12:45:19 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 12:45:19 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 12:45:19 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 12:45:25 INFO  DatabaseUtil:146 - Failed MySql print results,The column name username is not valid.
+2015-11-01 12:45:25 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:45:25 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 12:45:25 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:45:25 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:45:25 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 12:51:29 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 12:51:29 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 12:51:29 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 12:51:34 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:51:34 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 12:51:34 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:51:34 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:51:34 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 12:54:12 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 12:54:12 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 12:54:12 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 12:54:17 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:54:17 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 12:54:17 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:54:17 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 12:54:17 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 13:04:46 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 13:04:46 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 13:04:46 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 13:04:52 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 13:04:52 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 13:04:52 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 13:04:52 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 13:04:52 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 13:17:09 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 13:17:09 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 13:17:09 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 13:17:15 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 13:17:15 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 13:17:15 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 13:17:15 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 13:17:15 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 14:51:35 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 14:51:35 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 14:51:35 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 14:51:41 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:51:41 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 14:51:41 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:51:41 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:51:41 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 14:54:17 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 14:54:17 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 14:54:17 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 14:54:24 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:54:24 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 14:54:24 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:54:24 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:54:24 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 14:56:27 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 14:56:27 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 14:56:27 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 14:56:33 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:56:33 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 14:56:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:56:33 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 14:56:33 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:00:15 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:00:15 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:00:15 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:00:21 ERROR DatabaseUtil:88 - Failed MySql execute statement: The result set has no current row.
+2015-11-01 15:00:21 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:00:21 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:00:21 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:00:21 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:00:21 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:01:29 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:01:29 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:01:29 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:01:35 ERROR DatabaseUtil:88 - Failed MySql execute statement: The result set has no current row.
+2015-11-01 15:01:35 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:01:35 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:01:35 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:01:35 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:01:35 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:04:48 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:04:48 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:04:48 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:04:53 ERROR DatabaseUtil:88 - Failed MySql execute statement: The result set has no current row.
+2015-11-01 15:04:53 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:04:53 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:04:54 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:04:54 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:04:54 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:07:08 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:07:08 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:07:08 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:07:14 ERROR DatabaseUtil:88 - Failed MySql execute statement: Invalid object name 'BuyOffer'.
+2015-11-01 15:07:14 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:07:14 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:07:14 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:07:14 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:07:14 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:08:02 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:08:02 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:08:02 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:08:08 ERROR DatabaseUtil:88 - Failed MySql execute statement: The result set has no current row.
+2015-11-01 15:08:08 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:08:08 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:08:08 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:08:08 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:08:08 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:08:52 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:08:52 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:08:52 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:08:58 ERROR DatabaseUtil:88 - Failed MySql execute statement: The result set has no current row.
+2015-11-01 15:08:58 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:08:58 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:08:58 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:08:58 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:08:58 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:11:27 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:11:27 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:11:27 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:11:33 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:11:33 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:11:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:11:33 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:11:33 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:15:27 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:15:27 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:15:27 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:15:33 ERROR DatabaseUtil:404 - Missing data column: referenceId
+The result set has no current row.
+2015-11-01 15:15:33 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:15:33 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:15:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:15:33 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:15:33 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:18:10 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:18:10 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:18:10 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:18:15 ERROR DatabaseUtil:414 - Missing data column: 0
+The result set has no current row.
+2015-11-01 15:18:15 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:18:15 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:18:15 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:18:15 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:18:15 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:20:02 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:20:02 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:20:02 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:20:08 ERROR DatabaseUtil:414 - Missing data column: 0
+The result set has no current row.
+2015-11-01 15:20:08 INFO  TesterListener:27 - dbtest -- Test method skipped.
+2015-11-01 15:20:58 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:20:58 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:20:58 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:21:04 ERROR DatabaseUtil:414 - Missing data column: 1
+The result set has no current row.
+2015-11-01 15:21:04 INFO  TesterListener:27 - dbtest -- Test method skipped.
+2015-11-01 15:34:59 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:34:59 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:34:59 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:35:04 ERROR DatabaseUtil:89 - Failed MySql execute statement: The result set has no current row.
+2015-11-01 15:35:04 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:35:04 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:35:04 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:35:04 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:35:04 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:37:11 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:37:11 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:37:11 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:37:17 ERROR DatabaseUtil:89 - Failed MySql execute statement: The result set has no current row.
+2015-11-01 15:37:17 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:37:17 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:37:17 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:37:17 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:37:17 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:42:17 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:42:17 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:42:17 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:42:22 ERROR DatabaseUtil:89 - Failed MySql execute statement: The result set has no current row.
+2015-11-01 15:42:22 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:42:22 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:42:22 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:42:22 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:42:22 INFO  PRBase:179 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:48:47 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:48:47 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:48:47 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:48:52 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:48:52 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:48:52 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:48:52 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:48:52 INFO  PRBase:178 - FINISHING TEST SUITE: 'Default test'
+2015-11-01 15:57:05 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-01 15:57:05 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-01 15:57:05 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-01 15:57:11 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:57:11 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-01 15:57:11 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:57:11 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-01 15:57:11 INFO  PRBase:178 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 12:28:13 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 12:28:13 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 12:28:13 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 12:28:13 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-03 12:28:13 INFO  TesterListener:34 - dbtest -- Test method successful.
+2015-11-03 12:28:13 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-03 12:28:13 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.DBTest.dbtest
+2015-11-03 12:28:13 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 13:04:07 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 13:04:07 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 13:04:07 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 13:04:07 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 13:04:07 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 13:04:21 INFO  SeleniumUtils:277 - Typed text:  test3
+2015-11-03 13:04:22 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"//input[@value='Log in']"}
+Command duration or timeout: 29 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 76cceb0b-5093-4b8a-9b47-942b716d69e0
+*** Element info: {Using=id, value=//input[@value='Log in']}
+2015-11-03 13:04:22 ERROR TesterListener:20 - SMBPaymentGridTest -- Test method failed !!
+2015-11-03 13:04:23 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 13:04:23 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest,user=test3
+2015-11-03 13:04:23 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 13:09:48 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 13:09:48 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 13:09:48 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 13:09:48 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 13:09:48 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 13:10:00 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 13:10:01 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"//input[@value='Log in']"}
+Command duration or timeout: 53 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3a8175ad-e333-4412-9998-50cd215ce909
+*** Element info: {Using=id, value=//input[@value='Log in']}
+2015-11-03 13:10:01 ERROR TesterListener:20 - SMBPaymentGridTest -- Test method failed !!
+2015-11-03 13:10:01 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 13:10:01 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest,user=SPrkt
+2015-11-03 13:10:01 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 13:18:40 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 13:18:40 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 13:18:40 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 13:18:40 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 13:18:40 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 13:18:51 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 13:18:55 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 13:18:57 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 13:19:03 INFO  PRLogin:92 - Successful login.
+2015-11-03 13:19:03 INFO  TesterListener:34 - SMBPaymentGridTest -- Test method successful.
+2015-11-03 13:19:03 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 13:19:04 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest,user=SPrkt
+2015-11-03 13:19:04 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 14:17:41 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 14:17:41 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 14:17:41 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 14:17:41 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:17:41 INFO  TesterListener:34 - SMBPaymentGridTest -- Test method successful.
+2015-11-03 14:17:41 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:17:41 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:17:41 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 14:20:01 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 14:20:01 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 14:20:01 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 14:20:01 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:20:01 INFO  TesterListener:34 - SMBPaymentGridTest -- Test method successful.
+2015-11-03 14:20:01 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:20:01 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:20:01 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 14:21:46 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 14:21:46 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 14:21:46 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 14:21:46 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:21:46 INFO  TesterListener:34 - SMBPaymentGridTest -- Test method successful.
+2015-11-03 14:21:46 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:21:46 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:21:46 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 14:22:33 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 14:22:33 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 14:22:33 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 14:22:33 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:22:33 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 14:22:46 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 14:22:49 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 14:22:51 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 14:22:57 INFO  PRLogin:92 - Successful login.
+2015-11-03 14:22:57 INFO  TesterListener:34 - SMBPaymentGridTest -- Test method successful.
+2015-11-03 14:22:57 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest
+2015-11-03 14:22:58 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.SMBPaymentGridTest,user=SPrkt
+2015-11-03 14:22:58 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 15:27:35 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 15:27:35 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 15:27:35 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 15:27:35 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 15:27:35 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 15:27:47 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 15:27:50 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 15:27:52 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 15:27:58 INFO  PRLogin:92 - Successful login.
+2015-11-03 15:27:58 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 15:27:58 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 15:27:59 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest1,user=SPrkt
+2015-11-03 15:27:59 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:28:01 ERROR PRMenu:35 - Failed, communityManager click
+2015-11-03 15:28:03 ERROR PRMenu:49 - Failed, communityManager click
+2015-11-03 15:28:03 INFO  TesterListener:34 - smokeTest2 -- Test method successful.
+2015-11-03 15:28:03 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:28:05 ERROR PRLogin:112 - Failed, user logout.
+2015-11-03 15:28:05 ERROR Browser:114 - Failed to close browser !!
+2015-11-03 15:28:05 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:28:05 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 15:35:04 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 15:35:04 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 15:35:04 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 15:35:04 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 15:35:04 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 15:35:17 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 15:35:20 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 15:35:22 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 15:35:29 INFO  PRLogin:92 - Successful login.
+2015-11-03 15:35:29 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 15:35:29 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 15:35:29 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest1,user=SPrkt
+2015-11-03 15:35:29 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:35:31 ERROR PRMenu:35 - Failed, communityManager click
+2015-11-03 15:35:33 ERROR PRMenu:49 - Failed, communityManager click
+2015-11-03 15:35:33 INFO  TesterListener:34 - smokeTest2 -- Test method successful.
+2015-11-03 15:35:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:35:35 ERROR PRLogin:112 - Failed, user logout.
+2015-11-03 15:35:35 ERROR Browser:114 - Failed to close browser !!
+2015-11-03 15:35:35 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:35:35 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 15:48:32 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 15:48:32 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 15:48:32 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 15:48:32 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 15:48:32 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 15:48:44 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 15:48:48 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 15:48:50 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 15:48:59 INFO  PRLogin:92 - Successful login.
+2015-11-03 15:48:59 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 15:48:59 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 15:48:59 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest1,user=SPrkt
+2015-11-03 15:48:59 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:49:01 ERROR SCiSupplierMenu:49 - Failed, communityManager click
+2015-11-03 15:49:03 ERROR SCiSupplierMenu:63 - Failed, communityManager click
+2015-11-03 15:49:03 INFO  TesterListener:34 - smokeTest2 -- Test method successful.
+2015-11-03 15:49:03 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:49:05 ERROR PRLogin:112 - Failed, user logout.
+2015-11-03 15:49:05 ERROR Browser:114 - Failed to close browser !!
+2015-11-03 15:49:05 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:49:05 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 15:57:40 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 15:57:40 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 15:57:40 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 15:57:40 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 15:57:40 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 15:57:52 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 15:57:55 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 15:57:57 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 15:58:02 INFO  PRLogin:92 - Successful login.
+2015-11-03 15:58:02 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 15:58:02 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 15:58:03 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest1,user=SPrkt
+2015-11-03 15:58:03 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:58:07 ERROR SCiSupplierMenu:49 - Failed, communityManager click
+2015-11-03 15:58:09 ERROR SCiSupplierMenu:63 - Failed, communityManager click
+2015-11-03 15:58:09 INFO  TesterListener:34 - smokeTest2 -- Test method successful.
+2015-11-03 15:58:09 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:58:11 ERROR PRLogin:112 - Failed, user logout.
+2015-11-03 15:58:11 ERROR Browser:114 - Failed to close browser !!
+2015-11-03 15:58:11 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 15:58:11 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 16:02:04 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 16:02:04 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 16:02:04 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 16:02:04 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 16:02:04 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 16:02:15 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 16:02:19 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 16:02:21 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 16:02:27 INFO  PRLogin:92 - Successful login.
+2015-11-03 16:02:27 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 16:02:27 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 16:02:27 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest1,user=SPrkt
+2015-11-03 16:02:27 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:02:31 ERROR SCiSupplierMenu:49 - Failed, communityManager click
+2015-11-03 16:02:33 ERROR SCiSupplierMenu:63 - Failed, communityManager click
+2015-11-03 16:02:33 INFO  TesterListener:34 - smokeTest2 -- Test method successful.
+2015-11-03 16:02:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:02:35 ERROR PRLogin:112 - Failed, user logout.
+2015-11-03 16:02:35 ERROR Browser:114 - Failed to close browser !!
+2015-11-03 16:02:35 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:02:35 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 16:07:00 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 16:07:00 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 16:07:00 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 16:07:00 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 16:07:00 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 16:07:12 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 16:07:15 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 16:07:17 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 16:07:23 INFO  PRLogin:92 - Successful login.
+2015-11-03 16:07:23 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 16:07:23 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 16:07:24 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest1,user=SPrkt
+2015-11-03 16:07:24 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:07:26 ERROR TesterListener:19 - org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: driver.version: EventFiringWebDriver
+2015-11-03 16:07:26 ERROR TesterListener:20 - smokeTest2 -- Test method failed !!
+2015-11-03 16:07:26 ERROR SeleniumUtils:432 - Failed in capturing screen shot
+2015-11-03 16:07:26 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:07:28 ERROR PRLogin:112 - Failed, user logout.
+2015-11-03 16:07:28 ERROR Browser:114 - Failed to close browser !!
+2015-11-03 16:07:28 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:07:28 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 16:15:29 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 16:15:29 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 16:15:29 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 16:15:29 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 16:15:29 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 16:15:41 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 16:15:44 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 16:15:46 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 16:15:52 INFO  PRLogin:92 - Successful login.
+2015-11-03 16:15:52 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 16:15:52 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 16:15:52 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest1,user=SPrkt
+2015-11-03 16:15:52 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:15:54 ERROR TesterListener:19 - org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: driver.version: EventFiringWebDriver
+2015-11-03 16:15:54 ERROR TesterListener:20 - smokeTest2 -- Test method failed !!
+2015-11-03 16:15:54 ERROR SeleniumUtils:432 - Failed in capturing screen shot
+2015-11-03 16:15:54 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:15:56 ERROR PRLogin:112 - Failed, user logout.
+2015-11-03 16:15:56 ERROR Browser:114 - Failed to close browser !!
+2015-11-03 16:15:56 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest2
+2015-11-03 16:15:56 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 16:17:32 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 16:17:32 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 16:17:32 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 16:17:32 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 16:17:32 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 16:17:43 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 16:17:47 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 16:17:49 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 16:17:56 INFO  PRLogin:92 - Successful login.
+2015-11-03 16:18:00 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 16:18:00 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPlogin.smokeTest1
+2015-11-03 16:18:01 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPlogin.smokeTest1,user=SPrkt
+2015-11-03 16:18:01 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 16:25:14 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 16:25:14 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 16:25:14 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 16:25:14 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-03 16:25:14 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 16:25:26 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 16:25:29 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 16:25:31 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 16:25:38 INFO  PRLogin:92 - Successful login.
+2015-11-03 16:25:39 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-03 16:25:40 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-03 16:25:43 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 16:25:43 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-03 16:25:43 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-03 16:25:43 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-03 19:12:11 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-03 19:12:11 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-03 19:12:11 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-03 19:12:11 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-03 19:12:11 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-03 19:12:25 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-03 19:12:28 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-03 19:12:30 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-03 19:12:41 INFO  PRLogin:92 - Successful login.
+2015-11-03 19:12:42 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-03 19:12:43 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-03 19:12:46 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-03 19:12:46 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-03 19:12:47 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-03 19:12:47 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 08:16:03 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 08:16:03 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 08:16:03 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 08:16:03 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 08:16:03 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 08:16:16 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 08:16:19 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 08:16:21 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 08:16:26 INFO  PRLogin:92 - Successful login.
+2015-11-04 08:16:27 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 08:16:28 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 08:16:33 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 08:16:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 08:16:34 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 08:16:34 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 08:59:34 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 08:59:34 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 08:59:34 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 08:59:34 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 08:59:34 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 08:59:48 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 08:59:51 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 08:59:53 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 08:59:58 INFO  PRLogin:92 - Successful login.
+2015-11-04 08:59:59 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:00:00 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:00:17 ERROR MaintainMembership:38 - Failed, View link click 
+2015-11-04 09:00:17 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 09:00:17 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:00:17 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 09:00:17 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 09:00:54 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 09:00:54 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 09:00:54 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 09:00:54 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:00:54 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 09:01:08 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 09:01:12 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 09:01:14 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 09:01:18 INFO  PRLogin:92 - Successful login.
+2015-11-04 09:01:19 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:01:20 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:01:36 ERROR MaintainMembership:38 - Failed, View link click 
+2015-11-04 09:01:36 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 09:01:36 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:01:37 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 09:01:37 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 09:11:25 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 09:11:25 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 09:11:25 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 09:11:25 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:11:25 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 09:11:39 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 09:11:42 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 09:11:44 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 09:11:49 INFO  PRLogin:92 - Successful login.
+2015-11-04 09:11:50 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:11:51 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:11:57 ERROR MaintainMembership:38 - Failed, View link click 
+2015-11-04 09:11:57 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 09:11:57 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:11:58 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 09:11:58 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 09:14:53 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 09:14:53 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 09:14:53 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 09:14:53 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:14:53 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 09:15:07 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 09:15:10 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 09:15:12 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 09:15:17 INFO  PRLogin:92 - Successful login.
+2015-11-04 09:15:18 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:15:19 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:15:26 ERROR MaintainMembership:38 - Failed, View link click 
+2015-11-04 09:15:26 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 09:15:26 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:15:26 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 09:15:26 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 09:17:50 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 09:17:50 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 09:17:50 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 09:17:50 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:17:50 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 09:18:04 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 09:18:07 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 09:18:09 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 09:18:14 INFO  PRLogin:92 - Successful login.
+2015-11-04 09:18:15 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:18:16 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:18:23 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 09:18:23 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:18:24 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 09:18:24 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 09:24:11 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 09:24:11 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 09:24:11 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 09:24:11 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:24:11 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 09:24:24 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 09:24:27 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 09:24:29 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 09:24:34 INFO  PRLogin:92 - Successful login.
+2015-11-04 09:24:35 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:24:37 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 09:24:46 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 09:24:46 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 09:24:46 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 09:24:46 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 11:07:28 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 11:07:28 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 11:07:28 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 11:07:28 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 11:07:28 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 11:07:40 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 11:07:44 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 11:07:46 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 11:07:50 INFO  PRLogin:92 - Successful login.
+2015-11-04 11:07:52 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 11:07:53 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 11:08:01 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 11:08:01 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 11:08:02 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 11:08:02 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 11:09:35 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 11:09:35 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 11:09:35 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 11:09:35 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 11:09:35 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 11:09:48 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 11:09:51 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 11:09:53 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 11:09:57 INFO  PRLogin:92 - Successful login.
+2015-11-04 11:09:58 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 11:10:00 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 11:10:07 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 11:10:07 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 11:10:08 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 11:10:08 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 11:12:28 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 11:12:28 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 11:12:28 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 11:12:28 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 11:12:28 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 11:12:40 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 11:12:44 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 11:12:46 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 11:12:50 INFO  PRLogin:92 - Successful login.
+2015-11-04 11:12:51 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 11:12:52 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 11:13:09 ERROR AddBuyerProgram:138 - Failed, Community Buyers Tab click
+2015-11-04 11:13:09 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 11:13:09 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 11:13:10 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 11:13:10 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 11:34:17 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 11:34:17 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 11:34:17 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 11:34:17 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 11:34:17 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 11:34:30 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 11:34:34 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 11:34:36 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 11:34:41 INFO  PRLogin:92 - Successful login.
+2015-11-04 11:34:42 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 11:34:43 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 11:35:00 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 11:35:00 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 11:35:00 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 11:35:00 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 12:09:38 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 12:09:38 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 12:09:38 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 12:09:38 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:09:38 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 12:09:50 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 12:09:54 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 12:09:56 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 12:10:00 INFO  PRLogin:92 - Successful login.
+2015-11-04 12:10:01 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:10:02 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:10:30 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 12:10:33 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 12:10:33 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 12:10:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:10:33 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 12:10:33 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 12:13:46 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 12:13:46 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 12:13:46 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 12:13:46 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:13:46 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 12:13:58 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 12:14:01 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 12:14:03 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 12:14:08 INFO  PRLogin:92 - Successful login.
+2015-11-04 12:14:09 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:14:10 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:14:38 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 12:14:41 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 12:14:41 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 12:14:41 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:14:41 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 12:14:41 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 12:17:10 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 12:17:10 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 12:17:10 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 12:17:10 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:17:10 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 12:17:22 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 12:17:25 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 12:17:27 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 12:17:32 INFO  PRLogin:92 - Successful login.
+2015-11-04 12:17:34 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:17:35 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:18:03 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 12:18:06 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 12:18:06 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 12:18:06 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:18:06 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 12:18:06 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 12:18:37 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 12:18:37 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 12:18:37 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 12:18:37 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:18:37 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 12:18:49 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 12:18:53 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 12:18:55 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 12:18:59 INFO  PRLogin:92 - Successful login.
+2015-11-04 12:19:00 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:19:01 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:19:30 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 12:19:33 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 12:19:33 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 12:19:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:19:34 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 12:19:34 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 12:31:49 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 12:31:49 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 12:31:49 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 12:31:49 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:31:49 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 12:32:01 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 12:32:04 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 12:32:06 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 12:32:11 INFO  PRLogin:92 - Successful login.
+2015-11-04 12:32:12 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:32:13 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:32:40 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 12:32:43 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 12:32:43 INFO  AddBuyerProgram:147 - 1
+2015-11-04 12:32:43 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 12:32:43 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:32:44 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 12:32:44 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 12:44:21 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 12:44:21 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 12:44:21 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 12:44:21 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:44:21 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 12:44:33 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 12:44:37 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 12:44:39 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 12:44:44 INFO  PRLogin:92 - Successful login.
+2015-11-04 12:44:45 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:44:46 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:45:15 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 12:45:17 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 12:45:18 INFO  AddBuyerProgram:152 - 1
+2015-11-04 12:45:18 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 12:45:18 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:45:18 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 12:45:18 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 12:49:04 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 12:49:04 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 12:49:04 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 12:49:04 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:49:04 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 12:49:15 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 12:49:19 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 12:49:21 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 12:49:26 INFO  PRLogin:92 - Successful login.
+2015-11-04 12:49:27 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:49:28 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 12:49:55 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 12:49:58 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 12:49:58 INFO  AddBuyerProgram:152 - 1
+2015-11-04 12:49:58 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 12:49:58 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 12:49:59 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 12:49:59 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 13:19:23 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 13:19:23 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 13:19:23 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 13:19:23 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:19:23 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 13:19:35 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 13:19:39 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 13:19:41 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 13:19:46 INFO  PRLogin:92 - Successful login.
+2015-11-04 13:19:47 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:19:48 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:20:16 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 13:20:19 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 13:20:19 INFO  AddBuyerProgram:152 - 1
+2015-11-04 13:20:19 ERROR TesterListener:19 - java.lang.AssertionError: expected [false] but found [false]
+2015-11-04 13:20:19 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-11-04 13:20:19 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:20:20 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 13:20:20 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 13:23:37 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 13:23:37 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 13:23:37 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 13:23:37 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:23:38 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 13:23:50 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 13:23:53 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 13:23:55 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 13:23:59 INFO  PRLogin:92 - Successful login.
+2015-11-04 13:24:00 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:24:02 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:24:30 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 13:24:33 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 13:24:33 INFO  AddBuyerProgram:152 - 1
+2015-11-04 13:24:33 ERROR TesterListener:19 - java.lang.AssertionError: expected [true] but found [true]
+2015-11-04 13:24:33 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-11-04 13:24:33 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:24:34 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 13:24:34 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 13:30:21 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 13:30:21 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 13:30:21 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 13:30:21 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:30:21 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 13:30:37 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 13:30:40 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 13:30:42 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 13:30:47 INFO  PRLogin:92 - Successful login.
+2015-11-04 13:30:48 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:30:49 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:31:18 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 13:31:21 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 13:31:21 INFO  AddBuyerProgram:152 - 1
+2015-11-04 13:31:21 ERROR TesterListener:19 - java.lang.AssertionError: expected [false] but found [false]
+2015-11-04 13:31:21 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-11-04 13:31:21 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:31:22 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 13:31:22 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 13:34:15 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 13:34:15 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 13:34:15 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 13:34:15 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:34:15 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 13:34:27 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 13:34:30 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 13:34:32 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 13:34:37 INFO  PRLogin:92 - Successful login.
+2015-11-04 13:34:38 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:34:39 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:35:07 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 13:35:10 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 13:35:10 INFO  AddBuyerProgram:152 - 1
+2015-11-04 13:35:10 ERROR TesterListener:19 - java.lang.AssertionError: expected [false] but found [false]
+2015-11-04 13:35:10 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-11-04 13:35:10 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:35:11 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 13:35:11 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 13:51:41 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 13:51:41 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 13:51:41 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 13:51:41 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:51:41 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 13:51:54 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 13:51:58 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 13:52:00 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 13:52:05 INFO  PRLogin:92 - Successful login.
+2015-11-04 13:52:06 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:52:07 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 13:52:35 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 13:52:38 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 13:52:38 INFO  AddBuyerProgram:152 - 1
+2015-11-04 13:52:38 ERROR TesterListener:19 - java.lang.AssertionError: expected [true] but found [true]
+2015-11-04 13:52:38 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-11-04 13:52:38 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 13:52:39 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 13:52:39 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 14:03:04 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 14:03:04 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 14:03:04 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 14:03:04 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 14:03:04 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 14:03:16 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 14:03:20 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 14:03:22 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 14:03:26 INFO  PRLogin:92 - Successful login.
+2015-11-04 14:03:28 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 14:03:29 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 14:03:57 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 14:04:00 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 14:04:00 INFO  AddBuyerProgram:152 - 1
+2015-11-04 14:04:00 ERROR TesterListener:19 - java.lang.AssertionError: expected [true] but found [true]
+2015-11-04 14:04:00 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-11-04 14:04:00 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 14:04:01 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 14:04:01 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 16:46:10 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 16:46:10 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 16:46:10 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 16:46:10 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 16:46:10 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 16:46:23 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 16:46:26 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 16:46:28 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 16:46:35 INFO  PRLogin:92 - Successful login.
+2015-11-04 16:46:36 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 16:46:37 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 16:47:05 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 16:47:08 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 16:47:08 INFO  AddBuyerProgram:152 - 1
+2015-11-04 16:47:17 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 16:47:17 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 16:47:18 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 16:47:18 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-04 16:50:16 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-04 16:50:16 INFO  PropertiesUtil:29 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-04 16:50:16 INFO  PropertiesUtil:29 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-04 16:50:16 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 16:50:16 INFO  Browser:189 - Firefox profile: webdriver
+2015-11-04 16:50:28 INFO  SeleniumUtils:277 - Typed text:  SPrkt
+2015-11-04 16:50:31 INFO  Synchronizer:177 - Explicit wait 1 second
+2015-11-04 16:50:33 INFO  Synchronizer:177 - Explicit wait 2 second
+2015-11-04 16:50:40 INFO  PRLogin:92 - Successful login.
+2015-11-04 16:50:41 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 16:50:42 INFO  Synchronizer:25 - Waited for 5 sec implicity.
+2015-11-04 16:51:11 INFO  SeleniumUtils:277 - Typed text:  0001
+2015-11-04 16:51:14 INFO  SeleniumUtils:277 - Typed text:  2355
+2015-11-04 16:51:14 INFO  AddBuyerProgram:152 - 1
+2015-11-04 16:51:14 INFO  AddBuyerProgram:160 - radion button by defalut not selected - valadiation passed
+2015-11-04 16:51:15 INFO  AddBuyerProgram:169 - radion button by defalut selected - valadiation passed
+2015-11-04 16:51:23 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-04 16:51:23 INFO  PRBase:85 - Finishing Test: com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1
+2015-11-04 16:51:24 INFO  FileUtils:30 - Payment Values: test=com.primerevenue.osci.test.smoke.SPloginTestNG.smokeTest1,user=SPrkt
+2015-11-04 16:51:24 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
