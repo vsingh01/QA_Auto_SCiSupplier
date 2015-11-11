@@ -39,7 +39,7 @@ public class PRLogin {
     @FindBy(id = "watLogout")
     public WebElement logout;
 
-    @FindBy(xpath = "//div[text()='Service Provider Home']")
+    @FindBy(xpath = "//div[@class='title']")
     public WebElement title;
 
     public static String SUCCESSFUL_LANDING_PAGE_TITLE = "Service Provider Home";

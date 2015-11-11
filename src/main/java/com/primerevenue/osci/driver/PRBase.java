@@ -42,14 +42,14 @@ public class PRBase {
     public static Properties objectMapProp;
 
     public static String CORPORATE_UG;
-    public static String COM_USER1;
-    public static String CORPORATE_USER2;
+    public static String COM_USER;
+    public static String SUPP_USER;
     public static String CORPORATE_USER3;
 
     public static String SMB_UG;
-    public static String SP_USER1;
-    public static String SMB_USER2;
-    public static String SMB_USER3;
+    public static String SP_USER;
+    public static String FI_USER;
+    public static String BUY_USER;
 
     public static String CHANGE_PASSWORD;
 
@@ -109,14 +109,14 @@ public class PRBase {
     private void initGlobalData() {
         logger.debug("INITIALIZING GLOBAL VARIABLES... ");
         CORPORATE_UG = setupProp.getProperty("corp.user.group");
-        COM_USER1 = setupProp.getProperty("corp.user.username1");
-        CORPORATE_USER2 = setupProp.getProperty("corp.user.username2");
+        COM_USER = setupProp.getProperty("com.user.username");
+        SUPP_USER = setupProp.getProperty("supp.user.username");
         CORPORATE_USER3 = setupProp.getProperty("corp.user.username3");
 
         SMB_UG = setupProp.getProperty("smb.user.group");
-        SP_USER1 = setupProp.getProperty("sp.user.username1");
-        SMB_USER2 = setupProp.getProperty("smb.user.username2");
-        SMB_USER3 = setupProp.getProperty("smb.user.username3");
+        SP_USER = setupProp.getProperty("sp.user.username");
+        FI_USER = setupProp.getProperty("fi.user.username");
+        BUY_USER = setupProp.getProperty("buy.user.username");
         CHANGE_PASSWORD = setupProp.getProperty("user.password.change");
 
         ENABLE_EXECUTION_TRACE = setupProp.getProperty("execution.trace.enable");

@@ -124,6 +124,28 @@ public class SPAddBuyerProgram {
 
 	@FindBy(xpath = "//a[contains(text(),'Cancel')]")
 	public WebElement cancel;
+	
+	//Track Documents Page
+	
+	@FindBy(id = "dateOption")   
+	public WebElement dateOption;
+	
+	@FindBy(xpath = "//a[contains(text(),'Search')]")   
+	public WebElement search;
+	
+	//Payment Obligation Search Results page
+	
+	@FindBy(xpath = "//div[text()='Payment Obligation Search Results']")
+	public WebElement payObligSearchResultsPageTitle;
+	
+	@FindBy(xpath = "//div[text()='Load Confirmations']")
+	public WebElement loadConfirmPageTitle;
+	
+	@FindBy(xpath = "//div[text()='User Search']")
+	public WebElement userSearchTitle;
+	
+	
+	
 
 	public void addBuyerProgram() {
 		PageFactory.initElements(Browser.eDriver, this);
@@ -138,7 +160,7 @@ public class SPAddBuyerProgram {
 
 		try {
 			buyerProgramName.clear();
-			buyerProgramName.sendKeys("RKTbuy2_BP");
+			buyerProgramName.sendKeys("rktcommunity_BP");
 			SeleniumUtils.selectOption(countryCode, "United States of America");
 			SeleniumUtils.selectOption(currencyCode, "USD");
 			SeleniumUtils.selectOption(bankAccountId, "Prime Revenue Ltd");
@@ -151,6 +173,10 @@ public class SPAddBuyerProgram {
 					"US United States with Extra Holidays");
 			SeleniumUtils.type(buyOfferWindowOpen, "0001");
 			SeleniumUtils.type(buyOfferWindowClose, "2355");
+			SeleniumUtils.type(buyOfferTotalTimeOut, "1");
+			SeleniumUtils.type(buyOfferFiTimeOut, "1");
+			//SeleniumUtils.type(preMatureLeadDays, "1");
+			
 
 			String preMatLedDays = preMatureLeadDays.getAttribute("value");
 			logger.info(preMatLedDays);
@@ -204,7 +230,7 @@ public class SPAddBuyerProgram {
 					"SEB - SEB File - Credit");
 			SeleniumUtils.selectOption(gatewayId, "SEB");
 			
-			//SeleniumUtils.click(save);
+			SeleniumUtils.click(save);
 			
 			logger.debug("Successful, Community Buyers Tab click.");
 		} catch (Exception e) {
@@ -212,5 +238,30 @@ public class SPAddBuyerProgram {
 		}
 
 	}
-
+	public void trackDocumentsSearch() {
+		PageFactory.initElements(Browser.eDriver, this);
+		
+		SeleniumUtils.selectOption(dateOption, "This Year");
+		SeleniumUtils.selectOption(currencyCode, "USD");
+		SeleniumUtils.click(search);
+		
+		SeleniumUtils.isTextPresent("Payment Obligation Search Results");
+		
+	}
+	public void loadConfirm() {
+		PageFactory.initElements(Browser.eDriver, this);
+		
+		//SeleniumUtils.selectOption(dateOption, "This Year");
+				
+		SeleniumUtils.isTextPresent("Load Confirmations");
+		
+	}
+	public void userPwdMaintenance() {
+		PageFactory.initElements(Browser.eDriver, this);
+		
+		//SeleniumUtils.selectOption(dateOption, "This Year");
+				
+		SeleniumUtils.isTextPresent("User Search");
+		
+	}
 }
