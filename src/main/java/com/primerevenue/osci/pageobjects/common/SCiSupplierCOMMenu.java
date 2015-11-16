@@ -14,13 +14,13 @@ public class SCiSupplierCOMMenu {
 	final static Logger logger = Logger.getLogger(SCiSupplierCOMMenu.class);
 
 	@FindBy(id = "dashboard-toggle")
-	public WebElement cmuserMenu;
+	public WebElement userMenu;
 
 	@FindBy(id = "watAdministration")
-	public WebElement cmadmin;
+	public WebElement admin;
 
 	@FindBy(id = "watListUsers")
-	public WebElement cmusers;
+	public WebElement users;
 
 	@FindBy(xpath = "//a[contains(text(),'Buyer Program')]")
 	public WebElement buyerProgram;
@@ -37,36 +37,37 @@ public class SCiSupplierCOMMenu {
 	@FindBy(xpath = "//a[contains(text(),'Buyer Maturing Payment Forecast')]")
 	public WebElement buyerMaturepayForcastReport;
 
-	public void theComMenu() {
+	public void menuToUsers() {
 		PageFactory.initElements(Browser.eDriver, this);
-		Synchronizer.waitUntilDisplayed(cmuserMenu, 5);
+		Synchronizer.waitUntilDisplayed(userMenu, 5);
 
 		try {
-			SeleniumUtils.click(cmuserMenu);
+			SeleniumUtils.click(userMenu);
 			logger.debug("Successful, User Menu click.");
 		} catch (Exception e) {
 			logger.error("Failed, User Menu click");
 		}
 		Synchronizer.implicitWait(5);
 		try {
-			SeleniumUtils.click(cmadmin);
+			SeleniumUtils.click(admin);
 			logger.debug("Successful, Administration click.");
 		} catch (Exception e) {
 			logger.error("Failed, Administration click");
 		}
 		Synchronizer.implicitWait(5);
 		try {
-			SeleniumUtils.click(cmusers);
+			SeleniumUtils.click(users);
 			logger.debug("Successful, Users click.");
 		} catch (Exception e) {
 			logger.error("Failed, Users click");
 		}
 	}
 
-	public void navigateToPendingBuyerProgram() {
+	public void menuToPendingBuyerProgram() {
+		PageFactory.initElements(Browser.eDriver, this);
 
 		try {
-			SeleniumUtils.click(cmuserMenu);
+			SeleniumUtils.click(userMenu);
 			logger.debug("Successful, User Menu click.");
 		} catch (Exception e) {
 			logger.error("Failed, User Menu click");
@@ -88,7 +89,7 @@ public class SCiSupplierCOMMenu {
 	public void menuToCOMSuppActivityReport() {
 		PageFactory.initElements(Browser.eDriver, this);
 
-		SeleniumUtils.click(cmuserMenu);
+		SeleniumUtils.click(userMenu);
 		SeleniumUtils.click(reports);
 		SeleniumUtils.click(suppActivityReports);
 
@@ -96,7 +97,7 @@ public class SCiSupplierCOMMenu {
 	public void menuToCOMbuyerMaturepayForcastReport() {
 		PageFactory.initElements(Browser.eDriver, this);
 
-		SeleniumUtils.click(cmuserMenu);
+		SeleniumUtils.click(userMenu);
 		SeleniumUtils.click(buyerMaturepayForcastReport);
 
 	}

@@ -39,6 +39,25 @@ public class Browser {
 
     //Browser Profile
     public static String FIREFOX_PROFILE = "webdriver";
+    
+        
+    public static FirefoxProfile FirefoxDriverProfile() throws Exception {
+    	FirefoxProfile profile = new FirefoxProfile();
+		profile.setPreference("browser.download.folderList", 1);
+		profile.setPreference("browser.download.manager.showWhenStarting", false);
+		//profile.setPreference("browser.download.dir", downloadPath);
+		profile.setPreference("browser.helperApps.neverAsk.openFile",
+				"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/pdf,text/pdf");
+		profile.setPreference("browser.helperApps.neverAsk.saveToDisk",
+"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/pdf,text/pdf");
+		profile.setPreference("browser.helperApps.alwaysAsk.force", false);
+		profile.setPreference("browser.download.manager.alertOnEXEOpen", false);
+		profile.setPreference("browser.download.manager.focusWhenStarting", false);
+		profile.setPreference("browser.download.manager.useWindow", false);
+		profile.setPreference("browser.download.manager.showAlertOnComplete", false);
+		profile.setPreference("browser.download.manager.closeWhenDone", false);
+		return profile;
+	}
 
     public static void open(String gridBrowser, String gridNodeIP, String gridNodePort) {
         try {
@@ -138,9 +157,15 @@ public class Browser {
                 capabilities.setPlatform(Platform.VISTA);
                 // set firefox profile
                 FirefoxProfile profile = new ProfilesIni().getProfile(FIREFOX_PROFILE);
+                
+                       
+               
+                
+                
 
                 capabilities.setCapability(FirefoxDriver.PROFILE, profile);
-
+                
+                
                 break;
             case "chrome":
                 capabilities = DesiredCapabilities.chrome();
@@ -185,9 +210,12 @@ public class Browser {
         return new ChromeDriver();
     }
 
-    public static WebDriver getFirefoxDriver() {
+    public static WebDriver getFirefoxDriver()   {
         logger.info("Firefox profile: " + FIREFOX_PROFILE);
         FirefoxProfile profile = new ProfilesIni().getProfile(FIREFOX_PROFILE);
+        
+     
+                
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         capabilities.setJavascriptEnabled(true);
         capabilities.setCapability(FirefoxDriver.PROFILE, profile);
@@ -232,5 +260,7 @@ public class Browser {
             return true;
         }
     }
+    
+   
 	
 }

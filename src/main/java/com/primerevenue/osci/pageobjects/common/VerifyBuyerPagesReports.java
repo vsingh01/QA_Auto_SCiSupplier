@@ -1,5 +1,7 @@
 package com.primerevenue.osci.pageobjects.common;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
+import com.primerevenue.osci.utils.Synchronizer;
 
 public class VerifyBuyerPagesReports {
 
@@ -101,17 +104,21 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.switchToNewWindow(fbMainContainer, endOfDayReportTitle);
 		
 	}
-	public void tradeDetailsReportGen() {
+	public void tradeDetailsReportGen() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
 		SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.click(run);
-		SeleniumUtils.switchToNewWindow(fbMainContainer, tradeDetailsReportTitle);
+		Synchronizer.explicitWait(10);
+		Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTestBuyerMod.exe");
+		//SeleniumUtils.switchToNewWindow(fbMainContainer, tradeDetailsReportTitle);
 				
 	}
-	public void supplierTradTrendReportsGen() {
+	public void supplierTradTrendReportsGen() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
 		SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.click(run);
-		SeleniumUtils.switchToNewWindow(fbMainContainer, supplierTradTrendReportTitle);
+		Synchronizer.explicitWait(10);
+		Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTestBuyerMod.exe");
+		//SeleniumUtils.switchToNewWindow(fbMainContainer, supplierTradTrendReportTitle);
 }
 }

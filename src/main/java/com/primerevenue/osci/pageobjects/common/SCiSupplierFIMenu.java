@@ -53,7 +53,7 @@ public class SCiSupplierFIMenu {
 	@FindBy(xpath = "//a[contains(text(),'Payment Obligation Notification Report')]")
 	public WebElement poNotificationReport;
 	
-	@FindBy(xpath = "//a[contains(text(),'Payment Obligation Notification Report')]")
+	@FindBy(xpath = "//a[contains(text(),'Summary Booking Report')]")
 	public WebElement sumBookingReport;
 	
 		
@@ -87,7 +87,15 @@ public class SCiSupplierFIMenu {
 	
 	
 	
-	
+	public void menuToAvailablePortfolios()	{
+PageFactory.initElements(Browser.eDriver, this);
+		
+		SeleniumUtils.click(userMenu);
+		SeleniumUtils.click(portfolioManager);
+		SeleniumUtils.click(availablePortfolios);
+		SeleniumUtils.isTextPresent("Available Portfolios");
+		
+	}
 		
 	
 	public void verifyFIPages() {

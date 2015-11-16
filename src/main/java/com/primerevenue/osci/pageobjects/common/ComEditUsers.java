@@ -65,7 +65,7 @@ public class ComEditUsers {
 
 		SCiSupplierCOMMenu cmtestMenu10 = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierCOMMenu.class);
-		cmtestMenu10.navigateToPendingBuyerProgram();
+		cmtestMenu10.menuToPendingBuyerProgram();
 
 		try {
 			SeleniumUtils.click(addPendingBP);

@@ -10,8 +10,8 @@ import com.primerevenue.osci.pageobjects.common.SCiSupplierSuppMenu;
 import com.primerevenue.osci.pageobjects.common.SuppModePageNavigations;
 import com.primerevenue.osci.utils.Synchronizer;
 
-public class SupplierModPageNavTestNG extends PRBase {
-	final static Logger logger = Logger.getLogger(SupplierModPageNavTestNG.class);
+public class SupplierModPageNavTestNG6 extends PRBase {
+	final static Logger logger = Logger.getLogger(SupplierModPageNavTestNG6.class);
 	
 	@Test
 	public void smokeTest1() throws InterruptedException {

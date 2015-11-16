@@ -2,6 +2,7 @@ package com.primerevenue.osci.test.smoke;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import com.primerevenue.osci.driver.Browser;
@@ -12,37 +13,40 @@ import com.primerevenue.osci.pageobjects.common.ComUsersPage;
 import com.primerevenue.osci.pageobjects.common.SCiSupplierCOMMenu;
 import com.primerevenue.osci.utils.Synchronizer;
 
-public class CMLoginTestNG2 extends PRBase {
+public class CMSmokeTestNG2 extends PRBase {
 
-	final static Logger logger = Logger.getLogger(CMLoginTestNG2.class);
+	final static Logger logger = Logger.getLogger(CMSmokeTestNG2.class);
 
 	@Test
 	public void cmsmokeTest1() throws InterruptedException {
 		Synchronizer.implicitWait(10);
 		login(COM_USER);
+		
+				
 	}
 
 	@Test
 	public void cmsmokeTest2() throws InterruptedException {
-		SCiSupplierCOMMenu cmtestMenu = PageFactory.initElements(
+		
+		SCiSupplierCOMMenu cmMenuObjRef = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierCOMMenu.class);
-		cmtestMenu.theComMenu();
+		cmMenuObjRef.menuToUsers();
 
-		ComUsersPage cmtestMenu1 = PageFactory.initElements(Browser.eDriver,
+		ComUsersPage cmUserPageObjeRef = PageFactory.initElements(Browser.eDriver,
 				ComUsersPage.class);
-		cmtestMenu1.usersEditMethod();
+		cmUserPageObjeRef.usersEditMethod();
 
-		ComEditUsers cmtestMenu3 = PageFactory.initElements(Browser.eDriver,
+		ComEditUsers cmEditObjRef = PageFactory.initElements(Browser.eDriver,
 				ComEditUsers.class);
-		cmtestMenu3.cmAddBuyerProgram();
+		cmEditObjRef.cmAddBuyerProgram();
 
-		ComAddBuyerProgram cmtestMenu4 = PageFactory.initElements(
+		ComAddBuyerProgram cmAddByObjRef = PageFactory.initElements(
 				Browser.eDriver, ComAddBuyerProgram.class);
-		cmtestMenu4.addEditBuyerProgram();
+		cmAddByObjRef.addEditBuyerProgram();
 
 	}
-	@Test
-	public void cmsmokeTest3() throws InterruptedException {
+	/*@Test
+	public void cmsmokeTest3() throws Exception {
 		
 		SCiSupplierCOMMenu cmtestMenu5 = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierCOMMenu.class);
@@ -55,8 +59,14 @@ public class CMLoginTestNG2 extends PRBase {
 		
 		cmtestMenu5.menuToCOMbuyerMaturepayForcastReport();
 		cmtestMenu6.buyerMaturePayForcastReport();
-		
-		
+			
+	}*/
+	
+	/*@AfterClass
+	public void afterClass() {
+		           
+		Browser.close();
+        }*/
 	}
 	
-}
+

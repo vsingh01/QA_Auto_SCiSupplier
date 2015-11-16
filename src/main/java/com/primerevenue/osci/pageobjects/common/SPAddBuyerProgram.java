@@ -159,8 +159,8 @@ public class SPAddBuyerProgram {
 		 */
 
 		try {
-			buyerProgramName.clear();
-			buyerProgramName.sendKeys("rktcommunity_BP");
+			SeleniumUtils.clearWithBackSpace(buyerProgramName);
+			SeleniumUtils.type(buyerProgramName, "rktcommunity_BP");
 			SeleniumUtils.selectOption(countryCode, "United States of America");
 			SeleniumUtils.selectOption(currencyCode, "USD");
 			SeleniumUtils.selectOption(bankAccountId, "Prime Revenue Ltd");

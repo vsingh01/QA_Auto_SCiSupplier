@@ -10,8 +10,8 @@ import com.primerevenue.osci.pageobjects.common.SCiSupplierSuppMenu;
 import com.primerevenue.osci.pageobjects.common.SuppModVerifyReports;
 import com.primerevenue.osci.utils.Synchronizer;
 
-public class SuppReportsTestNG extends PRBase	{
-	final static Logger logger = Logger.getLogger(SuppReportsTestNG.class);
+public class SuppReportsTestNG5 extends PRBase	{
+	final static Logger logger = Logger.getLogger(SuppReportsTestNG5.class);
 	
 	@Test
 	public void smokeTestReports() throws InterruptedException {

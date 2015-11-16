@@ -1,5 +1,7 @@
 package com.primerevenue.osci.pageobjects.common;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
+import com.primerevenue.osci.utils.Synchronizer;
 
 public class ComAddBuyerProgram {
 
@@ -44,7 +47,7 @@ public class ComAddBuyerProgram {
 	
 	//Buyer Program Add - FI page
 	
-	@FindBy(xpath = "(//input[@name='checkedFIValue'])[2]")
+	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/table[2]/tbody/tr/td/form/table/tbody/tr[2]/td[1]/input")
 	public WebElement checkBoxFIValue;
 	
 	@FindBy(id = "_acceptFISubmit")
@@ -52,6 +55,9 @@ public class ComAddBuyerProgram {
 	
 	@FindBy(xpath = "//a[contains(text(),'RktFI')]")
 	public WebElement fIName;
+	
+	@FindBy(name = "selectedBuyerProgram")
+	public WebElement chkBox;
 	
 	//Reports
 	
@@ -73,22 +79,25 @@ public class ComAddBuyerProgram {
 	public void addEditBuyerProgram() {
 		PageFactory.initElements(Browser.eDriver, this);
 
-		SeleniumUtils.click(contactPerson);
-		SeleniumUtils.click(phone);
-		SeleniumUtils.click(email);
+		SeleniumUtils.typeText(contactPerson, "Sai");
+		SeleniumUtils.typeText(phone, "6785927880");
+		SeleniumUtils.typeText(email, "primerevenueqa@hotmail.com");
 		SeleniumUtils.click(next);
 
-		SeleniumUtils.type(supplierTransactionFee, null);
-		SeleniumUtils.type(fiTransactionFee, null);
+		SeleniumUtils.type(supplierTransactionFee, "2000");
+		SeleniumUtils.type(fiTransactionFee, "1000");
 		SeleniumUtils.click(next1);
 
 		SeleniumUtils.click(saveAndCont);
 		
 		SeleniumUtils.click(addFISubmit);
 		
-		SeleniumUtils.click(checkBoxFIValue);
+		
+		SeleniumUtils.clickCheckBox(checkBoxFIValue,"ON");
 		
 		SeleniumUtils.isTextPresent("RktFI");
+		
+		SeleniumUtils.click(acceptFISubmit);
 
 	}
 	public void supplierActivityReport() {
@@ -96,14 +105,17 @@ public class ComAddBuyerProgram {
 		
 		SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.click(run);
+		//Synchronizer.explicitWait(5);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, supplierActivityReportTitle);
 	}
-	public void buyerMaturePayForcastReport() {
+	public void buyerMaturePayForcastReport() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		//SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.click(run);
-		SeleniumUtils.switchToNewWindow(fbMainContainer, maturePayForcastReportTitle);
+		
+		Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+		//SeleniumUtils.switchToNewWindow(fbMainContainer, maturePayForcastReportTitle);
 	}
 	
 }

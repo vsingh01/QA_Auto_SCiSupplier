@@ -1,5 +1,7 @@
 package com.primerevenue.osci.test.smoke;
 
+import java.awt.AWTException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -10,12 +12,14 @@ import com.primerevenue.osci.pageobjects.common.FIAddBuyerProgram;
 import com.primerevenue.osci.pageobjects.common.SCiSupplierFIMenu;
 import com.primerevenue.osci.utils.Synchronizer;
 
-public class FILoginTestNG3 extends PRBase {
+public class FISmokeTestNG3 extends PRBase {
 
-	final static Logger logger = Logger.getLogger(FILoginTestNG3.class);
+	final static Logger logger = Logger.getLogger(FISmokeTestNG3.class);
 
 	@Test
-	public void smokeTestfi1() throws InterruptedException {
+	public void smokeTestfi1() throws Exception {
+		
+		
 		Synchronizer.implicitWait(10);
 		login(FI_USER);
 		/*
@@ -24,24 +28,25 @@ public class FILoginTestNG3 extends PRBase {
 		 * @Test public void smokeTestfi2() throws InterruptedException {
 		 */
 
-		SCiSupplierFIMenu testMenufi1 = PageFactory.initElements(
+		SCiSupplierFIMenu fIMenuObjRef = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierFIMenu.class);
 		//testMenufi1.verifyFIPages();
 		
 
-		FIAddBuyerProgram testMenufi2 = PageFactory.initElements(
+		FIAddBuyerProgram fIByProObjRef = PageFactory.initElements(
 				Browser.eDriver, FIAddBuyerProgram.class);
 
-		//testMenufi2.fIAddBP();
+		fIMenuObjRef.menuToAvailablePortfolios();
+		fIByProObjRef.fIAddBP();
 		
 		
-	
-		testMenufi1.menuToFIremitAdvOutboundReport();
+	// Reports
+		/*testMenufi1.menuToFIremitAdvOutboundReport();
 		testMenufi2.fIRenmitAdvOutboundReprots();
 		testMenufi1.menuToFIpoNotificationReport();
 		testMenufi2.fIPONotifReprots();
 		testMenufi1.menuToFISummBookReport();
-		testMenufi2.fISummaryBookingReprots();
+		testMenufi2.fISummaryBookingReprots();*/
 		
 	}
 }

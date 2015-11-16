@@ -13,9 +13,9 @@ import com.primerevenue.osci.utils.Synchronizer;
 
 
 
-public class SPLoginTestNG1 extends PRBase {
+public class SPSmokeTestNG1 extends PRBase {
 	
-	final static Logger logger = Logger.getLogger(SPLoginTestNG1.class);
+	final static Logger logger = Logger.getLogger(SPSmokeTestNG1.class);
 
 
 	@Test
@@ -23,23 +23,22 @@ public class SPLoginTestNG1 extends PRBase {
         Synchronizer.implicitWait(10);
 		login(SP_USER);
 		
-		SCiSupplierSPMenu testMenu = PageFactory.initElements(Browser.eDriver,
+		SCiSupplierSPMenu spMenuObjRef = PageFactory.initElements(Browser.eDriver,
         		SCiSupplierSPMenu.class);
-        
-        testMenu.menuToMainMembership();
-        
-        SPMaintainMembership testMenu1 = PageFactory.initElements(Browser.eDriver,
+		SPMaintainMembership spMainMembShipObjRef = PageFactory.initElements(Browser.eDriver,
         		SPMaintainMembership.class);
-       //testMenu1.maintainMembTab();
-       
-       //Testing tables.. 
-        testMenu1.testingTableContents();
-        
-        SPAddBuyerProgram testMenu2 = PageFactory.initElements(Browser.eDriver,
+		SPAddBuyerProgram spAddBPObjeRef = PageFactory.initElements(Browser.eDriver,
         		SPAddBuyerProgram.class);
-        //testMenu2.addBuyerProgram();
+		
+		spMenuObjRef.menuToMainMembership();
+		spMainMembShipObjRef.maintainMembComBuyersTab();
+		spAddBPObjeRef.addBuyerProgram();
+        
+       
         
         
+        
+            
         
 	}
 	

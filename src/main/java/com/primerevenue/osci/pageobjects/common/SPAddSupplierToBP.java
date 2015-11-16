@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
-public class SPAddSupplier {
-	final static Logger logger = Logger.getLogger(SPAddSupplier.class);
+public class SPAddSupplierToBP {
+	final static Logger logger = Logger.getLogger(SPAddSupplierToBP.class);
 	
 	// 		View Buyer Program page
 	
@@ -21,7 +21,7 @@ public class SPAddSupplier {
 	@FindBy(name = "searchValue")
 	public WebElement searchValue;
 	
-	@FindBy(name = "_searchSubmit")
+	@FindBy(id = "_searchSubmit")
 	public WebElement searchSubmit;
 	
 	// After Search
@@ -35,8 +35,10 @@ public class SPAddSupplier {
 	@FindBy(xpath = "//a[contains(text(),'Add Selected to Buyer Program')]")
 	public WebElement addSelectedtoBuyerProBtn;
 
-public void addSupplier() {
+public void addSupplierToBP() {
 		PageFactory.initElements(Browser.eDriver, this);
+		
+		SeleniumUtils.click(addBtn);
 		
 		SeleniumUtils.type(searchValue, "Rktsup2");
 		SeleniumUtils.click(searchSubmit);

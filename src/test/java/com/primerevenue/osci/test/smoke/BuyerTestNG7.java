@@ -10,12 +10,12 @@ import com.primerevenue.osci.pageobjects.common.SCiSupplierBuyerMenu;
 import com.primerevenue.osci.pageobjects.common.VerifyBuyerPagesReports;
 import com.primerevenue.osci.utils.Synchronizer;
 
-public class BuyerTestNG extends PRBase	{
+public class BuyerTestNG7 extends PRBase	{
 	
-	final static Logger logger = Logger.getLogger(BuyerTestNG.class);
+	final static Logger logger = Logger.getLogger(BuyerTestNG7.class);
 	
 	@Test
-	public void buyertest1() throws InterruptedException {
+	public void buyertest1() throws Exception {
         Synchronizer.implicitWait(10);
 		login(BUY_USER);
 	

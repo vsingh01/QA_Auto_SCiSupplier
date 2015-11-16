@@ -9,13 +9,13 @@ import com.primerevenue.osci.driver.PRBase;
 import com.primerevenue.osci.pageobjects.common.SCiSupplierSPMenu;
 import com.primerevenue.osci.pageobjects.common.SPAddBuyerProgram;
 import com.primerevenue.osci.pageobjects.common.SPAddNewSupplier;
-import com.primerevenue.osci.pageobjects.common.SPAddSupplier;
+import com.primerevenue.osci.pageobjects.common.SPAddSupplierToBP;
 import com.primerevenue.osci.pageobjects.common.SPMaintainMembership;
 import com.primerevenue.osci.utils.Synchronizer;
 
-public class SPLoginTestNG4 extends PRBase {
+public class SPSmokeTestNG4 extends PRBase {
 	
-	final static Logger logger = Logger.getLogger(SPLoginTestNG4.class);
+	final static Logger logger = Logger.getLogger(SPSmokeTestNG4.class);
 
 
 	@Test
@@ -23,23 +23,23 @@ public class SPLoginTestNG4 extends PRBase {
         Synchronizer.implicitWait(10);
 		login(SP_USER);
 		
-		SCiSupplierSPMenu testMenu = PageFactory.initElements(Browser.eDriver,
+		SCiSupplierSPMenu spMenuObjRef = PageFactory.initElements(Browser.eDriver,
         		SCiSupplierSPMenu.class);
         
-        /*testMenu.navigateToMainMembership();
+		spMenuObjRef.menuToMainMembership();
         
-        SPMaintainMembership testMenu1 = PageFactory.initElements(Browser.eDriver,
+        SPMaintainMembership mainMembObjRef = PageFactory.initElements(Browser.eDriver,
         		SPMaintainMembership.class);
-        testMenu1.maintainMembTabNavAddSupplier();
+        mainMembObjRef.addSupplierToBP();
         
-        SPAddSupplier testMenu2 = PageFactory.initElements(Browser.eDriver,
-        		SPAddSupplier.class);
-        testMenu2.addSupplier();
+        SPAddSupplierToBP spAddSuppObjRef = PageFactory.initElements(Browser.eDriver,
+        		SPAddSupplierToBP.class);
+        spAddSuppObjRef.addSupplierToBP();
         
-        SPAddBuyerProgram testMenu3 = PageFactory.initElements(Browser.eDriver,
+        SPAddBuyerProgram spAddByObjRef = PageFactory.initElements(Browser.eDriver,
         		SPAddBuyerProgram.class);
         
-        testMenu.menuToTrackDocuments();
+        /*testMenu.menuToTrackDocuments();
         testMenu3.trackDocumentsSearch();
         
         testMenu.menuToLoadConfirm();
@@ -48,8 +48,8 @@ public class SPLoginTestNG4 extends PRBase {
         testMenu.menuToUserPwdMaintenance();
         testMenu3.userPwdMaintenance();*/
         
-        //Adding a new Supplier from SP
-        SPAddNewSupplier testMenu4 = PageFactory.initElements(Browser.eDriver,
+        //test case---- Adding a new Supplier from SP
+        /*SPAddNewSupplier testMenu4 = PageFactory.initElements(Browser.eDriver,
         		SPAddNewSupplier.class);
         
         testMenu.menuToAddSupplier();
@@ -57,7 +57,7 @@ public class SPLoginTestNG4 extends PRBase {
         testMenu4.verifyingAddedNewSupplier();
         
         testMenu.menuToFIList();
-        testMenu4.editSaveComanyInfoForFI();
+        testMenu4.editSaveComanyInfoForFI();*/
 		
 }
 }

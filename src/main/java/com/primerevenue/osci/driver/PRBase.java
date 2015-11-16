@@ -79,7 +79,7 @@ public class PRBase {
         execTrace.put("test", testName);
     }
 
-    @AfterMethod
+    /*@AfterMethod
     protected void afterMethod(Method method) throws Exception {
         String testName = this.getClass().getName() + "." + method.getName();
         logger.info("Finishing Test: " + testName);
@@ -89,7 +89,7 @@ public class PRBase {
         }
         FileUtils.saveExecutionTraceData(EXECUTION_TRACE_FILE, execTrace);
         execTrace.clear();
-    }
+    }*/
 
     protected void login(String user) {
         Browser.open(gridBrowser, gridNodeIP, gridNodePort);

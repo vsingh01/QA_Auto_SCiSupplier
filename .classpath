@@ -44,5 +44,6 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/apps/selenium/pdfbox-app-1.8.10.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
