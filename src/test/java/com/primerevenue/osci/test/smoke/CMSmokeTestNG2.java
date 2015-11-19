@@ -13,6 +13,11 @@ import com.primerevenue.osci.pageobjects.common.ComUsersPage;
 import com.primerevenue.osci.pageobjects.common.SCiSupplierCOMMenu;
 import com.primerevenue.osci.utils.Synchronizer;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class CMSmokeTestNG2 extends PRBase {
 
 	final static Logger logger = Logger.getLogger(CMSmokeTestNG2.class);
@@ -21,19 +26,18 @@ public class CMSmokeTestNG2 extends PRBase {
 	public void cmsmokeTest1() throws InterruptedException {
 		Synchronizer.implicitWait(10);
 		login(COM_USER);
-		
-				
+
 	}
 
 	@Test
 	public void cmsmokeTest2() throws InterruptedException {
-		
+
 		SCiSupplierCOMMenu cmMenuObjRef = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierCOMMenu.class);
 		cmMenuObjRef.menuToUsers();
 
-		ComUsersPage cmUserPageObjeRef = PageFactory.initElements(Browser.eDriver,
-				ComUsersPage.class);
+		ComUsersPage cmUserPageObjeRef = PageFactory.initElements(
+				Browser.eDriver, ComUsersPage.class);
 		cmUserPageObjeRef.usersEditMethod();
 
 		ComEditUsers cmEditObjRef = PageFactory.initElements(Browser.eDriver,
@@ -45,28 +49,10 @@ public class CMSmokeTestNG2 extends PRBase {
 		cmAddByObjRef.addEditBuyerProgram();
 
 	}
-	/*@Test
-	public void cmsmokeTest3() throws Exception {
-		
-		SCiSupplierCOMMenu cmtestMenu5 = PageFactory.initElements(
-				Browser.eDriver, SCiSupplierCOMMenu.class);
-		
-		ComAddBuyerProgram cmtestMenu6 = PageFactory.initElements(
-				Browser.eDriver, ComAddBuyerProgram.class);
-		
-		cmtestMenu5.menuToCOMSuppActivityReport();
-		cmtestMenu6.supplierActivityReport();
-		
-		cmtestMenu5.menuToCOMbuyerMaturepayForcastReport();
-		cmtestMenu6.buyerMaturePayForcastReport();
-			
-	}*/
-	
-	/*@AfterClass
+	@AfterClass
 	public void afterClass() {
 		           
 		Browser.close();
-        }*/
-	}
-	
+        }
 
+}

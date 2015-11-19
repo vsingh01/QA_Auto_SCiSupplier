@@ -8,6 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SPAddSupplierToBP {
 	final static Logger logger = Logger.getLogger(SPAddSupplierToBP.class);
 	
@@ -35,7 +40,7 @@ public class SPAddSupplierToBP {
 	@FindBy(xpath = "//a[contains(text(),'Add Selected to Buyer Program')]")
 	public WebElement addSelectedtoBuyerProBtn;
 
-public void addSupplierToBP() {
+public void addSupplierToBP1() {
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		SeleniumUtils.click(addBtn);

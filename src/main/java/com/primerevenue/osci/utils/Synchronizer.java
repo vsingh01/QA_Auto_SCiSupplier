@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Sai Amuluru on 11/3/2015.
  */
+
 public class Synchronizer {
     final static Logger logger = Logger.getLogger(Synchronizer.class);
 

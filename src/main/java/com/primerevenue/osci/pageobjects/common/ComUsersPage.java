@@ -8,6 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class ComUsersPage {
 	/* COMMUNITY "Users page" */
 	final static Logger logger = Logger.getLogger(ComUsersPage.class);

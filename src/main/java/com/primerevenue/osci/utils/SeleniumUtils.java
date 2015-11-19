@@ -31,6 +31,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SeleniumUtils {
 
 	final static Logger logger = Logger.getLogger(SeleniumUtils.class);

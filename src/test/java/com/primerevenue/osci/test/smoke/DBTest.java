@@ -12,7 +12,10 @@ import com.primerevenue.osci.pageobjects.common.PDFManager;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
 
-
+/**
+ * @author Sai Amuluru;
+ *
+ **/
 
 
 public class DBTest {
@@ -58,11 +61,11 @@ public class DBTest {
 		//File newestFile = SeleniumUtils.getTheNewestFile("C:/Users/samuluru/Downloads", "PDF");
 	PDFManager pdfManager = new PDFManager();
 	pdfManager.setFilePath();
-	
-    System.out.println(pdfManager.ToText()); 	
+		
+  System.out.println(pdfManager.ToText()); 	
     
 	}
-	
+
 }
 	
 	

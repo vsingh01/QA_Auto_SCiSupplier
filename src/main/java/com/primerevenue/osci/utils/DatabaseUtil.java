@@ -8,6 +8,11 @@ import java.sql.*;
 import java.util.HashMap;
 import java.util.Properties;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class DatabaseUtil extends PropertiesUtil {
 
     public static Logger logger = Logger.getLogger(DatabaseUtil.class);

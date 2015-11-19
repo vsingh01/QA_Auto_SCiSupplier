@@ -11,6 +11,11 @@ import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SCiSupplierSPMenu {
 
 	final static Logger logger = Logger.getLogger(SCiSupplierSPMenu.class);
@@ -62,7 +67,8 @@ public class SCiSupplierSPMenu {
 	public void menuToMainMembership() {
 		PageFactory.initElements(Browser.eDriver, this);
 		Synchronizer.waitUntilDisplayed(userMenu, 5);
-
+		Boolean spTitle = SeleniumUtils.isTextPresent("Service Provider Home");
+		System.out.println("Service Provider Home Title verified : : :"+ spTitle );
 		SeleniumUtils.click(userMenu);
 		SeleniumUtils.click(comManagement);
 		SeleniumUtils.click(comDir);
@@ -80,6 +86,7 @@ public class SCiSupplierSPMenu {
 		PageFactory.initElements(Browser.eDriver, this);
 
 		SeleniumUtils.click(userMenu);
+		SeleniumUtils.click(provideSupport);
 		SeleniumUtils.click(loadConfirmations);
 	}
 

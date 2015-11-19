@@ -9,6 +9,11 @@ import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SCiSupplierCOMMenu {
 
 	final static Logger logger = Logger.getLogger(SCiSupplierCOMMenu.class);
@@ -40,6 +45,10 @@ public class SCiSupplierCOMMenu {
 	public void menuToUsers() {
 		PageFactory.initElements(Browser.eDriver, this);
 		Synchronizer.waitUntilDisplayed(userMenu, 5);
+
+		Boolean spTitle = SeleniumUtils.isTextPresent("Community Home");
+		System.out.println("Service Provider Home Title verified : : :"
+				+ spTitle);
 
 		try {
 			SeleniumUtils.click(userMenu);
@@ -94,6 +103,7 @@ public class SCiSupplierCOMMenu {
 		SeleniumUtils.click(suppActivityReports);
 
 	}
+
 	public void menuToCOMbuyerMaturepayForcastReport() {
 		PageFactory.initElements(Browser.eDriver, this);
 

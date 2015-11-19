@@ -9,6 +9,11 @@ import org.testng.Assert;
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SPAddBuyerProgram {
 	final static Logger logger = Logger.getLogger(SPAddBuyerProgram.class);
 
@@ -20,6 +25,10 @@ public class SPAddBuyerProgram {
 
 	@FindBy(id = "_currencyCode")
 	public WebElement currencyCode;
+	
+	//Track Documents page currency code
+	@FindBy(id = "currencyCode")
+	public WebElement currencyCode1;
 
 	@FindBy(id = "_bankAccountId")
 	public WebElement bankAccountId;
@@ -242,7 +251,7 @@ public class SPAddBuyerProgram {
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		SeleniumUtils.selectOption(dateOption, "This Year");
-		SeleniumUtils.selectOption(currencyCode, "USD");
+		SeleniumUtils.selectOption(currencyCode1, "USD");
 		SeleniumUtils.click(search);
 		
 		SeleniumUtils.isTextPresent("Payment Obligation Search Results");

@@ -8,6 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SCiSupplierSuppMenu {
 
 	final static Logger logger = Logger.getLogger(SCiSupplierSuppMenu.class);
@@ -60,7 +65,9 @@ public class SCiSupplierSuppMenu {
 
 	public void menuToSellOfferHistPage() {
 		PageFactory.initElements(Browser.eDriver, this);
-
+		Boolean spTitle = SeleniumUtils.isTextPresent("Supplier Home");
+		System.out.println("Service Provider Home Title verified : : :"
+				+ spTitle);
 		try {
 			SeleniumUtils.click(userMenu);
 			logger.debug("Successful, userMenu click.");

@@ -10,6 +10,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SCiSupplierBuyerMenu {
 
 	final static Logger logger = Logger.getLogger(SCiSupplierBuyerMenu.class);
@@ -62,11 +67,9 @@ public class SCiSupplierBuyerMenu {
 	public void menuToPaySchedule() {
 
 		PageFactory.initElements(Browser.eDriver, this);
-		//SeleniumUtils.mouseClick(byuserMenu);
-		//SeleniumUtils.click(userMenu);
-		/*JavascriptExecutor executor = (JavascriptExecutor)Browser.eDriver;
-		executor.executeScript("arguments[0].click();", userMenu);*/
-		//SeleniumUtils.scrollInFocus(userMenu);
+		Boolean spTitle = SeleniumUtils.isTextPresent("Buyer Home");
+		System.out.println("Service Provider Home Title verified : : :"
+				+ spTitle);
 		SeleniumUtils.click(userMenu);
 		//userMenu.sendKeys(Keys.ENTER);
 		SeleniumUtils.click(payments);

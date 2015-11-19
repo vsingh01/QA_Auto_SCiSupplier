@@ -11,6 +11,11 @@ import org.apache.pdfbox.util.PDFTextStripper;
 
 import com.primerevenue.osci.utils.SeleniumUtils;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class PDFManager {
 	
 	
@@ -42,7 +47,7 @@ public class PDFManager {
 		       pdDoc = new PDDocument(cosDoc);
 		       pdDoc.getNumberOfPages();
 		       pdfStripper.setStartPage(1);
-		       pdfStripper.setEndPage(10);
+		       pdfStripper.setEndPage(2);
 		       // reading text from page 1 to 10
 		       // if you want to get text from full pdf file use this code
 		       // pdfStripper.setEndPage(pdDoc.getNumberOfPages());

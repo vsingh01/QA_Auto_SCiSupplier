@@ -12,6 +12,11 @@ import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 import com.thoughtworks.selenium.webdriven.commands.SelectFrame;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SuppModVerifyReports {
 
 	final static Logger logger = Logger.getLogger(SuppModVerifyReports.class);

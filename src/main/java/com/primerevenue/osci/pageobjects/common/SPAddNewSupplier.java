@@ -1,12 +1,18 @@
 package com.primerevenue.osci.pageobjects.common;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
+
+/**
+ * @author Sai Amuluru;
+ *
+ **/
 
 public class SPAddNewSupplier {
 	final static Logger logger = Logger.getLogger(SPAddNewSupplier.class);
@@ -90,6 +96,18 @@ public class SPAddNewSupplier {
 	@FindBy(xpath = "//a[contains(text(),'AmulSupp')]")
 	public WebElement supplierName;
 	
+	// FI List page, FI name = vishfi9
+	
+	@FindBy(xpath = "//a[contains(text(),'vishfi9')]")
+	public WebElement fINameLink;
+	
+	@FindBy(id = "_editEntity")
+	public WebElement edit;
+	
+	
+	
+	
+	
 	
 	public void addNewSupplier() {
 		PageFactory.initElements(Browser.eDriver, this);
@@ -105,7 +123,7 @@ public class SPAddNewSupplier {
 		SeleniumUtils.type(email, "primerevenueqa@hotmail.com");
 		//SeleniumUtils.selectOption(taxTypeField, "AA");
 		SeleniumUtils.type(taxIdField, "6901");
-		SeleniumUtils.type(userName, "suppsam");
+		SeleniumUtils.type(userName, "suppsai");
 		SeleniumUtils.type(firstName, "sai");
 		SeleniumUtils.type(lastName, "amul");
 		SeleniumUtils.type(userEmailAddress, "primerevenueqa@hotmail.com");
@@ -143,5 +161,11 @@ public class SPAddNewSupplier {
 		SeleniumUtils.type(searchValue, "vishfi9");
 		SeleniumUtils.click(search);					 /*Table logic implementation here */
 		
+		SeleniumUtils.click(fINameLink);
+		
+		SeleniumUtils.click(edit);
+		SeleniumUtils.type(phone, "6785927880");
+		SeleniumUtils.click(save);
 	}
+	
 }

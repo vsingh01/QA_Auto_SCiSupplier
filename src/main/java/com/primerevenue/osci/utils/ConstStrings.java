@@ -4,7 +4,7 @@ package com.primerevenue.osci.utils;
  * Created by Sai Amuluru on 11/3/2015.
  */
 public interface ConstStrings {
-    String CONTINUE="Continue";
+    /*String CONTINUE="Continue";
     String ADD_NEW_PAYMENT = "Add a New Payment";
     String ADD_A_PAYMENT = "Add A Payment";
     String ADD_NEW_TEMPLATE = "Add a New Template";
@@ -94,7 +94,7 @@ public interface ConstStrings {
     String SMB_PMT_BILL= "SMB_PMT_BILL";
 
     String PMT_LOAN_PAYMENT = "PMT_LoanPayment";
-    String PMT_LOAN_DRAW = "PMT_LoanDraw";
+    String PMT_LOAN_DRAW = "PMT_LoanDraw";*/
 
 
 

@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>TestNG:  smokeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>smokeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 18 17:24:59 EST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>1081 seconds (1081107 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.SPModReportsTestNG8.smokeTest1()'><b>smokeTest1</b><br>Test class: com.primerevenue.osci.test.smoke.SPModReportsTestNG8<br/>
+<a href="#Output-1791589252" onClick='toggleBox("Output-1791589252", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1791589252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1791589252">
+<a href=C:\LocalProjects\Eclipse\SCiSupplier/target/surefire-reports/screen_shots/NHScreenShot_11-18-2015_05.39.09_SPModReportsTestNG8_smokeTest1.png target='_blank' >11-18-2015_05.39.09_SPModReportsTestNG8_smokeTest1.png</a><br/>
+<a href=C:\LocalProjects\Eclipse\SCiSupplier/target/surefire-reports/screen_shots/NHScreenShot_11-18-2015_05.39.09_SPModReportsTestNG8_smokeTest1.png target='_blank' >11-18-2015_05.39.09_SPModReportsTestNG8_smokeTest1.png</a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;AmulSupp&apos;)]&quot;}
+Command duration or timeout: 62 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;T450SAmuluru&apos;, ip: &apos;10.8.1.6&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d9d8e2c-2e50-4c3d-9d94-ab71dfd8ab6d
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;AmulSupp&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:185)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getAttribute(Unknown Source)
+	at com.primerevenue.osci.utils.SeleniumUtils.scrollInFocus(SeleniumUtils.java:123)
+	at com.primerevenue.osci.utils.SeleniumUtils.click(SeleniumUtils.java:258)
+	at com.primerevenue.osci.pageobjects.common.SPAddNewSupplier.verifyingAddedNewSupplier(SPAddNewSupplier.java:147)
+	at com.primerevenue.osci.test.smoke.SPModReportsTestNG8.smokeTest1(SPModReportsTestNG8.java:47)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;AmulSupp&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;T450SAmuluru&apos;, ip: &apos;10.8.1.6&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1791589252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1791589252'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;AmulSupp&apos;)]&quot;}
+Command duration or timeout: 62 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;T450SAmuluru&apos;, ip: &apos;10.8.1.6&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0d9d8e2c-2e50-4c3d-9d94-ab71dfd8ab6d
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;AmulSupp&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:185)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getAttribute(Unknown Source)
+	at com.primerevenue.osci.utils.SeleniumUtils.scrollInFocus(SeleniumUtils.java:123)
+	at com.primerevenue.osci.utils.SeleniumUtils.click(SeleniumUtils.java:258)
+	at com.primerevenue.osci.pageobjects.common.SPAddNewSupplier.verifyingAddedNewSupplier(SPAddNewSupplier.java:147)
+	at com.primerevenue.osci.test.smoke.SPModReportsTestNG8.smokeTest1(SPModReportsTestNG8.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;AmulSupp&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;T450SAmuluru&apos;, ip: &apos;10.8.1.6&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous413662270817324259webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+</pre></div></td>
+<td>158</td>
+<td>com.primerevenue.osci.test.smoke.SPModReportsTestNG8@48eff760</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1()'><b>buyertest1</b><br>Test class: com.primerevenue.osci.test.smoke.BuyerTestNG7</td>
+<td></td>
+<td>134</td>
+<td>com.primerevenue.osci.test.smoke.BuyerTestNG7@7c0e2abd</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1()'><b>cmsmokeTest1</b><br>Test class: com.primerevenue.osci.test.smoke.CMSmokeTestNG2</td>
+<td></td>
+<td>38</td>
+<td>com.primerevenue.osci.test.smoke.CMSmokeTestNG2@66d2e7d9</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.CMModReportsTestNG9.cmsmokeTest1()'><b>cmsmokeTest1</b><br>Test class: com.primerevenue.osci.test.smoke.CMModReportsTestNG9</td>
+<td></td>
+<td>63</td>
+<td>com.primerevenue.osci.test.smoke.CMModReportsTestNG9@402f32ff</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2()'><b>cmsmokeTest2</b><br>Test class: com.primerevenue.osci.test.smoke.CMSmokeTestNG2</td>
+<td></td>
+<td>49</td>
+<td>com.primerevenue.osci.test.smoke.CMSmokeTestNG2@66d2e7d9</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.CMModReportsTestNG9.cmsmokeTest3()'><b>cmsmokeTest3</b><br>Test class: com.primerevenue.osci.test.smoke.CMModReportsTestNG9</td>
+<td></td>
+<td>22</td>
+<td>com.primerevenue.osci.test.smoke.CMModReportsTestNG9@402f32ff</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1()'><b>smokeTest1</b><br>Test class: com.primerevenue.osci.test.smoke.SPSmokeTestNG1</td>
+<td></td>
+<td>95</td>
+<td>com.primerevenue.osci.test.smoke.SPSmokeTestNG1@174d20a</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.SPSmokeTestNG4.smokeTest1()'><b>smokeTest1</b><br>Test class: com.primerevenue.osci.test.smoke.SPSmokeTestNG4</td>
+<td></td>
+<td>60</td>
+<td>com.primerevenue.osci.test.smoke.SPSmokeTestNG4@6a2bcfcb</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.SupplierModPageNavTestNG6.smokeTest1()'><b>smokeTest1</b><br>Test class: com.primerevenue.osci.test.smoke.SupplierModPageNavTestNG6</td>
+<td></td>
+<td>78</td>
+<td>com.primerevenue.osci.test.smoke.SupplierModPageNavTestNG6@3c756e4d</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.SuppReportsTestNG5.smokeTestReports()'><b>smokeTestReports</b><br>Test class: com.primerevenue.osci.test.smoke.SuppReportsTestNG5</td>
+<td></td>
+<td>156</td>
+<td>com.primerevenue.osci.test.smoke.SuppReportsTestNG5@4de8b406</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.FISmokeTestNG3.smokeTestfi1()'><b>smokeTestfi1</b><br>Test class: com.primerevenue.osci.test.smoke.FISmokeTestNG3</td>
+<td></td>
+<td>76</td>
+<td>com.primerevenue.osci.test.smoke.FISmokeTestNG3@1efbd816</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.FIModReportTestNG10.smokeTestfi1()'><b>smokeTestfi1</b><br>Test class: com.primerevenue.osci.test.smoke.FIModReportTestNG10</td>
+<td></td>
+<td>49</td>
+<td>com.primerevenue.osci.test.smoke.FIModReportTestNG10@573f2bb1</td></tr>
+<tr>
+<td title='com.primerevenue.osci.test.smoke.FIModReportTestNG10.smokeTestfi2()'><b>smokeTestfi2</b><br>Test class: com.primerevenue.osci.test.smoke.FIModReportTestNG10</td>
+<td></td>
+<td>94</td>
+<td>com.primerevenue.osci.test.smoke.FIModReportTestNG10@573f2bb1</td></tr>
+</table><p>
+</body>
+</html>

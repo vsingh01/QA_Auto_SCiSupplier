@@ -1,3 +1,4 @@
+
 package com.primerevenue.osci.pageobjects.common;
 
 import java.io.IOException;
@@ -10,6 +11,12 @@ import org.openqa.selenium.support.PageFactory;
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
+
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 
 public class ComAddBuyerProgram {
 
@@ -91,7 +98,7 @@ public class ComAddBuyerProgram {
 		SeleniumUtils.click(saveAndCont);
 		
 		SeleniumUtils.click(addFISubmit);
-		
+		Synchronizer.explicitWait(5);
 		
 		SeleniumUtils.clickCheckBox(checkBoxFIValue,"ON");
 		
@@ -116,6 +123,10 @@ public class ComAddBuyerProgram {
 		
 		Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
 		//SeleniumUtils.switchToNewWindow(fbMainContainer, maturePayForcastReportTitle);
+		Synchronizer.explicitWait(5);
+		
+		
+		
 	}
 	
 }

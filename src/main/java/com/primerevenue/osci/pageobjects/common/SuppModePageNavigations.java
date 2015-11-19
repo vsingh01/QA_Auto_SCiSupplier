@@ -7,6 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
+/**
+ * @author Sai Amuluru;
+ *
+ **/
 
 public class SuppModePageNavigations {
 
@@ -30,7 +34,7 @@ public class SuppModePageNavigations {
 
 		try {
 			boolean title1 = SeleniumUtils.isTextPresent("Sell Offer History");
-			logger.debug("Successful, Sell Offer History title verified.");
+			logger.debug("Successful, Sell Offer History title verified.: : :"+ title1);
 		} catch (Exception e) {
 			logger.error("Failed, Sell Offer History title verified.");
 
@@ -42,7 +46,8 @@ public class SuppModePageNavigations {
 		try {
 			boolean title2 = SeleniumUtils
 					.isTextPresent("Payment Obligation & Credit Memo History");
-			logger.debug("Successful, Payment Obligation & Credit Memo History title verified.");
+			logger.debug("Successful, Payment Obligation & Credit Memo History title verified."
+					+ title2);
 		} catch (Exception e) {
 			logger.error("Failed, Payment Obligation & Credit Memo History title verified.");
 		}
@@ -52,7 +57,7 @@ public class SuppModePageNavigations {
 		PageFactory.initElements(Browser.eDriver, this);
 		try {
 			boolean title3 = SeleniumUtils.isTextPresent("Trade History");
-			logger.debug("Successful, Trade History title verified.");
+			logger.debug("Successful, Trade History title verified."+ title3);
 		} catch (Exception e) {
 			logger.error("Failed, Trade History title verified.");
 		}
@@ -60,8 +65,8 @@ public class SuppModePageNavigations {
 	public void verifyTrackDocumentMPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		try {
-			boolean title4 = SeleniumUtils.isTextPresent("Trade History");
-			logger.debug("Successful, Track Documents title verified.");
+			boolean title4 = SeleniumUtils.isTextPresent("Track Documents");
+			logger.debug("Successful, Track Documents title verified."+ title4);
 		} catch (Exception e) {
 			logger.error("Failed, Track Documents title verified.");
 		}

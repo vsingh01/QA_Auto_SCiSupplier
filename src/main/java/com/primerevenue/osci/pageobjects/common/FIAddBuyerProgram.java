@@ -18,6 +18,10 @@ import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
 
 public class FIAddBuyerProgram {
 
@@ -47,33 +51,31 @@ public class FIAddBuyerProgram {
 
 	@FindBy(xpath = "//a[contains(text(),'Submit')]")
 	public WebElement submitBtn;
-	
+
 	@FindBy(id = "dateOption")
 	public WebElement dateValue;
-	
+
 	@FindBy(id = "currencyCode")
 	public WebElement rmcurrencyCode;
-	
+
 	@FindBy(id = "currencyCodeId")
 	public WebElement pocurrencyCode;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Run')]")
 	public WebElement run;
-	
+
 	@FindBy(xpath = "xhtml:html/xhtml:body/xhtml:div[1]/xhtml:div[2]/xhtml:div[4]/xhtml:div/xhtml:div[1]/xhtml:div[2]")
 	public WebElement fbMainContainer;
-	
+
 	@FindBy(xpath = "xhtml:html/xhtml:body/xhtml:div[1]/xhtml:div[2]/xhtml:div[4]/xhtml:div/xhtml:div[1]/xhtml:div[2]/xhtml:div[170]")
 	public WebElement remitAdviceOutboundReportTitle;
-	
+
 	@FindBy(xpath = "xhtml:html/xhtml:body/xhtml:div[1]/xhtml:div[2]/xhtml:div[4]/xhtml:div/xhtml:div[1]/xhtml:div[2]/xhtml:div[122]")
 	public WebElement payObligNotificReportTitle;
-	
+
 	@FindBy(xpath = "xhtml:html/xhtml:body/xhtml:div[1]/xhtml:div[2]/xhtml:div[4]/xhtml:div/xhtml:div[1]/xhtml:div[2]/xhtml:div[184]")
 	public WebElement summaryBookingReportTitle;
 
-	
-	
 	public void fIAddBP() {
 		PageFactory.initElements(Browser.eDriver, this);
 		int addcount = addLinks.size();
@@ -93,53 +95,57 @@ public class FIAddBuyerProgram {
 	}
 
 	public void fIPONotifReprots() throws Exception {
-		
+
 		PageFactory.initElements(Browser.eDriver, this);
 		SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.selectOption(pocurrencyCode, "USD");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
-		Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+		Runtime.getRuntime().exec(
+				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
 		Synchronizer.explicitWait(5);
-		//SeleniumUtils.switchToNewWindow(fbMainContainer, payObligNotificReportTitle);
-		
-		
-		
-		
+		// SeleniumUtils.switchToNewWindow(fbMainContainer, payObligNotificReportTitle);
+
 	}
-public void fIRenmitAdvOutboundReprots() throws AWTException, Exception   {
-		
+
+	public void fIRenmitAdvOutboundReprots() throws AWTException, Exception {
+
 		PageFactory.initElements(Browser.eDriver, this);
-		
+
 		SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.selectOption(rmcurrencyCode, "USD");
-						
-		SeleniumUtils.click(run);	
+
+		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
-		Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
-		Synchronizer.explicitWait(5);				
-		
-		//SeleniumUtils.switchToNewWindow(fbMainContainer, remitAdviceOutboundReportTitle);
-		
-			
-		
+		Runtime.getRuntime().exec(
+				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+		Synchronizer.explicitWait(5);
+
+		PDFManager pdfManager = new PDFManager();
+		pdfManager.setFilePath();
+
+		System.out.println(pdfManager.ToText());
+		// SeleniumUtils.switchToNewWindow(fbMainContainer, remitAdviceOutboundReportTitle);
+
 	}
-public void fISummaryBookingReprots() throws Exception {
-	
-	PageFactory.initElements(Browser.eDriver, this);
-	SeleniumUtils.selectOption(dateValue, "This Year");
-	SeleniumUtils.selectOption(pocurrencyCode, "USD");
-	SeleniumUtils.click(run);
-	Synchronizer.explicitWait(10);
-	Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
-	//SeleniumUtils.switchToNewWindow(fbMainContainer, summaryBookingReportTitle);
-	Synchronizer.explicitWait(5);
-	
-	
-}
 
+	public void fISummaryBookingReprots() throws Exception {
 
+		PageFactory.initElements(Browser.eDriver, this);
+		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(pocurrencyCode, "USD");
+		SeleniumUtils.click(run);
+		Synchronizer.explicitWait(10);
+		Runtime.getRuntime().exec(
+				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+		// SeleniumUtils.switchToNewWindow(fbMainContainer, summaryBookingReportTitle);
+		Synchronizer.explicitWait(5);
 
+		PDFManager pdfManager = new PDFManager();
+		pdfManager.setFilePath();
 
+		System.out.println(pdfManager.ToText());
+
+	}
 
 }

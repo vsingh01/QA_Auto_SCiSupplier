@@ -13,6 +13,11 @@ import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 import com.google.common.collect.Iterables;
 
+/**
+ * @author Sai Amuluru;
+ *
+ **/
+
 public class SPMaintainMembership {
 
 	final static Logger logger = Logger.getLogger(SPMaintainMembership.class);
