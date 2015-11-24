@@ -123,7 +123,7 @@ public class SPAddNewSupplier {
 		SeleniumUtils.type(email, "primerevenueqa@hotmail.com");
 		//SeleniumUtils.selectOption(taxTypeField, "AA");
 		SeleniumUtils.type(taxIdField, "6901");
-		SeleniumUtils.type(userName, "suppsai");
+		SeleniumUtils.type(userName, "vishalSupplier");
 		SeleniumUtils.type(firstName, "sai");
 		SeleniumUtils.type(lastName, "amul");
 		SeleniumUtils.type(userEmailAddress, "primerevenueqa@hotmail.com");
@@ -149,7 +149,7 @@ public class SPAddNewSupplier {
 		SeleniumUtils.type(searchValue, "AmulSupp");
 		SeleniumUtils.click(search);
 		
-		SeleniumUtils.click(supplierName);      /*Table logic implementation here */
+		SeleniumUtils.click(supplierName);      /*Table logic might be implemented here further*/
 		
 	}
 	public void editSaveComanyInfoForFI() {
@@ -159,7 +159,7 @@ public class SPAddNewSupplier {
 		
 		editSave.menuToFIList();
 		SeleniumUtils.type(searchValue, "vishfi9");
-		SeleniumUtils.click(search);					 /*Table logic implementation here */
+		SeleniumUtils.click(search);					 /*Table logic might be implemented here further */
 		
 		SeleniumUtils.click(fINameLink);
 		

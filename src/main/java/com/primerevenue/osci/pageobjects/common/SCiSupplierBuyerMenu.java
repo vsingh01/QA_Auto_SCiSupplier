@@ -71,17 +71,14 @@ public class SCiSupplierBuyerMenu {
 		System.out.println("Service Provider Home Title verified : : :"
 				+ spTitle);
 		SeleniumUtils.click(userMenu);
-		//userMenu.sendKeys(Keys.ENTER);
 		SeleniumUtils.click(payments);
 		SeleniumUtils.click(paymentsSchedule);
 	}
 
 	public void menuToPaysHistory() {
 		PageFactory.initElements(Browser.eDriver, this);
-		//SeleniumUtils.scrollInFocus(userMenu);
+		
 		SeleniumUtils.click(userMenu);
-		//userMenu.sendKeys(Keys.ENTER);
-		//SeleniumUtils.click(payments);
 		SeleniumUtils.click(paymentHistory);
 
 	}

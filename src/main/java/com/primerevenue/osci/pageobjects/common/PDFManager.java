@@ -58,8 +58,12 @@ public class PDFManager {
 		 
 		    public void setFilePath() {
 		        this.file = file;
+		        
 		    }
 		    
+		   /* public void delFilePath() {
+		        file.deleteOnExit();
+		    }*/
 		    
 		    
 }

@@ -104,7 +104,10 @@ public class FIAddBuyerProgram {
 		Runtime.getRuntime().exec(
 				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
 		Synchronizer.explicitWait(5);
-		// SeleniumUtils.switchToNewWindow(fbMainContainer, payObligNotificReportTitle);
+		PDFManager pdfManager = new PDFManager();
+		pdfManager.setFilePath();
+		System.out.println(pdfManager.ToText());
+		pdfManager.setFilePath();
 
 	}
 
@@ -120,12 +123,10 @@ public class FIAddBuyerProgram {
 		Runtime.getRuntime().exec(
 				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
 		Synchronizer.explicitWait(5);
-
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
-
 		System.out.println(pdfManager.ToText());
-		// SeleniumUtils.switchToNewWindow(fbMainContainer, remitAdviceOutboundReportTitle);
+		pdfManager.setFilePath();
 
 	}
 
@@ -138,13 +139,11 @@ public class FIAddBuyerProgram {
 		Synchronizer.explicitWait(10);
 		Runtime.getRuntime().exec(
 				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
-		// SeleniumUtils.switchToNewWindow(fbMainContainer, summaryBookingReportTitle);
 		Synchronizer.explicitWait(5);
-
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
-
 		System.out.println(pdfManager.ToText());
+		pdfManager.setFilePath();
 
 	}
 

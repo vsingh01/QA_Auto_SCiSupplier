@@ -9,6 +9,7 @@
       <class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG4">
         <methods>
           <include name="beforeClass"/>
+          <include name="smokeTest1"/>
           <include name="beforeMethod"/>
           <include name="afterClass"/>
         </methods>
@@ -59,10 +60,10 @@
       </class> <!-- com.primerevenue.osci.test.smoke.CMModReportsTestNG9 -->
       <class name="com.primerevenue.osci.test.smoke.SPModReportsTestNG8">
         <methods>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
           <include name="smokeTest1"/>
-          <include name="afterClass"/>
         </methods>
       </class> <!-- com.primerevenue.osci.test.smoke.SPModReportsTestNG8 -->
       <class name="com.primerevenue.osci.test.smoke.SuppReportsTestNG5">

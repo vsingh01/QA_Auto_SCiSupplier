@@ -1,6 +1,8 @@
 package com.primerevenue.osci.utils;
 
+import com.asprise.util.ocr.OCR;
 import com.primerevenue.osci.driver.PRBase;
+
 import org.apache.commons.io.comparator.LastModifiedFileComparator;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
 import org.apache.log4j.Logger;
@@ -11,18 +13,20 @@ import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.primerevenue.osci.driver.Browser;
-
-
-
 
 //import org.sikuli.script.Key;
 import org.testng.ITestNGMethod;
 import org.testng.Reporter;
 
+import java.awt.Image;
+import java.awt.image.RenderedImage;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -30,6 +34,8 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+
+import javax.imageio.ImageIO;
 
 /**
  * @author Sai Amuluru;
@@ -707,68 +713,24 @@ public class SeleniumUtils {
 
 	public static void switchToNewWindow(WebElement elm1, WebElement elm2) {
 
-		/*String firstWinHandle = Browser.eDriver.getWindowHandle();
-		Set<String> handlesSet = Browser.eDriver.getWindowHandles();
-		String secondWinHandle = Iterables.getLast(handlesSet);
-		System.out.println(firstWinHandle);
-		System.out.println(secondWinHandle);
-		Browser.eDriver.switchTo().window(secondWinHandle);
-		SeleniumUtils.click(elm1);
-		String title = elm2.getText();
-		System.out.println(title);
-		Browser.eDriver.switchTo().window(secondWinHandle).close();
-		Browser.eDriver.switchTo().window(firstWinHandle);*/
-		
-		
-		
-		/*String strMainWindow = Browser.eDriver.getWindowHandle();
-		System.out.println("first title:::::" + Browser.eDriver.getTitle() );
-		
-		Set<String> strHandlesSet = Browser.eDriver.getWindowHandles();
-		
-		for (String handle: strHandlesSet) {
-				
-			
-			if(!handle.equalsIgnoreCase(strMainWindow)) {
-				Browser.eDriver.switchTo().window(handle);
-			//SeleniumUtils.click(elm1);
-			String title1 = elm1.getText();
-			System.out.println(title1);
-			String title2 = elm2.getText();
-			System.out.println(title2);
-			//Synchronizer.explicitWait(5);
-			System.out.println(title2);
-			Browser.eDriver.close();
-			
-		}
-		
-		}
-		Browser.eDriver.switchTo().window(strMainWindow);*/
-		
 		String parent_window = Browser.eDriver.getWindowHandle();
-		System.out.println("first title:::::" + parent_window );
-		
+		System.out.println("Main windowId :::::" + parent_window);
+
 		Set<String> s1 = Browser.eDriver.getWindowHandles();
-		
+
 		Iterator<String> i1 = s1.iterator();
-		
-		while (i1.hasNext())	{
+
+		while (i1.hasNext()) {
 			String child_window = i1.next();
-			
-			
-			
-					if (!parent_window.equalsIgnoreCase(child_window)) {
-						
-						Browser.eDriver.switchTo().window(child_window);
-						System.out.println("second title:::::" + child_window );
-						/*SeleniumUtils.click(elm1);
-						String title1 = elm1.getText();
-						System.out.println(title1);
-						String title2 = elm2.getText();
-						System.out.println(title2);*/
-						Synchronizer.explicitWait(5);
-						Browser.eDriver.switchTo().window(child_window).close();
-					}
+
+			if (!parent_window.equalsIgnoreCase(child_window)) {
+
+				Browser.eDriver.switchTo().window(child_window);
+				System.out.println("Report windowId :::::" + child_window);
+				Synchronizer.explicitWait(5);
+
+				Browser.eDriver.switchTo().window(child_window).close();
+			}
 		}
 		Browser.eDriver.switchTo().window(parent_window);
 	}
@@ -783,22 +745,21 @@ public class SeleniumUtils {
 			return true;
 		}
 	}
-	
+
 	/* Get the newest file for a specific extension */
 	public static File getTheNewestFile(String filePath, String ext) {
-	    File theNewestFile = null;
-	    File dir = new File(filePath);
-	    FileFilter fileFilter = new WildcardFileFilter("*." + ext);
-	    File[] files = dir.listFiles(fileFilter);
+		File theNewestFile = null;
+		File dir = new File(filePath);
+		FileFilter fileFilter = new WildcardFileFilter("*." + ext);
+		File[] files = dir.listFiles(fileFilter);
 
-	    if (files.length > 0) {
-	        /** The newest file comes first **/
-	        Arrays.sort(files, LastModifiedFileComparator.LASTMODIFIED_REVERSE);
-	        theNewestFile = files[0];
-	    }
+		if (files.length > 0) {
+			/** The newest file comes first **/
+			Arrays.sort(files, LastModifiedFileComparator.LASTMODIFIED_REVERSE);
+			theNewestFile = files[0];
+		}
 
-	    return theNewestFile;
+		return theNewestFile;
 	}
-	
-	
+
 }

@@ -254,23 +254,20 @@ public class SPAddBuyerProgram {
 		SeleniumUtils.selectOption(currencyCode1, "USD");
 		SeleniumUtils.click(search);
 		
-		SeleniumUtils.isTextPresent("Payment Obligation Search Results");
-		
+		boolean title = SeleniumUtils.isTextPresent("Payment Obligation Search Results");
+		System.out.println("Payment Obligation Search Results Title verified: : :"+ title);
 	}
 	public void loadConfirm() {
 		PageFactory.initElements(Browser.eDriver, this);
 		
-		//SeleniumUtils.selectOption(dateOption, "This Year");
-				
-		SeleniumUtils.isTextPresent("Load Confirmations");
+		boolean title = SeleniumUtils.isTextPresent("Load Confirmations");
+		System.out.println("Load Confirmations Title verified: : :"+ title);
 		
 	}
 	public void userPwdMaintenance() {
 		PageFactory.initElements(Browser.eDriver, this);
 		
-		//SeleniumUtils.selectOption(dateOption, "This Year");
-				
-		SeleniumUtils.isTextPresent("User Search");
-		
+		boolean title = SeleniumUtils.isTextPresent("User Search");
+		System.out.println("Load Confirmations Title verified: : :"+ title);
 	}
 }

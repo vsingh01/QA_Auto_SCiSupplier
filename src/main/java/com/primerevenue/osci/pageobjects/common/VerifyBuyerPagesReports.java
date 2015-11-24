@@ -62,21 +62,18 @@ public class VerifyBuyerPagesReports {
 	public void paymentSchedulePage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display1 = SeleniumUtils.isTextPresent("Payment Schedule");
-		//String display1 = paymentSchePageTitle.getText();
 		System.out.println("Payment Schedule page title verified: : : "+ display1);
 	}
 
 	public void paymentHistoryPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display2 = SeleniumUtils.isTextPresent("Payment History");
-		//String display2 = paymentHistoryPageTitle.getText();
 		System.out.println("Payment History page title verified: : : :"+ display2);
 	}
 
 	public void matureCalendarPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display3 = SeleniumUtils.isTextPresent("Set Maturing Calendar");
-		//String display3 = setMatureCalPageTitle.getText();
 		System.out.println("setMatureCalPageTitle verified: : :"+ display3);
 	}
 
@@ -85,21 +82,18 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.click(search);
 		boolean display4 = SeleniumUtils.isTextPresent("Payment Obligation Search Results");
-		//String display4 = poSearchResultsPageTitle.getText();
 		System.out.println("Payment Obligator serach results page title verified: : : :"+ display4);
 	}
 
 	public void viewRejectedPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display5 = SeleniumUtils.isTextPresent("View Rejected Documents");
-		//String display5 = viewRejctedDocPageTitle.getText();
 		System.out.println("View Rejected Document page title verified: : : "+ display5);
 	}
 
 	public void loadConfirmationPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display6 = SeleniumUtils.isTextPresent("Load Confirmations");
-		//String display6 = loadConfirmPageTitle.getText();
 		System.out.println("Load confirmation page title verified: : :"+ display6);
 	}
 	public void endOfDayReportGen() {
@@ -107,7 +101,8 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.click(run);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, endOfDayReportTitle);
-		
+		boolean title = SeleniumUtils.isTextPresent("End of Day Funding Report");
+		System.out.println("End of Day Funding Report Title verified: : :"+ title);
 	}
 	public void tradeDetailsReportGen() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
@@ -115,8 +110,11 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(5);
 		Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTestBuyerMod.exe");
-		//SeleniumUtils.switchToNewWindow(fbMainContainer, tradeDetailsReportTitle);
-		Synchronizer.explicitWait(5);		
+		Synchronizer.explicitWait(5);
+		PDFManager pdfManager = new PDFManager();
+		pdfManager.setFilePath();
+		System.out.println(pdfManager.ToText());
+		pdfManager.setFilePath();
 	}
 	public void supplierTradTrendReportsGen() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
@@ -125,6 +123,9 @@ public class VerifyBuyerPagesReports {
 		Synchronizer.explicitWait(10);
 		Runtime.getRuntime().exec("C:/Users/samuluru/Documents/AutoIt/autoTestBuyerMod.exe");
 		Synchronizer.explicitWait(5);
-		//SeleniumUtils.switchToNewWindow(fbMainContainer, supplierTradTrendReportTitle);
+		PDFManager pdfManager = new PDFManager();
+		pdfManager.setFilePath();
+		System.out.println(pdfManager.ToText());
+		pdfManager.setFilePath();
 }
 }

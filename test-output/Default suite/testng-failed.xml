@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG1">
+      <class name="com.primerevenue.osci.test.smoke.CMModReportsTestNG9">
         <methods>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
           <include name="beforeMethod"/>
-          <include name="smokeTest1"/>
+          <include name="cmsmokeTest1"/>
           <include name="beforeSuite"/>
+          <include name="afterClass"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.primerevenue.osci.test.smoke.SPSmokeTestNG1 -->
+      </class> <!-- com.primerevenue.osci.test.smoke.CMModReportsTestNG9 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
