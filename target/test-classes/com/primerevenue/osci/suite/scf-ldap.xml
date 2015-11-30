@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+    <bean id="contextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+        <property name="url">
+            <jee:jndi-lookup jndi-name="ldap.url" default-value="${ldap.url}"/>
+        </property>
+        <property name="base">
+            <jee:jndi-lookup jndi-name="ldap.base" default-value="${ldap.base}"/>
+        </property>
+        <property name="userDn">
+            <jee:jndi-lookup jndi-name="ldap.userDn" default-value="${ldap.userDn}"/>
+        </property>
+        <property name="password">
+            <jee:jndi-lookup jndi-name="ldap.password" default-value="${ldap.password}"/>
+        </property>
+        <property name="pooled" value="true"/>
+        <property name="baseEnvironmentProperties">
+			<map>
+				<entry key="com.sun.jndi.ldap.read.timeout" value="300000" />          
+			</map>  
+		</property>
+    </bean>
+
+    <bean id="ldapTemplate" class="org.springframework.ldap.core.LdapTemplate">
+        <property name="contextSource" ref="contextSource"/>
+    </bean>
+
+    <bean id="ldapUserDao" class="com.primerevenue.drake.dao.LdapUserDaoImpl">
+        <property name="ldapTemplate" ref="ldapTemplate"/>
+    </bean>
+
+</beans>

@@ -6,9 +6,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+import javax.naming.NamingException;
+
 import org.testng.annotations.Test;
 
 import com.primerevenue.osci.pageobjects.common.PDFManager;
+import com.primerevenue.osci.utils.ActiveDirectory;
+import com.primerevenue.osci.utils.LDAPTest;
+import com.primerevenue.osci.utils.RetrieveUserAttributes;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
 
@@ -55,7 +60,7 @@ public class DBTest {
 			System.out.println("unable to close the  file:"+ filePath.toString());
 		}
 }*/
-	@Test()	
+	/*@Test()	
 	public void pdftest() throws IOException	{
 		
 		//File newestFile = SeleniumUtils.getTheNewestFile("C:/Users/samuluru/Downloads", "PDF");
@@ -64,8 +69,30 @@ public class DBTest {
 		
   System.out.println(pdfManager.ToText()); 	
     
-	}
+	}*/
 
+	@Test()	
+	public void active() throws IOException	{
+		LDAPTest ad = new LDAPTest();
+		
+		//ad.testladap();
+		try {
+			ad.mainTest();
+		} catch (NamingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		/*try {
+			ad.searchUser("sprohit", "Name", "QATest.pr.net");
+		} catch (NamingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		
+		
+		}
+	
+	
 }
 	
 	

@@ -58,6 +58,7 @@ public class PDFManager {
 		 
 		    public void setFilePath() {
 		        this.file = file;
+		        file.deleteOnExit();
 		        
 		    }
 		    

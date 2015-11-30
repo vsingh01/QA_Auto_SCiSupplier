@@ -11155,3 +11155,305 @@ Session ID: 11da83c6-9ddb-4373-a864-efba9bbdbfed
 2015-11-23 13:34:32 INFO  Synchronizer:178 - Explicit wait 5 second
 2015-11-23 13:34:32 INFO  TesterListener:34 - cmsmokeTest3 -- Test method successful.
 2015-11-23 13:34:33 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-25 09:30:09 INFO  PRBase:135 - STARTING TEST SUITE: 'smokeTest'
+2015-11-25 09:30:09 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-25 09:30:09 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-25 09:30:09 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-11-25 09:30:10 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-25 21:09:41 INFO  PRBase:135 - STARTING TEST SUITE: 'smokeTest'
+2015-11-25 21:09:41 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-25 21:09:41 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-25 21:09:41 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-11-25 21:09:41 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-25 21:10:28 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-25 21:10:31 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-25 21:10:33 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-25 21:10:42 INFO  PRLogin:95 - Successful login.
+2015-11-25 21:11:07 INFO  SeleniumUtils:307 - Typed text:  rktcommunity_BP
+2015-11-25 21:11:30 INFO  SeleniumUtils:307 - Typed text:  0001
+2015-11-25 21:11:33 INFO  SeleniumUtils:307 - Typed text:  2355
+2015-11-25 21:11:36 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-25 21:11:39 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-25 21:11:39 INFO  SPAddBuyerProgram:191 - 1
+2015-11-25 21:11:39 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-11-25 21:11:39 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-11-25 21:11:39 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-11-25 21:11:40 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-11-25 21:11:40 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-11-25 21:11:40 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-11-25 21:11:40 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-11-25 21:11:53 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-25 21:11:53 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-25 21:11:57 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2015-11-25 21:11:57 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-25 21:12:29 INFO  SeleniumUtils:307 - Typed text:  Rktcommunity
+2015-11-25 21:12:33 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-25 21:12:35 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-25 21:12:38 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-25 21:12:38 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-25 21:12:38 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2015-11-25 21:12:40 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-25 21:12:41 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-25 21:13:03 INFO  SeleniumUtils:333 - Typed text:  Sai
+2015-11-25 21:13:06 INFO  SeleniumUtils:333 - Typed text:  6785927880
+2015-11-25 21:13:09 INFO  SeleniumUtils:333 - Typed text:  primerevenueqa@hotmail.com
+2015-11-25 21:13:14 INFO  SeleniumUtils:307 - Typed text:  2000
+2015-11-25 21:13:18 INFO  SeleniumUtils:307 - Typed text:  1000
+2015-11-25 21:13:33 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-25 21:13:37 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-11-25 21:13:37 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-11-25 21:13:37 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.FISmokeTestNG3.smokeTestfi1
+2015-11-25 21:13:37 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-25 21:14:15 INFO  SeleniumUtils:307 - Typed text:  Rktfi
+2015-11-25 21:14:18 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-25 21:14:20 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-25 21:15:00 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-11-25 21:15:00 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-11-25 21:15:00 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG4.smokeTest1
+2015-11-25 21:15:00 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-25 21:15:37 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-25 21:15:40 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-25 21:15:42 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-25 21:15:49 INFO  PRLogin:95 - Successful login.
+2015-11-25 21:16:07 INFO  SeleniumUtils:307 - Typed text:  Rktsup2
+2015-11-25 21:16:12 INFO  SeleniumUtils:307 - Typed text:  786
+2015-11-25 21:16:15 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-25 21:16:15 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-25 21:16:15 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SuppReportsTestNG5.smokeTestReports
+2015-11-25 21:16:15 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-25 21:16:52 INFO  SeleniumUtils:307 - Typed text:  Rktsup2
+2015-11-25 21:16:55 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-25 21:16:57 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-25 21:17:24 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-25 21:17:25 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-25 21:17:30 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-25 21:17:37 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-25 21:17:42 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-25 21:18:55 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-25 21:19:00 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-25 21:19:06 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-25 21:19:11 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-25 21:19:17 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-25 21:19:22 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-25 21:19:28 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-25 21:19:33 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-25 21:19:34 INFO  TesterListener:34 - smokeTestReports -- Test method successful.
+2015-11-25 21:19:34 INFO  TesterListener:34 - smokeTestReports -- Test method successful.
+2015-11-25 21:19:34 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SupplierModPageNavTestNG6.smokeTest1
+2015-11-25 21:19:34 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-25 21:20:11 INFO  SeleniumUtils:307 - Typed text:  Rktsup2
+2015-11-25 21:20:14 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-25 21:20:16 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-25 21:21:43 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-25 21:21:43 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-25 21:21:44 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-25 21:21:44 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-25 21:22:22 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-25 21:22:25 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-25 21:22:27 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-25 21:22:32 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-25 21:22:36 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-25 21:22:38 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 12:48:39 INFO  PRBase:135 - STARTING TEST SUITE: 'smokeTest'
+2015-11-29 12:48:39 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-29 12:48:39 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-29 12:48:39 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-11-29 12:48:39 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 12:49:24 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-29 12:49:27 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 12:49:29 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 12:49:42 INFO  PRLogin:95 - Successful login.
+2015-11-29 12:50:02 INFO  SeleniumUtils:307 - Typed text:  rktcommunity_BP
+2015-11-29 12:50:15 INFO  SeleniumUtils:307 - Typed text:  0001
+2015-11-29 12:50:17 INFO  SeleniumUtils:307 - Typed text:  2355
+2015-11-29 12:50:19 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-29 12:50:21 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-29 12:50:21 INFO  SPAddBuyerProgram:191 - 1
+2015-11-29 12:50:21 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-11-29 12:50:21 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-11-29 12:50:21 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-11-29 12:50:22 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-11-29 12:50:22 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-11-29 12:50:22 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-11-29 12:50:22 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-11-29 12:50:30 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-29 12:50:30 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-29 12:50:33 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2015-11-29 12:50:33 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 12:51:11 INFO  SeleniumUtils:307 - Typed text:  Rktcommunity
+2015-11-29 12:51:14 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 12:51:16 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 12:51:23 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-29 12:51:23 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-29 12:51:23 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2015-11-29 12:51:25 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-29 12:51:26 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-29 12:51:48 INFO  SeleniumUtils:333 - Typed text:  Sai
+2015-11-29 12:51:51 INFO  SeleniumUtils:333 - Typed text:  6785927880
+2015-11-29 12:51:55 INFO  SeleniumUtils:333 - Typed text:  primerevenueqa@hotmail.com
+2015-11-29 12:52:03 INFO  SeleniumUtils:307 - Typed text:  2000
+2015-11-29 12:52:06 INFO  SeleniumUtils:307 - Typed text:  1000
+2015-11-29 12:52:19 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-29 12:52:23 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-11-29 12:52:23 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-11-29 12:52:23 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.FISmokeTestNG3.smokeTestfi1
+2015-11-29 12:52:23 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 12:52:57 INFO  SeleniumUtils:307 - Typed text:  Rktfi
+2015-11-29 12:53:00 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 12:53:02 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 12:53:30 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-11-29 12:53:30 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-11-29 12:53:30 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG4.smokeTest1
+2015-11-29 12:53:30 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 12:54:03 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-29 12:54:06 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 12:54:08 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 12:54:15 INFO  PRLogin:95 - Successful login.
+2015-11-29 12:54:23 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, 'javascript: addSuppliers()')]"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8790a33d-775b-4872-a42b-c09a0d9970b8
+*** Element info: {Using=xpath, value=//a[contains(@href, 'javascript: addSuppliers()')]}
+2015-11-29 12:54:23 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-11-29 12:54:23 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, 'javascript: addSuppliers()')]"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8790a33d-775b-4872-a42b-c09a0d9970b8
+*** Element info: {Using=xpath, value=//a[contains(@href, 'javascript: addSuppliers()')]}
+2015-11-29 12:54:23 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-11-29 12:54:23 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SuppReportsTestNG5.smokeTestReports
+2015-11-29 12:54:23 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 13:00:01 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-29 13:00:01 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-29 13:00:01 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-29 13:00:01 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-11-29 13:00:01 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 13:00:40 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-29 13:00:43 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 13:00:45 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 13:00:52 INFO  PRLogin:95 - Successful login.
+2015-11-29 13:01:07 INFO  SeleniumUtils:307 - Typed text:  rktcommunity_BP
+2015-11-29 13:01:30 INFO  SeleniumUtils:307 - Typed text:  0001
+2015-11-29 13:01:33 INFO  SeleniumUtils:307 - Typed text:  2355
+2015-11-29 13:01:36 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-29 13:01:39 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-29 13:01:39 INFO  SPAddBuyerProgram:191 - 1
+2015-11-29 13:01:39 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-11-29 13:01:40 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-11-29 13:01:40 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-11-29 13:01:40 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-11-29 13:01:40 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-11-29 13:01:40 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-11-29 13:01:40 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-11-29 13:01:52 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-29 13:01:56 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-29 13:08:06 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-29 13:08:06 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-29 13:08:06 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-29 13:08:06 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2015-11-29 13:08:06 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 13:08:48 INFO  SeleniumUtils:307 - Typed text:  Rktcommunity
+2015-11-29 13:08:52 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 13:08:54 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 13:08:56 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-29 13:08:56 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2015-11-29 13:08:58 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-29 13:08:59 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-29 13:09:20 INFO  SeleniumUtils:333 - Typed text:  Sai
+2015-11-29 13:09:23 INFO  SeleniumUtils:333 - Typed text:  6785927880
+2015-11-29 13:09:26 INFO  SeleniumUtils:333 - Typed text:  primerevenueqa@hotmail.com
+2015-11-29 13:09:31 INFO  SeleniumUtils:307 - Typed text:  2000
+2015-11-29 13:09:37 INFO  SeleniumUtils:307 - Typed text:  1000
+2015-11-29 13:09:47 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-29 13:09:50 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-11-29 13:09:54 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-29 13:10:29 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-29 13:10:29 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-29 13:10:29 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-29 13:10:29 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.FISmokeTestNG3.smokeTestfi1
+2015-11-29 13:10:29 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 13:11:08 INFO  SeleniumUtils:307 - Typed text:  Rktfi
+2015-11-29 13:11:11 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 13:11:13 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 13:11:51 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"_settlmentBankAccountId"}
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7d658668-fc89-4116-afe5-1c8e93345ef3
+*** Element info: {Using=id, value=_settlmentBankAccountId}
+2015-11-29 13:11:51 ERROR TesterListener:20 - smokeTestfi1 -- Test method failed !!
+2015-11-29 13:11:55 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-29 13:20:54 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-29 13:20:54 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-29 13:20:54 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-29 13:20:54 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.FISmokeTestNG3.smokeTestfi1
+2015-11-29 13:20:54 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 13:21:33 INFO  SeleniumUtils:307 - Typed text:  Rktfi
+2015-11-29 13:21:37 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 13:21:39 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 13:22:18 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"_settlmentBankAccountId"}
+Command duration or timeout: 265 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a90f526e-01c2-4f7d-afb2-f0232a8fdfbb
+*** Element info: {Using=id, value=_settlmentBankAccountId}
+2015-11-29 13:22:18 ERROR TesterListener:20 - smokeTestfi1 -- Test method failed !!
+2015-11-29 13:22:22 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-29 13:24:36 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-29 13:24:36 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-29 13:24:36 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-29 13:24:36 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-11-29 13:24:36 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 13:25:16 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-29 13:25:20 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 13:25:22 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 13:25:29 INFO  PRLogin:95 - Successful login.
+2015-11-29 13:25:46 INFO  SeleniumUtils:307 - Typed text:  rktcommunity_BP
+2015-11-29 13:26:10 INFO  SeleniumUtils:307 - Typed text:  0001
+2015-11-29 13:26:13 INFO  SeleniumUtils:307 - Typed text:  2355
+2015-11-29 13:26:16 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-29 13:26:19 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-29 13:26:20 INFO  SPAddBuyerProgram:191 - 1
+2015-11-29 13:26:20 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-11-29 13:26:20 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-11-29 13:26:20 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-11-29 13:26:20 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-11-29 13:26:20 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-11-29 13:26:20 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-11-29 13:26:20 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-11-29 13:26:34 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-29 13:26:37 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-29 13:27:08 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-29 13:27:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-29 13:27:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-29 13:27:08 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2015-11-29 13:27:08 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-29 13:27:46 INFO  SeleniumUtils:307 - Typed text:  Rktcommunity
+2015-11-29 13:27:50 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-29 13:27:52 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-29 13:28:09 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-29 13:28:09 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2015-11-29 13:28:10 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-29 13:28:11 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-29 13:28:31 INFO  SeleniumUtils:333 - Typed text:  Sai
+2015-11-29 13:28:37 INFO  SeleniumUtils:333 - Typed text:  6785927880
+2015-11-29 13:28:40 INFO  SeleniumUtils:333 - Typed text:  primerevenueqa@hotmail.com
+2015-11-29 13:28:45 INFO  SeleniumUtils:307 - Typed text:  2000
+2015-11-29 13:28:48 INFO  SeleniumUtils:307 - Typed text:  1000
+2015-11-29 13:29:00 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-29 13:29:03 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-11-29 13:29:07 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'

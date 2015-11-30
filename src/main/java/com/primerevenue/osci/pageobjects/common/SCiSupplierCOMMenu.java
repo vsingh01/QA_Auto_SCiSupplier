@@ -47,7 +47,7 @@ public class SCiSupplierCOMMenu {
 		Synchronizer.waitUntilDisplayed(userMenu, 5);
 
 		Boolean spTitle = SeleniumUtils.isTextPresent("Community Home");
-		System.out.println("Service Provider Home Title verified : : :"
+		System.out.println("Community Home Title verified : : :"
 				+ spTitle);
 
 		try {
