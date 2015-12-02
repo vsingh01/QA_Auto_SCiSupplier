@@ -30,7 +30,7 @@ public class BuyerTestNG7 extends PRBase {
 
 		VerifyBuyerPagesReports testMenu1 = PageFactory.initElements(
 				Browser.eDriver, VerifyBuyerPagesReports.class);
-		/*testMenu.menuToPaySchedule();
+		testMenu.menuToPaySchedule();
 		testMenu1.paymentSchedulePage();
 
 		testMenu.menuToPaysHistory();
@@ -49,7 +49,7 @@ public class BuyerTestNG7 extends PRBase {
 		testMenu1.loadConfirmationPage();
 
 		testMenu.menuToEndOfDayReports();
-		testMenu1.endOfDayReportGen();*/
+		testMenu1.endOfDayReportGen();
 
 		testMenu.menuToTradeDetailReports();
 		testMenu1.tradeDetailsReportGen();
