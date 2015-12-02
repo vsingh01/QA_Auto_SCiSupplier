@@ -31,7 +31,6 @@
 	<classpathentry kind="lib" path="C:/jar/selenium-server-standalone-2.47.1.jar"/>
 	<classpathentry kind="lib" path="C:/jar/xalan-2.7.2.jar"/>
 	<classpathentry kind="lib" path="C:/jar/sqljdbc_4.0.2206.100_enu/sqljdbc_4.0/enu/sqljdbc4.jar"/>
-	<classpathentry kind="lib" path="C:/jar/sqljdbc_4.0.2206.100_enu/sqljdbc_4.0/enu/sqljdbc.jar"/>
 	<classpathentry kind="lib" path="C:/jar/jetty-io-9.2.11.v20150529.jar"/>
 	<classpathentry kind="lib" path="C:/jar/jndi-1.2.1.jar/jndi-1.2.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
