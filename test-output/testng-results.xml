@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[<a href=C:\LocalProjects\Eclipse\SCiSupplier/target/surefire-reports/screen_shots/NHScreenShot_12-02-2015_10.32.29_TestEmailTestNG_smokeTest1.png target='_blank' >12-02-2015_10.32.29_TestEmailTestNG_smokeTest1.png</a>]]>
+      <![CDATA[<a href=C:\LocalProjects\Eclipse\SCiSupplier/target/surefire-reports/screen_shots/NHScreenShot_12-02-2015_05.39.34_BuyerTestNG7_buyertest1.png target='_blank' >12-02-2015_05.39.34_BuyerTestNG7_buyertest1.png</a>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32535" started-at="2015-12-02T15:32:01Z" finished-at="2015-12-02T15:32:33Z">
+  <suite name="Default suite" duration-ms="27292" started-at="2015-12-02T22:39:08Z" finished-at="2015-12-02T22:39:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32535" started-at="2015-12-02T15:32:01Z" finished-at="2015-12-02T15:32:33Z">
-      <class name="com.primerevenue.osci.test.smoke.TestEmailTestNG">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.TestEmailTestNG@5cc7c2a6]" name="beforeSuite" is-config="true" duration-ms="28" started-at="2015-12-02T10:32:01Z" finished-at="2015-12-02T10:32:01Z">
+    <test name="Default test" duration-ms="27292" started-at="2015-12-02T22:39:08Z" finished-at="2015-12-02T22:39:35Z">
+      <class name="com.primerevenue.osci.test.smoke.BuyerTestNG7">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.BuyerTestNG7@458ad742]" name="beforeSuite" is-config="true" duration-ms="17" started-at="2015-12-02T17:39:08Z" finished-at="2015-12-02T17:39:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7fcf2fc1]]>
+                <![CDATA[org.testng.TestRunner@3697186]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.TestEmailTestNG@5cc7c2a6]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-12-02T10:32:01Z" finished-at="2015-12-02T10:32:01Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.BuyerTestNG7@458ad742]" name="beforeClass" is-config="true" duration-ms="1" started-at="2015-12-02T17:39:08Z" finished-at="2015-12-02T17:39:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.TestEmailTestNG@5cc7c2a6]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-12-02T10:32:01Z" finished-at="2015-12-02T10:32:01Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.BuyerTestNG7@458ad742]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-12-02T17:39:08Z" finished-at="2015-12-02T17:39:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="smokeTest1()[pri:0, instance:com.primerevenue.osci.test.smoke.TestEmailTestNG@5cc7c2a6]" name="smokeTest1" duration-ms="27206" started-at="2015-12-02T10:32:01Z" finished-at="2015-12-02T10:32:28Z">
+        <test-method status="FAIL" signature="buyertest1()[pri:0, instance:com.primerevenue.osci.test.smoke.BuyerTestNG7@458ad742]" name="buyertest1" duration-ms="26566" started-at="2015-12-02T17:39:08Z" finished-at="2015-12-02T17:39:34Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1b8a29df
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'T450SAmuluru', ip: '10.8.1.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+              <![CDATA[Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@42a15bdc
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
 Driver info: org.openqa.selenium.support.events.EventFiringWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1b8a29df
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'T450SAmuluru', ip: '10.8.1.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@42a15bdc
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
 Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at com.primerevenue.osci.utils.Synchronizer.pollElementVisibility(Synchronizer.java:68)
-	at com.primerevenue.osci.driver.EMLogin.isLoginFailed(EMLogin.java:83)
-	at com.primerevenue.osci.driver.EMLogin.emlogin(EMLogin.java:72)
-	at com.primerevenue.osci.driver.EMLogin.<init>(EMLogin.java:43)
-	at com.primerevenue.osci.driver.PRBase.emlogin(PRBase.java:116)
-	at com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1(TestEmailTestNG.java:18)
+	at com.primerevenue.osci.utils.SeleniumUtils.type(SeleniumUtils.java:296)
+	at com.primerevenue.osci.pageobjects.common.PRLogin.login(PRLogin.java:75)
+	at com.primerevenue.osci.pageobjects.common.PRLogin.<init>(PRLogin.java:53)
+	at com.primerevenue.osci.driver.PRBase.login(PRBase.java:101)
+	at com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1(BuyerTestNG7.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -81,15 +81,15 @@ Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='title']"}
-Command duration or timeout: 187 milliseconds
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//input[@type='text']"}
+Command duration or timeout: 52 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'T450SAmuluru', ip: '10.8.1.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 59bf3a2b-3db7-405e-b267-2184b7638586
-*** Element info: {Using=xpath, value=//div[@class='title']}
+Session ID: 4602411e-c262-41e4-abd4-48700f70216a
+*** Element info: {Using=xpath, value=.//input[@type='text']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -111,54 +111,39 @@ Session ID: 59bf3a2b-3db7-405e-b267-2184b7638586
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$1(ExpectedConditions.java:301)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
 	... 30 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='title']"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//input[@type='text']"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'T450SAmuluru', ip: '10.8.1.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous239065145670298943webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous239065145670298943webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous239065145670298943webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous239065145670298943webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous239065145670298943webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous5700714518980585495webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous5700714518980585495webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10676)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous5700714518980585495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous5700714518980585495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12648)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/samuluru/AppData/Local/Temp/anonymous5700714518980585495webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12590)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
-              <![CDATA[<a href=C:\LocalProjects\Eclipse\SCiSupplier/target/surefire-reports/screen_shots/NHScreenShot_12-02-2015_10.32.29_TestEmailTestNG_smokeTest1.png target='_blank' >12-02-2015_10.32.29_TestEmailTestNG_smokeTest1.png</a>]]>
+              <![CDATA[<a href=C:\LocalProjects\Eclipse\SCiSupplier/target/surefire-reports/screen_shots/NHScreenShot_12-02-2015_05.39.34_BuyerTestNG7_buyertest1.png target='_blank' >12-02-2015_05.39.34_BuyerTestNG7_buyertest1.png</a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- smokeTest1 -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.TestEmailTestNG@5cc7c2a6]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-12-02T10:32:29Z" finished-at="2015-12-02T10:32:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest2() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="smokeTest2()[pri:0, instance:com.primerevenue.osci.test.smoke.TestEmailTestNG@5cc7c2a6]" name="smokeTest2" duration-ms="4480" started-at="2015-12-02T10:32:29Z" finished-at="2015-12-02T10:32:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smokeTest2 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.TestEmailTestNG@5cc7c2a6]" name="afterClass" is-config="true" duration-ms="1" started-at="2015-12-02T10:32:33Z" finished-at="2015-12-02T10:32:33Z">
+        </test-method> <!-- buyertest1 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.BuyerTestNG7@458ad742]" name="afterClass" is-config="true" duration-ms="552" started-at="2015-12-02T17:39:34Z" finished-at="2015-12-02T17:39:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="FAIL" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.TestEmailTestNG@5cc7c2a6]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-12-02T10:32:33Z" finished-at="2015-12-02T10:32:33Z">
+        <test-method status="FAIL" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.BuyerTestNG7@458ad742]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-12-02T17:39:35Z" finished-at="2015-12-02T17:39:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7fcf2fc1]]>
+                <![CDATA[org.testng.TestRunner@3697186]]>
               </value>
             </param>
           </params>
@@ -190,7 +175,7 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.primerevenue.osci.test.smoke.TestEmailTestNG -->
+      </class> <!-- com.primerevenue.osci.test.smoke.BuyerTestNG7 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

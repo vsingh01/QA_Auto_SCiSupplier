@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.primerevenue.osci.test.smoke.TestEmailTestNG">
+      <class name="com.primerevenue.osci.test.smoke.BuyerTestNG7">
         <methods>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="buyertest1"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
-          <include name="afterClass"/>
           <include name="afterSuite"/>
-          <include name="smokeTest1"/>
         </methods>
-      </class> <!-- com.primerevenue.osci.test.smoke.TestEmailTestNG -->
+      </class> <!-- com.primerevenue.osci.test.smoke.BuyerTestNG7 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

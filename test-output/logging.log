@@ -12125,3 +12125,125 @@ Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
 2015-12-02 10:32:29 INFO  Synchronizer:26 - Waited for 5 sec implicity.
 2015-12-02 10:32:33 INFO  TesterListener:34 - smokeTest2 -- Test method successful.
 2015-12-02 10:32:33 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 17:15:04 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:15:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:15:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:15:04 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:15:04 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:15:24 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:15:27 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:15:29 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:16:12 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-02 17:16:38 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-02 17:16:38 ERROR TesterListener:19 - java.io.IOException: Cannot run program "C:/autoTestBuyerMod.exe": CreateProcess error=2, The system cannot find the file specified
+2015-12-02 17:16:38 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-02 17:16:39 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 17:18:14 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:18:14 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:18:14 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:18:14 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:18:14 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:19:40 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:19:40 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:19:40 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:19:40 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:19:40 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:19:58 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:20:01 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:20:03 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:20:34 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-02 17:20:34 ERROR TesterListener:19 - java.io.IOException: Cannot run program "C:/autoTestBuyerMod.exe": CreateProcess error=2, The system cannot find the file specified
+2015-12-02 17:20:34 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-02 17:20:35 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 17:22:52 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:22:52 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:22:52 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:22:52 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:22:52 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:23:08 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:23:12 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:23:14 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:23:41 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-02 17:23:41 ERROR TesterListener:19 - java.io.IOException: Cannot run program "C:/jar/autoTestBuyerMod.exe": CreateProcess error=2, The system cannot find the file specified
+2015-12-02 17:23:41 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-02 17:23:42 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 17:27:47 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:27:47 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:27:47 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:27:47 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:27:47 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:28:05 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:28:08 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:28:10 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:28:35 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-02 17:28:35 ERROR TesterListener:19 - java.io.IOException: Cannot run program "C:/jar/autoTestBuyerMod.exe": CreateProcess error=2, The system cannot find the file specified
+2015-12-02 17:28:35 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-02 17:28:36 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 17:30:08 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:30:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:30:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:30:08 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:30:08 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:30:25 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:30:29 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:30:31 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:30:58 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-02 17:31:08 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-02 17:31:18 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-02 17:31:24 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-02 17:34:28 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:34:28 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:34:28 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:34:28 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:34:28 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:34:46 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:34:50 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:34:52 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:34:55 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2d9caaeb
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-02 17:34:55 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-02 17:34:56 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 17:35:20 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:35:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:35:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:35:20 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:35:20 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:35:36 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:35:40 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:35:42 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:35:45 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2d9caaeb
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-02 17:35:45 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-02 17:35:46 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 17:36:20 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:36:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:36:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:36:20 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:36:20 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:36:37 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:36:41 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:36:43 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:36:46 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@2d9caaeb
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-02 17:36:46 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-02 17:36:47 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 17:39:08 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 17:39:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 17:39:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 17:39:08 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-02 17:39:08 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 17:39:25 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-02 17:39:29 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 17:39:31 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 17:39:34 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@42a15bdc
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-02 17:39:34 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-02 17:39:35 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'

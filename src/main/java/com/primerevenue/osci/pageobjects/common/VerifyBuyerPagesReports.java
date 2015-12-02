@@ -127,7 +127,7 @@ public class VerifyBuyerPagesReports {
 		Synchronizer.explicitWait(10);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
-		Synchronizer.explicitWait(8);
+		Synchronizer.explicitWait(10);
 		System.out.println(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		SeleniumUtils.deleteFile("C:/Users/samuluru/Downloads", "PDF");
@@ -141,7 +141,7 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
 		Runtime.getRuntime().exec(
-				"C:/autoTestBuyerMod.exe");
+				"C:/jar/autoTestBuyerMod.exe");
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
