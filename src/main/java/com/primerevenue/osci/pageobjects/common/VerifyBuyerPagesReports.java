@@ -123,7 +123,7 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(5);
 		Runtime.getRuntime().exec(
-				"C:/Users/samuluru/Documents/AutoIt/autoTestBuyerMod.exe");
+				"C:/autoTestBuyerMod.exe");
 		Synchronizer.explicitWait(10);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
@@ -141,7 +141,7 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
 		Runtime.getRuntime().exec(
-				"C:/Users/samuluru/Documents/AutoIt/autoTestBuyerMod.exe");
+				"C:/autoTestBuyerMod.exe");
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();

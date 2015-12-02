@@ -124,7 +124,7 @@ public class ComAddBuyerProgram {
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(5);
 		Runtime.getRuntime().exec(
-				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+				"C:/autoTest.exe");
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
