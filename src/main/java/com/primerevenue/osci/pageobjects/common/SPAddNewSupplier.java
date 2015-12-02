@@ -111,7 +111,7 @@ public class SPAddNewSupplier {
 	
 	public void addNewSupplier() {
 		PageFactory.initElements(Browser.eDriver, this);
-		
+		 try {
 		SeleniumUtils.type(companyName, "AmulSupp");
 		SeleniumUtils.type(street1, "1575 Apple");
 		SeleniumUtils.type(city, "Cuumming");
@@ -133,7 +133,10 @@ public class SPAddNewSupplier {
 		SeleniumUtils.selectOption(dynamicCodeLockoutAfter, "4");
 		SeleniumUtils.selectOption(dynamicCodeForceChangeAfter, "60");
 		SeleniumUtils.click(save);
-		
+		 logger.debug("Successfully created Supplier");
+	        } catch (Exception e) {
+	            logger.error("Failed, Supplier creation.");
+	        }
 		}
 	
 	//Verifying just added Supplier creation
@@ -149,23 +152,33 @@ public class SPAddNewSupplier {
 		SeleniumUtils.type(searchValue, "AmulSupp");
 		SeleniumUtils.click(search);
 		
-		SeleniumUtils.click(supplierName);      /*Table logic might be implemented here further*/
+		SeleniumUtils.click(supplierName);      /*Table logic might be implemented here in future if necessary*/
 		
 	}
 	public void editSaveComanyInfoForFI() {
 		PageFactory.initElements(Browser.eDriver, this);
 		SCiSupplierSPMenu editSave = PageFactory.initElements(Browser.eDriver,
 				SCiSupplierSPMenu.class);
-		
+		try {
 		editSave.menuToFIList();
 		SeleniumUtils.type(searchValue, "vishfi9");
-		SeleniumUtils.click(search);					 /*Table logic might be implemented here further */
+		SeleniumUtils.click(search);					 /*Table logic might be implemented here in future if necessary */
 		
 		SeleniumUtils.click(fINameLink);
-		
+		logger.debug("Search FI Found");
+        } catch (Exception e) {
+            logger.error("Failed, Search FI.");
+        }
+	
+		try{
 		SeleniumUtils.click(edit);
 		SeleniumUtils.type(phone, "6785927880");
 		SeleniumUtils.click(save);
+		logger.debug("edit & save successfull");
+        } catch (Exception e) {
+            logger.error("Failed, edit & save");
+        }
+		
 	}
 	
 }

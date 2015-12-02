@@ -128,8 +128,11 @@ public class ComAddBuyerProgram {
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
+		Synchronizer.explicitWait(8);
 		System.out.println(pdfManager.ToText());
-		pdfManager.setFilePath();
+		Synchronizer.explicitWait(5);
+		SeleniumUtils.deleteFile("C:/Users/samuluru/Downloads", "PDF");
+		
 
 	}
 

@@ -1,6 +1,7 @@
 package com.primerevenue.osci.pageobjects.common;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -41,6 +42,67 @@ public class SCiSupplierCOMMenu {
 
 	@FindBy(xpath = "//a[contains(text(),'Buyer Maturing Payment Forecast')]")
 	public WebElement buyerMaturepayForcastReport;
+	
+	//		Edit FI / Buyer / Currency Configuration page
+	
+	@FindBy(xpath = "//table[@id='rowBuyerPerformance']/tbody/tr[3]/td[3]/a")
+	public WebElement targetCreditCapAmountLink;
+	
+	@FindBy(id = "targetCreditCapacity")
+	public WebElement targetCreditCapacity;
+	
+	@FindBy(xpath = "//a[contains(text(),'Save')]")
+	public WebElement save;
+	
+	// Target Credit Capacity
+	
+	
+	public void resetTargetCreditCapacity() {
+
+		PageFactory.initElements(Browser.eDriver, this);
+		SeleniumUtils.click(targetCreditCapAmountLink);
+
+		/*//Buyer Name or First name
+		//html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/div[2]/table/tbody/tr[1]/td[1]/a
+		//html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/div[2]/table/tbody/tr[2]/td[1]/a
+		//html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/div[2]/table/tbody/tr[3]/td[1]/a	
+		
+		String xpath_Start = ("html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/div[2]/table/tbody/tr[");
+		String xpath_End = ("]/td[1]/a");
+		int i=1;
+		
+		while(SeleniumUtils.isElementPresent(xpath_Start+i+xpath_End)) {
+		String buyerName = Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).getText();
+		if(buyerName.equalsIgnoreCase("rktbuyer2")) {
+			System.out.println("Buyer Name Found : : : : :" + buyerName);
+			
+			//Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).click();
+		
+		// Check for Target Credit Capacity 
+		//html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/div[2]/table/tbody/tr[1]/td[3]/a
+		//html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/div[2]/table/tbody/tr[2]/td[3]/a
+		//html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/div[2]/table/tbody/tr[3]/td[3]/a
+				
+		
+		String buyerProgramView = Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End.replace("td[1]","td[3]"))).getText();
+		
+		if (buyerProgramView.equalsIgnoreCase("View")) {
+			System.out.println("Buyer Program Found : : : : :" + buyerProgramView);
+			Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End.replace("td[1]","td[3]"))).click();
+			break;
+		}
+		
+		}
+		i++; 
+	
+		}*/
+		
+		SeleniumUtils.type(targetCreditCapacity, "1000000000000.00");
+		SeleniumUtils.click(save);
+		
+	}
+	
+	
 
 	public void menuToUsers() {
 		PageFactory.initElements(Browser.eDriver, this);

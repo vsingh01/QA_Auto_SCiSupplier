@@ -11457,3 +11457,671 @@ Session ID: a90f526e-01c2-4f7d-afb2-f0232a8fdfbb
 2015-11-29 13:29:00 INFO  Synchronizer:178 - Explicit wait 5 second
 2015-11-29 13:29:03 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
 2015-11-29 13:29:07 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 10:56:37 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 10:56:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 10:56:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 10:56:37 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2015-11-30 10:56:37 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 10:56:54 INFO  SeleniumUtils:307 - Typed text:  Rktcommunity
+2015-11-30 10:56:57 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 10:56:59 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 10:57:04 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-30 10:57:04 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2015-11-30 10:57:06 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@3b74ac8
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.23', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-11-30 10:57:06 ERROR TesterListener:20 - cmsmokeTest2 -- Test method failed !!
+2015-11-30 10:57:07 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 11:22:40 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 11:22:40 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 11:22:40 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 11:22:40 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2015-11-30 11:22:41 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 11:22:57 INFO  SeleniumUtils:307 - Typed text:  Rktcommunity
+2015-11-30 11:23:00 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 11:23:02 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 11:23:07 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-30 11:23:07 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2015-11-30 11:23:12 INFO  SeleniumUtils:307 - Typed text:  1000000000000.00
+2015-11-30 11:23:13 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-11-30 11:23:14 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 14:08:12 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 14:08:12 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 14:08:12 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 14:08:12 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-11-30 14:08:12 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 14:08:28 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-30 14:08:32 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 14:08:34 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 14:08:44 INFO  PRLogin:95 - Successful login.
+2015-11-30 14:08:58 INFO  SeleniumUtils:307 - Typed text:  rktcommunity_BP
+2015-11-30 14:09:17 INFO  SeleniumUtils:307 - Typed text:  0001
+2015-11-30 14:09:19 INFO  SeleniumUtils:307 - Typed text:  2355
+2015-11-30 14:09:22 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-30 14:09:25 INFO  SeleniumUtils:307 - Typed text:  1
+2015-11-30 14:09:25 INFO  SPAddBuyerProgram:191 - 1
+2015-11-30 14:09:25 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-11-30 14:09:25 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-11-30 14:09:25 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-11-30 14:09:25 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-11-30 14:09:25 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-11-30 14:09:25 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-11-30 14:09:26 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-11-30 14:09:37 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-30 14:09:37 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 14:10:00 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 14:10:00 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 14:10:00 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 14:10:00 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2015-11-30 14:10:00 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 14:10:15 INFO  SeleniumUtils:307 - Typed text:  Rktcommunity
+2015-11-30 14:10:18 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 14:10:20 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 14:10:26 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-30 14:10:26 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2015-11-30 14:10:30 INFO  SeleniumUtils:307 - Typed text:  1000000000000.00
+2015-11-30 14:10:32 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-30 14:10:33 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-11-30 14:10:53 INFO  SeleniumUtils:333 - Typed text:  Sai
+2015-11-30 14:10:56 INFO  SeleniumUtils:333 - Typed text:  6785927880
+2015-11-30 14:10:59 INFO  SeleniumUtils:333 - Typed text:  primerevenueqa@hotmail.com
+2015-11-30 14:11:03 INFO  SeleniumUtils:307 - Typed text:  2000
+2015-11-30 14:11:06 INFO  SeleniumUtils:307 - Typed text:  1000
+2015-11-30 14:11:18 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:11:21 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-11-30 14:11:22 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 14:11:37 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 14:11:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 14:11:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 14:11:37 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.FISmokeTestNG3.smokeTestfi1
+2015-11-30 14:11:37 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 14:11:54 INFO  SeleniumUtils:307 - Typed text:  Rktfi
+2015-11-30 14:11:57 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 14:11:59 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 14:12:38 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-11-30 14:12:39 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 14:19:11 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 14:19:11 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 14:19:11 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 14:19:11 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG4.smokeTest1
+2015-11-30 14:19:11 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 14:19:27 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-30 14:19:30 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 14:19:32 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 14:19:42 INFO  PRLogin:95 - Successful login.
+2015-11-30 14:19:58 INFO  SeleniumUtils:307 - Typed text:  Rktsup2
+2015-11-30 14:20:03 INFO  SeleniumUtils:307 - Typed text:  786
+2015-11-30 14:20:05 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-30 14:20:06 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 14:20:37 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 14:20:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 14:20:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 14:20:37 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SuppReportsTestNG5.smokeTestReports
+2015-11-30 14:20:37 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 14:20:52 INFO  SeleniumUtils:307 - Typed text:  Rktsup2
+2015-11-30 14:20:55 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 14:20:57 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 14:21:13 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-30 14:21:14 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-30 14:21:20 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:21:26 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-30 14:21:31 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:26:32 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-30 14:26:37 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:28:02 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-30 14:28:07 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:30:48 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-30 14:30:53 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:30:59 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-11-30 14:31:04 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:31:04 INFO  TesterListener:34 - smokeTestReports -- Test method successful.
+2015-11-30 14:31:05 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 14:31:20 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 14:31:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 14:31:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 14:31:20 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SupplierModPageNavTestNG6.smokeTest1
+2015-11-30 14:31:20 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 14:31:35 INFO  SeleniumUtils:307 - Typed text:  Rktsup2
+2015-11-30 14:31:39 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 14:31:41 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 14:32:16 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-30 14:32:17 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 14:34:44 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 14:34:44 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 14:34:44 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 14:34:44 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 14:34:44 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 14:34:59 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 14:35:02 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 14:35:04 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 14:37:48 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 14:37:48 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 14:37:48 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 14:37:48 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 14:37:48 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 14:38:03 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 14:38:06 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 14:38:08 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 14:38:55 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:39:46 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:39:51 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 14:39:51 ERROR TesterListener:19 - java.lang.NullPointerException
+2015-11-30 14:39:51 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 14:39:52 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:02:04 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:02:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:02:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:02:04 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:02:04 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:02:23 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:02:27 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:02:29 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:03:22 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:03:46 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:03:51 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:03:51 ERROR TesterListener:19 - java.lang.NullPointerException
+2015-11-30 16:03:51 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:03:54 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:06:50 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:06:50 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:06:50 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:06:50 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:06:50 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:07:10 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:07:14 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:07:16 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:08:06 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:08:31 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:08:36 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:08:36 ERROR TesterListener:19 - java.lang.NullPointerException
+2015-11-30 16:08:36 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:08:37 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:09:16 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:09:16 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:09:16 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:09:16 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:09:16 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:09:33 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:09:37 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:09:39 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:10:25 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:10:50 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:10:55 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:10:55 ERROR TesterListener:19 - java.io.IOException: Error: End-of-File, expected line
+2015-11-30 16:10:55 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:10:56 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:12:37 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:12:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:12:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:12:37 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:12:37 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:12:53 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:12:56 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:12:58 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:13:48 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:14:12 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:14:17 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:14:17 ERROR TesterListener:19 - java.io.IOException: Error: End-of-File, expected line
+2015-11-30 16:14:17 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:14:18 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:20:32 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:20:32 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:20:32 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:20:32 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:20:32 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:20:48 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:20:52 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:20:54 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:21:44 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:22:10 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:22:15 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:22:15 ERROR TesterListener:19 - java.io.IOException: Error: End-of-File, expected line
+2015-11-30 16:22:15 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:22:16 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:29:02 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:29:02 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:29:02 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:29:02 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:29:02 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:29:17 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:29:21 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:29:23 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:30:12 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:30:37 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:30:42 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:30:42 ERROR TesterListener:19 - java.io.IOException: Error: End-of-File, expected line
+2015-11-30 16:30:42 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:30:43 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:38:04 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:38:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:38:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:38:04 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:38:05 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:38:20 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:38:24 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:38:26 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:39:06 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:39:11 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:39:11 ERROR TesterListener:19 - java.io.IOException: Error: End-of-File, expected line
+2015-11-30 16:39:11 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:39:12 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:50:20 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:50:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:50:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:50:20 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:50:20 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:50:38 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:50:41 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:50:43 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:51:16 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:51:21 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:51:21 ERROR TesterListener:19 - java.io.IOException: Error: End-of-File, expected line
+2015-11-30 16:51:21 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:51:22 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:55:29 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:55:29 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:55:29 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:55:29 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:55:29 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:55:45 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:55:49 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:55:51 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:56:16 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:56:21 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:56:21 ERROR TesterListener:19 - java.io.IOException: Error: End-of-File, expected line
+2015-11-30 16:56:21 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:56:22 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 16:58:10 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 16:58:10 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 16:58:10 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 16:58:10 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 16:58:10 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 16:58:26 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 16:58:30 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 16:58:32 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 16:59:05 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:59:10 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 16:59:10 ERROR TesterListener:19 - java.io.IOException: Error: End-of-File, expected line
+2015-11-30 16:59:10 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-11-30 16:59:11 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 17:00:49 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 17:00:49 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 17:00:49 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 17:00:49 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 17:00:50 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 17:01:05 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 17:01:09 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 17:01:11 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 17:01:45 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:01:55 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:02:05 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:02:16 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:02:34 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:02:39 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:02:49 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:02:59 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:02:59 INFO  TesterListener:34 - buyertest1 -- Test method successful.
+2015-11-30 17:03:00 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 17:06:49 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 17:06:49 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 17:06:49 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 17:06:49 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 17:06:49 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 17:07:08 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 17:07:12 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 17:07:14 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 17:07:55 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:08:05 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:08:15 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:08:26 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:08:43 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:08:48 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:08:58 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:09:08 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:09:08 INFO  TesterListener:34 - buyertest1 -- Test method successful.
+2015-11-30 17:09:09 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 17:11:38 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 17:11:38 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 17:11:38 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 17:11:38 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-11-30 17:11:38 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 17:11:56 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-11-30 17:11:59 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 17:12:01 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 17:12:30 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:12:40 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:12:50 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:13:01 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:13:19 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:13:25 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:13:35 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:13:45 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:13:45 INFO  TesterListener:34 - buyertest1 -- Test method successful.
+2015-11-30 17:13:45 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 17:27:52 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 17:27:52 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 17:27:52 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 17:27:52 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.SPModReportsTestNG8.smokeTest1
+2015-11-30 17:27:52 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 17:28:07 INFO  SeleniumUtils:307 - Typed text:  SPrkt
+2015-11-30 17:28:10 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 17:28:12 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 17:28:23 INFO  PRLogin:95 - Successful login.
+2015-11-30 17:28:50 INFO  SeleniumUtils:307 - Typed text:  AmulSupp
+2015-11-30 17:28:52 INFO  SeleniumUtils:307 - Typed text:  1575 Apple
+2015-11-30 17:28:54 INFO  SeleniumUtils:307 - Typed text:  Cuumming
+2015-11-30 17:28:59 INFO  SeleniumUtils:307 - Typed text:  30041
+2015-11-30 17:29:01 INFO  SeleniumUtils:307 - Typed text:  Sai
+2015-11-30 17:29:04 INFO  SeleniumUtils:307 - Typed text:  6785927880
+2015-11-30 17:29:06 INFO  SeleniumUtils:307 - Typed text:  primerevenueqa@hotmail.com
+2015-11-30 17:29:08 INFO  SeleniumUtils:307 - Typed text:  6901
+2015-11-30 17:29:10 INFO  SeleniumUtils:307 - Typed text:  vishalSupplier
+2015-11-30 17:29:13 INFO  SeleniumUtils:307 - Typed text:  sai
+2015-11-30 17:29:15 INFO  SeleniumUtils:307 - Typed text:  amul
+2015-11-30 17:29:17 INFO  SeleniumUtils:307 - Typed text:  primerevenueqa@hotmail.com
+2015-11-30 17:29:30 INFO  SeleniumUtils:307 - Typed text:  AmulSupp
+2015-11-30 17:29:38 INFO  SeleniumUtils:307 - Typed text:  vishfi9
+2015-11-30 17:29:44 INFO  SeleniumUtils:307 - Typed text:  6785927880
+2015-11-30 17:29:46 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-11-30 17:29:47 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 17:45:38 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 17:45:38 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 17:45:38 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 17:45:38 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG9.cmsmokeTest1
+2015-11-30 17:45:38 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 17:45:56 INFO  SeleniumUtils:307 - Typed text:  Rktcommunity
+2015-11-30 17:46:00 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 17:46:02 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 17:46:08 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-11-30 17:46:08 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG9.cmsmokeTest3
+2015-11-30 17:46:20 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:46:25 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:46:35 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:46:40 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:46:48 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-11-30 17:46:54 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:46:54 INFO  TesterListener:34 - cmsmokeTest3 -- Test method successful.
+2015-11-30 17:46:55 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-11-30 17:49:34 INFO  PRBase:135 - STARTING TEST SUITE: 'Default test'
+2015-11-30 17:49:34 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-11-30 17:49:34 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-11-30 17:49:34 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.FIModReportTestNG10.smokeTestfi1
+2015-11-30 17:49:34 INFO  Browser:214 - Firefox profile: webdriver
+2015-11-30 17:49:49 INFO  SeleniumUtils:307 - Typed text:  Rktfi
+2015-11-30 17:49:53 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-11-30 17:49:55 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-11-30 17:50:01 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-11-30 17:50:01 INFO  PRBase:78 - Running Test: com.primerevenue.osci.test.smoke.FIModReportTestNG10.smokeTestfi2
+2015-11-30 17:50:42 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:50:47 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:50:55 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-11-30 17:51:00 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:51:17 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:51:22 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:51:30 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-11-30 17:51:35 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:51:53 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-11-30 17:51:58 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:52:06 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-11-30 17:52:11 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-11-30 17:52:11 INFO  TesterListener:34 - smokeTestfi2 -- Test method successful.
+2015-11-30 17:52:12 INFO  PRBase:180 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 15:13:35 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:13:35 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:13:35 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:13:35 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 15:13:35 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:16:38 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:16:38 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:16:38 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:16:38 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 15:16:38 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:16:46 ERROR TesterListener:19 - org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 31 milliseconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1a084013-baa6-491d-b489-7328460e1b12
+2015-12-01 15:16:46 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 15:16:46 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 15:29:00 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:29:00 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:29:00 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:29:00 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 15:29:00 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:29:09 ERROR TesterListener:19 - org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 30 milliseconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 49d9e5aa-3cf5-4bbf-bc85-65d858e3a621
+2015-12-01 15:29:09 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 15:29:09 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 15:29:38 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:29:38 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:29:38 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:29:38 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-01 15:29:38 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:29:53 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-01 15:29:56 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-01 15:29:58 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-01 15:30:27 ERROR TesterListener:19 - org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: driver.version: EventFiringWebDriver
+2015-12-01 15:30:27 ERROR TesterListener:20 - buyertest1 -- Test method failed !!
+2015-12-01 15:30:28 ERROR SeleniumUtils:473 - Failed in capturing screen shot
+2015-12-01 15:30:29 ERROR Browser:160 - Failed to close browser !!
+2015-12-01 15:30:29 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 15:31:26 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:31:26 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:31:26 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:31:26 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 15:31:26 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:31:34 ERROR TesterListener:19 - org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 59 milliseconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 38aaea81-141e-4c0f-9665-3e16b0be8f2f
+2015-12-01 15:31:34 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 15:31:35 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 15:42:39 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:42:39 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:42:39 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:42:39 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 15:42:39 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:42:49 ERROR TesterListener:19 - org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 21 milliseconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1f33dac9-cd05-4ac2-a2bd-bd284f4fe47c
+2015-12-01 15:42:49 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 15:42:50 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 15:45:27 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:45:27 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:45:27 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:45:27 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 15:45:27 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:45:39 ERROR TesterListener:19 - org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 79 milliseconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bb394b2e-9909-4556-8556-a0ed9918b4a7
+2015-12-01 15:45:39 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 15:45:39 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 15:52:03 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:52:03 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:52:03 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:52:03 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 15:52:03 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:52:12 ERROR TesterListener:19 - org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 43 milliseconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2b9583d6-c14f-4e84-849a-077622822662
+2015-12-01 15:52:12 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 15:52:12 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 15:55:43 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 15:55:43 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 15:55:43 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 15:55:43 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 15:55:43 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 15:55:53 ERROR TesterListener:19 - org.openqa.selenium.WebDriverException: Element must be user-editable in order to clear it.
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 31a30380-32dd-464c-a750-c8f7cc7df682
+2015-12-01 15:55:53 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 15:55:54 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 16:01:33 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 16:01:33 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 16:01:33 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 16:01:33 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 16:01:33 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 16:01:43 INFO  SeleniumUtils:307 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-01 16:01:52 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-01 16:01:54 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-01 16:01:57 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@5b3f61ff
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-01 16:01:57 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 16:01:57 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 16:06:39 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 16:06:39 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 16:06:39 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 16:06:39 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 16:06:39 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 16:06:48 INFO  SeleniumUtils:307 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-01 16:06:55 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-01 16:06:57 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-01 16:07:00 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@57ad2aa7
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-01 16:07:00 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 16:07:00 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 16:16:22 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 16:16:22 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 16:16:22 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 16:16:22 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 16:16:22 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 16:16:31 INFO  SeleniumUtils:307 - Typed text:  https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1449004365&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fcol126.mail.live.com%2Fdefault.aspx%3Frru%3Dinbox&lc=1033&id=64855&mkt=en-us&cbcxt=mai
+2015-12-01 16:16:35 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-01 16:16:37 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-01 16:16:42 INFO  SeleniumUtils:307 - Typed text:  https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1449004365&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fcol126.mail.live.com%2Fdefault.aspx%3Frru%3Dinbox&lc=1033&id=64855&mkt=en-us&cbcxt=mai
+2015-12-01 16:16:45 ERROR TesterListener:19 - org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: driver.version: EventFiringWebDriver
+2015-12-01 16:16:45 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 16:16:46 ERROR SeleniumUtils:473 - Failed in capturing screen shot
+2015-12-01 16:16:47 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 16:18:29 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 16:18:29 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 16:18:29 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 16:18:29 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 16:18:29 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 16:18:39 INFO  SeleniumUtils:307 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-01 16:18:49 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-01 16:18:51 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-01 16:18:54 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1b8a29df
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-01 16:18:54 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 16:18:55 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-01 16:19:59 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 16:19:59 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 16:19:59 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 16:19:59 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-01 16:19:59 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 16:20:15 INFO  SeleniumUtils:307 - Typed text:  Rktbuy2
+2015-12-01 16:20:18 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-01 16:20:20 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-01 16:22:15 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-01 16:22:15 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-01 16:22:15 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-01 16:22:15 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-01 16:22:15 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-01 16:22:25 INFO  SeleniumUtils:307 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-01 16:22:37 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-01 16:22:39 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-01 16:22:43 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@46271dd6
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '192.168.1.87', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-01 16:22:43 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-01 16:22:44 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 07:23:55 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 07:23:55 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 07:23:55 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 07:23:55 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-02 07:23:55 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 07:24:09 INFO  SeleniumUtils:307 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-02 07:24:16 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 07:24:18 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 07:24:22 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1722011b
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-02 07:24:22 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-02 07:24:23 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 07:26:16 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 07:26:16 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 07:26:16 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 07:26:16 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-02 07:26:16 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 07:26:26 INFO  SeleniumUtils:307 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-02 07:26:37 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 07:26:39 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 07:26:43 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@57ad2aa7
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-02 07:26:43 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-02 07:26:43 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 09:00:13 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 09:00:13 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 09:00:13 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 09:00:13 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-02 09:00:13 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 09:00:25 INFO  SeleniumUtils:307 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-02 09:00:33 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 09:00:35 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 09:00:38 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@57ad2aa7
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-02 09:00:38 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-02 09:00:39 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'
+2015-12-02 10:32:01 INFO  PRBase:156 - STARTING TEST SUITE: 'Default test'
+2015-12-02 10:32:01 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-02 10:32:01 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-02 10:32:01 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest1
+2015-12-02 10:32:01 INFO  Browser:240 - Firefox profile: webdriver
+2015-12-02 10:32:12 INFO  SeleniumUtils:307 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-02 10:32:23 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-02 10:32:25 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-02 10:32:28 ERROR TesterListener:19 - org.openqa.selenium.TimeoutException: Timed out after 1 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@1b8a29df
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'T450SAmuluru', ip: '10.8.1.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_65'
+Driver info: org.openqa.selenium.support.events.EventFiringWebDriver
+2015-12-02 10:32:28 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2015-12-02 10:32:29 INFO  PRBase:82 - Running Test: com.primerevenue.osci.test.smoke.TestEmailTestNG.smokeTest2
+2015-12-02 10:32:29 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-02 10:32:33 INFO  TesterListener:34 - smokeTest2 -- Test method successful.
+2015-12-02 10:32:33 INFO  PRBase:201 - FINISHING TEST SUITE: 'Default test'

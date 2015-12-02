@@ -18,6 +18,7 @@ import org.testng.annotations.Listeners;
 import com.primerevenue.osci.utils.CommonUtils;
 import com.primerevenue.osci.driver.TesterListener;
 import com.primerevenue.osci.pageobjects.common.PRLogin;
+import com.primerevenue.osci.driver.EMLogin;
 import com.primerevenue.osci.utils.DatabaseUtil;
 import com.primerevenue.osci.utils.FileUtils;
 import com.primerevenue.osci.utils.PropertiesUtil;
@@ -29,6 +30,7 @@ public class PRBase {
 
     final static Logger logger = Logger.getLogger(PRBase.class);
     protected PRLogin login;
+    protected EMLogin emlogin;
     public static DatabaseUtil databaseUtil;
     public static String gridBrowser, gridNodeIP, gridNodePort, screenSize;
     /*protected PowerBar powerBar;*/
@@ -50,6 +52,8 @@ public class PRBase {
     public static String SP_USER;
     public static String FI_USER;
     public static String BUY_USER;
+    
+    public static String HM_USER;
 
     public static String CHANGE_PASSWORD;
 
@@ -105,6 +109,21 @@ public class PRBase {
 
 
     }
+    
+    protected void emlogin(String user) {
+        Browser.eMopen(gridBrowser, gridNodeIP, gridNodePort);
+        Browser.setScreenSize(screenSize);
+        emlogin = new EMLogin(user);
+    }
+
+    protected void emlogOff() {
+        if (emlogin != null) {
+            emlogin.loggOff();
+            Browser.close();
+        }
+
+
+    }
 
     private void initGlobalData() {
         logger.debug("INITIALIZING GLOBAL VARIABLES... ");
@@ -118,6 +137,8 @@ public class PRBase {
         FI_USER = setupProp.getProperty("fi.user.username");
         BUY_USER = setupProp.getProperty("buy.user.username");
         CHANGE_PASSWORD = setupProp.getProperty("user.password.change");
+        
+        HM_USER = setupProp.getProperty("em.user");
 
         ENABLE_EXECUTION_TRACE = setupProp.getProperty("execution.trace.enable");
         EXECUTION_TRACE_FILE = setupProp.getProperty("execution.trace.file");

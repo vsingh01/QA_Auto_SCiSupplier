@@ -17,55 +17,46 @@ import com.primerevenue.osci.utils.SeleniumUtils;
  **/
 
 public class PDFManager {
-	
-	
-	    
-		   private PDFParser parser;
-		   private PDFTextStripper pdfStripper;
-		   private PDDocument pdDoc ;
-		   private COSDocument cosDoc ;
-		   
-		   private String Text ;
-		   private String filePath;
-		   private File file;
-		 
-		    public PDFManager() {
-		        
-		    }
-		   public String ToText() throws IOException
-		   {
-		       this.pdfStripper = null;
-		       this.pdDoc = null;
-		       this.cosDoc = null;
-		       File file = SeleniumUtils.getTheNewestFile("C:/Users/samuluru/Downloads", "PDF");
-		       //file = new File(file);
-		       parser = new PDFParser(new FileInputStream(file));
-		       
-		       parser.parse();
-		       cosDoc = parser.getDocument();
-		       pdfStripper = new PDFTextStripper();
-		       pdDoc = new PDDocument(cosDoc);
-		       pdDoc.getNumberOfPages();
-		       pdfStripper.setStartPage(1);
-		       pdfStripper.setEndPage(2);
-		       // reading text from page 1 to 10
-		       // if you want to get text from full pdf file use this code
-		       // pdfStripper.setEndPage(pdDoc.getNumberOfPages());
-		       
-		       Text = pdfStripper.getText(pdDoc);
-		       return Text;
-		   }
-		 
-		    public void setFilePath() {
-		        this.file = file;
-		        file.deleteOnExit();
-		        
-		    }
-		    
-		   /* public void delFilePath() {
-		        file.deleteOnExit();
-		    }*/
-		    
-		    
-}
 
+	private PDFParser parser;
+	private PDFTextStripper pdfStripper;
+	private PDDocument pdDoc;
+	private COSDocument cosDoc;
+
+	private String Text;
+	private String filePath;
+	private File file;
+
+	public PDFManager() {
+
+	}
+
+	public String ToText() throws IOException {
+		this.pdfStripper = null;
+		this.pdDoc = null;
+		this.cosDoc = null;
+		File file = SeleniumUtils.getTheNewestFile(
+				"C:/Users/samuluru/Downloads", "PDF");
+		// file = new File(file);
+		parser = new PDFParser(new FileInputStream(file));
+
+		parser.parse();
+		cosDoc = parser.getDocument();
+		pdfStripper = new PDFTextStripper();
+		pdDoc = new PDDocument(cosDoc);
+		pdDoc.getNumberOfPages();
+		pdfStripper.setStartPage(1);
+		pdfStripper.setEndPage(2);
+		// reading text from page 1 to 10
+		// if you want to get text from full pdf file use this code
+		// pdfStripper.setEndPage(pdDoc.getNumberOfPages());
+
+		Text = pdfStripper.getText(pdDoc);
+		return Text;
+	}
+
+	public void setFilePath() {
+		this.file = file;
+	}
+
+}

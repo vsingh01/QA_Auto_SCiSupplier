@@ -746,7 +746,6 @@ public class SeleniumUtils {
 		}
 	}
 
-	/* Get the newest file for a specific extension */
 	public static File getTheNewestFile(String filePath, String ext) {
 		File theNewestFile = null;
 		File dir = new File(filePath);
@@ -762,4 +761,18 @@ public class SeleniumUtils {
 		return theNewestFile;
 	}
 
+	public static void deleteFile(String filePath, String ext) {
+		File theNewestFile = null;
+		File dir = new File(filePath);
+		FileFilter fileFilter = new WildcardFileFilter("*." + ext);
+		File[] files = dir.listFiles(fileFilter);
+
+		if (files.length > 0) {
+			/** The newest file comes first **/
+			Arrays.sort(files, LastModifiedFileComparator.LASTMODIFIED_REVERSE);
+			theNewestFile = files[0];
+			theNewestFile.delete();
+		}
+		System.out.println("file name :::::" + theNewestFile);
+	}
 }

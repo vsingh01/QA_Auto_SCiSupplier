@@ -34,6 +34,10 @@ public class CMSmokeTestNG2 extends PRBase {
 
 		SCiSupplierCOMMenu cmMenuObjRef = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierCOMMenu.class);
+		//perform target credit capacity until the issue got ficed..
+		/*----------------------------------------------------------------*/
+		cmMenuObjRef.resetTargetCreditCapacity();
+		/*----------------------------------------------------------------*/
 		cmMenuObjRef.menuToUsers();
 
 		ComUsersPage cmUserPageObjeRef = PageFactory.initElements(

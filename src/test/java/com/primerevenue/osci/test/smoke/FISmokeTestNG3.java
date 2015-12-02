@@ -36,15 +36,14 @@ public class FISmokeTestNG3 extends PRBase {
 
 		SCiSupplierFIMenu fIMenuObjRef = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierFIMenu.class);
-		fIMenuObjRef.verifyFIPages();
 		
-
 		FIAddBuyerProgram fIByProObjRef = PageFactory.initElements(
 				Browser.eDriver, FIAddBuyerProgram.class);
 	// Continue Buyer Program workflow 
 		fIMenuObjRef.menuToAvailablePortfolios();
 		fIByProObjRef.fIAddBP();
 		
+		fIMenuObjRef.verifyFIPages();
 	
 		
 	}
