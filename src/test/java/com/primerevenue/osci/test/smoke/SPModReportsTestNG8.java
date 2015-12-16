@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.driver.PRBase;
+import com.primerevenue.osci.pageobjects.common.EmailClient;
 import com.primerevenue.osci.pageobjects.common.SCiSupplierSPMenu;
 import com.primerevenue.osci.pageobjects.common.SPAddBuyerProgram;
 import com.primerevenue.osci.pageobjects.common.SPAddNewSupplier;
@@ -25,7 +26,7 @@ public class SPModReportsTestNG8 extends PRBase {
 	public void smokeTest1() throws InterruptedException {
 		Synchronizer.implicitWait(10);
 		login(SP_USER);
-
+		Synchronizer.implicitWait(5);
 		SCiSupplierSPMenu spMenuObjRef = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierSPMenu.class);
 		SPAddBuyerProgram spAddByObjRef = PageFactory.initElements(
@@ -51,14 +52,15 @@ public class SPModReportsTestNG8 extends PRBase {
 		spAddNewSuppObjRef.addNewSupplier();
 		spAddNewSuppObjRef.verifyingAddedNewSupplier();
 
-		//spMenuObjRef.menuToFIList();
+		// spMenuObjRef.menuToFIList();
 		spAddNewSuppObjRef.editSaveComanyInfoForFI();
 
 	}
-
-	@AfterClass
+	@Test
 	public void afterClass() {
 
 		Browser.close();
 	}
+	
+
 }

@@ -123,14 +123,15 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(5);
 		Runtime.getRuntime().exec(
-				"C:/autoTestBuyerMod.exe");
+				"C:/jar/autoTestBuyerMod.exe");
 		Synchronizer.explicitWait(10);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(10);
 		System.out.println(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		SeleniumUtils.deleteFile("C:/Users/samuluru/Downloads", "PDF");
+		String username = System.getProperty("user.name");
+		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 		
 
 	}
@@ -148,7 +149,8 @@ public class VerifyBuyerPagesReports {
 		Synchronizer.explicitWait(8);
 		System.out.println(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		SeleniumUtils.deleteFile("C:/Users/samuluru/Downloads", "PDF");
+		String username = System.getProperty("user.name");
+		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 
 	}
 }

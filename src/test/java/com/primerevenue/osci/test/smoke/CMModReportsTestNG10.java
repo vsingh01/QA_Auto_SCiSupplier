@@ -17,9 +17,9 @@ import com.primerevenue.osci.utils.Synchronizer;
  *
  **/
 
-public class CMModReportsTestNG9 extends PRBase{
+public class CMModReportsTestNG10 extends PRBase{
 	
-	final static Logger logger = Logger.getLogger(CMModReportsTestNG9.class);
+	final static Logger logger = Logger.getLogger(CMModReportsTestNG10.class);
 
 	@Test
 	public void cmsmokeTest1() throws InterruptedException {

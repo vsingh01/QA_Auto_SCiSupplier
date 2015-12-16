@@ -1,6 +1,6 @@
 package com.primerevenue.osci.utils;
 
-import com.asprise.util.ocr.OCR;
+
 import com.primerevenue.osci.driver.PRBase;
 
 import org.apache.commons.io.comparator.LastModifiedFileComparator;
@@ -15,6 +15,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.primerevenue.osci.driver.Browser;
+
+
+
+
+
 
 //import org.sikuli.script.Key;
 import org.testng.ITestNGMethod;
@@ -775,4 +780,30 @@ public class SeleniumUtils {
 		}
 		System.out.println("file name :::::" + theNewestFile);
 	}
+
+	public static void switchWindows() {
+
+		//Get all window handles
+				Set<String> allHandles = Browser.eDriver.getWindowHandles();
+
+				//count the handles Here count is=2
+				System.out.println("Count of windows:"+allHandles.size());      
+
+				//Get current handle or default handle
+				String currentWindowHandle = allHandles.iterator().next();
+				System.out.println("currentWindow Handle"+currentWindowHandle);
+
+				//Remove first/default Handle
+				allHandles.remove(allHandles.iterator().next());
+
+				//get the last Window Handle
+				String lastHandle = allHandles.iterator().next();
+				System.out.println("last window handle"+lastHandle);
+
+				//switch to second/last window, because we know there are only two windows 1-parent window 2-other window(ad window)
+				Browser.eDriver.switchTo().window(lastHandle);
+				System.out.println(Browser.eDriver.getTitle());
+				Browser.eDriver.findElement(By.tagName("body")).click();
+	}	
 }
+

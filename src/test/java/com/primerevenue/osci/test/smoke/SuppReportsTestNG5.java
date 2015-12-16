@@ -23,7 +23,7 @@ public class SuppReportsTestNG5 extends PRBase {
 	public void smokeTestReports() throws InterruptedException {
 		Synchronizer.implicitWait(10);
 		login(SUPP_USER);
-
+		Synchronizer.implicitWait(5);
 		SCiSupplierSuppMenu testMenusupp1 = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierSuppMenu.class);
 

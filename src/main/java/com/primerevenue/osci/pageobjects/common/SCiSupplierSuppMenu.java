@@ -60,6 +60,9 @@ public class SCiSupplierSuppMenu {
 	@FindBy(xpath = "//a[contains(text(),'Payment Obligation Notification Report')]")
 	public WebElement ponReport;
 	
+	@FindBy(id = "watATF")
+	public WebElement avialToFund;
+	
 	
 	
 
@@ -308,4 +311,26 @@ PageFactory.initElements(Browser.eDriver, this);
 					logger.error("Failed, ponReport click");
 				}
 			}
+	public void menuToAvailableToFund()	{
+		PageFactory.initElements(Browser.eDriver, this);
+		
+		try {
+			SeleniumUtils.click(userMenu);
+			logger.debug("Successful, userMenu click.");
+		} catch (Exception e) {
+			logger.error("Failed, userMenu click");
+		}
+		try {
+			SeleniumUtils.click(funding);
+			logger.debug("Successful, funding click.");
+		} catch (Exception e) {
+			logger.error("Failed, funding click");
+		}
+		try {
+			SeleniumUtils.click(avialToFund);
+			logger.debug("Successful, avialToFund click.");
+		} catch (Exception e) {
+			logger.error("Failed, avialToFund click");
+		}
+	}
 }

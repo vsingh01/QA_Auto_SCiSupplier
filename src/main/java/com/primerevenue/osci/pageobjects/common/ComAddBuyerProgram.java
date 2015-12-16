@@ -1,7 +1,5 @@
 package com.primerevenue.osci.pageobjects.common;
 
-import java.io.IOException;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,6 +9,7 @@ import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 
+import java.util.regex.*;
 /**
  * @author Sai Amuluru;
  *
@@ -116,22 +115,24 @@ public class ComAddBuyerProgram {
 				supplierActivityReportTitle);
 		boolean title = SeleniumUtils.isTextPresent("Supplier Activity Report");
 		System.out.println("Supplier Activity Report Title verified: : :"+ title);
+		Synchronizer.explicitWait(2);
 	}
 
 	public void buyerMaturePayForcastReport() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
-
+				
 		SeleniumUtils.click(run);
-		Synchronizer.explicitWait(5);
-		Runtime.getRuntime().exec(
-				"C:/jar/autoTest.exe");
+				
+		/*Runtime.getRuntime().exec(
+				"C:/jar/autoTest.exe");*/
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
 		System.out.println(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		SeleniumUtils.deleteFile("C:/Users/samuluru/Downloads", "PDF");
+		String username = System.getProperty("user.name");
+		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 		
 
 	}

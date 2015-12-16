@@ -15,614 +15,850 @@ import java.util.Properties;
 
 public class DatabaseUtil extends PropertiesUtil {
 
-    public static Logger logger = Logger.getLogger(DatabaseUtil.class);
-
-    private static String MYSQL_HOST;
-    private static String MYSQL_USER;
-    private static String MYSQL_PASSWORD;
-    private static String MYSQL_SCHEMA_ADMIN;
-    private static String MYSQL_SCHEMA_CLIENT;
-    private static String MYSQL_SCHEMA;
-    private static String MYSQL_TABLE;
-    private static String MYSQL_URL;
-
-    static Connection connection = null;
-    ResultSet resultSet = null;
-
-    //oracle
-    private static String ORACLE_HOST;
-    private static String ORACLE_SID;
-    private static String ORACLE_SCHEMA_ADMIN;
-    private static String ORACLE_SCHEMA_CLIENT;
-    private static String ORACLE_PORT;
-    private static String ORACLE_USER;
-    private static String ORACLE_PASSWORD;
-
-    public static void initMySql() {
-        Properties dbProp = PRBase.setupProp;
-
-        //MySql
-        setHost(dbProp.getProperty("mysql.host"));
-        setUser(dbProp.getProperty("mysql.user"));
-        setPassword(dbProp.getProperty("mysql.password"));
-        setSchemaAdmin(dbProp.getProperty("mysql.schema.admin"));
-        setSchemaClient(dbProp.getProperty("mysql.schema.client"));
-
-       // MYSQL_URL = "jdbc:sqlserver://" + MYSQL_HOST + "?user=" + MYSQL_USER + "&password=" + MYSQL_PASSWORD;
-        MYSQL_URL = "jdbc:sqlserver://" + MYSQL_HOST + ";" +"username=" + MYSQL_USER + ";" +"password=" + MYSQL_PASSWORD;
-       // MYSQL_URL = "jdbc:sqlserver://" +  ";" + "servername" + "=" + MYSQL_HOST + ";" + "integratedSecurity" + "=" + "true";
-          //MYSQL_URL = "jdbc:sqlserver://;servername=172.18.2.15;integratedSecurity=true";
-    }
-
-    public static Connection getMySqlConnection() {
-        initMySql();
-        String connectionUrl = getConnectionUrl();
-        try {
-            logger.debug("Attempting MySql connection: " + connectionUrl);
-            connection = DriverManager.getConnection(connectionUrl);
-            logger.debug("Successful MySql connection: " + connectionUrl);
-            Thread.sleep(5000);
-        } catch (SQLException e) {
-            logger.error("Failed MySql connection: " + connectionUrl + "\n" + e.getMessage());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        return connection;
-
-    }
+	public static Logger logger = Logger.getLogger(DatabaseUtil.class);
+
+	private static String MYSQL_HOST;
+	private static String MYSQL_USER;
+	private static String MYSQL_PASSWORD;
+	private static String MYSQL_SCHEMA_ADMIN;
+	private static String MYSQL_SCHEMA_CLIENT;
+	private static String MYSQL_SCHEMA;
+	private static String MYSQL_TABLE;
+	private static String MYSQL_URL;
+
+	static Connection connection = null;
+	ResultSet resultSet = null;
+
+	// oracle
+	private static String ORACLE_HOST;
+	private static String ORACLE_SID;
+	private static String ORACLE_SCHEMA_ADMIN;
+	private static String ORACLE_SCHEMA_CLIENT;
+	private static String ORACLE_PORT;
+	private static String ORACLE_USER;
+	private static String ORACLE_PASSWORD;
+
+	public String supplierID;
+	public String fieldID;
+
+	public static void initMySql() {
+		Properties dbProp = PRBase.setupProp;
+
+		// MySql
+		setHost(dbProp.getProperty("mysql.host"));
+		setUser(dbProp.getProperty("mysql.user"));
+		setPassword(dbProp.getProperty("mysql.password"));
+		setSchemaAdmin(dbProp.getProperty("mysql.schema.admin"));
+		setSchemaClient(dbProp.getProperty("mysql.schema.client"));
+
+		// MYSQL_URL = "jdbc:sqlserver://" + MYSQL_HOST + "?user=" + MYSQL_USER
+		// + "&password=" + MYSQL_PASSWORD;
+		MYSQL_URL = "jdbc:sqlserver://" + MYSQL_HOST + ";" + "username="
+				+ MYSQL_USER + ";" + "password=" + MYSQL_PASSWORD;
+		// MYSQL_URL = "jdbc:sqlserver://" + ";" + "servername" + "=" +
+		// MYSQL_HOST + ";" + "integratedSecurity" + "=" + "true";
+		// MYSQL_URL =
+		// "jdbc:sqlserver://;servername=172.18.2.15;integratedSecurity=true";
+	}
+
+	public static Connection getMySqlConnection() {
+		initMySql();
+		String connectionUrl = getConnectionUrl();
+		try {
+			logger.debug("Attempting MySql connection: " + connectionUrl);
+			connection = DriverManager.getConnection(connectionUrl);
+			logger.debug("Successful MySql connection: " + connectionUrl);
+			Thread.sleep(5000);
+		} catch (SQLException e) {
+			logger.error("Failed MySql connection: " + connectionUrl + "\n"
+					+ e.getMessage());
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
+		return connection;
+
+	}
 
-    public ResultSet getResults() {
+	public ResultSet getResults() {
 
-        //String sqlQuery = "select * from " + getSchema() + "." + getTable();
-        String sqlQuery = "select referenceId from MagellanReporting.dbo.BuyOffer where buyerId =2";
-        
-        Statement stmt = null;
+		// String sqlQuery = "select * from " + getSchema() + "." + getTable();
+		String sqlQuery = "select referenceId from MagellanReporting.dbo.BuyOffer where buyerId =2";
 
-        try {
-            stmt = connection.createStatement();
-        } catch (SQLException e) {
-            logger.error("Failed MySql create statement: " + e.getMessage());
-        }
+		Statement stmt = null;
 
-        ResultSet rs = null;
-        try {
-            rs = stmt.executeQuery(sqlQuery);
-            //System.out.println(rs.getObject("referenceId").toString());
-            
-        } catch (SQLException e) {
-            logger.error("Failed MySql execute statement: " + e.getMessage());
-        }
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e) {
+			logger.error("Failed MySql create statement: " + e.getMessage());
+		}
 
-        setResultSet(rs);
-       
-         
-        return rs;
+		ResultSet rs = null;
+		try {
+			rs = stmt.executeQuery(sqlQuery);
+			// System.out.println(rs.getObject("referenceId").toString());
 
-    }
+		} catch (SQLException e) {
+			logger.error("Failed MySql execute statement: " + e.getMessage());
+		}
 
-    public ResultSet getResultsWithLimit(int startRow, int maxRowsToFetch) {
+		setResultSet(rs);
 
-        String sqlQuery = "select * from " + getSchema() + "." + getTable() + " LIMIT " + startRow + "," + maxRowsToFetch;
+		return rs;
 
-        Statement stmt = null;
+	}
 
-        try {
-            stmt = connection.createStatement();
-        } catch (SQLException e) {
-            logger.error("Failed MySql create statement: " + e.getMessage());
-        }
+	public ResultSet getResultsWithLimit(int startRow, int maxRowsToFetch) {
 
-        ResultSet rs = null;
-        try {
-            rs = stmt.executeQuery(sqlQuery);
-        } catch (SQLException e) {
-            logger.error("Failed MySql execute statement: " + e.getMessage());
-        }
+		String sqlQuery = "select * from " + getSchema() + "." + getTable()
+				+ " LIMIT " + startRow + "," + maxRowsToFetch;
 
-        setResultSet(rs);
+		Statement stmt = null;
 
-        return rs;
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e) {
+			logger.error("Failed MySql create statement: " + e.getMessage());
+		}
 
-    }
+		ResultSet rs = null;
+		try {
+			rs = stmt.executeQuery(sqlQuery);
+		} catch (SQLException e) {
+			logger.error("Failed MySql execute statement: " + e.getMessage());
+		}
 
-    public void closeConnection() {
+		setResultSet(rs);
 
-        try {
-            if (connection != null)
-                connection.close();
-            logger.debug("Successful MySql connection closed.");
-        } catch (SQLException e) {
-            logger.error("Failed MySql connection close !!");
-            e.printStackTrace();
-        }
+		return rs;
 
-    }
+	}
 
-    public void printResults(ResultSet rs) {
+	public void closeConnection() {
 
-        try {
-            while (rs.next()) {
+		try {
+			if (connection != null)
+				connection.close();
+			logger.debug("Successful MySql connection closed.");
+		} catch (SQLException e) {
+			logger.error("Failed MySql connection close !!");
+			e.printStackTrace();
+		}
 
-                String referenceId = rs.getString("referenceId");
-                //String username = rs.getString("username");
-                System.out.println(referenceId);
-                //logger.info(usergroup + ", " + username);
+	}
 
-            }
-        } catch (SQLException e) {
-            logger.info("Failed MySql print results," + e.getMessage());
-        }
+	public void printResults(ResultSet rs) {
 
-    }
+		try {
+			while (rs.next()) {
 
-    public int getColumnCount() {
+				// String referenceId = rs.getString("referenceId");
+				String supplierid = rs.getString("supplierid");
+				// String username = rs.getString("username");
+				System.out.println(supplierid);
+				// logger.info(usergroup + ", " + username);
+				this.supplierID = supplierid;
+				
+			}
+		} catch (SQLException e) {
+			logger.info("Failed MySql print results," + e.getMessage());
+		}
 
-        Integer columnCount = null;
+	}
 
-        try {
+	public int getColumnCount() {
 
-            ResultSetMetaData rsmd = resultSet.getMetaData();
+		Integer columnCount = null;
 
-            columnCount = rsmd.getColumnCount();
+		try {
 
-        } catch (SQLException e) {
+			ResultSetMetaData rsmd = resultSet.getMetaData();
 
-            logger.info("Failed MySql getting column count," + e.getMessage());
+			columnCount = rsmd.getColumnCount();
 
-        }
+		} catch (SQLException e) {
 
-        return columnCount;
+			logger.info("Failed MySql getting column count," + e.getMessage());
 
-    }
+		}
 
-    public int getColumnCount(ResultSet rs) {
-        Integer columnCount = null;
+		return columnCount;
 
-        try {
+	}
 
-            ResultSetMetaData rsmd = resultSet.getMetaData();
+	public int getColumnCount(ResultSet rs) {
+		Integer columnCount = null;
 
-            columnCount = rsmd.getColumnCount();
+		try {
 
-        } catch (SQLException e) {
+			ResultSetMetaData rsmd = resultSet.getMetaData();
 
-            logger.info("Failed MySql getting column count," + e.getMessage());
+			columnCount = rsmd.getColumnCount();
 
-        }
+		} catch (SQLException e) {
 
-        return columnCount;
-    }
+			logger.info("Failed MySql getting column count," + e.getMessage());
 
-    public int getRowCount() {
+		}
 
-        Integer rowCount = null;
+		return columnCount;
+	}
 
-        try {
+	public int getRowCount() {
 
-            resultSet.last();
+		Integer rowCount = null;
 
-            rowCount = resultSet.getRow();
+		try {
 
-            resultSet.beforeFirst();
+			resultSet.last();
 
-        } catch (SQLException e) {
+			rowCount = resultSet.getRow();
 
-            logger.info("Failed MySql getting row count," + e.getMessage());
+			resultSet.beforeFirst();
 
-        }
+		} catch (SQLException e) {
 
-        return rowCount;
+			logger.info("Failed MySql getting row count," + e.getMessage());
 
-    }
+		}
 
-    public int getRowCount(ResultSet rs) {
-        Integer rowCount = null;
+		return rowCount;
 
-        try {
+	}
 
-            resultSet.last();
+	public int getRowCount(ResultSet rs) {
+		Integer rowCount = null;
 
-            rowCount = resultSet.getRow();
+		try {
 
-            resultSet.beforeFirst();
+			resultSet.last();
 
-        } catch (SQLException e) {
+			rowCount = resultSet.getRow();
 
-            logger.info("Failed MySql getting row count," + e.getMessage());
+			resultSet.beforeFirst();
 
-        }
+		} catch (SQLException e) {
 
-        return rowCount;
-    }
+			logger.info("Failed MySql getting row count," + e.getMessage());
 
-    public Object getDataObject() {
-        /***
-         * Multi-dimensional array for TestNG DataProvider
-         */
+		}
 
-        int maxRow = getRowCount();
+		return rowCount;
+	}
 
-        int maxColumn = getColumnCount();
+	public Object getDataObject() {
+		/***
+		 * Multi-dimensional array for TestNG DataProvider
+		 */
 
-        Object[][][] objData = new Object[maxRow][1][maxColumn];
+		int maxRow = getRowCount();
 
-        try {
-            this.resultSet.first();
+		int maxColumn = getColumnCount();
 
-            // Iterate throw the rows
-            for (int row = 1; row <= maxRow; row++) {
-                this.resultSet.absolute(row);
+		Object[][][] objData = new Object[maxRow][1][maxColumn];
 
-                String rValue = getDataValue(row);
+		try {
+			this.resultSet.first();
 
-                // Iterate through the columns
-                for (int column = 1; column <= maxColumn; column++) {
+			// Iterate throw the rows
+			for (int row = 1; row <= maxRow; row++) {
+				this.resultSet.absolute(row);
 
-                    String cValue = getDataValue(column);
+				String rValue = getDataValue(row);
 
-                    objData[row - 1][0][column - 1] = cValue;
+				// Iterate through the columns
+				for (int column = 1; column <= maxColumn; column++) {
 
-                    logger.info("Row " + row + "| Column " + column + ", " + rValue + " | " + cValue);
+					String cValue = getDataValue(column);
 
-                }
+					objData[row - 1][0][column - 1] = cValue;
 
-            }
-        } catch (Exception e) {
-            logger.error("Failed MySql getting data object." + e.getMessage());
-        }
+					logger.info("Row " + row + "| Column " + column + ", "
+							+ rValue + " | " + cValue);
 
-        return objData;
+				}
 
-    }
+			}
+		} catch (Exception e) {
+			logger.error("Failed MySql getting data object." + e.getMessage());
+		}
 
-    public Object[][][] getDataForDataProvider() {
-        Object[][][] data = null;
+		return objData;
 
-        try {
-            ResultSet rs = getResults();
-            int maxRow = getRowCount(rs);
+	}
 
-            int maxColumn = getColumnCount(rs);
-            data = new Object[maxRow][1][maxColumn];
+	public Object[][][] getDataForDataProvider() {
+		Object[][][] data = null;
 
-            for (int row = 1; row <= maxRow; row++) {
-                rs.absolute(row);
+		try {
+			ResultSet rs = getResults();
+			int maxRow = getRowCount(rs);
 
-                String rValue = getDataValue(row);
-                for (int column = 1; column <= maxColumn; column++) {
+			int maxColumn = getColumnCount(rs);
+			data = new Object[maxRow][1][maxColumn];
 
-                    String cValue = getDataValue(column);
+			for (int row = 1; row <= maxRow; row++) {
+				rs.absolute(row);
 
-                    data[row - 1][0][column - 1] = cValue;
+				String rValue = getDataValue(row);
+				for (int column = 1; column <= maxColumn; column++) {
 
-                    logger.debug("Row " + row + "| Column " + column + ", " + rValue + " | " + cValue);
+					String cValue = getDataValue(column);
 
-                }
-            }
-        } catch (SQLException exception) {
-            logger.info("Fail to get data for data provider");
-        }
+					data[row - 1][0][column - 1] = cValue;
 
-        return data;
+					logger.debug("Row " + row + "| Column " + column + ", "
+							+ rValue + " | " + cValue);
 
-    }
+				}
+			}
+		} catch (SQLException exception) {
+			logger.info("Fail to get data for data provider");
+		}
 
-    public Object[][][] getDataForDataProvider1() throws SQLException {
-        Object[][][] obj = null;
+		return data;
 
-        try {
-            ResultSet rs = getResults();
-            int maxRow = getRowCount(rs);
+	}
 
-            int maxColumn = getColumnCount(rs);
-            obj = new Object[2][maxRow][maxColumn];
-            for (int tableNo = 0; tableNo < 2; tableNo++) {
-                for (int row = 1; row <= maxRow; row++) {
-                    rs.absolute(row);
+	public Object[][][] getDataForDataProvider1() throws SQLException {
+		Object[][][] obj = null;
 
-                    String rValue = getDataValue(row);
-                    for (int column = 1; column <= maxColumn; column++) {
+		try {
+			ResultSet rs = getResults();
+			int maxRow = getRowCount(rs);
 
-                        String cValue = getDataValue(column);
+			int maxColumn = getColumnCount(rs);
+			obj = new Object[2][maxRow][maxColumn];
+			for (int tableNo = 0; tableNo < 2; tableNo++) {
+				for (int row = 1; row <= maxRow; row++) {
+					rs.absolute(row);
 
-                        obj[tableNo][row - 1][column - 1] = cValue;
+					String rValue = getDataValue(row);
+					for (int column = 1; column <= maxColumn; column++) {
 
-                        logger.debug("Row " + row + "| Column " + column + ", " + rValue + " | " + cValue);
+						String cValue = getDataValue(column);
 
-                    }
-                }
-            }
-        } catch (SQLException exception) {
-            logger.info("Fail to get data for data provider");
-        }
+						obj[tableNo][row - 1][column - 1] = cValue;
 
-        return obj;
+						logger.debug("Row " + row + "| Column " + column + ", "
+								+ rValue + " | " + cValue);
 
-    }
+					}
+				}
+			}
+		} catch (SQLException exception) {
+			logger.info("Fail to get data for data provider");
+		}
 
-    public HashMap dataObjectToDataMap(Object[] data, ResultSet rs) {
+		return obj;
 
-        HashMap dataMap = new HashMap();
+	}
 
-        int columnCount = getColumnCount(rs);
+	public HashMap dataObjectToDataMap(Object[] data, ResultSet rs) {
 
-        String[] columnNames = getColumnNames();
+		HashMap dataMap = new HashMap();
 
-        for (int i = 0; i < columnCount; i++) {
+		int columnCount = getColumnCount(rs);
 
-            dataMap.put(columnNames[i], (String) data[i]);
+		String[] columnNames = getColumnNames();
 
-        }
+		for (int i = 0; i < columnCount; i++) {
 
-        return dataMap;
+			dataMap.put(columnNames[i], (String) data[i]);
 
-    }
+		}
 
-    public String[] getColumnNames() {
-        String[] colNames;
+		return dataMap;
 
-        int maxColumn = getColumnCount();
-        colNames = new String[maxColumn];
+	}
 
-        ResultSetMetaData rsMetaData = null;
+	public String[] getColumnNames() {
+		String[] colNames;
 
-        try {
+		int maxColumn = getColumnCount();
+		colNames = new String[maxColumn];
 
-            rsMetaData = resultSet.getMetaData();
+		ResultSetMetaData rsMetaData = null;
 
-        } catch (SQLException e) {
+		try {
 
-            logger.error("Failed getting result set meta data, " + e.getMessage());
+			rsMetaData = resultSet.getMetaData();
 
-        }
+		} catch (SQLException e) {
 
-        try {
+			logger.error("Failed getting result set meta data, "
+					+ e.getMessage());
 
-            // get the column names; column indexes start from 1
-            for (int i = 1; i < maxColumn + 1; i++) {
+		}
 
-                String columnName = rsMetaData.getColumnName(i);
-                colNames[i - 1] = columnName;
+		try {
 
-                // Get the name of the column's table name
-                String tableName = rsMetaData.getTableName(i);
-                logger.info("column name=" + columnName + " table=" + tableName + "");
+			// get the column names; column indexes start from 1
+			for (int i = 1; i < maxColumn + 1; i++) {
 
-            }
+				String columnName = rsMetaData.getColumnName(i);
+				colNames[i - 1] = columnName;
 
-            return colNames;
+				// Get the name of the column's table name
+				String tableName = rsMetaData.getTableName(i);
+				logger.info("column name=" + columnName + " table=" + tableName
+						+ "");
 
-        } catch (Exception e) {
+			}
 
-            logger.error("Failed getting the column names, " + e.getMessage());
-            return null;
+			return colNames;
 
-        }
+		} catch (Exception e) {
 
+			logger.error("Failed getting the column names, " + e.getMessage());
+			return null;
 
-    }
+		}
 
-    public String getDataValue(String columnName) {
-        String value = null;
-        try {
-            value = resultSet.getString(columnName).trim();
-        } catch (Exception e) {
-            logger.error("Missing data column: " + columnName + "\n" + e.getMessage());
-        }
-        return value;
-    }
+	}
 
-    public String getDataValue(int columnIndex) {
-        String value = null;
-        try {
-            value = resultSet.getString(columnIndex).trim();
-        } catch (Exception e) {
-            logger.error("Missing data column: " + columnIndex + "\n" + e.getMessage());
-        }
-        return value;
-    }
+	public String getDataValue(String columnName) {
+		String value = null;
+		try {
+			value = resultSet.getString(columnName).trim();
+		} catch (Exception e) {
+			logger.error("Missing data column: " + columnName + "\n"
+					+ e.getMessage());
+		}
+		return value;
+	}
 
-    public String getDataValue(int columnIndex, ResultSet rs) {
-        String value = null;
-        try {
-            value = rs.getString(columnIndex).trim();
-        } catch (Exception e) {
-            logger.error("Missing data column: " + columnIndex + "\n" + e.getMessage());
-        }
-        return value;
-    }
+	public String getDataValue(int columnIndex) {
+		String value = null;
+		try {
+			value = resultSet.getString(columnIndex).trim();
+		} catch (Exception e) {
+			logger.error("Missing data column: " + columnIndex + "\n"
+					+ e.getMessage());
+		}
+		return value;
+	}
 
-    // Get
+	public String getDataValue(int columnIndex, ResultSet rs) {
+		String value = null;
+		try {
+			value = rs.getString(columnIndex).trim();
+		} catch (Exception e) {
+			logger.error("Missing data column: " + columnIndex + "\n"
+					+ e.getMessage());
+		}
+		return value;
+	}
 
-    public String getHost() {
-        return MYSQL_HOST;
-    }
+	// Get
 
-    public String getUser() {
-        return MYSQL_USER;
-    }
+	public String getHost() {
+		return MYSQL_HOST;
+	}
 
-    public String getPassword() {
-        return MYSQL_USER;
-    }
+	public String getUser() {
+		return MYSQL_USER;
+	}
 
-    public String getSchemaAdmin() {
-        return MYSQL_SCHEMA_ADMIN;
-    }
+	public String getPassword() {
+		return MYSQL_USER;
+	}
 
-    public String getSchemaClient() {
-        return MYSQL_SCHEMA_CLIENT;
-    }
+	public String getSchemaAdmin() {
+		return MYSQL_SCHEMA_ADMIN;
+	}
 
-    public String getTable() {
-        return MYSQL_TABLE;
-    }
+	public String getSchemaClient() {
+		return MYSQL_SCHEMA_CLIENT;
+	}
 
-    public String getSchema() {
-        return MYSQL_SCHEMA;
-    }
+	public String getTable() {
+		return MYSQL_TABLE;
+	}
 
-    public static String getConnectionUrl() {
-        return MYSQL_URL;
-    }
+	public String getSchema() {
+		return MYSQL_SCHEMA;
+	}
 
-    // Set
+	public static String getConnectionUrl() {
+		return MYSQL_URL;
+	}
 
-    public static void setHost(final String name) {
-        MYSQL_HOST = name;
-    }
+	// Set
 
-    public static void setUser(final String name) {
-        MYSQL_USER = name;
-    }
+	public static void setHost(final String name) {
+		MYSQL_HOST = name;
+	}
 
-    public static void setPassword(final String password) {
-        MYSQL_PASSWORD = password;
-    }
+	public static void setUser(final String name) {
+		MYSQL_USER = name;
+	}
 
-    public static void setSchemaAdmin(final String schema) {
-        MYSQL_SCHEMA_ADMIN = schema;
-    }
+	public static void setPassword(final String password) {
+		MYSQL_PASSWORD = password;
+	}
 
-    public static void setSchemaClient(final String schema) {
-        MYSQL_SCHEMA_CLIENT = schema;
-    }
+	public static void setSchemaAdmin(final String schema) {
+		MYSQL_SCHEMA_ADMIN = schema;
+	}
 
-    public static void setTable(final String table) {
-        MYSQL_TABLE = table;
-    }
+	public static void setSchemaClient(final String schema) {
+		MYSQL_SCHEMA_CLIENT = schema;
+	}
 
-    public static void setSchema(final String schema) {
-        MYSQL_SCHEMA = schema;
-    }
+	public static void setTable(final String table) {
+		MYSQL_TABLE = table;
+	}
 
-    public void setConnectionUrl() {
+	public static void setSchema(final String schema) {
+		MYSQL_SCHEMA = schema;
+	}
 
-        MYSQL_URL = "jdbc:mysql://" + MYSQL_HOST + "?user=" + MYSQL_USER + "&password=" + MYSQL_PASSWORD;
+	public void setConnectionUrl() {
 
-    }
+		MYSQL_URL = "jdbc:mysql://" + MYSQL_HOST + "?user=" + MYSQL_USER
+				+ "&password=" + MYSQL_PASSWORD;
 
-    public void setResultSet(ResultSet rs) {
-        resultSet = rs;
-    }
+	}
 
-    public static void setOracleSID(String oracleSID) {
-        ORACLE_SID = oracleSID;
-    }
+	public void setResultSet(ResultSet rs) {
+		resultSet = rs;
+	}
 
-    public static String getOracleSID() {
-        return ORACLE_SID;
-    }
+	public static void setOracleSID(String oracleSID) {
+		ORACLE_SID = oracleSID;
+	}
 
-    public static void setOracleHost(String oracleHost) {
-        ORACLE_HOST = oracleHost;
-    }
+	public static String getOracleSID() {
+		return ORACLE_SID;
+	}
 
-    public static String getOracleHost() {
-        return ORACLE_HOST;
-    }
+	public static void setOracleHost(String oracleHost) {
+		ORACLE_HOST = oracleHost;
+	}
 
-    public static void setOracleSchemaAdmin(String oracleSchemaAdmin) {
-        ORACLE_SCHEMA_ADMIN = oracleSchemaAdmin;
-    }
+	public static String getOracleHost() {
+		return ORACLE_HOST;
+	}
 
-    public static String getOracleSchemaAdmin() {
-        return ORACLE_SCHEMA_ADMIN;
-    }
+	public static void setOracleSchemaAdmin(String oracleSchemaAdmin) {
+		ORACLE_SCHEMA_ADMIN = oracleSchemaAdmin;
+	}
 
-    public static void setOracleSchemaClient(String oracleSchemaClient) {
-        ORACLE_SCHEMA_CLIENT = oracleSchemaClient;
-    }
+	public static String getOracleSchemaAdmin() {
+		return ORACLE_SCHEMA_ADMIN;
+	}
 
-    public static String getOracleSchemaClient() {
-        return ORACLE_SCHEMA_CLIENT;
-    }
+	public static void setOracleSchemaClient(String oracleSchemaClient) {
+		ORACLE_SCHEMA_CLIENT = oracleSchemaClient;
+	}
 
-    public static void setOraclePort(String oraclePort) {
-        ORACLE_PORT = oraclePort;
-    }
+	public static String getOracleSchemaClient() {
+		return ORACLE_SCHEMA_CLIENT;
+	}
 
-    public static String getOraclePort() {
-        return ORACLE_PORT;
-    }
+	public static void setOraclePort(String oraclePort) {
+		ORACLE_PORT = oraclePort;
+	}
 
-    public static void setOracleUser(String oracleUser) {
-        ORACLE_USER = oracleUser;
-    }
+	public static String getOraclePort() {
+		return ORACLE_PORT;
+	}
 
-    public static String setOracleUser() {
-        return ORACLE_USER;
-    }
+	public static void setOracleUser(String oracleUser) {
+		ORACLE_USER = oracleUser;
+	}
 
-    public static void setOraclePassword(String oraclePassword) {
-        ORACLE_PASSWORD = oraclePassword;
-    }
+	public static String setOracleUser() {
+		return ORACLE_USER;
+	}
 
-    public static String getOraclePassword() {
-        return ORACLE_PASSWORD;
-    }
+	public static void setOraclePassword(String oraclePassword) {
+		ORACLE_PASSWORD = oraclePassword;
+	}
 
-    private static void initOracleProperties() {
-        Properties dbProp = PRBase.setupProp;
-        //oracle
-        setOracleHost(dbProp.getProperty("oracle.host"));
-        setOracleSID(dbProp.getProperty("oracle.sid"));
-        setOracleSchemaAdmin(dbProp.getProperty("oracle.schema.admin"));
-        setOracleSchemaClient(dbProp.getProperty("oracle.schema.client"));
-        setOraclePort(dbProp.getProperty("oracle.port"));
-        setOracleUser(dbProp.getProperty("oracle.user"));
-        setOraclePassword(dbProp.getProperty("oracle.password"));
-    }
+	public static String getOraclePassword() {
+		return ORACLE_PASSWORD;
+	}
 
-    public static Connection getOracleConnection() {
-        initOracleProperties();
-        Connection conn = null;
-        try {
-            conn = DriverManager.getConnection("jdbc:oracle:thin:" + ORACLE_SCHEMA_CLIENT + "/" + ORACLE_PASSWORD +
-                    "@" + ORACLE_HOST + ":" + ORACLE_PORT + ":" + ORACLE_SID);                 
-                       
-        } catch (SQLException ex) {
-            // handle any errors
-            logger.error("SQLException: " + ex.getMessage() + "\n" +
-                    "SQLState: " + ex.getSQLState() + "\n" +
-                    "VendorError: " + ex.getErrorCode());
+	private static void initOracleProperties() {
+		Properties dbProp = PRBase.setupProp;
+		// oracle
+		setOracleHost(dbProp.getProperty("oracle.host"));
+		setOracleSID(dbProp.getProperty("oracle.sid"));
+		setOracleSchemaAdmin(dbProp.getProperty("oracle.schema.admin"));
+		setOracleSchemaClient(dbProp.getProperty("oracle.schema.client"));
+		setOraclePort(dbProp.getProperty("oracle.port"));
+		setOracleUser(dbProp.getProperty("oracle.user"));
+		setOraclePassword(dbProp.getProperty("oracle.password"));
+	}
 
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException sqlEx) {
-                
-                } // ignore
-            }
-        }
-        //end try select
-        return conn;
-    }
+	public static Connection getOracleConnection() {
+		initOracleProperties();
+		Connection conn = null;
+		try {
+			conn = DriverManager.getConnection("jdbc:oracle:thin:"
+					+ ORACLE_SCHEMA_CLIENT + "/" + ORACLE_PASSWORD + "@"
+					+ ORACLE_HOST + ":" + ORACLE_PORT + ":" + ORACLE_SID);
 
-    public static ResultSet getOracleResultSet(String sqlQuery) {
-        Connection conn = null;
-        Statement stmt = null;
-        ResultSet rsQuery = null;
+		} catch (SQLException ex) {
+			// handle any errors
+			logger.error("SQLException: " + ex.getMessage() + "\n"
+					+ "SQLState: " + ex.getSQLState() + "\n" + "VendorError: "
+					+ ex.getErrorCode());
 
-        try {
-            conn = getOracleConnection();
-            stmt = conn.createStatement();
-            rsQuery = stmt.executeQuery(sqlQuery);
-        } catch (SQLException ex) {
-            // handle any errors
-            logger.error("SQLException: " + ex.getMessage() + "\n" +
-                    "SQLState: " + ex.getSQLState() + "\n" +
-                    "VendorError: " + ex.getErrorCode());
+			if (conn != null) {
+				try {
+					conn.close();
+				} catch (SQLException sqlEx) {
 
-            if (rsQuery != null) {
-                try {
-                    rsQuery.close();
-                } catch (SQLException sqlEx) {
-                } // ignore
-            }
-        }//end try select
+				} // ignore
+			}
+		}
+		// end try select
+		return conn;
+	}
 
-        return rsQuery;
-    }
+	public static ResultSet getOracleResultSet(String sqlQuery) {
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rsQuery = null;
+
+		try {
+			conn = getOracleConnection();
+			stmt = conn.createStatement();
+			rsQuery = stmt.executeQuery(sqlQuery);
+		} catch (SQLException ex) {
+			// handle any errors
+			logger.error("SQLException: " + ex.getMessage() + "\n"
+					+ "SQLState: " + ex.getSQLState() + "\n" + "VendorError: "
+					+ ex.getErrorCode());
+
+			if (rsQuery != null) {
+				try {
+					rsQuery.close();
+				} catch (SQLException sqlEx) {
+				} // ignore
+			}
+		}// end try select
+
+		return rsQuery;
+	}
+
+	/*---------------------------------------------------------*/
+
+	public ResultSet getSupIdResults() {
+
+		// String sqlQuery = "select * from " + getSchema() + "." + getTable();
+		String sqlQuery = "select supplierid from magellanrelations..supplier where companyName = 'AmulSupp'";
+
+		Statement stmt = null;
+
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e) {
+			logger.error("Failed MySql create statement: " + e.getMessage());
+		}
+
+		ResultSet rs = null;
+
+		try {
+			rs = stmt.executeQuery(sqlQuery);
+			printResults(rs);
+
+			String sqlQuery1 = "delete from magellanrelations..Audit_Supplier where supplierid = '553'";
+
+			rs = stmt.executeQuery(sqlQuery1);
+
+		} catch (SQLException e) {
+			logger.error("Failed MySql execute statement: " + e.getMessage());
+		}
+
+		setResultSet(rs);
+
+		return rs;
+
+	}
+
+	public ResultSet delSupId() {
+
+		 //String sqlQuery = "select * from " + getSchema() + "." + getTable();
+		String sqlQuery = "select supplierid from magellanrelations..supplier where companyName = 'AmulSupp'";
+
+		Statement stmt = null;
+
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e) {
+			logger.error("Failed MySql create statement: " + e.getMessage());
+		}
+
+		ResultSet rs = null;
+
+		try {
+			rs = stmt.executeQuery(sqlQuery);
+			printResults(rs);
+
+			System.out.println("::" + supplierID);
+
+			String sqlQuery1 = "delete from magellanrelations..SavedSearch where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..Audit_Supplier where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..AutoAdvanceDates where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..SupplierBuyerProgram where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..SupplierBuyerProgramHistory where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..SavedReport where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..supplier where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..TaxReport where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..CreditMemoTemporary where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..TempWorkSpaceMapping where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..TempWorkspaceBuyerProgramReserves where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..output_BuyOffer where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..output_CreditMemo where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..output_SellOffer where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..output_TaxReport where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..NotifyUploads where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..BuyOffer where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..SellOffer where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..CreditMemo where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..PaymentObligation where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..PaymentObligationTemporary where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from MagellanWarehouse..SellOfferNotify where supplierid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..ProblemHistory where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..Users where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..UsersView where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..BankAccountView where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..SavedReport where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..TaskInstance where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..SSRSScheduledReports where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..taxProfile where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..IPAssignment where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..BankAccount where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanrelations..Exchange where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanwarehouse..EntityProcessStateTransition where departmentcode = '04' and entityid = '"
+					+ supplierID
+					+ "'"
+					+ "delete from magellanwarehouse..Audit_EntityProcessStateTransition where departmentcode = '04' and EntityId = '"
+					+ supplierID + "'";
+
+			rs = stmt.executeQuery(sqlQuery1);
+
+		} catch (SQLException e) {
+			logger.error("Failed MySql execute statement: " + e.getMessage());
+		}
+
+		setResultSet(rs);
+
+		return rs;
+
+	}
+
+	public ResultSet poTradedBQueries() {
+
+		String sqlQuery = "select top 1 fileId from  magellanwarehouse.dbo.POUpload order by fileUploadDate desc";
+
+		Statement stmt = null;
+
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e) {
+			logger.error("Failed MySql create statement: " + e.getMessage());
+		}
+
+		ResultSet rs = null;
+
+		try {
+			rs = stmt.executeQuery(sqlQuery);
+
+			while (rs.next()) {
+
+				String fieldId = rs.getString("fileId");
+				System.out.println(fieldId);
+				this.fieldID = fieldId;
+			}
+
+			// printResults(rs);
+
+			System.out.println("::" + fieldID);
+
+			String sqlQuery1 = "SELECT processingStatus FROM [MagellanReporting].[dbo].[PaymentObligation] where fileId ='"
+					+ fieldID + "' order by paymentobligationid desc";
+
+						
+			rs = stmt.executeQuery(sqlQuery1);
+
+		} catch (SQLException e) {
+			logger.error("Failed MySql execute statement: " + e.getMessage());
+		}
+
+		setResultSet(rs);
+
+		return rs;
+
+	}
 }

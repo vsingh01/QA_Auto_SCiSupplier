@@ -84,6 +84,14 @@ public class SCiSupplierFIMenu {
 
 	@FindBy(xpath = "//a[contains(text(),'Search')]")
 	public WebElement search;
+	
+	@FindBy(xpath = "//a[contains(text(),'Buy Offers')]")
+	public WebElement buyOffer;
+	
+	@FindBy(id = "documentType")
+	public WebElement documentType;
+	
+	
 
 	public void menuToAvailablePortfolios() {
 		PageFactory.initElements(Browser.eDriver, this);
@@ -166,4 +174,23 @@ public class SCiSupplierFIMenu {
 		SeleniumUtils.click(sumBookingReport);
 
 	}
+	public void menuToFIBuyOffer() {
+		PageFactory.initElements(Browser.eDriver, this);
+
+		SeleniumUtils.click(userMenu);
+		SeleniumUtils.click(tradingDesk);
+		SeleniumUtils.click(buyOffer);
+			
+	}
+	public void menuToFITrackDocumentsAndSearchBP() {
+		PageFactory.initElements(Browser.eDriver, this);
+		
+		SeleniumUtils.click(userMenu);
+		SeleniumUtils.click(trackDocuments);
+		SeleniumUtils.isTextPresent("Track Documents");
+		SeleniumUtils.selectOption(documentType, "EFT Statements");
+		SeleniumUtils.selectOption(currencyCode, "USD");
+		SeleniumUtils.click(search);
+	}
 }
+

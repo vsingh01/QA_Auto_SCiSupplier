@@ -19,8 +19,12 @@
 			<class name="com.primerevenue.osci.test.smoke.SupplierModPageNavTestNG6" />
 			<class name="com.primerevenue.osci.test.smoke.BuyerTestNG7"/>
 			<class name="com.primerevenue.osci.test.smoke.SPModReportsTestNG8" />
-			<class name="com.primerevenue.osci.test.smoke.CMModReportsTestNG9" />
-			<class name="com.primerevenue.osci.test.smoke.FIModReportTestNG10" />
+			<class name="com.primerevenue.osci.test.smoke.NewSupplierLoginEmailTestNG9" />
+			<class name="com.primerevenue.osci.test.smoke.CMModReportsTestNG10" />
+			<class name="com.primerevenue.osci.test.smoke.FIModReportTestNG11" />
+			<class name="com.primerevenue.osci.test.smoke.Otp2FATestNG12" />
+			<class name="com.primerevenue.osci.test.smoke.POPerformTradeTestNG13" />
+			<class name="com.primerevenue.osci.test.smoke.DBRollBackTestNG14" />
 
 		</classes>
 

@@ -54,6 +54,10 @@ public class SCiSupplierCOMMenu {
 	@FindBy(xpath = "//a[contains(text(),'Save')]")
 	public WebElement save;
 	
+	@FindBy(xpath = "//a[contains(text(),'Buy Offer Manual Distribution')]")
+	public WebElement bOManDistribution;
+	
+	
 	// Target Credit Capacity
 	
 	
@@ -173,4 +177,26 @@ public class SCiSupplierCOMMenu {
 		SeleniumUtils.click(buyerMaturepayForcastReport);
 
 	}
+	public void menuToBOManualDist() {
+		PageFactory.initElements(Browser.eDriver, this);
+
+		try {
+			SeleniumUtils.click(userMenu);
+			logger.debug("Successful, User Menu click.");
+		} catch (Exception e) {
+			logger.error("Failed, User Menu click");
+		}
+		try {
+			SeleniumUtils.click(buyerProgram);
+			logger.debug("Successful, Buyer Program click.");
+		} catch (Exception e) {
+			logger.error("Failed, Buyer Program  click");
+		}
+		try {
+			SeleniumUtils.click(bOManDistribution);
+			logger.debug("Successful, Buy Offer Manual Distribution click");
+		} catch (Exception e) {
+			logger.error("Failed, Buy Offer Manual Distribution  click");
+		}
+}
 }

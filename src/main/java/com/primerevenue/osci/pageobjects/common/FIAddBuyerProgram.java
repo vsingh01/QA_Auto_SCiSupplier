@@ -101,15 +101,16 @@ public class FIAddBuyerProgram {
 		SeleniumUtils.selectOption(pocurrencyCode, "USD");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
-		Runtime.getRuntime().exec(
-				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+		/*Runtime.getRuntime().exec(
+				"C:/jar/autoTest.exe");*/
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
 		System.out.println(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		SeleniumUtils.deleteFile("C:/Users/samuluru/Downloads", "PDF");
+		String username = System.getProperty("user.name");
+		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 
 	}
 
@@ -122,15 +123,16 @@ public class FIAddBuyerProgram {
 
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
-		Runtime.getRuntime().exec(
-				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+		/*Runtime.getRuntime().exec(
+				"C:/jar/autoTest.exe");*/
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
 		System.out.println(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		SeleniumUtils.deleteFile("C:/Users/samuluru/Downloads", "PDF");
+		String username = System.getProperty("user.name");
+		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 
 	}
 
@@ -141,15 +143,16 @@ public class FIAddBuyerProgram {
 		SeleniumUtils.selectOption(pocurrencyCode, "USD");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
-		Runtime.getRuntime().exec(
-				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+		/*Runtime.getRuntime().exec(
+				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");*/
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
 		System.out.println(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		SeleniumUtils.deleteFile("C:/Users/samuluru/Downloads", "PDF");
+		String username = System.getProperty("user.name");
+		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 
 	}
 

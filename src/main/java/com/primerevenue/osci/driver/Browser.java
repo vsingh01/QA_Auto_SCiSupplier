@@ -40,28 +40,7 @@ public class Browser {
 	// Browser Profile
 	public static String FIREFOX_PROFILE = "webdriver";
 
-	public static FirefoxProfile FirefoxDriverProfile() throws Exception {
-		FirefoxProfile profile = new FirefoxProfile();
-		profile.setPreference("browser.download.folderList", 1);
-		profile.setPreference("browser.download.manager.showWhenStarting",
-				false);
-		// profile.setPreference("browser.download.dir", downloadPath);
-		profile.setPreference(
-				"browser.helperApps.neverAsk.openFile",
-				"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/pdf,text/pdf");
-		profile.setPreference(
-				"browser.helperApps.neverAsk.saveToDisk",
-				"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/pdf,text/pdf");
-		profile.setPreference("browser.helperApps.alwaysAsk.force", false);
-		profile.setPreference("browser.download.manager.alertOnEXEOpen", false);
-		profile.setPreference("browser.download.manager.focusWhenStarting",
-				false);
-		profile.setPreference("browser.download.manager.useWindow", false);
-		profile.setPreference("browser.download.manager.showAlertOnComplete",
-				false);
-		profile.setPreference("browser.download.manager.closeWhenDone", false);
-		return profile;
-	}
+	public static String downloadPath = "C:/Users/samuluru/Downloads";
 
 	public static void open(String gridBrowser, String gridNodeIP,
 			String gridNodePort) {
@@ -135,12 +114,13 @@ public class Browser {
 			e.printStackTrace();
 		}
 		eDriver = new EventFiringWebDriver(driver);
-
+		
 	}
 
 	public static void initEventFiringWebDriver() {
 
 		eDriver = new EventFiringWebDriver(driver);
+				
 	}
 
 	public static void addBrowserListener() {
@@ -184,11 +164,34 @@ public class Browser {
 			capabilities.setJavascriptEnabled(true);
 			capabilities.setPlatform(Platform.VISTA);
 			// set firefox profile
-			FirefoxProfile profile = new ProfilesIni()
-					.getProfile(FIREFOX_PROFILE);
-
-			capabilities.setCapability(FirefoxDriver.PROFILE, profile);
-
+			/*FirefoxProfile profile = new ProfilesIni()
+					.getProfile(FIREFOX_PROFILE);*/
+			
+			FirefoxProfile profile = new FirefoxProfile();
+			
+			profile.setPreference("browser.download.folderList", 2);
+			profile.setPreference("browser.download.manager.showWhenStarting", false);
+			profile.setPreference("browser.download.dir", downloadPath);
+			profile.setPreference("browser.helperApps.neverAsk.openFile",
+					"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/pdf,application/vnd.pdf,application/vnd.sealedmedia.softseal-pdf,application/vnd.cups-pdf,application/x-pdf,text/pdf,application/PDF,application/vnd.sealedmedia.softseal-PDF,application/vnd.cups-PDF,application/x-PDF,text/PDF,application/vnd.PDF,application/x-download,application/download,application/force-download,application/octet,application/acrobat,applications/vnd.pdf,text/x-pdf,text/x-PDF,applications/vnd.PDF");
+			profile.setPreference("browser.helperApps.neverAsk.saveToDisk",
+	"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/pdf,application/vnd.pdf,application/vnd.sealedmedia.softseal-pdf,application/vnd.cups-pdf,application/x-pdf,text/pdf,application/PDF,application/vnd.sealedmedia.softseal-PDF,application/vnd.cups-PDF,application/x-PDF,text/PDF,application/vnd.PDF,application/x-download,application/download,application/force-download,application/octet,application/acrobat,applications/vnd.pdf,text/x-pdf,text/x-PDF,applications/vnd.PDF");
+			
+			profile.setPreference("pdfjs.disabled", true);
+			profile.setPreference("plugin.scan.Acrobat", "99.0");
+			profile.setPreference("plugin.scan.plid.all", true);
+			
+			profile.setPreference("browser.helperApps.alwaysAsk.force", false);
+			profile.setPreference("browser.download.manager.alertOnEXEOpen", false);
+			profile.setPreference("browser.download.manager.focusWhenStarting", false);
+			profile.setPreference("browser.download.manager.useWindow", false);
+			profile.setPreference("browser.download.manager.showAlertOnComplete", false);
+			profile.setPreference("browser.download.manager.closeWhenDone", false);
+			
+			//capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+			
+			
+			
 			break;
 		case "chrome":
 			capabilities = DesiredCapabilities.chrome();
@@ -238,12 +241,37 @@ public class Browser {
 
 	public static WebDriver getFirefoxDriver() {
 		logger.info("Firefox profile: " + FIREFOX_PROFILE);
-		FirefoxProfile profile = new ProfilesIni().getProfile(FIREFOX_PROFILE);
-
+		//FirefoxProfile profile = new ProfilesIni().getProfile(FIREFOX_PROFILE);
+		
+		FirefoxProfile profile = new FirefoxProfile();
+		
+		profile.setPreference("browser.download.folderList", 2);
+		profile.setPreference("browser.download.manager.showWhenStarting", false);
+		profile.setPreference("browser.download.dir", downloadPath);
+		profile.setPreference("browser.helperApps.neverAsk.openFile",
+				"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/pdf,application/vnd.pdf,application/vnd.sealedmedia.softseal-pdf,application/vnd.cups-pdf,application/x-pdf,text/pdf,application/PDF,application/vnd.sealedmedia.softseal-PDF,application/vnd.cups-PDF,application/x-PDF,text/PDF,application/vnd.PDF,application/x-download,application/download,application/force-download,application/octet,application/acrobat,applications/vnd.pdf,text/x-PDF,applications/vnd.PDF");
+		profile.setPreference("browser.helperApps.neverAsk.saveToDisk",
+"text/csv,application/x-msexcel,application/excel,application/x-excel,application/vnd.ms-excel,image/png,image/jpeg,text/html,text/plain,application/msword,application/xml,application/pdf,application/vnd.pdf,application/vnd.sealedmedia.softseal-pdf,application/vnd.cups-pdf,application/x-pdf,text/pdf,application/PDF,application/vnd.sealedmedia.softseal-PDF,application/vnd.cups-PDF,application/x-PDF/text/PDF,application/vnd.PDF,application/x-download,application/download,application/force-download,application/octet,application/acrobat,applications/vnd.pdf,text/x-PDF,applications/vnd.PDF");
+		
+		profile.setPreference("pdfjs.disabled", true);
+		profile.setPreference("plugin.scan.Acrobat", "99.0");
+		profile.setPreference("plugin.scan.plid.all", true);
+		
+		
+		profile.setPreference("browser.helperApps.alwaysAsk.force", false);
+		profile.setPreference("browser.download.manager.alertOnEXEOpen", false);
+		profile.setPreference("browser.download.manager.focusWhenStarting", false);
+		profile.setPreference("browser.download.manager.useWindow", false);
+		profile.setPreference("browser.download.manager.showAlertOnComplete", false);
+		profile.setPreference("browser.download.manager.closeWhenDone", false);
+		
+		
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setJavascriptEnabled(true);
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
-		return new FirefoxDriver(capabilities);
+		
+		//return new FirefoxDriver(capabilities);
+		return new FirefoxDriver(profile);
 	}
 
 	public static WebDriver configureHtmlUnit() {

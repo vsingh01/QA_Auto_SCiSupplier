@@ -43,9 +43,12 @@ public class ActiveDirectory {
         properties = new Properties();        
 
         properties.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
-        properties.put(Context.PROVIDER_URL, "LDAPS://" + domainController);
+        properties.put(Context.PROVIDER_URL, "ldap://" + domainController);
         properties.put(Context.SECURITY_PRINCIPAL, username + "@" + domainController);
         properties.put(Context.SECURITY_CREDENTIALS, password);
+      
+       
+        
         
         //initializing active directory LDAP connection
         try {

@@ -87,7 +87,7 @@ public class PRLogin {
         Synchronizer.explicitWait(2);
         boolean bLoginFailed = false;
         //if user menu is displayed then login is successful
-        if (Synchronizer.waitUntilDisplayed(userMenu, 5)) {
+        /*if (Synchronizer.waitUntilDisplayed(userMenu, 5)) {
             bLoginFailed = false;
             //check correct Landing page appears
             if (Synchronizer.pollElementVisibility(title, 5)) {
@@ -98,23 +98,25 @@ public class PRLogin {
             }
         } else {
             bLoginFailed = true;
-        }
+        }*/
         return bLoginFailed;
     }
 
     public void loggOff() {
-        Synchronizer.waitUntilDisplayed(userMenu, 5);
-        Actions actions = new Actions(Browser.eDriver);
+    	PageFactory.initElements(Browser.eDriver, this);
+        //Synchronizer.waitUntilDisplayed(userMenu, 5);
+       // Actions actions = new Actions(Browser.eDriver);
         try {
             // move mouse on user menu which expands drop down pop up
-            actions.moveToElement(userMenu).perform();
+            //actions.moveToElement(logout).perform();
             // click on log off menu item from drop down pop up
-            actions.moveToElement(logout).click().build();
+           // actions.moveToElement(logout).click().build();
+        	SeleniumUtils.click(logout);
             logger.debug("Successful, logout.");
         } catch (Exception e) {
             logger.error("Failed, user logout.");
         }
     }
 
-    
+   
 }

@@ -120,13 +120,13 @@ public class SPAddNewSupplier {
 		SeleniumUtils.type(zip, "30041");
 		SeleniumUtils.type(contactPerson, "Sai");
 		SeleniumUtils.type(phone, "6785927880");
-		SeleniumUtils.type(email, "primerevenueqa@hotmail.com");
+		SeleniumUtils.type(email, "primerevenueqauto@hotmail.com");
 		//SeleniumUtils.selectOption(taxTypeField, "AA");
 		SeleniumUtils.type(taxIdField, "6901");
-		SeleniumUtils.type(userName, "vishalSupplier");
+		SeleniumUtils.type(userName, "samulu2");
 		SeleniumUtils.type(firstName, "sai");
 		SeleniumUtils.type(lastName, "amul");
-		SeleniumUtils.type(userEmailAddress, "primerevenueqa@hotmail.com");
+		SeleniumUtils.type(userEmailAddress, "primerevenueqauto@hotmail.com");
 		SeleniumUtils.selectOption(localeCode, "English");
 		SeleniumUtils.selectOption(userCountryCode, "United States of America");
 		SeleniumUtils.selectOption(timeZoneCode, "Eastern Standard Time (America/New_York, EST)");

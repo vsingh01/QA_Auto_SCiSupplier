@@ -24,7 +24,7 @@ public class BuyerTestNG7 extends PRBase {
 	public void buyertest1() throws Exception {
 		Synchronizer.implicitWait(10);
 		login(BUY_USER);
-
+		Synchronizer.implicitWait(5);
 		SCiSupplierBuyerMenu testMenu = PageFactory.initElements(
 				Browser.eDriver, SCiSupplierBuyerMenu.class);
 

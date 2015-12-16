@@ -26,6 +26,7 @@ public class SupplierModPageNavTestNG6 extends PRBase {
 		
 		SCiSupplierSuppMenu testMenusupp1 = PageFactory.initElements(Browser.eDriver,
 				SCiSupplierSuppMenu.class);
+		Synchronizer.implicitWait(5);
 		testMenusupp1.menuToSellOfferHistPage();
 		
 		SuppModePageNavigations testMenusupp2 = PageFactory.initElements(Browser.eDriver,

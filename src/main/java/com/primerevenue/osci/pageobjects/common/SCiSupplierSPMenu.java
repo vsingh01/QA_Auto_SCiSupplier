@@ -23,6 +23,9 @@ public class SCiSupplierSPMenu {
 	@FindBy(id = "dashboard-toggle")
 	public WebElement userMenu;
 
+	@FindBy(id = "watLogout")
+	public WebElement logout;
+
 	@FindBy(xpath = "//a[contains(text(),'Home')]")
 	public WebElement home;
 
@@ -68,7 +71,8 @@ public class SCiSupplierSPMenu {
 		PageFactory.initElements(Browser.eDriver, this);
 		Synchronizer.waitUntilDisplayed(userMenu, 5);
 		Boolean spTitle = SeleniumUtils.isTextPresent("Service Provider Home");
-		System.out.println("Service Provider Home Title verified : : :"+ spTitle );
+		System.out.println("Service Provider Home Title verified : : :"
+				+ spTitle);
 		SeleniumUtils.click(userMenu);
 		SeleniumUtils.click(comManagement);
 		SeleniumUtils.click(comDir);
@@ -122,6 +126,16 @@ public class SCiSupplierSPMenu {
 		SeleniumUtils.click(comManagement);
 		SeleniumUtils.click(manageFIs);
 		SeleniumUtils.click(listFIs);
+	}
+
+	public void logout() {
+		PageFactory.initElements(Browser.eDriver, this);
+		try {
+			SeleniumUtils.click(logout);
+			logger.debug("Successful, logout.");
+		} catch (Exception e) {
+			logger.error("Failed, user logout.");
+		}
 	}
 
 }

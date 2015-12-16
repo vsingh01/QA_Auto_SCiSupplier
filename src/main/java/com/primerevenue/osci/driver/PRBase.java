@@ -31,6 +31,7 @@ public class PRBase {
     final static Logger logger = Logger.getLogger(PRBase.class);
     protected PRLogin login;
     protected EMLogin emlogin;
+    protected EMOrgLogin emorglogin;
     public static DatabaseUtil databaseUtil;
     public static String gridBrowser, gridNodeIP, gridNodePort, screenSize;
     /*protected PowerBar powerBar;*/
@@ -54,6 +55,7 @@ public class PRBase {
     public static String BUY_USER;
     
     public static String HM_USER;
+    public static String USER_2FA;
 
     public static String CHANGE_PASSWORD;
 
@@ -109,14 +111,28 @@ public class PRBase {
 
 
     }
-    
+   /*  OTP */ 
     protected void emlogin(String user) {
-        Browser.eMopen(gridBrowser, gridNodeIP, gridNodePort);
-        Browser.setScreenSize(screenSize);
+        EBrowser.eMopen(gridBrowser, gridNodeIP, gridNodePort);
+        EBrowser.setScreenSize(screenSize);
         emlogin = new EMLogin(user);
     }
 
     protected void emlogOff() {
+        if (emlogin != null) {
+            emlogin.loggOff();
+            EBrowser.close();
+        }
+      /*  OTP */
+
+    }
+    protected void emorglogin(String user) {
+        Browser.eMopen(gridBrowser, gridNodeIP, gridNodePort);
+        Browser.setScreenSize(screenSize);
+        emorglogin = new EMOrgLogin(user);
+    }
+
+    protected void emorglogOff() {
         if (emlogin != null) {
             emlogin.loggOff();
             Browser.close();
@@ -139,6 +155,7 @@ public class PRBase {
         CHANGE_PASSWORD = setupProp.getProperty("user.password.change");
         
         HM_USER = setupProp.getProperty("em.user");
+        USER_2FA = setupProp.getProperty("com.user.2fa");
 
         ENABLE_EXECUTION_TRACE = setupProp.getProperty("execution.trace.enable");
         EXECUTION_TRACE_FILE = setupProp.getProperty("execution.trace.file");
@@ -167,14 +184,14 @@ public class PRBase {
 
         //initialize global variables
         initGlobalData();
-        /*--------------------------------------------------------------------------------
+        /*--------------------------------------------------------------------------------*/
         //connect my sql database
-        databaseUtil = new DatabaseUtil();
+        /*databaseUtil = new DatabaseUtil();
         databaseUtil.getMySqlConnection();
-        databaseUtil.printResults(databaseUtil.getResults());
+        databaseUtil.printResults(databaseUtil.getResults());*/
         //databaseUtil.getOracleConnection();
        
-		/*-----------------------------------------------------------------------------     
+		/*-----------------------------------------------------------------------------  */   
         //kill all process of browser where test is to be run
         String browser = null;
         /*try {
@@ -196,13 +213,13 @@ public class PRBase {
 
     }
 
-    @AfterSuite
+    /*@AfterSuite
     public void afterSuite(ITestContext ctx) {
         logger.info("FINISHING TEST SUITE: '" + ctx.getName() + "'");
         setupProp = null;
         objectMapProp = null;
         databaseUtil.closeConnection();
         databaseUtil = null;
-    }
+    }*/
 
 }

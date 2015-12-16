@@ -16,16 +16,16 @@ import com.primerevenue.osci.utils.Synchronizer;
  *
  **/
 
-public class FIModReportTestNG10 extends PRBase {
+public class FIModReportTestNG11 extends PRBase {
 
-	final static Logger logger = Logger.getLogger(FIModReportTestNG10.class);
+	final static Logger logger = Logger.getLogger(FIModReportTestNG11.class);
 
 	@Test
 	public void smokeTestfi1() throws Exception {
 
 		Synchronizer.implicitWait(10);
 		login(FI_USER);
-
+		Synchronizer.implicitWait(5);
 	}
 
 	@Test
