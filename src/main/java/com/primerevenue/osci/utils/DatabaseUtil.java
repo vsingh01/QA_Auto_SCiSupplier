@@ -861,4 +861,24 @@ public class DatabaseUtil extends PropertiesUtil {
 		return rs;
 
 	}
+	public ResultSet delBuyerPrograme() {
+
+		// String sqlQuery = "select * from " + getSchema() + "." + getTable();
+		String sqlQuery = "select buyerProgramId from [MagellanRelations].[dbo].[BuyerProgram] where buyerProgramName = 'rktcommunity_BP'";
+
+		Statement stmt = null;
+
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e) {
+			logger.error("Failed MySql create statement: " + e.getMessage());
+		}
+
+		ResultSet rs = null;
+
+		setResultSet(rs);
+
+		return rs;
+
+	}
 }
