@@ -19017,3 +19017,12 @@ Session ID: ea4c9948-2cec-4f01-9275-30e21352c3d1
 2015-12-17 09:26:30 ERROR DatabaseUtil:1026 - Failed MySql execute statement: The statement did not return a result set.
 2015-12-17 09:26:30 ERROR DatabaseUtil:813 - Failed MySql execute statement: Error converting data type varchar to numeric.
 2015-12-17 09:26:30 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-17 11:35:22 INFO  PRBase:173 - STARTING TEST SUITE: 'smokeTest'
+2015-12-17 11:35:22 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 11:35:22 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 11:35:22 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-12-17 11:35:22 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 11:35:41 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-17 11:35:44 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 11:35:46 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 11:36:08 INFO  SeleniumUtils:312 - Typed text:  rktcommunity_BP
