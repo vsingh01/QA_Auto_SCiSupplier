@@ -18992,3 +18992,28 @@ Session ID: ea4c9948-2cec-4f01-9275-30e21352c3d1
 2015-12-16 11:04:29 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
 2015-12-16 11:04:35 ERROR DatabaseUtil:812 - Failed MySql execute statement: The statement did not return a result set.
 2015-12-16 11:04:35 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-17 08:26:56 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 08:26:56 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 08:26:56 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 08:26:56 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-17 08:27:01 ERROR DatabaseUtil:812 - Failed MySql execute statement: Error converting data type varchar to numeric.
+2015-12-17 08:27:01 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-17 08:43:42 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 08:43:42 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 08:43:42 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 08:43:42 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-17 08:43:47 ERROR DatabaseUtil:812 - Failed MySql execute statement: Error converting data type varchar to numeric.
+2015-12-17 08:43:47 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-17 08:45:32 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 08:45:32 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 08:45:32 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 08:45:32 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-17 08:45:38 ERROR DatabaseUtil:812 - Failed MySql execute statement: Error converting data type varchar to numeric.
+2015-12-17 08:45:38 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-17 09:26:20 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 09:26:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 09:26:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 09:26:20 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-17 09:26:30 ERROR DatabaseUtil:1026 - Failed MySql execute statement: The statement did not return a result set.
+2015-12-17 09:26:30 ERROR DatabaseUtil:813 - Failed MySql execute statement: Error converting data type varchar to numeric.
+2015-12-17 09:26:30 INFO  TesterListener:34 - testdb -- Test method successful.

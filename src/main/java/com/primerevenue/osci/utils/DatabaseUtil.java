@@ -40,6 +40,7 @@ public class DatabaseUtil extends PropertiesUtil {
 
 	public String supplierID;
 	public String fieldID;
+	public String buyerProgramID;
 
 	public static void initMySql() {
 		Properties dbProp = PRBase.setupProp;
@@ -699,7 +700,7 @@ public class DatabaseUtil extends PropertiesUtil {
 			rs = stmt.executeQuery(sqlQuery);
 			printResults(rs);
 
-			System.out.println("::" + supplierID);
+			System.out.println("supplierID parameter value::" + supplierID);
 
 			String sqlQuery1 = "delete from magellanrelations..SavedSearch where supplierid = '"
 					+ supplierID
@@ -838,13 +839,13 @@ public class DatabaseUtil extends PropertiesUtil {
 			while (rs.next()) {
 
 				String fieldId = rs.getString("fileId");
-				System.out.println(fieldId);
+				System.out.println("fileId::::" + fieldId);
 				this.fieldID = fieldId;
 			}
 
 			// printResults(rs);
 
-			System.out.println("::" + fieldID);
+			System.out.println("fieldID parameter value::" + fieldID);
 
 			String sqlQuery1 = "SELECT processingStatus FROM [MagellanReporting].[dbo].[PaymentObligation] where fileId ='"
 					+ fieldID + "' order by paymentobligationid desc";
@@ -863,7 +864,7 @@ public class DatabaseUtil extends PropertiesUtil {
 	}
 	public ResultSet delBuyerPrograme() {
 
-		// String sqlQuery = "select * from " + getSchema() + "." + getTable();
+		 //String sqlQuery = "select * from " + getSchema() + "." + getTable();
 		String sqlQuery = "select buyerProgramId from [MagellanRelations].[dbo].[BuyerProgram] where buyerProgramName = 'rktcommunity_BP'";
 
 		Statement stmt = null;
@@ -876,9 +877,157 @@ public class DatabaseUtil extends PropertiesUtil {
 
 		ResultSet rs = null;
 
+		try {
+			rs = stmt.executeQuery(sqlQuery);
+			
+			while (rs.next()) {
+
+				String buyerProgramId = rs.getString("buyerProgramId");
+				System.out.println("buyerProgramId:::::" + buyerProgramId);
+				this.buyerProgramID = buyerProgramId;
+			}
+			
+			//printResults(rs);
+
+			System.out.println("buyerProgramID parameter value::" + buyerProgramID);
+
+			String sqlQuery1 = "delete from magellanrelations..Audit_BuyerProgram where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..AutoAcceptLimit where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..AutoAdvanceDates where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..BPSpecificMatCal where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..BuyerProgramNetCommunityMargin where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..BuyerProgramRateHistory where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..BuyerProgramReserve where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..BuyerProgramRestrictedAutoAdvance where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..BuyerProgramSettlementConfig where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..FITier where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..MultipleFIsInSingleBuyerProgram where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..PricingTierCatalogue where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..RestrictedAutoAdvanceDates where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..SavedReport where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..SavedSearch where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..SpecificMatCal_MasterCal where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..SupplierBuyerProgram where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..SupplierBuyerProgramHistory where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..UserBuyerProgram where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..ValidMaturityDate where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..FiGroupHistory where groupid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..FIGroup where groupid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanrelations..BuyerProgram where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..Buyoffer where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..ClearingAccountTransactionLog where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..ClearingAccountTransactionLogView where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..CreditMemo where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..CreditMemoEffectiveDateValidation where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..CreditMemoTemporary where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..output_BuyOffer where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..output_CreditMemo where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..output_PaymentObligation where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..output_SellOffer where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..output_TaxReport where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..output_BuyOffer where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..PaymentObligation where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..PaymentObligationMaturityValidation where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..PaymentObligationTemporary where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..SellOffer where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..[Statement] where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..TransactionAuditTrail where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..TransactionAuditTrailView where buyerprogramid = '"
+					+ buyerProgramID
+					+ "'"
+					+ "delete from magellanwarehouse..TaxReport where buyerprogramid = '"
+					+ buyerProgramID + "'";
+
+			rs = stmt.executeQuery(sqlQuery1);
+
+		} catch (SQLException e) {
+			logger.error("Failed MySql execute statement: " + e.getMessage());
+		}
+
 		setResultSet(rs);
 
 		return rs;
-
-	}
+}
 }
