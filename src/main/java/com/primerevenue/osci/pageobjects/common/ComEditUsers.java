@@ -42,28 +42,28 @@ public class ComEditUsers {
 
 		try {
 			SeleniumUtils.click(addBtn);
-			logger.debug("Successful, Add Btn click.");
+			logger.info("Successful, Add Btn click.");
 		} catch (Exception e) {
 			logger.error("Failed, Add Btn click");
 		}
 
 		try {
 			SeleniumUtils.clickCheckBox(chkBox, "ON");
-			logger.debug("Successful, checkbox click.");
+			logger.info("Successful, checkbox click.");
 		} catch (Exception e) {
 			logger.error("Failed, checkbox click");
 
 		}
 		try {
 			SeleniumUtils.click(addSelected);
-			logger.debug("Successful, Add Selected Btn click.");
+			logger.info("Successful, Add Selected Btn click.");
 		} catch (Exception e) {
 			logger.error("Failed, Add Selected Btn click");
 
 		}
 		try {
 			SeleniumUtils.click(saveBtn);
-			logger.debug("Successful, Save Btn click.");
+			logger.info("Successful, Save Btn click.");
 		} catch (Exception e) {
 			logger.error("Failed, Save Btn click");
 
@@ -75,7 +75,7 @@ public class ComEditUsers {
 
 		try {
 			SeleniumUtils.click(addPendingBP);
-			logger.debug("Successful, addPendingBP Btn click.");
+			logger.info("Successful, addPendingBP Btn click.");
 		} catch (Exception e) {
 			logger.error("Failed, addPendingBP Btn click");
 

@@ -54,6 +54,19 @@ public class POUploadPerformTrade  {
 	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/table/tbody/tr/td[1]/a")
 	public List<WebElement> eFTStateLinks;
 	
+	//Sell Offer History page
+	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/form/table[4]/tbody/tr/td[2]/a")
+	public List<WebElement> sellOffHistLinks;
+	
+	//Track Documents Page
+	
+	@FindBy(id = "documentType")
+	public WebElement documentType;
+	
+	@FindBy(xpath = "(//a[contains(text(),'Search')])[3]")
+	public WebElement trackSearch;
+	
+		
 	
 	public void copyFiles(String source, String destination ) throws IOException {
 
@@ -89,7 +102,9 @@ public class POUploadPerformTrade  {
 
 		SeleniumUtils.clickCheckBox(chkBox, "ON");
 		SeleniumUtils.click(createSellOfferBtn);
-
+		Synchronizer.explicitWait(3);
+		boolean title = SeleniumUtils.isTextPresent("The sell offer process has been successfully completed.");
+		logger.info("The sell offer process has been successfully completed.: : :"+ title);
 		SeleniumUtils.click(_initiateFundingSubmit);
 
 	}
@@ -121,9 +136,51 @@ public class POUploadPerformTrade  {
 		int eftStatesCount = eFTStateLinks.size();
 		System.out.println(eftStatesCount);
 		WebElement latestStatement = Iterables.getLast(eFTStateLinks);
-		String sssaaaa = latestStatement.getText();
-		System.out.println(sssaaaa);
-		SeleniumUtils.click(latestStatement);
+		String eftStmtNumber = latestStatement.getText();
+		System.out.println(eftStmtNumber);
+		//SeleniumUtils.click(latestStatement);
+		
+	}
+	public void poTradeFrmSuppplierAuto() {
+		PageFactory.initElements(Browser.eDriver, this);
+
+		SCiSupplierSuppMenu objRef = PageFactory.initElements(Browser.eDriver,
+				SCiSupplierSuppMenu.class);
+		objRef.menuToAvailableToFund();
+
+		SeleniumUtils.clickCheckBox(chkBox, "ON");
+		SeleniumUtils.click(createSellOfferBtn);
+		Synchronizer.explicitWait(3);
+		/*boolean title = SeleniumUtils.isTextPresent("The sell offer process has been successfully completed.");
+		logger.info("The sell offer process has been successfully completed.: : :"+ title);*/
+		SeleniumUtils.click(_initiateFundingSubmit);
+		Synchronizer.explicitWait(180);
+		objRef.menuToSellOfferHistPage();
+		SeleniumUtils.click(_searchSubmit);
+		
+		boolean title1 = SeleniumUtils.isTextPresent("Auto Accepted");
+		logger.info("                 Auto Accepted             : : :"+ title1);
+		
+		int selloffCount = sellOffHistLinks.size();
+		System.out.println(selloffCount);
+		WebElement latestStatement1 = Iterables.getLast(sellOffHistLinks);
+		String sellOfferNumber = latestStatement1.getText();
+		System.out.println(sellOfferNumber);
+		
+		//menu
+		objRef.menuTrackDocumentPage();
+		SeleniumUtils.selectOption(documentType, "EFT Statements");
+		Synchronizer.explicitWait(3);
+		SeleniumUtils.click(trackSearch);
+		
+		int eftStatesCount = eFTStateLinks.size();
+		System.out.println(eftStatesCount);
+		WebElement latestStatement = Iterables.getLast(eFTStateLinks);
+		String eftStmtNumber = latestStatement.getText();
+		System.out.println(eftStmtNumber);
+		
+		System.out.println(eftStmtNumber.equalsIgnoreCase(sellOfferNumber));//true  
+		
 		
 	}
 }

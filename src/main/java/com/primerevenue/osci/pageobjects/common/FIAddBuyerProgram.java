@@ -44,7 +44,7 @@ public class FIAddBuyerProgram {
 	public WebElement clearingBankAccountId;
 
 	@FindBy(xpath = "(//input[@name='autoAccept'])[2]")
-	public WebElement autoAcceptRadio;
+	public WebElement autoAcceptOffRadio;
 
 	@FindBy(xpath = "//a[contains(text(),'Save')]")
 	public WebElement saveBtn;
@@ -87,7 +87,14 @@ public class FIAddBuyerProgram {
 
 		SeleniumUtils.selectOption(settlmentBankAccountId, "RktFI_Bank");
 		SeleniumUtils.selectOption(clearingBankAccountId, "RktFI_Bank");
-		SeleniumUtils.clickCheckBox(autoAcceptRadio, "ON");
+		
+		boolean radio1 = autoAcceptOffRadio.isSelected();
+		System.out.println(radio1);
+		if (radio1 == false) {
+			logger.info("Auto Accept radion button by defalut not selected - valadiation passed");
+		}
+		SeleniumUtils.click(autoAcceptOffRadio);
+		Synchronizer.explicitWait(5);
 		SeleniumUtils.click(saveBtn);
 
 		SeleniumUtils.click(submitBtn);
@@ -155,5 +162,28 @@ public class FIAddBuyerProgram {
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 
 	}
+	public void fIAddBPAuto() {
+		PageFactory.initElements(Browser.eDriver, this);
+		int addcount = addLinks.size();
+		System.out.println(addcount);
+		WebElement lastElement = Iterables.getLast(addLinks);
+		String sssaaaa = lastElement.getText();
+		System.out.println(sssaaaa);
+		SeleniumUtils.click(lastElement);
 
+		SeleniumUtils.selectOption(settlmentBankAccountId, "RktFI_Bank");
+		SeleniumUtils.selectOption(clearingBankAccountId, "RktFI_Bank");
+		Synchronizer.explicitWait(3);
+		boolean radio1 = autoAcceptOffRadio.isSelected();
+		System.out.println(radio1);
+		if (radio1 == false) {
+			logger.info("Auto Accept radion button by defalut not selected - valadiation passed");
+		}
+		
+		Synchronizer.explicitWait(3);
+		SeleniumUtils.click(saveBtn);
+		Synchronizer.explicitWait(2);
+		SeleniumUtils.click(submitBtn);
+
+	}
 }

@@ -241,7 +241,7 @@ public class SPAddBuyerProgram {
 			
 			SeleniumUtils.click(save);
 			
-			logger.debug("Successful, Community Buyers Tab click.");
+			logger.info("Successful, Community Buyers Tab click.");
 		} catch (Exception e) {
 			logger.error("Failed, Community Buyers Tab click");
 		}

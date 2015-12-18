@@ -19026,3 +19026,610 @@ Session ID: ea4c9948-2cec-4f01-9275-30e21352c3d1
 2015-12-17 11:35:44 INFO  Synchronizer:178 - Explicit wait 1 second
 2015-12-17 11:35:46 INFO  Synchronizer:178 - Explicit wait 2 second
 2015-12-17 11:36:08 INFO  SeleniumUtils:312 - Typed text:  rktcommunity_BP
+2015-12-17 14:29:03 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 14:29:03 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 14:29:03 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 14:29:03 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-12-17 14:29:03 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 14:29:39 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-17 14:29:42 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 14:29:44 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 14:30:01 INFO  SeleniumUtils:312 - Typed text:  rktcommunity_BP
+2015-12-17 14:30:11 INFO  SeleniumUtils:312 - Typed text:  0001
+2015-12-17 14:30:13 INFO  SeleniumUtils:312 - Typed text:  2355
+2015-12-17 14:30:15 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-17 14:30:17 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-17 14:30:17 INFO  SPAddBuyerProgram:191 - 1
+2015-12-17 14:30:17 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-12-17 14:30:17 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-12-17 14:30:17 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-12-17 14:30:17 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-12-17 14:30:17 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-12-17 14:30:17 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-12-17 14:30:17 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-12-17 14:30:25 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-17 14:50:34 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 14:50:34 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 14:50:34 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 14:50:34 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2015-12-17 14:50:34 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 14:51:16 INFO  SeleniumUtils:312 - Typed text:  Rktcommunity
+2015-12-17 14:51:19 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 14:51:21 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 14:51:21 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-17 14:51:21 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2015-12-17 14:51:34 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2015-12-17 14:51:37 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-17 14:51:39 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-17 14:51:44 INFO  ComEditUsers:45 - Successful, Add Btn click.
+2015-12-17 14:51:44 INFO  ComEditUsers:52 - Successful, checkbox click.
+2015-12-17 14:51:46 INFO  ComEditUsers:59 - Successful, Add Selected Btn click.
+2015-12-17 14:51:50 INFO  ComEditUsers:66 - Successful, Save Btn click.
+2015-12-17 14:51:55 INFO  ComEditUsers:78 - Successful, addPendingBP Btn click.
+2015-12-17 14:51:58 INFO  SeleniumUtils:338 - Typed text:  Sai
+2015-12-17 14:52:03 INFO  SeleniumUtils:338 - Typed text:  6785927880
+2015-12-17 14:52:06 INFO  SeleniumUtils:338 - Typed text:  primerevenueqa@hotmail.com
+2015-12-17 20:16:00 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:16:00 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:16:00 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:16:00 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-17 20:16:09 ERROR DatabaseUtil:1026 - Failed MySql execute statement: The statement did not return a result set.
+2015-12-17 20:16:09 ERROR DatabaseUtil:813 - Failed MySql execute statement: Error converting data type varchar to numeric.
+2015-12-17 20:16:09 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-17 20:17:20 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:17:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:17:20 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:17:20 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-12-17 20:17:20 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 20:18:05 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-17 20:18:08 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 20:18:10 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 20:18:31 INFO  SeleniumUtils:312 - Typed text:  rktcommunity_BP
+2015-12-17 20:18:51 INFO  SeleniumUtils:312 - Typed text:  0001
+2015-12-17 20:18:55 INFO  SeleniumUtils:312 - Typed text:  2355
+2015-12-17 20:18:57 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-17 20:19:00 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-17 20:19:00 INFO  SPAddBuyerProgram:191 - 1
+2015-12-17 20:19:00 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-12-17 20:19:00 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-12-17 20:19:01 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-12-17 20:19:01 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-12-17 20:19:01 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-12-17 20:19:01 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-12-17 20:19:01 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-12-17 20:19:12 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-17 20:19:39 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:19:39 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:19:39 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:19:39 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest1
+2015-12-17 20:19:39 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 20:20:12 INFO  SeleniumUtils:312 - Typed text:  Rktcommunity
+2015-12-17 20:20:15 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 20:20:17 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 20:20:17 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-17 20:20:17 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest2
+2015-12-17 20:20:19 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2015-12-17 20:20:23 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2015-12-17 20:20:26 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-17 20:20:27 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-17 20:20:33 INFO  ComEditUsers:45 - Successful, Add Btn click.
+2015-12-17 20:20:34 INFO  ComEditUsers:52 - Successful, checkbox click.
+2015-12-17 20:20:35 INFO  ComEditUsers:59 - Successful, Add Selected Btn click.
+2015-12-17 20:20:38 INFO  ComEditUsers:66 - Successful, Save Btn click.
+2015-12-17 20:20:43 INFO  ComEditUsers:78 - Successful, addPendingBP Btn click.
+2015-12-17 20:20:46 INFO  SeleniumUtils:338 - Typed text:  Sai
+2015-12-17 20:20:49 INFO  SeleniumUtils:338 - Typed text:  6785927880
+2015-12-17 20:20:52 INFO  SeleniumUtils:338 - Typed text:  primerevenueqa@hotmail.com
+2015-12-17 20:20:57 INFO  SeleniumUtils:312 - Typed text:  2000
+2015-12-17 20:21:00 INFO  SeleniumUtils:312 - Typed text:  1000
+2015-12-17 20:21:15 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-17 20:21:18 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-12-17 20:23:45 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:23:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:23:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:23:45 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-17 20:23:55 ERROR DatabaseUtil:1026 - Failed MySql execute statement: The statement did not return a result set.
+2015-12-17 20:23:55 ERROR DatabaseUtil:813 - Failed MySql execute statement: Error converting data type varchar to numeric.
+2015-12-17 20:23:55 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-17 20:24:34 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:24:34 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:24:34 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:24:34 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-12-17 20:24:34 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 20:25:08 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-17 20:25:12 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 20:25:14 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 20:25:42 INFO  SeleniumUtils:312 - Typed text:  rktcommunity_BP
+2015-12-17 20:26:04 INFO  SeleniumUtils:312 - Typed text:  0001
+2015-12-17 20:26:08 INFO  SeleniumUtils:312 - Typed text:  2355
+2015-12-17 20:26:11 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-17 20:26:14 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-17 20:26:14 INFO  SPAddBuyerProgram:191 - 1
+2015-12-17 20:26:14 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-12-17 20:26:14 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-12-17 20:26:14 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-12-17 20:26:14 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-12-17 20:26:14 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-12-17 20:26:14 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-12-17 20:26:14 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-12-17 20:26:27 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-17 20:26:36 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:26:36 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:26:36 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:26:36 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest1
+2015-12-17 20:26:36 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 20:27:10 INFO  SeleniumUtils:312 - Typed text:  Rktcommunity
+2015-12-17 20:27:13 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 20:27:15 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 20:27:15 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-17 20:27:15 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest2
+2015-12-17 20:27:23 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2015-12-17 20:27:27 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2015-12-17 20:27:31 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-17 20:27:32 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-17 20:27:37 INFO  ComEditUsers:45 - Successful, Add Btn click.
+2015-12-17 20:27:38 INFO  ComEditUsers:52 - Successful, checkbox click.
+2015-12-17 20:27:39 INFO  ComEditUsers:59 - Successful, Add Selected Btn click.
+2015-12-17 20:27:43 INFO  ComEditUsers:66 - Successful, Save Btn click.
+2015-12-17 20:27:48 INFO  ComEditUsers:78 - Successful, addPendingBP Btn click.
+2015-12-17 20:27:51 INFO  SeleniumUtils:338 - Typed text:  Sai
+2015-12-17 20:27:54 INFO  SeleniumUtils:338 - Typed text:  6785927880
+2015-12-17 20:27:57 INFO  SeleniumUtils:338 - Typed text:  primerevenueqa@hotmail.com
+2015-12-17 20:28:01 INFO  SeleniumUtils:312 - Typed text:  2000
+2015-12-17 20:28:07 INFO  SeleniumUtils:312 - Typed text:  1000
+2015-12-17 20:28:15 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-17 20:28:24 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-17 20:28:27 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-12-17 20:29:04 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:29:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:29:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:29:04 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-17 20:29:14 ERROR DatabaseUtil:1026 - Failed MySql execute statement: The statement did not return a result set.
+2015-12-17 20:29:14 ERROR DatabaseUtil:813 - Failed MySql execute statement: Error converting data type varchar to numeric.
+2015-12-17 20:29:14 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-17 20:29:54 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:29:54 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:29:54 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:29:54 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-12-17 20:29:54 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 20:30:36 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-17 20:30:39 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 20:30:41 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 20:31:07 INFO  SeleniumUtils:312 - Typed text:  rktcommunity_BP
+2015-12-17 20:31:30 INFO  SeleniumUtils:312 - Typed text:  0001
+2015-12-17 20:31:33 INFO  SeleniumUtils:312 - Typed text:  2355
+2015-12-17 20:31:35 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-17 20:31:38 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-17 20:31:38 INFO  SPAddBuyerProgram:191 - 1
+2015-12-17 20:31:39 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-12-17 20:31:39 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-12-17 20:31:39 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-12-17 20:31:39 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-12-17 20:31:39 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-12-17 20:31:39 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-12-17 20:31:39 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-12-17 20:31:51 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-17 20:32:03 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 20:32:03 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 20:32:03 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 20:32:03 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest1
+2015-12-17 20:32:03 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-17 20:32:53 INFO  SeleniumUtils:312 - Typed text:  Rktcommunity
+2015-12-17 20:32:57 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-17 20:32:59 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-17 20:32:59 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-17 20:32:59 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest2
+2015-12-17 20:33:01 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2015-12-17 20:33:06 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2015-12-17 20:33:09 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-17 20:33:10 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-17 20:33:15 INFO  ComEditUsers:45 - Successful, Add Btn click.
+2015-12-17 20:33:15 INFO  ComEditUsers:52 - Successful, checkbox click.
+2015-12-17 20:33:17 INFO  ComEditUsers:59 - Successful, Add Selected Btn click.
+2015-12-17 20:33:20 INFO  ComEditUsers:66 - Successful, Save Btn click.
+2015-12-17 20:33:24 INFO  ComEditUsers:78 - Successful, addPendingBP Btn click.
+2015-12-17 20:33:27 INFO  SeleniumUtils:338 - Typed text:  Sai
+2015-12-17 20:33:33 INFO  SeleniumUtils:338 - Typed text:  6785927880
+2015-12-17 20:33:36 INFO  SeleniumUtils:338 - Typed text:  primerevenueqa@hotmail.com
+2015-12-17 20:33:41 INFO  SeleniumUtils:312 - Typed text:  2000
+2015-12-17 20:33:44 INFO  SeleniumUtils:312 - Typed text:  1000
+2015-12-17 20:34:03 INFO  Synchronizer:178 - Explicit wait 15 second
+2015-12-17 20:34:11 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-17 20:34:14 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-12-17 21:40:22 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-17 21:40:22 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-17 21:40:22 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-17 21:40:22 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-17 21:40:32 ERROR DatabaseUtil:1026 - Failed MySql execute statement: The statement did not return a result set.
+2015-12-17 21:40:32 ERROR DatabaseUtil:813 - Failed MySql execute statement: Error converting data type varchar to numeric.
+2015-12-17 21:40:32 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-18 07:21:24 INFO  PRBase:173 - STARTING TEST SUITE: 'smokeTest'
+2015-12-18 07:21:24 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 07:21:24 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 07:21:24 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-12-18 07:21:24 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 07:21:41 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-18 07:21:44 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 07:21:46 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:22:15 INFO  SeleniumUtils:312 - Typed text:  rktcommunity_BP
+2015-12-18 07:22:35 INFO  SeleniumUtils:312 - Typed text:  0001
+2015-12-18 07:22:38 INFO  SeleniumUtils:312 - Typed text:  2355
+2015-12-18 07:22:40 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-18 07:22:43 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-18 07:22:43 INFO  SPAddBuyerProgram:191 - 1
+2015-12-18 07:22:43 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-12-18 07:22:44 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-12-18 07:22:44 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-12-18 07:22:44 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-12-18 07:22:44 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-12-18 07:22:44 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-12-18 07:22:44 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-12-18 07:22:56 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 07:22:56 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 07:22:57 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest1
+2015-12-18 07:22:57 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 07:23:13 INFO  SeleniumUtils:312 - Typed text:  Rktcommunity
+2015-12-18 07:23:16 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 07:23:18 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:23:18 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-18 07:23:18 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-18 07:23:18 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest2
+2015-12-18 07:23:25 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2015-12-18 07:23:28 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 07:23:29 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 07:23:35 INFO  ComEditUsers:45 - Successful, Add Btn click.
+2015-12-18 07:23:36 INFO  ComEditUsers:52 - Successful, checkbox click.
+2015-12-18 07:23:37 INFO  ComEditUsers:59 - Successful, Add Selected Btn click.
+2015-12-18 07:23:40 INFO  ComEditUsers:66 - Successful, Save Btn click.
+2015-12-18 07:23:46 INFO  ComEditUsers:78 - Successful, addPendingBP Btn click.
+2015-12-18 07:23:49 INFO  SeleniumUtils:338 - Typed text:  Sai
+2015-12-18 07:23:52 INFO  SeleniumUtils:338 - Typed text:  6785927880
+2015-12-18 07:23:55 INFO  SeleniumUtils:338 - Typed text:  primerevenueqa@hotmail.com
+2015-12-18 07:24:00 INFO  SeleniumUtils:312 - Typed text:  2000
+2015-12-18 07:24:02 INFO  SeleniumUtils:312 - Typed text:  1000
+2015-12-18 07:24:21 INFO  Synchronizer:178 - Explicit wait 15 second
+2015-12-18 07:24:29 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 07:24:32 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-12-18 07:24:32 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-12-18 07:24:33 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.FIAutoPerformTradeTestNG3.smokeTestfi1
+2015-12-18 07:24:33 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 07:24:49 INFO  SeleniumUtils:312 - Typed text:  Rktfi
+2015-12-18 07:24:52 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 07:24:54 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:25:03 INFO  FIAddBuyerProgram:180 - Auto Accept radion button by defalut not selected - valadiation passed
+2015-12-18 07:25:08 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 07:25:34 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-12-18 07:25:34 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-12-18 07:25:35 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG4.smokeTest1
+2015-12-18 07:25:35 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 07:25:50 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-18 07:25:54 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 07:25:56 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:26:22 INFO  SeleniumUtils:312 - Typed text:  Rktsup2
+2015-12-18 07:26:26 INFO  SeleniumUtils:312 - Typed text:  786
+2015-12-18 07:26:29 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 07:26:29 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 07:41:13 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-18 07:41:13 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 07:41:13 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 07:41:13 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2015-12-18 07:41:22 ERROR DatabaseUtil:1026 - Failed MySql execute statement: The statement did not return a result set.
+2015-12-18 07:41:22 INFO  TesterListener:34 - testdb -- Test method successful.
+2015-12-18 07:43:23 INFO  PRBase:173 - STARTING TEST SUITE: 'smokeTest'
+2015-12-18 07:43:23 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 07:43:23 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 07:43:23 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2015-12-18 07:43:23 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 07:43:38 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-18 07:43:41 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 07:43:43 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:44:02 INFO  SeleniumUtils:312 - Typed text:  rktcommunity_BP
+2015-12-18 07:44:20 INFO  SeleniumUtils:312 - Typed text:  0001
+2015-12-18 07:44:23 INFO  SeleniumUtils:312 - Typed text:  2355
+2015-12-18 07:44:26 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-18 07:44:28 INFO  SeleniumUtils:312 - Typed text:  1
+2015-12-18 07:44:28 INFO  SPAddBuyerProgram:191 - 1
+2015-12-18 07:44:29 INFO  SPAddBuyerProgram:196 - radion button by defalut not selected - valadiation passed
+2015-12-18 07:44:29 INFO  SPAddBuyerProgram:201 - radion button by defalut selected - valadiation passed
+2015-12-18 07:44:29 INFO  SPAddBuyerProgram:205 - radion button by defalut selected - valadiation passed
+2015-12-18 07:44:29 INFO  SPAddBuyerProgram:209 - radion button by defalut selected - valadiation passed
+2015-12-18 07:44:29 INFO  SPAddBuyerProgram:214 - radion button by defalut selected - valadiation passed
+2015-12-18 07:44:29 INFO  SPAddBuyerProgram:218 - radion button by defalut selected - valadiation passed
+2015-12-18 07:44:29 INFO  SPAddBuyerProgram:223 - radion button by defalut selected - valadiation passed
+2015-12-18 07:44:40 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 07:44:40 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 07:44:41 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest1
+2015-12-18 07:44:41 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 07:44:56 INFO  SeleniumUtils:312 - Typed text:  Rktcommunity
+2015-12-18 07:44:59 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 07:45:01 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:45:01 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-18 07:45:01 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-18 07:45:01 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMAutoPerformTradeTestNG2.cmsmokeTest2
+2015-12-18 07:45:08 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2015-12-18 07:45:12 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2015-12-18 07:45:16 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 07:45:17 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 07:45:22 INFO  ComEditUsers:45 - Successful, Add Btn click.
+2015-12-18 07:45:23 INFO  ComEditUsers:52 - Successful, checkbox click.
+2015-12-18 07:45:24 INFO  ComEditUsers:59 - Successful, Add Selected Btn click.
+2015-12-18 07:45:27 INFO  ComEditUsers:66 - Successful, Save Btn click.
+2015-12-18 07:45:33 INFO  ComEditUsers:78 - Successful, addPendingBP Btn click.
+2015-12-18 07:45:36 INFO  SeleniumUtils:338 - Typed text:  Sai
+2015-12-18 07:45:39 INFO  SeleniumUtils:338 - Typed text:  6785927880
+2015-12-18 07:45:42 INFO  SeleniumUtils:338 - Typed text:  primerevenueqa@hotmail.com
+2015-12-18 07:45:47 INFO  SeleniumUtils:312 - Typed text:  2000
+2015-12-18 07:45:50 INFO  SeleniumUtils:312 - Typed text:  1000
+2015-12-18 07:46:09 INFO  Synchronizer:178 - Explicit wait 15 second
+2015-12-18 07:46:17 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 07:46:21 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-12-18 07:46:21 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2015-12-18 07:46:21 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.FIAutoPerformTradeTestNG3.smokeTestfi1
+2015-12-18 07:46:21 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 07:46:38 INFO  SeleniumUtils:312 - Typed text:  Rktfi
+2015-12-18 07:46:41 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 07:46:43 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:46:55 INFO  Synchronizer:178 - Explicit wait 3 second
+2015-12-18 07:46:55 INFO  FIAddBuyerProgram:180 - Auto Accept radion button by defalut not selected - valadiation passed
+2015-12-18 07:46:58 INFO  Synchronizer:178 - Explicit wait 3 second
+2015-12-18 07:47:02 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:47:24 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-12-18 07:47:24 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-12-18 07:47:25 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG4.smokeTest1
+2015-12-18 07:47:25 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 07:47:41 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-18 07:47:44 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 07:47:46 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 07:48:08 INFO  SeleniumUtils:312 - Typed text:  Rktsup2
+2015-12-18 07:48:12 INFO  SeleniumUtils:312 - Typed text:  786
+2015-12-18 07:48:14 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 07:48:14 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 08:03:58 INFO  PRBase:173 - STARTING TEST SUITE: 'smokeTest'
+2015-12-18 08:03:58 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 08:03:58 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 08:03:58 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SuppReportsTestNG5.smokeTestReports
+2015-12-18 08:03:58 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:04:19 INFO  SeleniumUtils:312 - Typed text:  Rktsup2
+2015-12-18 08:04:22 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:04:24 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:04:30 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 08:04:35 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-12-18 08:04:36 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-12-18 08:04:42 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:04:48 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-12-18 08:04:53 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:04:59 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-12-18 08:05:04 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:05:09 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-12-18 08:05:14 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:05:20 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-12-18 08:05:25 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:05:31 INFO  Synchronizer:26 - Waited for 10 sec implicity.
+2015-12-18 08:05:36 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:05:36 INFO  TesterListener:34 - smokeTestReports -- Test method successful.
+2015-12-18 08:05:36 INFO  TesterListener:34 - smokeTestReports -- Test method successful.
+2015-12-18 08:05:37 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SupplierModPageNavTestNG6.smokeTest1
+2015-12-18 08:05:37 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:05:52 INFO  SeleniumUtils:312 - Typed text:  Rktsup2
+2015-12-18 08:05:55 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:05:57 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:06:03 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 08:06:33 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 08:06:33 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 08:06:33 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.BuyerTestNG7.buyertest1
+2015-12-18 08:06:33 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:06:49 INFO  SeleniumUtils:312 - Typed text:  Rktbuy2
+2015-12-18 08:06:53 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:06:55 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:06:55 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 08:07:38 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:08:09 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:08:19 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-18 08:08:29 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-18 08:08:35 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:08:52 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-18 08:08:57 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:09:05 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-12-18 08:09:10 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:09:10 INFO  TesterListener:34 - buyertest1 -- Test method successful.
+2015-12-18 08:09:10 INFO  TesterListener:34 - buyertest1 -- Test method successful.
+2015-12-18 08:09:10 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPModReportsTestNG8.afterClass
+2015-12-18 08:09:10 ERROR Browser:140 - Failed to close browser !!
+2015-12-18 08:09:10 INFO  TesterListener:34 - afterClass -- Test method successful.
+2015-12-18 08:09:10 INFO  TesterListener:34 - afterClass -- Test method successful.
+2015-12-18 08:09:10 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.SPModReportsTestNG8.smokeTest1
+2015-12-18 08:09:10 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:09:26 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-18 08:09:29 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:09:31 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:09:36 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 08:10:07 INFO  SeleniumUtils:312 - Typed text:  AmulSupp
+2015-12-18 08:10:10 INFO  SeleniumUtils:312 - Typed text:  1575 Apple
+2015-12-18 08:10:13 INFO  SeleniumUtils:312 - Typed text:  Cuumming
+2015-12-18 08:10:21 INFO  SeleniumUtils:312 - Typed text:  30041
+2015-12-18 08:10:24 INFO  SeleniumUtils:312 - Typed text:  Sai
+2015-12-18 08:10:26 INFO  SeleniumUtils:312 - Typed text:  6785927880
+2015-12-18 08:10:29 INFO  SeleniumUtils:312 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-18 08:10:32 INFO  SeleniumUtils:312 - Typed text:  6901
+2015-12-18 08:10:35 INFO  SeleniumUtils:312 - Typed text:  samulu2
+2015-12-18 08:10:38 INFO  SeleniumUtils:312 - Typed text:  sai
+2015-12-18 08:10:40 INFO  SeleniumUtils:312 - Typed text:  amul
+2015-12-18 08:10:43 INFO  SeleniumUtils:312 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-18 08:11:09 INFO  SeleniumUtils:312 - Typed text:  AmulSupp
+2015-12-18 08:11:20 INFO  SeleniumUtils:312 - Typed text:  vishfi9
+2015-12-18 08:11:28 INFO  SeleniumUtils:312 - Typed text:  6785927880
+2015-12-18 08:11:31 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 08:11:31 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 08:11:31 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.NewSupplierLoginEmailTestNG9.smokeTest1
+2015-12-18 08:11:31 INFO  Synchronizer:26 - Waited for 2 sec implicity.
+2015-12-18 08:11:31 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:11:40 INFO  SeleniumUtils:312 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-18 08:12:01 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:12:03 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:12:04 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 08:12:04 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2015-12-18 08:12:04 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.NewSupplierLoginEmailTestNG9.smokeTestss
+2015-12-18 08:12:04 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 08:12:08 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:12:23 INFO  SeleniumUtils:312 - Typed text:  SPrkt
+2015-12-18 08:12:27 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:12:29 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:12:40 INFO  SeleniumUtils:312 - Typed text:  samulu2
+2015-12-18 08:12:42 INFO  SeleniumUtils:312 - Typed text:  TYwMTk3M
+2015-12-18 08:12:46 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:12:49 INFO  SeleniumUtils:312 - Typed text:  TYwMTk3M
+2015-12-18 08:12:51 INFO  SeleniumUtils:312 - Typed text:  Prime109
+2015-12-18 08:12:54 INFO  SeleniumUtils:312 - Typed text:  Prime109
+2015-12-18 08:13:00 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:13:06 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:13:22 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-18 08:13:22 INFO  TesterListener:34 - smokeTestss -- Test method successful.
+2015-12-18 08:13:22 INFO  TesterListener:34 - smokeTestss -- Test method successful.
+2015-12-18 08:13:22 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest1
+2015-12-18 08:13:22 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:13:37 INFO  SeleniumUtils:312 - Typed text:  Rktcommunity
+2015-12-18 08:13:41 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:13:43 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:13:43 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-18 08:13:43 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2015-12-18 08:13:43 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest3
+2015-12-18 08:13:56 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:14:01 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:14:03 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:14:13 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:14:21 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-12-18 08:14:26 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:14:26 INFO  TesterListener:34 - cmsmokeTest3 -- Test method successful.
+2015-12-18 08:14:26 INFO  TesterListener:34 - cmsmokeTest3 -- Test method successful.
+2015-12-18 08:14:26 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.FIModReportTestNG11.smokeTestfi1
+2015-12-18 08:14:26 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:14:41 INFO  SeleniumUtils:312 - Typed text:  Rktfi
+2015-12-18 08:14:44 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:14:46 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:14:46 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2015-12-18 08:14:46 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-12-18 08:14:46 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2015-12-18 08:14:46 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.FIModReportTestNG11.smokeTestfi2
+2015-12-18 08:15:26 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-18 08:15:31 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:15:39 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-12-18 08:15:44 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:16:00 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-18 08:16:05 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:16:13 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-12-18 08:16:18 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:16:35 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-18 08:16:40 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:16:48 INFO  Synchronizer:178 - Explicit wait 8 second
+2015-12-18 08:16:53 INFO  Synchronizer:178 - Explicit wait 5 second
+2015-12-18 08:16:53 INFO  TesterListener:34 - smokeTestfi2 -- Test method successful.
+2015-12-18 08:16:53 INFO  TesterListener:34 - smokeTestfi2 -- Test method successful.
+2015-12-18 08:16:54 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.Otp2FATestNG12.oTPTest1
+2015-12-18 08:16:54 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:17:08 INFO  SeleniumUtils:312 - Typed text:  comvm1_smoke
+2015-12-18 08:17:12 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:17:14 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:17:14 INFO  EBrowser:220 - Firefox profile: webdriver
+2015-12-18 08:17:22 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, i0116
+2015-12-18 08:17:24 INFO  SeleniumUtils:312 - Typed text:  primerevenueqauto@hotmail.com
+2015-12-18 08:17:26 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, idSIButton9
+2015-12-18 08:17:28 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:17:30 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:18:00 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2015-12-18 08:18:02 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2015-12-18 08:18:07 INFO  SeleniumUtils:312 - Typed text:  830774
+2015-12-18 08:18:18 INFO  Synchronizer:178 - Explicit wait 10 second
+2015-12-18 08:18:18 INFO  TesterListener:34 - oTPTest1 -- Test method successful.
+2015-12-18 08:18:18 INFO  TesterListener:34 - oTPTest1 -- Test method successful.
+2015-12-18 08:31:16 INFO  PRBase:173 - STARTING TEST SUITE: 'smokeTest'
+2015-12-18 08:31:16 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 08:31:16 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 08:31:16 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.dBQueries
+2015-12-18 08:31:22 INFO  TesterListener:34 - dBQueries -- Test method successful.
+2015-12-18 08:31:22 INFO  TesterListener:34 - dBQueries -- Test method successful.
+2015-12-18 08:31:22 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.runServices
+2015-12-18 08:31:22 INFO  TesterListener:34 - runServices -- Test method successful.
+2015-12-18 08:31:22 INFO  TesterListener:34 - runServices -- Test method successful.
+2015-12-18 08:31:22 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test1
+2015-12-18 08:31:22 INFO  TesterListener:34 - test1 -- Test method successful.
+2015-12-18 08:31:22 INFO  TesterListener:34 - test1 -- Test method successful.
+2015-12-18 08:31:22 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test2
+2015-12-18 08:31:22 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 08:31:37 INFO  SeleniumUtils:312 - Typed text:  Rktsup2
+2015-12-18 08:31:41 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 08:31:43 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 08:37:43 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-18 08:37:44 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 08:37:44 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 08:37:44 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test1
+2015-12-18 08:37:44 INFO  TesterListener:34 - test1 -- Test method successful.
+2015-12-18 08:53:37 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-18 08:53:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 08:53:37 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 08:53:37 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.runServices
+2015-12-18 08:53:37 INFO  TesterListener:34 - runServices -- Test method successful.
+2015-12-18 09:21:45 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-18 09:21:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 09:21:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 09:21:45 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.dBQueries
+2015-12-18 09:21:50 INFO  TesterListener:34 - dBQueries -- Test method successful.
+2015-12-18 09:21:50 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test2
+2015-12-18 09:21:50 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 10:45:28 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-18 10:45:28 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 10:45:28 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 10:45:28 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test1
+2015-12-18 10:45:28 INFO  TesterListener:34 - test1 -- Test method successful.
+2015-12-18 11:38:02 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-18 11:38:02 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 11:38:02 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 11:38:02 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.dBQueries
+2015-12-18 11:38:07 INFO  TesterListener:34 - dBQueries -- Test method successful.
+2015-12-18 11:38:07 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test1
+2015-12-18 11:38:07 INFO  TesterListener:34 - test1 -- Test method successful.
+2015-12-18 11:38:07 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test2
+2015-12-18 11:38:07 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 11:38:25 INFO  SeleniumUtils:312 - Typed text:  Rktsup2
+2015-12-18 11:38:29 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 11:38:31 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 11:38:37 INFO  SCiSupplierSuppMenu:319 - Successful, userMenu click.
+2015-12-18 11:38:38 INFO  SCiSupplierSuppMenu:325 - Successful, funding click.
+2015-12-18 11:38:42 INFO  SCiSupplierSuppMenu:331 - Successful, avialToFund click.
+2015-12-18 11:38:49 INFO  Synchronizer:178 - Explicit wait 3 second
+2015-12-18 11:38:50 INFO  POUploadPerformTrade:155 - The sell offer process has been successfully completed.: : :false
+2015-12-18 11:41:53 INFO  Synchronizer:178 - Explicit wait 180 second
+2015-12-18 11:41:54 INFO  SCiSupplierSuppMenu:341 - Successful, userMenu click.
+2015-12-18 11:42:50 INFO  SCiSupplierSuppMenu:347 - Successful, funding click.
+2015-12-18 11:42:52 INFO  POUploadPerformTrade:162 -                  Auto Accepted             : : :false
+2015-12-18 11:42:52 INFO  POUploadPerformTrade:166 - 0
+2015-12-18 11:42:52 ERROR TesterListener:19 - java.util.NoSuchElementException
+2015-12-18 11:42:52 ERROR TesterListener:20 - test2 -- Test method failed !!
+2015-12-18 11:53:45 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-18 11:53:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 11:53:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 11:53:45 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test1
+2015-12-18 11:53:45 INFO  TesterListener:34 - test1 -- Test method successful.
+2015-12-18 11:57:13 INFO  PRBase:173 - STARTING TEST SUITE: 'Default test'
+2015-12-18 11:57:13 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2015-12-18 11:57:13 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2015-12-18 11:57:13 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.dBQueries
+2015-12-18 11:57:19 INFO  TesterListener:34 - dBQueries -- Test method successful.
+2015-12-18 11:57:19 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.runServices
+2015-12-18 11:57:19 INFO  TesterListener:34 - runServices -- Test method successful.
+2015-12-18 11:57:19 INFO  PRBase:84 - Running Test: com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test2
+2015-12-18 11:57:19 INFO  Browser:243 - Firefox profile: webdriver
+2015-12-18 11:57:36 INFO  SeleniumUtils:312 - Typed text:  Rktsup2
+2015-12-18 11:57:40 INFO  Synchronizer:178 - Explicit wait 1 second
+2015-12-18 11:57:42 INFO  Synchronizer:178 - Explicit wait 2 second
+2015-12-18 11:57:47 INFO  SCiSupplierSuppMenu:319 - Successful, userMenu click.
+2015-12-18 11:57:48 INFO  SCiSupplierSuppMenu:325 - Successful, funding click.
+2015-12-18 11:57:52 INFO  SCiSupplierSuppMenu:331 - Successful, avialToFund click.
+2015-12-18 11:57:59 INFO  Synchronizer:178 - Explicit wait 3 second
+2015-12-18 12:01:02 INFO  Synchronizer:178 - Explicit wait 180 second
+2015-12-18 12:01:03 INFO  SCiSupplierSuppMenu:341 - Successful, userMenu click.
+2015-12-18 12:01:09 INFO  SCiSupplierSuppMenu:347 - Successful, funding click.
+2015-12-18 12:01:11 INFO  POUploadPerformTrade:162 -                  Auto Accepted             : : :true
+2015-12-18 12:01:12 INFO  SCiSupplierSuppMenu:169 - Successful, userMenu click.
+2015-12-18 12:01:13 INFO  SCiSupplierSuppMenu:175 - Successful, Track Documents click.
+2015-12-18 12:01:18 INFO  Synchronizer:178 - Explicit wait 3 second
+2015-12-18 12:01:20 INFO  TesterListener:34 - test2 -- Test method successful.

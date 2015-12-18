@@ -62,6 +62,11 @@ public class ComAddBuyerProgram {
 
 	@FindBy(name = "selectedBuyerProgram")
 	public WebElement chkBox;
+	
+	// edit Buyer Program page
+	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/form/table[1]/tbody/tr[2]/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/input")
+	public WebElement rotationRadioBtn;
+	
 
 	// Reports
 
@@ -134,6 +139,32 @@ public class ComAddBuyerProgram {
 		String username = System.getProperty("user.name");
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 		
+
+	}
+	public void addEditBuyerProgramAuto() {
+		PageFactory.initElements(Browser.eDriver, this);
+
+		SeleniumUtils.typeText(contactPerson, "Sai");
+		SeleniumUtils.typeText(phone, "6785927880");
+		SeleniumUtils.typeText(email, "primerevenueqa@hotmail.com");
+		SeleniumUtils.click(next);
+
+		SeleniumUtils.type(supplierTransactionFee, "2000");
+		SeleniumUtils.type(fiTransactionFee, "1000");
+		SeleniumUtils.click(next1);
+		
+		SeleniumUtils.click(rotationRadioBtn);
+		Synchronizer.explicitWait(15);
+		SeleniumUtils.click(saveAndCont);
+
+		SeleniumUtils.click(addFISubmit);
+		Synchronizer.explicitWait(5);
+
+		SeleniumUtils.clickCheckBox(checkBoxFIValue, "ON");
+
+		SeleniumUtils.isTextPresent("RktFI");
+
+		SeleniumUtils.click(acceptFISubmit);
 
 	}
 

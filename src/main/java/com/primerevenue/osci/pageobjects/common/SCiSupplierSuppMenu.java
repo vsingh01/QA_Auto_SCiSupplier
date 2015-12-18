@@ -73,19 +73,19 @@ public class SCiSupplierSuppMenu {
 				+ spTitle);
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		try {
 			SeleniumUtils.click(funding);
-			logger.debug("Successful, funding click.");
+			logger.info("Successful, funding click.");
 		} catch (Exception e) {
 			logger.error("Failed, funding click");
 		}
 		try {
 			SeleniumUtils.click(sellOfferHistory);
-			logger.debug("Successful, sellOfferHistory click.");
+			logger.info("Successful, sellOfferHistory click.");
 		} catch (Exception e) {
 			logger.error("Failed, sellOfferHistory click");
 		}
@@ -96,31 +96,31 @@ public class SCiSupplierSuppMenu {
 
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		try {
 			SeleniumUtils.click(home);
-			logger.debug("Successful, home click.");
+			logger.info("Successful, home click.");
 		} catch (Exception e) {
 			logger.error("Failed, home click");
 		}
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		try {
 			SeleniumUtils.click(funding);
-			logger.debug("Successful, funding click.");
+			logger.info("Successful, funding click.");
 		} catch (Exception e) {
 			logger.error("Failed, funding click");
 		}
 		try {
 			SeleniumUtils.click(poCmHistroy);
-			logger.debug("Successful, Payment Obligation & Credit Memo History click.");
+			logger.info("Successful, Payment Obligation & Credit Memo History click.");
 		} catch (Exception e) {
 			logger.error("Failed, Payment Obligation & Credit Memo History click");
 		}
@@ -131,31 +131,31 @@ public class SCiSupplierSuppMenu {
 
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		try {
 			SeleniumUtils.click(home);
-			logger.debug("Successful, home click.");
+			logger.info("Successful, home click.");
 		} catch (Exception e) {
 			logger.error("Failed, home click");
 		}
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		try {
 			SeleniumUtils.click(funding);
-			logger.debug("Successful, funding click.");
+			logger.info("Successful, funding click.");
 		} catch (Exception e) {
 			logger.error("Failed, funding click");
 		}
 		try {
 			SeleniumUtils.click(tradeHistory);
-			logger.debug("Successful, tradeHistory click.");
+			logger.info("Successful, tradeHistory click.");
 		} catch (Exception e) {
 			logger.error("Failed, tradeHistory click");
 		}
@@ -166,13 +166,13 @@ public class SCiSupplierSuppMenu {
 
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		try {
 			SeleniumUtils.click(trackDocument);
-			logger.debug("Successful, Track Documents click.");
+			logger.info("Successful, Track Documents click.");
 		} catch (Exception e) {
 			logger.error("Failed, Track Documents click");
 		}
@@ -184,19 +184,19 @@ public class SCiSupplierSuppMenu {
 		
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		try {
 			SeleniumUtils.click(reports);
-			logger.debug("Successful, Reports click.");
+			logger.info("Successful, Reports click.");
 		} catch (Exception e) {
 			logger.error("Failed, Reports click");
 		}
 		try {
 			SeleniumUtils.click(paymentObliAgedForcast);
-			logger.debug("Successful, paymentObliAgedForcast click.");
+			logger.info("Successful, paymentObliAgedForcast click.");
 		} catch (Exception e) {
 			logger.error("Failed, paymentObliAgedForcast click");
 		}
@@ -206,19 +206,19 @@ public class SCiSupplierSuppMenu {
 		
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		/*try {
 			SeleniumUtils.click(reports);
-			logger.debug("Successful, Reports click.");
+			logger.info("Successful, Reports click.");
 		} catch (Exception e) {
 			logger.error("Failed, Reports click");
 		}*/
 		try {
 			SeleniumUtils.click(remtAdviceReport);
-			logger.debug("Successful, remtAdviceReport click.");
+			logger.info("Successful, remtAdviceReport click.");
 		} catch (Exception e) {
 			logger.error("Failed, remtAdviceReport click");
 		}
@@ -228,19 +228,19 @@ PageFactory.initElements(Browser.eDriver, this);
 		
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		/*try {
 			SeleniumUtils.click(reports);
-			logger.debug("Successful, Reports click.");
+			logger.info("Successful, Reports click.");
 		} catch (Exception e) {
 			logger.error("Failed, Reports click");
 		}*/
 		try {
 			SeleniumUtils.click(poReport);
-			logger.debug("Successful, poReport click.");
+			logger.info("Successful, poReport click.");
 		} catch (Exception e) {
 			logger.error("Failed, poReport click");
 		}
@@ -250,19 +250,19 @@ PageFactory.initElements(Browser.eDriver, this);
 				
 				try {
 					SeleniumUtils.click(userMenu);
-					logger.debug("Successful, userMenu click.");
+					logger.info("Successful, userMenu click.");
 				} catch (Exception e) {
 					logger.error("Failed, userMenu click");
 				}
 				/*try {
 					SeleniumUtils.click(reports);
-					logger.debug("Successful, Reports click.");
+					logger.info("Successful, Reports click.");
 				} catch (Exception e) {
 					logger.error("Failed, Reports click");
 				}*/
 				try {
 					SeleniumUtils.click(creditMemoReport);
-					logger.debug("Successful, creditMemoReport click.");
+					logger.info("Successful, creditMemoReport click.");
 				} catch (Exception e) {
 					logger.error("Failed, creditMemoReport click");
 				}
@@ -272,19 +272,19 @@ PageFactory.initElements(Browser.eDriver, this);
 				
 				try {
 					SeleniumUtils.click(userMenu);
-					logger.debug("Successful, userMenu click.");
+					logger.info("Successful, userMenu click.");
 				} catch (Exception e) {
 					logger.error("Failed, userMenu click");
 				}
 				/*try {
 					SeleniumUtils.click(reports);
-					logger.debug("Successful, Reports click.");
+					logger.info("Successful, Reports click.");
 				} catch (Exception e) {
 					logger.error("Failed, Reports click");
 				}*/
 				try {
 					SeleniumUtils.click(taxReport);
-					logger.debug("Successful, taxReport click.");
+					logger.info("Successful, taxReport click.");
 				} catch (Exception e) {
 					logger.error("Failed, taxReport click");
 				}
@@ -294,19 +294,19 @@ PageFactory.initElements(Browser.eDriver, this);
 				
 				try {
 					SeleniumUtils.click(userMenu);
-					logger.debug("Successful, userMenu click.");
+					logger.info("Successful, userMenu click.");
 				} catch (Exception e) {
 					logger.error("Failed, userMenu click");
 				}
 				/*try {
 					SeleniumUtils.click(reports);
-					logger.debug("Successful, Reports click.");
+					logger.info("Successful, Reports click.");
 				} catch (Exception e) {
 					logger.error("Failed, Reports click");
 				}*/
 				try {
 					SeleniumUtils.click(ponReport);
-					logger.debug("Successful, ponReport click.");
+					logger.info("Successful, ponReport click.");
 				} catch (Exception e) {
 					logger.error("Failed, ponReport click");
 				}
@@ -316,21 +316,38 @@ PageFactory.initElements(Browser.eDriver, this);
 		
 		try {
 			SeleniumUtils.click(userMenu);
-			logger.debug("Successful, userMenu click.");
+			logger.info("Successful, userMenu click.");
 		} catch (Exception e) {
 			logger.error("Failed, userMenu click");
 		}
 		try {
 			SeleniumUtils.click(funding);
-			logger.debug("Successful, funding click.");
+			logger.info("Successful, funding click.");
 		} catch (Exception e) {
 			logger.error("Failed, funding click");
 		}
 		try {
 			SeleniumUtils.click(avialToFund);
-			logger.debug("Successful, avialToFund click.");
+			logger.info("Successful, avialToFund click.");
 		} catch (Exception e) {
 			logger.error("Failed, avialToFund click");
 		}
 	}
+	/*public void menuToSellOfferHistoryAuto()	{
+		PageFactory.initElements(Browser.eDriver, this);
+		
+		try {
+			SeleniumUtils.click(userMenu);
+			logger.info("Successful, userMenu click.");
+		} catch (Exception e) {
+			logger.error("Failed, userMenu click");
+		}
+		try {
+			SeleniumUtils.click(sellOfferHistory);
+			logger.info("Successful, funding click.");
+		} catch (Exception e) {
+			logger.error("Failed, funding click");
+		}
+		
+	}*/
 }

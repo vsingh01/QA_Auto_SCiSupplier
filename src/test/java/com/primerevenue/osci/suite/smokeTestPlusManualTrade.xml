@@ -12,7 +12,7 @@
 
 		<classes>
 			<class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG1" />
-			<!-- <class name="com.primerevenue.osci.test.smoke.CMSmokeTestNG2" />
+			<class name="com.primerevenue.osci.test.smoke.CMSmokeTestNG2" />
 			<class name="com.primerevenue.osci.test.smoke.FISmokeTestNG3" />
 			<class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG4" />
 			<class name="com.primerevenue.osci.test.smoke.SuppReportsTestNG5" />
@@ -24,7 +24,7 @@
 			<class name="com.primerevenue.osci.test.smoke.FIModReportTestNG11" />
 			<class name="com.primerevenue.osci.test.smoke.Otp2FATestNG12" />
 			<class name="com.primerevenue.osci.test.smoke.POPerformTradeTestNG13" />
-			<class name="com.primerevenue.osci.test.smoke.DBRollBackTestNG14" /> -->
+			<class name="com.primerevenue.osci.test.smoke.DBRollBackTestNG14" />
 
 		</classes>
 
