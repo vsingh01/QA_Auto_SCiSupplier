@@ -63,21 +63,21 @@ public class VerifyBuyerPagesReports {
 	public void paymentSchedulePage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display1 = SeleniumUtils.isTextPresent("Payment Schedule");
-		System.out.println("Payment Schedule page title verified: : : "
+		logger.info("Payment Schedule page title verified: : : "
 				+ display1);
 	}
 
 	public void paymentHistoryPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display2 = SeleniumUtils.isTextPresent("Payment History");
-		System.out.println("Payment History page title verified: : : :"
+		logger.info("Payment History page title verified: : : :"
 				+ display2);
 	}
 
 	public void matureCalendarPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display3 = SeleniumUtils.isTextPresent("Set Maturing Calendar");
-		System.out.println("setMatureCalPageTitle verified: : :" + display3);
+		logger.info("setMatureCalPageTitle verified: : :" + display3);
 	}
 
 	public void payObligationSerachResultsPage() {
@@ -95,14 +95,14 @@ public class VerifyBuyerPagesReports {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display5 = SeleniumUtils
 				.isTextPresent("View Rejected Documents");
-		System.out.println("View Rejected Document page title verified: : : "
+		logger.info("View Rejected Document page title verified: : : "
 				+ display5);
 	}
 
 	public void loadConfirmationPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		boolean display6 = SeleniumUtils.isTextPresent("Load Confirmations");
-		System.out.println("Load confirmation page title verified: : :"
+		logger.info("Load confirmation page title verified: : :"
 				+ display6);
 	}
 
@@ -113,7 +113,7 @@ public class VerifyBuyerPagesReports {
 		SeleniumUtils.switchToNewWindow(fbMainContainer, endOfDayReportTitle);
 		boolean title = SeleniumUtils
 				.isTextPresent("End of Day Funding Report");
-		System.out.println("End of Day Funding Report Title verified: : :"
+		logger.info("End of Day Funding Report Title verified: : :"
 				+ title);
 	}
 
@@ -128,7 +128,7 @@ public class VerifyBuyerPagesReports {
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(10);
-		System.out.println(pdfManager.ToText());
+		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
@@ -147,7 +147,7 @@ public class VerifyBuyerPagesReports {
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
-		System.out.println(pdfManager.ToText());
+		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");

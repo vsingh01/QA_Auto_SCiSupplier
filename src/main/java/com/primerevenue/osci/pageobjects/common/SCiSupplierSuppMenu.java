@@ -69,7 +69,7 @@ public class SCiSupplierSuppMenu {
 	public void menuToSellOfferHistPage() {
 		PageFactory.initElements(Browser.eDriver, this);
 		Boolean spTitle = SeleniumUtils.isTextPresent("Supplier Home");
-		System.out.println("Supplier Home Title verified : : :"
+		logger.info("Supplier Home Title verified : : :"
 				+ spTitle);
 		try {
 			SeleniumUtils.click(userMenu);

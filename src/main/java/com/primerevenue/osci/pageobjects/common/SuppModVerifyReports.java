@@ -69,7 +69,7 @@ public class SuppModVerifyReports {
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, poafRepoTitle);
 		boolean title = SeleniumUtils.isTextPresent("Payment Obligation Aged Forecast");
-		System.out.println("Payment Obligation Aged Forecast Report Title verified: : :"+ title);
+		logger.info("Payment Obligation Aged Forecast Report Title verified: : :"+ title);
 		
 	}
 	public void remAdviceReport() {
@@ -81,7 +81,7 @@ public class SuppModVerifyReports {
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, remAdvRepoTitle);
 		boolean title = SeleniumUtils.isTextPresent("Remittance Advice Report");
-		System.out.println("Remittance Advice Report Title verified: : :"+ title);
+		logger.info("Remittance Advice Report Title verified: : :"+ title);
 			
 	}
 	public void poReport() {
@@ -92,7 +92,7 @@ public class SuppModVerifyReports {
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, poRepoTitle);
 		boolean title = SeleniumUtils.isTextPresent("Payments Obligation Report");
-		System.out.println("Payments Obligation Report Title verified: : :"+ title);
+		logger.info("Payments Obligation Report Title verified: : :"+ title);
 		
 	}	
 	public void creditMemoReport() {
@@ -103,7 +103,7 @@ public class SuppModVerifyReports {
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, creditMemoRepoTitle);
 		boolean title = SeleniumUtils.isTextPresent("Credit Memo Report");
-		System.out.println("Credit Memo Report Title verified: : :"+ title);
+		logger.info("Credit Memo Report Title verified: : :"+ title);
 		
 	}
 	public void taxReport() {
@@ -114,7 +114,7 @@ public class SuppModVerifyReports {
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, taxInvoiceReprt);
 		boolean title = SeleniumUtils.isTextPresent("Tax Report");
-		System.out.println("Tax Report Title verified: : :"+ title);
+		logger.info("Tax Report Title verified: : :"+ title);
 		
 	}
 	public void poNotificationReport() {
@@ -125,7 +125,7 @@ public class SuppModVerifyReports {
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, poNotificationReprt);
 		boolean title = SeleniumUtils.isTextPresent("Payment Obligation Notification Report");
-		System.out.println("Payment Obligation Notification Report Title verified: : :"+ title);
+		logger.info("Payment Obligation Notification Report Title verified: : :"+ title);
 		
 	}
 }

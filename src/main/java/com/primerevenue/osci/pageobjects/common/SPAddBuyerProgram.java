@@ -191,12 +191,12 @@ public class SPAddBuyerProgram {
 			logger.info(preMatLedDays);
 			Assert.assertEquals("1", preMatLedDays);
 			boolean radio1 = intraDayRatesUpdate1.isSelected();
-			System.out.println(radio1);
+			logger.info(radio1);
 			if (radio1 == false) {
 				logger.info("radion button by defalut not selected - valadiation passed");
 			}
 			boolean radio2 = sendTransferNotifyBuyer1.isSelected();
-			System.out.println(radio2);
+			logger.info(radio2);
 			if (radio2 == true) {
 				logger.info("radion button by defalut selected - valadiation passed");
 			}
@@ -255,19 +255,19 @@ public class SPAddBuyerProgram {
 		SeleniumUtils.click(search);
 		
 		boolean title = SeleniumUtils.isTextPresent("Payment Obligation Search Results");
-		System.out.println("Payment Obligation Search Results Title verified: : :"+ title);
+		logger.info("Payment Obligation Search Results Title verified: : :"+ title);
 	}
 	public void loadConfirm() {
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		boolean title = SeleniumUtils.isTextPresent("Load Confirmations");
-		System.out.println("Load Confirmations Title verified: : :"+ title);
+		logger.info("Load Confirmations Title verified: : :"+ title);
 		
 	}
 	public void userPwdMaintenance() {
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		boolean title = SeleniumUtils.isTextPresent("User Search");
-		System.out.println("Load Confirmations Title verified: : :"+ title);
+		logger.info("Load Confirmations Title verified: : :"+ title);
 	}
 }

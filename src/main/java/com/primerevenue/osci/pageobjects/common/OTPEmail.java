@@ -52,7 +52,7 @@ public class OTPEmail {
 	sddsads.findElement(By.id("idSIButton9")).click();
 	
 	
-	System.out.println("email title::::"+ sddsads.getTitle());
+	logger.info("email title::::"+ sddsads.getTitle());
 	
 		
 	
@@ -74,9 +74,9 @@ public class OTPEmail {
 	/*String accessCode;
 	String otpmsgCont = sddsads.findElement(By.xpath("html/body/div[2]/div[2]/div/div/div[1]/div/div/div[3]/div[1]/div[2]/div/div[2]/div[2]/div[2]/div[3]/div/pre")).getText();
 	int xx = otpmsgCont.indexOf("Code:");
-	System.out.println("Access Code:::::" + xx);
+	logger.info("Access Code:::::" + xx);
 	accessCode = otpmsgCont.substring(xx+5, xx+11);
-	System.out.println("Access Code>>>>>"+ accessCode);
+	logger.info("Access Code>>>>>"+ accessCode);
 	this.accessCode = accessCode;
 	Browser.close();
 		

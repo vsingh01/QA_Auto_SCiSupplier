@@ -87,7 +87,7 @@ public class LoginFrmTmpPwd {
     	SeleniumUtils.click(proceedButton);
     	Synchronizer.explicitWait(10);
     	Boolean spTitle = SeleniumUtils.isTextPresent("Supplier Home");
-		System.out.println("Supplier Home Title verified : : :"
+		logger.info("Supplier Home Title verified : : :"
 				+ spTitle);
     }
 

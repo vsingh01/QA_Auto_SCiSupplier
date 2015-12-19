@@ -97,7 +97,7 @@ public class SCiSupplierFIMenu {
 		PageFactory.initElements(Browser.eDriver, this);
 		Boolean spTitle = SeleniumUtils
 				.isTextPresent("Financial Institution Home");
-		System.out.println("Financial Institution Home Title verified : : :"
+		logger.info("Financial Institution Home Title verified : : :"
 				+ spTitle);
 		SeleniumUtils.click(userMenu);
 		SeleniumUtils.click(portfolioManager);

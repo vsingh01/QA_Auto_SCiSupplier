@@ -134,10 +134,10 @@ public class POUploadPerformTrade  {
 		SeleniumUtils.click(accept);
 		
 		int eftStatesCount = eFTStateLinks.size();
-		System.out.println(eftStatesCount);
+		logger.info(eftStatesCount);
 		WebElement latestStatement = Iterables.getLast(eFTStateLinks);
 		String eftStmtNumber = latestStatement.getText();
-		System.out.println(eftStmtNumber);
+		logger.info(eftStmtNumber);
 		//SeleniumUtils.click(latestStatement);
 		
 	}
@@ -162,10 +162,10 @@ public class POUploadPerformTrade  {
 		logger.info("                 Auto Accepted             : : :"+ title1);
 		
 		int selloffCount = sellOffHistLinks.size();
-		System.out.println(selloffCount);
+		logger.info(selloffCount);
 		WebElement latestStatement1 = Iterables.getLast(sellOffHistLinks);
 		String sellOfferNumber = latestStatement1.getText();
-		System.out.println(sellOfferNumber);
+		logger.info(sellOfferNumber);
 		
 		//menu
 		objRef.menuTrackDocumentPage();
@@ -174,12 +174,12 @@ public class POUploadPerformTrade  {
 		SeleniumUtils.click(trackSearch);
 		
 		int eftStatesCount = eFTStateLinks.size();
-		System.out.println(eftStatesCount);
+		logger.info(eftStatesCount);
 		WebElement latestStatement = Iterables.getLast(eFTStateLinks);
 		String eftStmtNumber = latestStatement.getText();
-		System.out.println(eftStmtNumber);
+		logger.info(eftStmtNumber);
 		
-		System.out.println(eftStmtNumber.equalsIgnoreCase(sellOfferNumber));//true  
+		logger.info(eftStmtNumber.equalsIgnoreCase(sellOfferNumber));//true  
 		
 		
 	}

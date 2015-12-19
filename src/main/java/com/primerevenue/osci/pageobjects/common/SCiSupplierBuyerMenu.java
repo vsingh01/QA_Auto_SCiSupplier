@@ -68,7 +68,7 @@ public class SCiSupplierBuyerMenu {
 
 		PageFactory.initElements(Browser.eDriver, this);
 		Boolean spTitle = SeleniumUtils.isTextPresent("Buyer Home");
-		System.out.println("Buyer Home Title verified : : :"
+		logger.info("Buyer Home Title verified : : :"
 				+ spTitle);
 		SeleniumUtils.click(userMenu);
 		SeleniumUtils.click(payments);

@@ -29,7 +29,7 @@ public class Otp2fa {
 		
 		//SeleniumUtils.click(senCode);
 		String oSCiWindow = Browser.eDriver.getWindowHandle();
-		System.out.println("OSCi_window :::::" + oSCiWindow);
+		logger.info("OSCi_window :::::" + oSCiWindow);
 		this.oSCiWindow = oSCiWindow;
 		SeleniumUtils.mouseClick(senCode);
 		return oSCiWindow;
@@ -40,7 +40,7 @@ public class Otp2fa {
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		String oSCiWindow = Browser.eDriver.getWindowHandle();
-		System.out.println("OSCi_window :::::" + oSCiWindow);
+		logger.info("OSCi_window :::::" + oSCiWindow);
 		Browser.eDriver.switchTo().window(oSCiWindow);
 		
 		//EmailClient acess = new EmailClient();
@@ -49,7 +49,7 @@ public class Otp2fa {
 		SeleniumUtils.click(submit);
 		Synchronizer.explicitWait(10);
 		Boolean sdsdd = SeleniumUtils.isTextPresent("Community Home");
-		System.out.println("Community Home Page Title Verified and User is able to scucceefully logged in with 2FA credentials:::::"+ sdsdd);
+		logger.info("Community Home Page Title Verified and User is able to scucceefully logged in with 2FA credentials:::::"+ sdsdd);
 		
 	}
 	

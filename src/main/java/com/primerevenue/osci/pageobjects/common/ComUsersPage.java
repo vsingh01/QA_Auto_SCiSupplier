@@ -28,7 +28,7 @@ public class ComUsersPage {
 
 		try {
 			SeleniumUtils.click(edit);
-			logger.debug("Successful, edit link click.");
+			logger.info("Successful, edit link click.");
 		} catch (Exception e) {
 			logger.error("Failed, edit link click");
 		}

@@ -43,9 +43,9 @@ public class EmailClient {
 		String tempPwd;
 		String msgCont = msgEmail.getText();
 		int xx = msgCont.indexOf("Temporary Password:");
-		System.out.println("Temporary Password:::::" + xx);
+		logger.info("Temporary Password:::::" + xx);
 		tempPwd = msgCont.substring(xx+20, xx+28);
-		System.out.println("Temporary Password>>>>>"+ tempPwd);
+		logger.info("Temporary Password>>>>>"+ tempPwd);
 		this.tempPwd = tempPwd;
 		Browser.close();
 		return tempPwd;
@@ -70,13 +70,13 @@ public class EmailClient {
 		String accessCode;
 		String otpmsgCont = otpMsgEmail.getText();
 		int xx = otpmsgCont.indexOf("Code:");
-		System.out.println("Access Code:::::" + xx);
+		logger.info("Access Code:::::" + xx);
 		accessCode = otpmsgCont.substring(xx+5, xx+11);
-		System.out.println("Access Code>>>>>"+ accessCode);
+		logger.info("Access Code>>>>>"+ accessCode);
 		this.accessCode = accessCode;
 		
 		String emailWindow = EBrowser.eDriver.getWindowHandle();
-		System.out.println("emailwindow :::::" + emailWindow);
+		logger.info("emailwindow :::::" + emailWindow);
 		EBrowser.eDriver.quit();
 		
 		return accessCode;

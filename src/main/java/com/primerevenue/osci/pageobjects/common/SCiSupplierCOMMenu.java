@@ -78,7 +78,7 @@ public class SCiSupplierCOMMenu {
 		while(SeleniumUtils.isElementPresent(xpath_Start+i+xpath_End)) {
 		String buyerName = Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).getText();
 		if(buyerName.equalsIgnoreCase("rktbuyer2")) {
-			System.out.println("Buyer Name Found : : : : :" + buyerName);
+			logger.info("Buyer Name Found : : : : :" + buyerName);
 			
 			//Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).click();
 		
@@ -91,7 +91,7 @@ public class SCiSupplierCOMMenu {
 		String buyerProgramView = Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End.replace("td[1]","td[3]"))).getText();
 		
 		if (buyerProgramView.equalsIgnoreCase("View")) {
-			System.out.println("Buyer Program Found : : : : :" + buyerProgramView);
+			logger.info("Buyer Program Found : : : : :" + buyerProgramView);
 			Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End.replace("td[1]","td[3]"))).click();
 			break;
 		}
@@ -113,7 +113,7 @@ public class SCiSupplierCOMMenu {
 		Synchronizer.waitUntilDisplayed(userMenu, 5);
 
 		Boolean spTitle = SeleniumUtils.isTextPresent("Community Home");
-		System.out.println("Community Home Title verified : : :"
+		logger.info("Community Home Title verified : : :"
 				+ spTitle);
 
 		try {

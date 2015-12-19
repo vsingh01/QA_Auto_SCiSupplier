@@ -80,7 +80,7 @@ public class SPMaintainMembership {
 		while(SeleniumUtils.isElementPresent(xpath_Start+i+xpath_End)) {
 		String buyerName = Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).getText();
 		if(buyerName.equalsIgnoreCase("rktbuyer2")) {
-			System.out.println("Buyer Name Found : : : : :" + buyerName);
+			logger.info("Buyer Name Found : : : : :" + buyerName);
 			
 			//Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).click();
 		
@@ -92,7 +92,7 @@ public class SPMaintainMembership {
 		String buyerProgramView = Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End.replace("td[2]","td[5]"))).getText();
 		
 		if (buyerProgramView.equalsIgnoreCase("View")) {
-			System.out.println("Buyer Program Found : : : : :" + buyerProgramView);
+			logger.info("Buyer Program Found : : : : :" + buyerProgramView);
 			Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End.replace("td[2]","td[5]"))).click();
 			break;
 		}
@@ -124,7 +124,7 @@ public class SPMaintainMembership {
 		while(SeleniumUtils.isElementPresent(xpath_Start+i+xpath_End)) {
 		String buyerProgram = Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).getText();
 		if(buyerProgram.equalsIgnoreCase("rktcommunity_BP")) {
-			System.out.println("Buyer Name Found : : : : :" + buyerProgram);
+			logger.info("Buyer Name Found : : : : :" + buyerProgram);
 			
 			Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).click();
 		break;

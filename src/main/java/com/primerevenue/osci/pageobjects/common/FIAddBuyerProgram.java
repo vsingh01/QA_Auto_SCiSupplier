@@ -79,17 +79,17 @@ public class FIAddBuyerProgram {
 	public void fIAddBP() {
 		PageFactory.initElements(Browser.eDriver, this);
 		int addcount = addLinks.size();
-		System.out.println(addcount);
+		logger.info(addcount);
 		WebElement lastElement = Iterables.getLast(addLinks);
 		String sssaaaa = lastElement.getText();
-		System.out.println(sssaaaa);
+		logger.info(sssaaaa);
 		SeleniumUtils.click(lastElement);
 
 		SeleniumUtils.selectOption(settlmentBankAccountId, "RktFI_Bank");
 		SeleniumUtils.selectOption(clearingBankAccountId, "RktFI_Bank");
 		
 		boolean radio1 = autoAcceptOffRadio.isSelected();
-		System.out.println(radio1);
+		logger.info(radio1);
 		if (radio1 == false) {
 			logger.info("Auto Accept radion button by defalut not selected - valadiation passed");
 		}
@@ -114,7 +114,7 @@ public class FIAddBuyerProgram {
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
-		System.out.println(pdfManager.ToText());
+		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
@@ -136,7 +136,7 @@ public class FIAddBuyerProgram {
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
-		System.out.println(pdfManager.ToText());
+		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
@@ -156,7 +156,7 @@ public class FIAddBuyerProgram {
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
-		System.out.println(pdfManager.ToText());
+		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
@@ -165,17 +165,17 @@ public class FIAddBuyerProgram {
 	public void fIAddBPAuto() {
 		PageFactory.initElements(Browser.eDriver, this);
 		int addcount = addLinks.size();
-		System.out.println(addcount);
+		logger.info(addcount);
 		WebElement lastElement = Iterables.getLast(addLinks);
 		String sssaaaa = lastElement.getText();
-		System.out.println(sssaaaa);
+		logger.info(sssaaaa);
 		SeleniumUtils.click(lastElement);
 
 		SeleniumUtils.selectOption(settlmentBankAccountId, "RktFI_Bank");
 		SeleniumUtils.selectOption(clearingBankAccountId, "RktFI_Bank");
 		Synchronizer.explicitWait(3);
 		boolean radio1 = autoAcceptOffRadio.isSelected();
-		System.out.println(radio1);
+		logger.info(radio1);
 		if (radio1 == false) {
 			logger.info("Auto Accept radion button by defalut not selected - valadiation passed");
 		}

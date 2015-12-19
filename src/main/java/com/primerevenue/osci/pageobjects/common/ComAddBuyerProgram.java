@@ -119,7 +119,7 @@ public class ComAddBuyerProgram {
 		SeleniumUtils.switchToNewWindow(fbMainContainer,
 				supplierActivityReportTitle);
 		boolean title = SeleniumUtils.isTextPresent("Supplier Activity Report");
-		System.out.println("Supplier Activity Report Title verified: : :"+ title);
+		logger.info("Supplier Activity Report Title verified: : :"+ title);
 		Synchronizer.explicitWait(2);
 	}
 
@@ -134,7 +134,7 @@ public class ComAddBuyerProgram {
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
 		Synchronizer.explicitWait(8);
-		System.out.println(pdfManager.ToText());
+		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
