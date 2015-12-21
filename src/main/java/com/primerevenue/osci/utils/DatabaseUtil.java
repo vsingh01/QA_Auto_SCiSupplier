@@ -97,7 +97,7 @@ public class DatabaseUtil extends PropertiesUtil {
 		ResultSet rs = null;
 		try {
 			rs = stmt.executeQuery(sqlQuery);
-			// System.out.println(rs.getObject("referenceId").toString());
+			// logger.info(rs.getObject("referenceId").toString());
 
 		} catch (SQLException e) {
 			logger.error("Failed MySql execute statement: " + e.getMessage());
@@ -156,7 +156,7 @@ public class DatabaseUtil extends PropertiesUtil {
 				// String referenceId = rs.getString("referenceId");
 				String supplierid = rs.getString("supplierid");
 				// String username = rs.getString("username");
-				System.out.println(supplierid);
+				logger.info("supplierid:::"+ supplierid);
 				// logger.info(usergroup + ", " + username);
 				this.supplierID = supplierid;
 				
@@ -700,7 +700,7 @@ public class DatabaseUtil extends PropertiesUtil {
 			rs = stmt.executeQuery(sqlQuery);
 			printResults(rs);
 
-			System.out.println("supplierID parameter value::" + supplierID);
+			logger.info("Supplier username successfully deleted and its supplierID is ::" + supplierID);
 
 			String sqlQuery1 = "delete from magellanrelations..SavedSearch where supplierid = '"
 					+ supplierID
@@ -839,13 +839,13 @@ public class DatabaseUtil extends PropertiesUtil {
 			while (rs.next()) {
 
 				String fieldId = rs.getString("fileId");
-				System.out.println("fileId::::" + fieldId);
+				logger.info("fileId::::" + fieldId);
 				this.fieldID = fieldId;
 			}
 
 			// printResults(rs);
 
-			System.out.println("fieldID parameter value::" + fieldID);
+			logger.info("fieldID parameter value::" + fieldID);
 
 			String sqlQuery1 = "SELECT processingStatus FROM [MagellanReporting].[dbo].[PaymentObligation] where fileId ='"
 					+ fieldID + "' order by paymentobligationid desc";
@@ -883,13 +883,13 @@ public class DatabaseUtil extends PropertiesUtil {
 			while (rs.next()) {
 
 				String buyerProgramId = rs.getString("buyerProgramId");
-				System.out.println("buyerProgramId:::::" + buyerProgramId);
+				logger.info("buyerProgramId:::::" + buyerProgramId);
 				this.buyerProgramID = buyerProgramId;
 			}
 			
 			//printResults(rs);
 
-			System.out.println("buyerProgramID parameter value::" + buyerProgramID);
+			logger.info("Buyerprograme succesfully deleted and its buyerProgramID is ::" + buyerProgramID);
 
 			String sqlQuery1 = "delete from magellanrelations..Audit_BuyerProgram where buyerprogramid = '"
 					+ buyerProgramID

@@ -58,7 +58,7 @@ public class SeleniumUtils {
 			myDynamicElement = (new WebDriverWait(driver, 10))
 					.until(ExpectedConditions.alertIsPresent());
 		} catch (Exception e) {
-			System.out.println("Alert not appear");
+			logger.info("Alert not appear");
 		}
 		return myDynamicElement;
 
@@ -162,7 +162,7 @@ public class SeleniumUtils {
 			myDynamicElement = (new WebDriverWait(driver, 10))
 					.until(ExpectedConditions.presenceOfElementLocated(by));
 		} catch (Exception e) {
-			System.out.println("Element " + by + " not found");
+			logger.info("Element " + by + " not found");
 		}
 		return myDynamicElement;
 
@@ -719,7 +719,7 @@ public class SeleniumUtils {
 	public static void switchToNewWindow(WebElement elm1, WebElement elm2) {
 
 		String parent_window = Browser.eDriver.getWindowHandle();
-		System.out.println("Main windowId :::::" + parent_window);
+		logger.info("Main windowId :::::" + parent_window);
 
 		Set<String> s1 = Browser.eDriver.getWindowHandles();
 
@@ -731,7 +731,7 @@ public class SeleniumUtils {
 			if (!parent_window.equalsIgnoreCase(child_window)) {
 
 				Browser.eDriver.switchTo().window(child_window);
-				System.out.println("Report windowId :::::" + child_window);
+				logger.info("Report windowId :::::" + child_window);
 				Synchronizer.explicitWait(5);
 
 				Browser.eDriver.switchTo().window(child_window).close();
@@ -778,7 +778,7 @@ public class SeleniumUtils {
 			theNewestFile = files[0];
 			theNewestFile.delete();
 		}
-		System.out.println("file name :::::" + theNewestFile);
+		logger.info("file name :::::" + theNewestFile);
 	}
 
 	public static void switchWindows() {
@@ -787,22 +787,22 @@ public class SeleniumUtils {
 				Set<String> allHandles = Browser.eDriver.getWindowHandles();
 
 				//count the handles Here count is=2
-				System.out.println("Count of windows:"+allHandles.size());      
+				logger.info("Count of windows:"+allHandles.size());      
 
 				//Get current handle or default handle
 				String currentWindowHandle = allHandles.iterator().next();
-				System.out.println("currentWindow Handle"+currentWindowHandle);
+				logger.info("currentWindow Handle"+currentWindowHandle);
 
 				//Remove first/default Handle
 				allHandles.remove(allHandles.iterator().next());
 
 				//get the last Window Handle
 				String lastHandle = allHandles.iterator().next();
-				System.out.println("last window handle"+lastHandle);
+				logger.info("last window handle"+lastHandle);
 
 				//switch to second/last window, because we know there are only two windows 1-parent window 2-other window(ad window)
 				Browser.eDriver.switchTo().window(lastHandle);
-				System.out.println(Browser.eDriver.getTitle());
+				logger.info(Browser.eDriver.getTitle());
 				Browser.eDriver.findElement(By.tagName("body")).click();
 	}	
 }

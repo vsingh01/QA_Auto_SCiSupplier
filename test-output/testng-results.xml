@@ -1,77 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="247346" started-at="2015-12-18T16:57:13Z" finished-at="2015-12-18T17:01:20Z">
+  <suite name="Default suite" duration-ms="6810" started-at="2015-12-21T00:01:30Z" finished-at="2015-12-21T00:01:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="247346" started-at="2015-12-18T16:57:13Z" finished-at="2015-12-18T17:01:20Z">
-      <class name="com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="beforeSuite" is-config="true" duration-ms="22" started-at="2015-12-18T11:57:13Z" finished-at="2015-12-18T11:57:13Z">
+    <test name="Default test" duration-ms="6810" started-at="2015-12-21T00:01:30Z" finished-at="2015-12-21T00:01:37Z">
+      <class name="com.primerevenue.osci.test.smoke.DBRollBackTestNG14">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2015-12-20T19:01:30Z" finished-at="2015-12-20T19:01:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@ec2cc4]]>
+                <![CDATA[org.testng.TestRunner@5cee5251]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-12-18T11:57:13Z" finished-at="2015-12-18T11:57:13Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-12-20T19:01:30Z" finished-at="2015-12-20T19:01:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-12-18T11:57:13Z" finished-at="2015-12-18T11:57:13Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-12-20T19:01:30Z" finished-at="2015-12-20T19:01:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.dBQueries()]]>
+                <![CDATA[public void com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="dBQueries()[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="dBQueries" duration-ms="5498" started-at="2015-12-18T11:57:13Z" finished-at="2015-12-18T11:57:19Z">
+        <test-method status="PASS" signature="testdb()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="testdb" duration-ms="6793" started-at="2015-12-20T19:01:30Z" finished-at="2015-12-20T19:01:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dBQueries -->
-        <test-method status="PASS" signature="runServices()[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="runServices" duration-ms="47" started-at="2015-12-18T11:57:19Z" finished-at="2015-12-18T11:57:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runServices -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-12-18T11:57:19Z" finished-at="2015-12-18T11:57:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.runServices() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-12-18T11:57:19Z" finished-at="2015-12-18T11:57:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG.test2()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="test2" duration-ms="241771" started-at="2015-12-18T11:57:19Z" finished-at="2015-12-18T12:01:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG@7c0e2abd]" name="afterClass" is-config="true" duration-ms="0" started-at="2015-12-18T12:01:20Z" finished-at="2015-12-18T12:01:20Z">
+        </test-method> <!-- testdb -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="afterClass" is-config="true" duration-ms="0" started-at="2015-12-20T19:01:37Z" finished-at="2015-12-20T19:01:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.primerevenue.osci.test.smoke.AutoPOPerformTradeTestNG -->
+      </class> <!-- com.primerevenue.osci.test.smoke.DBRollBackTestNG14 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
