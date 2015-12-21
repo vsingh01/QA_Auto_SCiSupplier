@@ -12,6 +12,8 @@ import com.primerevenue.osci.driver.PRBase;
 import com.primerevenue.osci.pageobjects.common.POUploadPerformTrade;
 import com.primerevenue.osci.pageobjects.common.SCiSupplierCOMMenu;
 import com.primerevenue.osci.utils.DatabaseUtil;
+import com.primerevenue.osci.utils.SeleniumUtils;
+import com.primerevenue.osci.utils.Synchronizer;
 
 public class POPerformTradeTestNG13 extends PRBase {
 	final static Logger logger = Logger.getLogger(POPerformTradeTestNG13.class);
@@ -25,7 +27,8 @@ public class POPerformTradeTestNG13 extends PRBase {
 	//POUploadPerformTrade poupload1 = new POUploadPerformTrade();
 		
 		poUpload1.copyFiles("C:/Dir1", "X:/Magellan/Import/PaymentObligationsCSV");
-	
+		
+		
 	//run restart services
 	
 	}
@@ -34,8 +37,8 @@ public class POPerformTradeTestNG13 extends PRBase {
 		POUploadPerformTrade poUpload1 = PageFactory.initElements(
 				Browser.eDriver, POUploadPerformTrade.class);
 		
-		//poUpload1.bounceWFCServices();
-		
+		poUpload1.bounceWFCServices();
+		Synchronizer.explicitWait(360);
 	}
 	@Test
 	public void dBQueries() {

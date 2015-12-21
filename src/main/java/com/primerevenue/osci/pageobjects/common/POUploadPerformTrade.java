@@ -81,13 +81,18 @@ public class POUploadPerformTrade  {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		logger.info("PO file upload process underway, scripts execution will wait for 180 seconds");
+		Synchronizer.explicitWait(180);
+		
+		//System.out.println(SeleniumUtils.getTheNewestFile("X:/Magellan/Import/PaymentObligationsCSV/Archive", "txt"));
 
 	}
 	public void bounceWFCServices() throws Exception {
 		
 		// run batch file here..
-		Runtime.getRuntime().exec("C:/restartServicesMaj.bat");
-		
+		Runtime.getRuntime().exec("cmd /C start C:\\restartServicesMaj.bat");
+		logger.info("Restarting wfc services, scripts execution will wait for 360 minutes");
+		Synchronizer.explicitWait(360);
 	}
 	
 	
