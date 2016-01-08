@@ -58,6 +58,9 @@ public class PRBase {
     public static String USER_2FA;
 
     public static String CHANGE_PASSWORD;
+    
+    public static String STACK_POFILE_PATH;
+    public static String LOCAL_POFILE_PATH;
 
     // Disable webdriver debug
     static {
@@ -156,6 +159,10 @@ public class PRBase {
         
         HM_USER = setupProp.getProperty("em.user");
         USER_2FA = setupProp.getProperty("com.user.2fa");
+        
+        LOCAL_POFILE_PATH = setupProp.getProperty("local.pofile.path");
+        STACK_POFILE_PATH = setupProp.getProperty("stack.server.path");
+        
 
         ENABLE_EXECUTION_TRACE = setupProp.getProperty("execution.trace.enable");
         EXECUTION_TRACE_FILE = setupProp.getProperty("execution.trace.file");

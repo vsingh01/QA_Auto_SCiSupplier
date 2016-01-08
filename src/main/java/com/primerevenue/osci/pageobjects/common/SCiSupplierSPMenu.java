@@ -64,15 +64,19 @@ public class SCiSupplierSPMenu {
 
 	/* SP Community Directory page */
 
-	@FindBy(xpath = "//a[contains(text(),'Rktcommunity')]")
+	/*
+	 * @FindBy(xpath = "//a[contains(text(),'Rktcommunity')]") public WebElement
+	 * comDirName;
+	 */
+
+	@FindBy(xpath = "//a[contains(text(),'rohcom103')]")
 	public WebElement comDirName;
 
 	public void menuToMainMembership() {
 		PageFactory.initElements(Browser.eDriver, this);
 		Synchronizer.waitUntilDisplayed(userMenu, 5);
 		Boolean spTitle = SeleniumUtils.isTextPresent("Service Provider Home");
-		logger.info("Service Provider Home Title verified : : :"
-				+ spTitle);
+		logger.info("Service Provider Home Title verified : : :" + spTitle);
 		SeleniumUtils.click(userMenu);
 		SeleniumUtils.click(comManagement);
 		SeleniumUtils.click(comDir);

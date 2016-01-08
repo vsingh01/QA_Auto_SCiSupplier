@@ -25,11 +25,9 @@ public class BuyerTestNG7 extends PRBase {
 		Synchronizer.implicitWait(10);
 		login(BUY_USER);
 		Synchronizer.implicitWait(5);
-		SCiSupplierBuyerMenu testMenu = PageFactory.initElements(
-				Browser.eDriver, SCiSupplierBuyerMenu.class);
+		SCiSupplierBuyerMenu testMenu = PageFactory.initElements(Browser.eDriver, SCiSupplierBuyerMenu.class);
 
-		VerifyBuyerPagesReports testMenu1 = PageFactory.initElements(
-				Browser.eDriver, VerifyBuyerPagesReports.class);
+		VerifyBuyerPagesReports testMenu1 = PageFactory.initElements(Browser.eDriver, VerifyBuyerPagesReports.class);
 		testMenu.menuToPaySchedule();
 		testMenu1.paymentSchedulePage();
 

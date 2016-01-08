@@ -25,8 +25,8 @@ public class SPAddBuyerProgram {
 
 	@FindBy(id = "_currencyCode")
 	public WebElement currencyCode;
-	
-	//Track Documents page currency code
+
+	// Track Documents page currency code
 	@FindBy(id = "currencyCode")
 	public WebElement currencyCode1;
 
@@ -133,28 +133,25 @@ public class SPAddBuyerProgram {
 
 	@FindBy(xpath = "//a[contains(text(),'Cancel')]")
 	public WebElement cancel;
-	
-	//Track Documents Page
-	
-	@FindBy(id = "dateOption")   
+
+	// Track Documents Page
+
+	@FindBy(id = "dateOption")
 	public WebElement dateOption;
-	
-	@FindBy(xpath = "//a[contains(text(),'Search')]")   
+
+	@FindBy(xpath = "//a[contains(text(),'Search')]")
 	public WebElement search;
-	
-	//Payment Obligation Search Results page
-	
+
+	// Payment Obligation Search Results page
+
 	@FindBy(xpath = "//div[text()='Payment Obligation Search Results']")
 	public WebElement payObligSearchResultsPageTitle;
-	
+
 	@FindBy(xpath = "//div[text()='Load Confirmations']")
 	public WebElement loadConfirmPageTitle;
-	
+
 	@FindBy(xpath = "//div[text()='User Search']")
 	public WebElement userSearchTitle;
-	
-	
-	
 
 	public void addBuyerProgram() {
 		PageFactory.initElements(Browser.eDriver, this);
@@ -163,29 +160,26 @@ public class SPAddBuyerProgram {
 		 * SeleniumUtils.isTextPresent("RKTbuy2"); buyerProgramName.clear();
 		 * buyerProgramName.sendKeys("RKTbuy2_BP");
 		 * 
-		 * SeleniumUtils.selectFromList(countryCode,
-		 * "United States of America");
+		 * SeleniumUtils.selectFromList(countryCode, "United States of America"
+		 * );
 		 */
 
 		try {
 			SeleniumUtils.clearWithBackSpace(buyerProgramName);
-			SeleniumUtils.type(buyerProgramName, "rktcommunity_BP");
+			// SeleniumUtils.type(buyerProgramName, "rktcommunity_BP");
+			SeleniumUtils.type(buyerProgramName, "rohcom103_BP");
 			SeleniumUtils.selectOption(countryCode, "United States of America");
 			SeleniumUtils.selectOption(currencyCode, "USD");
 			SeleniumUtils.selectOption(bankAccountId, "Prime Revenue Ltd");
 			SeleniumUtils.selectOption(profileId, "GMAC PP");
-			SeleniumUtils.selectOption(timeZoneCode,
-					"USA - Eastern Standard Time (New York)");
-			SeleniumUtils.selectOption(tradeCalendarName,
-					"US United States with Extra Holidays");
-			SeleniumUtils.selectOption(maturityCalendarName,
-					"US United States with Extra Holidays");
+			SeleniumUtils.selectOption(timeZoneCode, "USA - Eastern Standard Time (New York)");
+			SeleniumUtils.selectOption(tradeCalendarName, "US United States with Extra Holidays");
+			SeleniumUtils.selectOption(maturityCalendarName, "US United States with Extra Holidays");
 			SeleniumUtils.type(buyOfferWindowOpen, "0001");
 			SeleniumUtils.type(buyOfferWindowClose, "2355");
 			SeleniumUtils.type(buyOfferTotalTimeOut, "1");
 			SeleniumUtils.type(buyOfferFiTimeOut, "1");
-			//SeleniumUtils.type(preMatureLeadDays, "1");
-			
+			// SeleniumUtils.type(preMatureLeadDays, "1");
 
 			String preMatLedDays = preMatureLeadDays.getAttribute("value");
 			logger.info(preMatLedDays);
@@ -223,51 +217,47 @@ public class SPAddBuyerProgram {
 				logger.info("radion button by defalut selected - valadiation passed");
 			}
 
-			SeleniumUtils.selectOption(svcProvTransactionId,
-					"SEB - SEB File - Credit");
-			SeleniumUtils.selectOption(commTransactionId,
-					"SEB - SEB File - Credit");
-			SeleniumUtils.selectOption(obligorTransactionId,
-					"SEB - SEB File - Debit");
-			SeleniumUtils.selectOption(supplierTradeTransactionId,
-					"SEB - SEB File - Credit");
-			SeleniumUtils.selectOption(supplierMatureTransactionId,
-					"SEB - SEB File - Credit");
-			SeleniumUtils.selectOption(fiTradeTransactionId,
-					"SEB - SEB File - Debit");
-			SeleniumUtils.selectOption(fiMatureTransactionId,
-					"SEB - SEB File - Credit");
+			SeleniumUtils.selectOption(svcProvTransactionId, "SEB - SEB File - Credit");
+			SeleniumUtils.selectOption(commTransactionId, "SEB - SEB File - Credit");
+			SeleniumUtils.selectOption(obligorTransactionId, "SEB - SEB File - Debit");
+			SeleniumUtils.selectOption(supplierTradeTransactionId, "SEB - SEB File - Credit");
+			SeleniumUtils.selectOption(supplierMatureTransactionId, "SEB - SEB File - Credit");
+			SeleniumUtils.selectOption(fiTradeTransactionId, "SEB - SEB File - Debit");
+			SeleniumUtils.selectOption(fiMatureTransactionId, "SEB - SEB File - Credit");
 			SeleniumUtils.selectOption(gatewayId, "SEB");
-			
+
 			SeleniumUtils.click(save);
-			
+
 			logger.info("Successful, Community Buyers Tab click.");
 		} catch (Exception e) {
 			logger.error("Failed, Community Buyers Tab click");
 		}
 
 	}
+
 	public void trackDocumentsSearch() {
 		PageFactory.initElements(Browser.eDriver, this);
-		
+
 		SeleniumUtils.selectOption(dateOption, "This Year");
 		SeleniumUtils.selectOption(currencyCode1, "USD");
 		SeleniumUtils.click(search);
-		
+
 		boolean title = SeleniumUtils.isTextPresent("Payment Obligation Search Results");
-		logger.info("Payment Obligation Search Results Title verified: : :"+ title);
+		logger.info("Payment Obligation Search Results Title verified: : :" + title);
 	}
+
 	public void loadConfirm() {
 		PageFactory.initElements(Browser.eDriver, this);
-		
+
 		boolean title = SeleniumUtils.isTextPresent("Load Confirmations");
-		logger.info("Load Confirmations Title verified: : :"+ title);
-		
+		logger.info("Load Confirmations Title verified: : :" + title);
+
 	}
+
 	public void userPwdMaintenance() {
 		PageFactory.initElements(Browser.eDriver, this);
-		
+
 		boolean title = SeleniumUtils.isTextPresent("User Search");
-		logger.info("Load Confirmations Title verified: : :"+ title);
+		logger.info("Load Confirmations Title verified: : :" + title);
 	}
 }

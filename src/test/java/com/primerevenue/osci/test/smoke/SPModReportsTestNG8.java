@@ -56,7 +56,7 @@ public class SPModReportsTestNG8 extends PRBase {
 		spAddNewSuppObjRef.editSaveComanyInfoForFI();
 
 	}
-	@Test
+	@AfterClass
 	public void afterClass() {
 
 		Browser.close();

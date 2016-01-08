@@ -22,7 +22,7 @@ public class NewSupplierLoginEmailTestNG9 extends PRBase {
 	@Test
 	public void smokeTestss() throws Exception {
 		Synchronizer.implicitWait(5);
-
+		
 		EmailClient emalObjRef = PageFactory.initElements(Browser.eDriver,
 				EmailClient.class);
 
@@ -32,7 +32,7 @@ public class NewSupplierLoginEmailTestNG9 extends PRBase {
 		emalObjRef.getTempPwd1();
 	}
 
-	@AfterClass
+	@Test
 	public void afterClass() {
 		Browser.close();
 	}

@@ -32,31 +32,28 @@ public class CMSmokeTestNG2 extends PRBase {
 	@Test
 	public void cmsmokeTest2() throws InterruptedException {
 
-		SCiSupplierCOMMenu cmMenuObjRef = PageFactory.initElements(
-				Browser.eDriver, SCiSupplierCOMMenu.class);
-		//perform target credit capacity until the issue got ficed..
+		SCiSupplierCOMMenu cmMenuObjRef = PageFactory.initElements(Browser.eDriver, SCiSupplierCOMMenu.class);
+		// perform target credit capacity until the issue got ficed..
 		/*----------------------------------------------------------------*/
 		cmMenuObjRef.resetTargetCreditCapacity();
 		/*----------------------------------------------------------------*/
 		cmMenuObjRef.menuToUsers();
 
-		ComUsersPage cmUserPageObjeRef = PageFactory.initElements(
-				Browser.eDriver, ComUsersPage.class);
+		ComUsersPage cmUserPageObjeRef = PageFactory.initElements(Browser.eDriver, ComUsersPage.class);
 		cmUserPageObjeRef.usersEditMethod();
 
-		ComEditUsers cmEditObjRef = PageFactory.initElements(Browser.eDriver,
-				ComEditUsers.class);
+		ComEditUsers cmEditObjRef = PageFactory.initElements(Browser.eDriver, ComEditUsers.class);
 		cmEditObjRef.cmAddBuyerProgram();
 
-		ComAddBuyerProgram cmAddByObjRef = PageFactory.initElements(
-				Browser.eDriver, ComAddBuyerProgram.class);
+		ComAddBuyerProgram cmAddByObjRef = PageFactory.initElements(Browser.eDriver, ComAddBuyerProgram.class);
 		cmAddByObjRef.addEditBuyerProgram();
 
 	}
+
 	@AfterClass
 	public void afterClass() {
-		           
+
 		Browser.close();
-        }
+	}
 
 }

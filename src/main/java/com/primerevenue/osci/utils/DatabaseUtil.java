@@ -162,7 +162,7 @@ public class DatabaseUtil extends PropertiesUtil {
 				
 			}
 		} catch (SQLException e) {
-			logger.info("Failed MySql print results," + e.getMessage());
+			logger.info("MySql print results," + e.getMessage());
 		}
 
 	}
@@ -672,7 +672,7 @@ public class DatabaseUtil extends PropertiesUtil {
 			rs = stmt.executeQuery(sqlQuery1);
 
 		} catch (SQLException e) {
-			logger.error("Failed MySql execute statement: " + e.getMessage());
+			logger.error("MySql execute statement: " + e.getMessage());
 		}
 
 		setResultSet(rs);
@@ -681,7 +681,7 @@ public class DatabaseUtil extends PropertiesUtil {
 
 	}
 
-	public ResultSet delSupId() {
+	public void delSupId() {
 
 		 //String sqlQuery = "select * from " + getSchema() + "." + getTable();
 		String sqlQuery = "select supplierid from magellanrelations..supplier where companyName = 'AmulSupp'";
@@ -810,12 +810,12 @@ public class DatabaseUtil extends PropertiesUtil {
 			rs = stmt.executeQuery(sqlQuery1);
 
 		} catch (SQLException e) {
-			logger.error("Failed MySql execute statement: " + e.getMessage());
+			logger.error("MySql execute statement: " + e.getMessage());
 		}
 
 		setResultSet(rs);
 
-		return rs;
+		//return rs;
 
 	}
 
@@ -847,25 +847,30 @@ public class DatabaseUtil extends PropertiesUtil {
 
 			logger.info("fieldID parameter value::" + fieldID);
 
-			String sqlQuery1 = "SELECT processingStatus FROM [MagellanReporting].[dbo].[PaymentObligation] where fileId ='"
+			String sqlQuery1 = "SELECT top 1 processingStatus FROM [MagellanReporting].[dbo].[PaymentObligation] where fileId ='"
 					+ fieldID + "' order by paymentobligationid desc";
 
 						
 			rs = stmt.executeQuery(sqlQuery1);
 
+			while (rs.next()) {
+			String processingStatus = rs.getString("processingStatus");
+			logger.info("processingStatus::" + processingStatus);
+			}
+			
 		} catch (SQLException e) {
 			logger.error("Failed MySql execute statement: " + e.getMessage());
 		}
-
+	
 		setResultSet(rs);
 
 		return rs;
 
 	}
-	public ResultSet delBuyerPrograme() {
+	public void delBuyerPrograme() {
 
 		 //String sqlQuery = "select * from " + getSchema() + "." + getTable();
-		String sqlQuery = "select buyerProgramId from [MagellanRelations].[dbo].[BuyerProgram] where buyerProgramName = 'rktcommunity_BP'";
+		String sqlQuery = "select buyerProgramId from [MagellanRelations].[dbo].[BuyerProgram] where buyerProgramName = 'rohcom103_BP'";
 
 		Statement stmt = null;
 
@@ -1023,11 +1028,11 @@ public class DatabaseUtil extends PropertiesUtil {
 			rs = stmt.executeQuery(sqlQuery1);
 
 		} catch (SQLException e) {
-			logger.error("Failed MySql execute statement: " + e.getMessage());
+			logger.error("MySql execute statement: " + e.getMessage());
 		}
 
 		setResultSet(rs);
 
-		return rs;
+		//return rs;
 }
 }

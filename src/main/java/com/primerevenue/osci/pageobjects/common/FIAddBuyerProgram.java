@@ -85,9 +85,9 @@ public class FIAddBuyerProgram {
 		logger.info(sssaaaa);
 		SeleniumUtils.click(lastElement);
 
-		SeleniumUtils.selectOption(settlmentBankAccountId, "RktFI_Bank");
-		SeleniumUtils.selectOption(clearingBankAccountId, "RktFI_Bank");
-		
+		SeleniumUtils.selectOption(settlmentBankAccountId, "rohficom103_bank");
+		SeleniumUtils.selectOption(clearingBankAccountId, "rohficom103_bank");
+
 		boolean radio1 = autoAcceptOffRadio.isSelected();
 		logger.info(radio1);
 		if (radio1 == false) {
@@ -108,8 +108,9 @@ public class FIAddBuyerProgram {
 		SeleniumUtils.selectOption(pocurrencyCode, "USD");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
-		/*Runtime.getRuntime().exec(
-				"C:/jar/autoTest.exe");*/
+		/*
+		 * Runtime.getRuntime().exec( "C:/jar/autoTest.exe");
+		 */
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
@@ -117,7 +118,7 @@ public class FIAddBuyerProgram {
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
-		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
+		SeleniumUtils.deleteFile("C:/Users/" + username + "/Downloads", "PDF");
 
 	}
 
@@ -130,8 +131,9 @@ public class FIAddBuyerProgram {
 
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
-		/*Runtime.getRuntime().exec(
-				"C:/jar/autoTest.exe");*/
+		/*
+		 * Runtime.getRuntime().exec( "C:/jar/autoTest.exe");
+		 */
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
@@ -139,7 +141,7 @@ public class FIAddBuyerProgram {
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
-		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
+		SeleniumUtils.deleteFile("C:/Users/" + username + "/Downloads", "PDF");
 
 	}
 
@@ -150,8 +152,10 @@ public class FIAddBuyerProgram {
 		SeleniumUtils.selectOption(pocurrencyCode, "USD");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
-		/*Runtime.getRuntime().exec(
-				"C:/Users/samuluru/Documents/AutoIt/autoTest.exe");*/
+		/*
+		 * Runtime.getRuntime().exec(
+		 * "C:/Users/samuluru/Documents/AutoIt/autoTest.exe");
+		 */
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
@@ -159,9 +163,10 @@ public class FIAddBuyerProgram {
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
-		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
+		SeleniumUtils.deleteFile("C:/Users/" + username + "/Downloads", "PDF");
 
 	}
+
 	public void fIAddBPAuto() {
 		PageFactory.initElements(Browser.eDriver, this);
 		int addcount = addLinks.size();
@@ -171,15 +176,15 @@ public class FIAddBuyerProgram {
 		logger.info(sssaaaa);
 		SeleniumUtils.click(lastElement);
 
-		SeleniumUtils.selectOption(settlmentBankAccountId, "RktFI_Bank");
-		SeleniumUtils.selectOption(clearingBankAccountId, "RktFI_Bank");
+		SeleniumUtils.selectOption(settlmentBankAccountId, "rohficom103_bank");
+		SeleniumUtils.selectOption(clearingBankAccountId, "rohficom103_bank");
 		Synchronizer.explicitWait(3);
 		boolean radio1 = autoAcceptOffRadio.isSelected();
 		logger.info(radio1);
 		if (radio1 == false) {
 			logger.info("Auto Accept radion button by defalut not selected - valadiation passed");
 		}
-		
+
 		Synchronizer.explicitWait(3);
 		SeleniumUtils.click(saveBtn);
 		Synchronizer.explicitWait(2);

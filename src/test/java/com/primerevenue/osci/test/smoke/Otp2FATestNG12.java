@@ -21,7 +21,7 @@ public class Otp2FATestNG12 extends PRBase {
 
 		Otp2fa ObjRef = PageFactory.initElements(Browser.eDriver, Otp2fa.class);
 		ObjRef.sendOtpToEmail();
-
+		Synchronizer.explicitWait(2);
 		oTPTest2();
 
 	}

@@ -32,12 +32,12 @@ public class DBRollBackTestNG14 extends PRBase {
 		
 		databaseUtil = new DatabaseUtil();
         databaseUtil.getMySqlConnection();
-        //databaseUtil.printResults(databaseUtil.getSupIdResults());
+        databaseUtil.printResults(databaseUtil.getSupIdResults());
         databaseUtil.delBuyerPrograme();
         databaseUtil.delSupId();
+        databaseUtil.poTradedBQueries();
+              
         
-        
-        //Add delete buyer program here
 	}
 		
 	

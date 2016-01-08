@@ -10,6 +10,7 @@ import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 
 import java.util.regex.*;
+
 /**
  * @author Sai Amuluru;
  *
@@ -51,7 +52,7 @@ public class ComAddBuyerProgram {
 
 	// Buyer Program Add - FI page
 
-	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/table[2]/tbody/tr/td/form/table/tbody/tr[2]/td[1]/input")
+	@FindBy(xpath = "//a[contains(text(),'rohfi_com103')]//..//..//td[1]/input")
 	public WebElement checkBoxFIValue;
 
 	@FindBy(id = "_acceptFISubmit")
@@ -62,11 +63,10 @@ public class ComAddBuyerProgram {
 
 	@FindBy(name = "selectedBuyerProgram")
 	public WebElement chkBox;
-	
+
 	// edit Buyer Program page
 	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/form/table[1]/tbody/tr[2]/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td[1]/input")
 	public WebElement rotationRadioBtn;
-	
 
 	// Reports
 
@@ -104,8 +104,8 @@ public class ComAddBuyerProgram {
 
 		SeleniumUtils.clickCheckBox(checkBoxFIValue, "ON");
 
-		SeleniumUtils.isTextPresent("RktFI");
-
+		// SeleniumUtils.isTextPresent("RktFI");
+		SeleniumUtils.isTextPresent("rohfi_com103");
 		SeleniumUtils.click(acceptFISubmit);
 
 	}
@@ -116,20 +116,20 @@ public class ComAddBuyerProgram {
 		SeleniumUtils.selectOption(dateValue, "This Year");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(5);
-		SeleniumUtils.switchToNewWindow(fbMainContainer,
-				supplierActivityReportTitle);
+		SeleniumUtils.switchToNewWindow(fbMainContainer, supplierActivityReportTitle);
 		boolean title = SeleniumUtils.isTextPresent("Supplier Activity Report");
-		logger.info("Supplier Activity Report Title verified: : :"+ title);
+		logger.info("Supplier Activity Report Title verified: : :" + title);
 		Synchronizer.explicitWait(2);
 	}
 
 	public void buyerMaturePayForcastReport() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
-				
+
 		SeleniumUtils.click(run);
-				
-		/*Runtime.getRuntime().exec(
-				"C:/jar/autoTest.exe");*/
+
+		/*
+		 * Runtime.getRuntime().exec( "C:/jar/autoTest.exe");
+		 */
 		Synchronizer.explicitWait(5);
 		PDFManager pdfManager = new PDFManager();
 		pdfManager.setFilePath();
@@ -137,10 +137,10 @@ public class ComAddBuyerProgram {
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
 		String username = System.getProperty("user.name");
-		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
-		
+		SeleniumUtils.deleteFile("C:/Users/" + username + "/Downloads", "PDF");
 
 	}
+
 	public void addEditBuyerProgramAuto() {
 		PageFactory.initElements(Browser.eDriver, this);
 
@@ -152,7 +152,7 @@ public class ComAddBuyerProgram {
 		SeleniumUtils.type(supplierTransactionFee, "2000");
 		SeleniumUtils.type(fiTransactionFee, "1000");
 		SeleniumUtils.click(next1);
-		
+
 		SeleniumUtils.click(rotationRadioBtn);
 		Synchronizer.explicitWait(15);
 		SeleniumUtils.click(saveAndCont);

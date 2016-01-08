@@ -1,11 +1,14 @@
 package com.primerevenue.osci.pageobjects.common;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.google.common.collect.Iterables;
 import com.primerevenue.osci.driver.Browser;
 import com.primerevenue.osci.utils.SeleniumUtils;
 
@@ -24,6 +27,9 @@ public class ComEditUsers {
 
 	@FindBy(name = "selectedBuyerProgram")
 	public WebElement chkBox;
+
+	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/form/table[2]/tbody/tr/td[1]/input")
+	public List<WebElement> chkBoxLists;
 
 	@FindBy(xpath = "//a[contains(@href, 'javascript: addSelectedClick();')]")
 	public WebElement addSelected;
@@ -48,7 +54,15 @@ public class ComEditUsers {
 		}
 
 		try {
-			SeleniumUtils.clickCheckBox(chkBox, "ON");
+
+			int chkBoxcount = chkBoxLists.size();
+			logger.info(chkBoxcount);
+			WebElement lastElement = Iterables.getLast(chkBoxLists);
+			String sssaaaa = lastElement.getText();
+			logger.info(sssaaaa);
+			SeleniumUtils.clickCheckBox(lastElement, "ON");
+
+			// SeleniumUtils.clickCheckBox(chkBox, "ON");
 			logger.info("Successful, checkbox click.");
 		} catch (Exception e) {
 			logger.error("Failed, checkbox click");
@@ -69,8 +83,7 @@ public class ComEditUsers {
 
 		}
 
-		SCiSupplierCOMMenu cmtestMenu10 = PageFactory.initElements(
-				Browser.eDriver, SCiSupplierCOMMenu.class);
+		SCiSupplierCOMMenu cmtestMenu10 = PageFactory.initElements(Browser.eDriver, SCiSupplierCOMMenu.class);
 		cmtestMenu10.menuToPendingBuyerProgram();
 
 		try {
