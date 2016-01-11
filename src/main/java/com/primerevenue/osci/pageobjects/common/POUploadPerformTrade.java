@@ -12,10 +12,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.google.common.collect.Iterables;
 import com.primerevenue.osci.driver.Browser;
+import com.primerevenue.osci.driver.PRBase;
 import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 
-public class POUploadPerformTrade {
+public class POUploadPerformTrade extends PRBase {
 	final static Logger logger = Logger.getLogger(POUploadPerformTrade.class);
 
 	@FindBy(id = "_atfSubmit")
@@ -65,7 +66,8 @@ public class POUploadPerformTrade {
 
 	@FindBy(xpath = "//a[contains(text(),'Search')]")
 	public WebElement trackSearch;
-
+	
+	
 	public void copyFiles(String source, String destination) throws IOException {
 
 		// String source = "C:/Dir1";
@@ -88,8 +90,9 @@ public class POUploadPerformTrade {
 
 	public void bounceWFCServices() throws Exception {
 
+			
 		// run batch file here..
-		Runtime.getRuntime().exec("cmd /C start C:\\restartServicesMaj.bat");
+		Runtime.getRuntime().exec("cmd /C start "+ RESTART_SERV);
 		logger.info("Restarting wfc services, scripts execution will wait for 420 minutes");
 
 	}

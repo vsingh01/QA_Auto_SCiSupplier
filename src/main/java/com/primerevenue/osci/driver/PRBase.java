@@ -61,6 +61,8 @@ public class PRBase {
     
     public static String STACK_POFILE_PATH;
     public static String LOCAL_POFILE_PATH;
+    
+    public static String RESTART_SERV;
 
     // Disable webdriver debug
     static {
@@ -162,6 +164,8 @@ public class PRBase {
         
         LOCAL_POFILE_PATH = setupProp.getProperty("local.pofile.path");
         STACK_POFILE_PATH = setupProp.getProperty("stack.server.path");
+        
+        RESTART_SERV = setupProp.getProperty("restart.serv.bat.file");
         
 
         ENABLE_EXECUTION_TRACE = setupProp.getProperty("execution.trace.enable");

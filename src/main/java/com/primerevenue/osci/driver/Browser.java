@@ -1,6 +1,7 @@
 package com.primerevenue.osci.driver;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -11,7 +12,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -166,8 +166,18 @@ public class Browser {
 			// set firefox profile
 			/*FirefoxProfile profile = new ProfilesIni()
 					.getProfile(FIREFOX_PROFILE);*/
+			//File file = new File("firebug-2.0.13-fx.xpi");
 			
 			FirefoxProfile profile = new FirefoxProfile();
+			
+			/*try {
+				profile.addExtension(file);
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
+			
+			profile.setPreference("extensions.firebug.currentVersion", "2.0.13");*/
 			
 			profile.setPreference("browser.download.folderList", 2);
 			profile.setPreference("browser.download.manager.showWhenStarting", false);
@@ -243,7 +253,18 @@ public class Browser {
 		logger.info("Firefox profile: " + FIREFOX_PROFILE);
 		//FirefoxProfile profile = new ProfilesIni().getProfile(FIREFOX_PROFILE);
 		
+		//File file = new File("firebug-2.0.13-fx.xpi");
+		
 		FirefoxProfile profile = new FirefoxProfile();
+		
+		/*try {
+			profile.addExtension(file);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		profile.setPreference("extensions.firebug.currentVersion", "2.0.13");*/
 		
 		profile.setPreference("browser.download.folderList", 2);
 		profile.setPreference("browser.download.manager.showWhenStarting", false);
