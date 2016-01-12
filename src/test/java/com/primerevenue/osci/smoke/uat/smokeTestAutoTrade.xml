@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="smokeTest">
+
+	<listeners>
+<!-- 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+<!-- 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+		<listener class-name="com.primerevenue.osci.driver.TesterListener" />
+	</listeners>
+
+	<test name="smokeTest" preserve-order="true">
+
+		<classes>
+			<class name="com.primerevenue.osci.test.UATsmoke.SPSmokeTestNG1" />
+			<class name="com.primerevenue.osci.test.UATsmoke.CMAutoPerformTradeTestNG2" />
+			<class name="com.primerevenue.osci.test.UATsmoke.FIAutoPerformTradeTestNG3" />
+			<class name="com.primerevenue.osci.test.UATsmoke.SPSmokeTestNG4" />
+			<class name="com.primerevenue.osci.test.UATsmoke.AutoPOPerformTradeTestNG" />
+			<class name="com.primerevenue.osci.test.UATsmoke.DBRollBackTestNG14" />
+
+		</classes>
+
+
+	</test>
+</suite>

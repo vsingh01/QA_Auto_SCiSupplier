@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="smokeTest">
+
+	<listeners>
+<!-- 		<listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+<!-- 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+		<listener class-name="com.primerevenue.osci.driver.TesterListener" />
+	</listeners>
+
+	<test name="smokeTest" preserve-order="true">
+
+		<classes>
+			<class name="com.primerevenue.osci.test.UATsmoke.SPSmokeTestNG1" />
+			<class name="com.primerevenue.osci.test.UATsmoke.CMSmokeTestNG2" />
+			<class name="com.primerevenue.osci.test.UATsmoke.FISmokeTestNG3" />
+			<class name="com.primerevenue.osci.test.UATsmoke.SPSmokeTestNG4" />
+			<class name="com.primerevenue.osci.test.UATsmoke.SuppReportsTestNG5" />
+			<class name="com.primerevenue.osci.test.UATsmoke.SupplierModPageNavTestNG6" />
+			<class name="com.primerevenue.osci.test.UATsmoke.BuyerTestNG7"/>
+			<class name="com.primerevenue.osci.test.UATsmoke.SPModReportsTestNG8" />
+			<class name="com.primerevenue.osci.test.UATsmoke.NewSupplierLoginEmailTestNG9" />
+			<class name="com.primerevenue.osci.test.UATsmoke.CMModReportsTestNG10" />
+			<class name="com.primerevenue.osci.test.UATsmoke.FIModReportTestNG11" />
+			<class name="com.primerevenue.osci.test.UATsmoke.Otp2FATestNG12" />
+			<class name="com.primerevenue.osci.test.UATsmoke.POPerformTradeTestNG13" />
+			<class name="com.primerevenue.osci.test.UATsmoke.DBRollBackTestNG14" />
+
+		</classes>
+
+
+	</test>
+</suite>

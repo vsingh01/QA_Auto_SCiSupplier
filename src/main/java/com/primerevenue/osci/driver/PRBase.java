@@ -43,6 +43,7 @@ public class PRBase {
 
     public static Properties setupProp;
     public static Properties objectMapProp;
+    public static Properties setupPropU;
 
     public static String CORPORATE_UG;
     public static String COM_USER;
@@ -63,6 +64,15 @@ public class PRBase {
     public static String LOCAL_POFILE_PATH;
     
     public static String RESTART_SERV;
+    
+    // UAT Variables
+    public static String UAT_COM_USER;
+    public static String UAT_SUPP_USER;
+    public static String UAT_SP_USER;
+    public static String UAT_FI_USER;
+    public static String UAT_BUY_USER;
+    public static String UAT_USER_2FA;
+
 
     // Disable webdriver debug
     static {
@@ -74,13 +84,13 @@ public class PRBase {
 
     @BeforeClass
     public void beforeClass() throws Exception {
-        logger.debug("EXECUTING before class");
+        logger.info("EXECUTING before class");
 
     }
 
     @AfterClass
     protected void afterClass() throws Exception {
-        logger.debug("EXECUTING after class");
+        logger.info("EXECUTING after class");
     }
 
     @BeforeMethod
@@ -147,13 +157,9 @@ public class PRBase {
     }
 
     private void initGlobalData() {
-        logger.debug("INITIALIZING GLOBAL VARIABLES... ");
-        CORPORATE_UG = setupProp.getProperty("corp.user.group");
+        logger.info("INITIALIZING GLOBAL VARIABLES... ");
         COM_USER = setupProp.getProperty("com.user.username");
         SUPP_USER = setupProp.getProperty("supp.user.username");
-        CORPORATE_USER3 = setupProp.getProperty("corp.user.username3");
-
-        SMB_UG = setupProp.getProperty("smb.user.group");
         SP_USER = setupProp.getProperty("sp.user.username");
         FI_USER = setupProp.getProperty("fi.user.username");
         BUY_USER = setupProp.getProperty("buy.user.username");
@@ -166,11 +172,18 @@ public class PRBase {
         STACK_POFILE_PATH = setupProp.getProperty("stack.server.path");
         
         RESTART_SERV = setupProp.getProperty("restart.serv.bat.file");
-        
-
+               
         ENABLE_EXECUTION_TRACE = setupProp.getProperty("execution.trace.enable");
         EXECUTION_TRACE_FILE = setupProp.getProperty("execution.trace.file");
         EXECUTION_TRACE_KEY_VALUE = setupProp.getProperty("execution.trace.key.value");
+        
+        //UAT variables
+        UAT_COM_USER = setupPropU.getProperty("com.user.username");
+        UAT_SUPP_USER = setupPropU.getProperty("supp.user.username");
+        UAT_SP_USER = setupPropU.getProperty("sp.user.username");
+        UAT_FI_USER = setupPropU.getProperty("fi.user.username");
+        UAT_BUY_USER = setupPropU.getProperty("buy.user.username");
+        UAT_USER_2FA = setupPropU.getProperty("com.user.2fa");
     }
 
     /**
@@ -192,6 +205,7 @@ public class PRBase {
         //load properties files
         setupProp = new PropertiesUtil().getProperties("setup.properties");
         objectMapProp = new PropertiesUtil().getProperties("objectmap.properties");
+        setupPropU = new PropertiesUtil().getProperties("uatsetup.properties");
 
         //initialize global variables
         initGlobalData();

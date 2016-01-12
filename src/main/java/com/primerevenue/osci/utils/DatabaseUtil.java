@@ -46,11 +46,11 @@ public class DatabaseUtil extends PropertiesUtil {
 		Properties dbProp = PRBase.setupProp;
 
 		// MySql
-		setHost(dbProp.getProperty("mysql.host"));
-		setUser(dbProp.getProperty("mysql.user"));
-		setPassword(dbProp.getProperty("mysql.password"));
-		setSchemaAdmin(dbProp.getProperty("mysql.schema.admin"));
-		setSchemaClient(dbProp.getProperty("mysql.schema.client"));
+		setHost(dbProp.getProperty("sqlserver.host"));
+		setUser(dbProp.getProperty("sqlserver.user"));
+		setPassword(dbProp.getProperty("sqlserver.password"));
+		setSchemaAdmin(dbProp.getProperty("sqlserver.schema.admin"));
+		setSchemaClient(dbProp.getProperty("sqlserver.schema.client"));
 
 		// MYSQL_URL = "jdbc:sqlserver://" + MYSQL_HOST + "?user=" + MYSQL_USER
 		// + "&password=" + MYSQL_PASSWORD;
