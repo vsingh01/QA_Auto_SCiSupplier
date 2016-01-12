@@ -19,7 +19,7 @@ public class ComUsersPage {
 
 	/* Rktcommunity user id */
 
-	@FindBy(xpath = "(//a[contains(text(),'Edit')])[1]")
+	@FindBy(xpath = "//td[text()='com103']//..//td[7]")
 	public WebElement edit;
 
 	public void usersEditMethod() {

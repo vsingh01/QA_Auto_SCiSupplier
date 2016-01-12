@@ -25,7 +25,7 @@ public class ComEditUsers {
 	@FindBy(xpath = "//a[contains(@href, 'javascript: onAddClick();')]")
 	public WebElement addBtn;
 
-	@FindBy(name = "selectedBuyerProgram")
+	@FindBy(xpath = "//td[text()='rohcom103_BP']//..//td[1]/input")
 	public WebElement chkBox;
 
 	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/form/table[2]/tbody/tr/td[1]/input")
@@ -52,8 +52,13 @@ public class ComEditUsers {
 		} catch (Exception e) {
 			logger.error("Failed, Add Btn click");
 		}
-
 		try {
+			SeleniumUtils.clickCheckBox(chkBox, "ON");
+			logger.info("CheckBox selected for rohcom103_BP");
+		} catch (Exception e) {
+			logger.error("Failed, CheckBox selection for rohcom103_BP");
+		}
+		/*try {
 
 			int chkBoxcount = chkBoxLists.size();
 			logger.info(chkBoxcount);
@@ -62,12 +67,10 @@ public class ComEditUsers {
 			logger.info(sssaaaa);
 			SeleniumUtils.clickCheckBox(lastElement, "ON");
 
-			// SeleniumUtils.clickCheckBox(chkBox, "ON");
 			logger.info("Successful, checkbox click.");
 		} catch (Exception e) {
 			logger.error("Failed, checkbox click");
-
-		}
+		}*/
 		try {
 			SeleniumUtils.click(addSelected);
 			logger.info("Successful, Add Selected Btn click.");
