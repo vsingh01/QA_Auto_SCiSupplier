@@ -18,7 +18,7 @@ import com.primerevenue.osci.utils.SeleniumUtils;
  **/
 
 public class ComEditUsers {
-
+	
 	/* COMMUNITY "Edit User page" */
 	final static Logger logger = Logger.getLogger(ComEditUsers.class);
 
