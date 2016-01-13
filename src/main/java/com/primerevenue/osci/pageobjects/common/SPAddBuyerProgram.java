@@ -167,7 +167,7 @@ public class SPAddBuyerProgram {
 		try {
 			SeleniumUtils.clearWithBackSpace(buyerProgramName);
 			// SeleniumUtils.type(buyerProgramName, "rktcommunity_BP");
-			SeleniumUtils.type(buyerProgramName, "rohcom103_BP");
+			SeleniumUtils.type(buyerProgramName, "smokeTest_BP");
 			SeleniumUtils.selectOption(countryCode, "United States of America");
 			SeleniumUtils.selectOption(currencyCode, "USD");
 			SeleniumUtils.selectOption(bankAccountId, "Prime Revenue Ltd");

@@ -870,7 +870,7 @@ public class DatabaseUtil extends PropertiesUtil {
 	public void delBuyerPrograme() {
 
 		 //String sqlQuery = "select * from " + getSchema() + "." + getTable();
-		String sqlQuery = "select buyerProgramId from [MagellanRelations].[dbo].[BuyerProgram] where buyerProgramName = 'rohcom103_BP'";
+		String sqlQuery = "select buyerProgramId from [MagellanRelations].[dbo].[BuyerProgram] where buyerProgramName = 'smokeTest_BP'";
 
 		Statement stmt = null;
 

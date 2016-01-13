@@ -38,7 +38,7 @@ public class SPMaintainMembership {
 	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/table/tbody/tr/td[2]/div/div/div[3]/form/table[1]/tbody/tr/td[2]/a")
 	public WebElement buyerNameLink;
 
-	@FindBy(xpath = "//a[contains(text(),'rohcom103_BP')]")
+	@FindBy(xpath = "//a[contains(text(),'smokeTest_BP')]")
 	public WebElement buyerProgramLink;
 
 	@FindBy(xpath = "//a[contains(@href, 'javascript: addBuyerProgram();')]")

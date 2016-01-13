@@ -37,7 +37,7 @@ public class ComUsersPage extends PRBase {
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		try {
-			Browser.eDriver.findElement(By.xpath("//td[text()='"+ UAT_COM_USER +"']//..//td[7]")).click();
+			Browser.eDriver.findElement(By.xpath("//td[text()='"+ COM_USER +"']//..//td[7]")).click();
 			logger.info("Successful, edit link click.");
 		} catch (Exception e) {
 			logger.error("Failed, edit link click");

@@ -25,7 +25,7 @@ public class ComEditUsers {
 	@FindBy(xpath = "//a[contains(@href, 'javascript: onAddClick();')]")
 	public WebElement addBtn;
 
-	@FindBy(xpath = "//td[text()='rohcom103_BP']//..//td[1]/input")
+	@FindBy(xpath = "//td[text()='smokeTest_BP']//..//td[1]/input")
 	public WebElement chkBox;
 
 	@FindBy(xpath = "html/body/div[1]/div/div/div/div/table[4]/tbody/tr/td[2]/form/table[2]/tbody/tr/td[1]/input")
