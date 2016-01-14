@@ -36,7 +36,7 @@ public class EmailClient {
 
 	public String getTempPwd() {
 		PageFactory.initElements(Browser.eDriver, this);
-		Synchronizer.explicitWait(10);
+		Synchronizer.explicitWait(30);
 		try {
 			SeleniumUtils.click(inbox);
 		} catch (Exception e) {
@@ -70,7 +70,7 @@ public class EmailClient {
 
 	public String getOTP() {
 		PageFactory.initElements(EBrowser.eDriver, this);
-		Synchronizer.explicitWait(10);
+		Synchronizer.explicitWait(30);
 		SeleniumUtils.click(inbox);
 		SeleniumUtils.click(newEmail);
 

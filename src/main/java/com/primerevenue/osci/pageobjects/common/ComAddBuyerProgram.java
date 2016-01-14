@@ -1,11 +1,13 @@
 package com.primerevenue.osci.pageobjects.common;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.primerevenue.osci.driver.Browser;
+import com.primerevenue.osci.driver.PRBase;
 import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 
@@ -16,7 +18,7 @@ import java.util.regex.*;
  *
  **/
 
-public class ComAddBuyerProgram {
+public class ComAddBuyerProgram extends PRBase	{
 
 	final static Logger logger = Logger.getLogger(ComAddBuyerProgram.class);
 	// Add Buyer Program page
@@ -84,6 +86,10 @@ public class ComAddBuyerProgram {
 
 	@FindBy(xpath = "xhtml:html/xhtml:body/xhtml:div[1]/xhtml:div[2]/xhtml:div[4]/xhtml:div/xhtml:div[1]/xhtml:div[2]/xhtml:div[59]")
 	public WebElement maturePayForcastReportTitle;
+	
+	//For if logic
+		@FindBy(xpath = "//a[contains(text(),'rohfi_com103')]")
+		public WebElement chkBox1;
 
 	public void addEditBuyerProgram() {
 		PageFactory.initElements(Browser.eDriver, this);
@@ -102,10 +108,23 @@ public class ComAddBuyerProgram {
 		SeleniumUtils.click(addFISubmit);
 		Synchronizer.explicitWait(5);
 
-		SeleniumUtils.clickCheckBox(checkBoxFIValue, "ON");
+		try {
+			String chk = chkBox1.getText();
+			logger.info(chk);
+			if(chk.equalsIgnoreCase("rohfi_com103"))
+				Browser.eDriver.findElement(By.xpath("//a[contains(text(),'"+ FI_USER +"')]//..//..//td[1]/input")).click();
+			else {
+				Browser.eDriver.findElement(By.xpath("//a[contains(text(),'"+ UAT_FI_USER +"')]//..//..//td[1]/input")).click();
+			}
+			logger.info("Successful, FI checkBox selected.");
+		} catch (Exception e) {
+			logger.error("Failed, FI checkBox selected");
+		}
+		
+		/*SeleniumUtils.clickCheckBox(checkBoxFIValue, "ON");*/
 
 		// SeleniumUtils.isTextPresent("RktFI");
-		SeleniumUtils.isTextPresent("rohfi_com103");
+		//SeleniumUtils.isTextPresent("rohfi_com103");
 		SeleniumUtils.click(acceptFISubmit);
 
 	}
@@ -113,7 +132,7 @@ public class ComAddBuyerProgram {
 	public void supplierActivityReport() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
 
-		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(dateValue, "Last Year");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(5);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, supplierActivityReportTitle);
@@ -159,10 +178,23 @@ public class ComAddBuyerProgram {
 
 		SeleniumUtils.click(addFISubmit);
 		Synchronizer.explicitWait(5);
+		try {
+			String chk = chkBox1.getText();
+			logger.info(chk);
+			if(chk.equalsIgnoreCase("rohfi_com103"))
+				Browser.eDriver.findElement(By.xpath("//a[contains(text(),'"+ FI_USER +"')]//..//..//td[1]/input")).click();
+			else {
+				Browser.eDriver.findElement(By.xpath("//a[contains(text(),'"+ UAT_FI_USER +"')]//..//..//td[1]/input")).click();
+			}
+			logger.info("Successful, FI checkBox selected.");
+		} catch (Exception e) {
+			logger.error("Failed, FI checkBox selected");
+		}
+		
 
-		SeleniumUtils.clickCheckBox(checkBoxFIValue, "ON");
+		/*SeleniumUtils.clickCheckBox(checkBoxFIValue, "ON");*/
 
-		SeleniumUtils.isTextPresent("RktFI");
+		//SeleniumUtils.isTextPresent("RktFI");
 
 		SeleniumUtils.click(acceptFISubmit);
 

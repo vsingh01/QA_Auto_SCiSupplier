@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.primerevenue.osci.driver.Browser;
+import com.primerevenue.osci.driver.PRBase;
 import com.primerevenue.osci.utils.SeleniumUtils;
 import com.primerevenue.osci.utils.Synchronizer;
 import com.google.common.collect.Iterables;
@@ -18,7 +19,7 @@ import com.google.common.collect.Iterables;
  *
  **/
 
-public class SPMaintainMembership {
+public class SPMaintainMembership extends PRBase	{
 
 	final static Logger logger = Logger.getLogger(SPMaintainMembership.class);
 
@@ -47,13 +48,30 @@ public class SPMaintainMembership {
 	/* Buyer Name = rktbuyer2 */
 	@FindBy(xpath = "//a[contains(text(),'rktcommunity_BP')]")
 	public WebElement rktcommunity_BP;
+	//For if logic
+	@FindBy(xpath = "//a[contains(text(),'rohbuy_com103')]")
+	public WebElement userId;
 
 	public void maintainMembComBuyersTab() {
 
 		PageFactory.initElements(Browser.eDriver, this);
 
 		SeleniumUtils.click(commBuyersTab);
-		SeleniumUtils.click(view);
+		
+		try {
+			String buyUsrId = userId.getText();
+			logger.info(buyUsrId);
+			if(buyUsrId.equalsIgnoreCase("rohbuy_com103"))
+				Browser.eDriver.findElement(By.xpath("//a[contains(text(),'"+ BUY_USER +"')]//..//..//td[5]/a")).click();
+			else {
+				Browser.eDriver.findElement(By.xpath("//a[contains(text(),'"+ UAT_BUY_USER +"')]//..//..//td[5]/a")).click();
+			}
+			logger.info("Successful, edit link click.");
+		} catch (Exception e) {
+			logger.error("Failed, edit link click");
+		}
+				
+		//SeleniumUtils.click(view);
 		// clickViewForBPFrmCommBuyerTable();
 		SeleniumUtils.click(addBtn);
 
@@ -90,7 +108,7 @@ public class SPMaintainMembership {
 
 		while (SeleniumUtils.isElementPresent(xpath_Start + i + xpath_End)) {
 			String buyerName = Browser.eDriver.findElement(By.xpath(xpath_Start + i + xpath_End)).getText();
-			if (buyerName.equalsIgnoreCase("rohbuy_com103")) {
+			if (buyerName.equalsIgnoreCase(BUY_USER)) {
 				logger.info("Buyer Name Found : : : : :" + buyerName);
 
 				// Browser.eDriver.findElement(By.xpath(xpath_Start+i+xpath_End)).click();
@@ -137,7 +155,7 @@ public class SPMaintainMembership {
 
 		while (SeleniumUtils.isElementPresent(xpath_Start + i + xpath_End)) {
 			String buyerProgram = Browser.eDriver.findElement(By.xpath(xpath_Start + i + xpath_End)).getText();
-			if (buyerProgram.equalsIgnoreCase("                         rohcom103_BP                     ")) {
+			if (buyerProgram.equalsIgnoreCase("                         smokeTest_BP                     ")) {
 				logger.info("Buyer Name Found : : : : :" + buyerProgram);
 
 				Browser.eDriver.findElement(By.xpath(xpath_Start + i + xpath_End)).click();

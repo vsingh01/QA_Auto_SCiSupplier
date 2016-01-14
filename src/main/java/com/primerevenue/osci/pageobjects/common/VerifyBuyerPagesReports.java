@@ -82,7 +82,7 @@ public class VerifyBuyerPagesReports {
 
 	public void payObligationSerachResultsPage() {
 		PageFactory.initElements(Browser.eDriver, this);
-		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(dateValue, "Last Year");
 		SeleniumUtils.click(search);
 		boolean display4 = SeleniumUtils
 				.isTextPresent("Payment Obligation Search Results");
@@ -108,7 +108,7 @@ public class VerifyBuyerPagesReports {
 
 	public void endOfDayReportGen() {
 		PageFactory.initElements(Browser.eDriver, this);
-		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(dateValue, "Last Year");
 		SeleniumUtils.click(run);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, endOfDayReportTitle);
 		boolean title = SeleniumUtils
@@ -119,7 +119,7 @@ public class VerifyBuyerPagesReports {
 
 	public void tradeDetailsReportGen() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
-		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(dateValue, "Last Year");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(5);
 		Runtime.getRuntime().exec(
@@ -138,7 +138,7 @@ public class VerifyBuyerPagesReports {
 
 	public void supplierTradTrendReportsGen() throws Exception {
 		PageFactory.initElements(Browser.eDriver, this);
-		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(dateValue, "Last Year");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
 		Runtime.getRuntime().exec(

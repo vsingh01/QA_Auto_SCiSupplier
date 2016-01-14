@@ -31,13 +31,23 @@ public class ComUsersPage extends PRBase {
 	/*@FindBy(xpath = "//td[text()='rohcom103']//..//td[7]")
 	public WebElement edit;*/
 	
+	//For if logic
+	@FindBy(xpath = "//td[text()='rohcom103']")
+	public WebElement userId;
+	
 	
 	public void usersEditMethod() {
 		
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		try {
-			Browser.eDriver.findElement(By.xpath("//td[text()='"+ COM_USER +"']//..//td[7]")).click();
+			String comUsrId = userId.getText();
+			logger.info(comUsrId);
+			if(comUsrId.equalsIgnoreCase("rohcom103"))
+				Browser.eDriver.findElement(By.xpath("//td[text()='"+COM_USER+"']//..//td[7]")).click();
+			else {
+				Browser.eDriver.findElement(By.xpath("//td[text()='"+UAT_COM_USER+"']//..//td[7]")).click();
+			}
 			logger.info("Successful, edit link click.");
 		} catch (Exception e) {
 			logger.error("Failed, edit link click");

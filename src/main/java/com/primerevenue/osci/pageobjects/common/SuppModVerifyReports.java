@@ -76,7 +76,7 @@ public class SuppModVerifyReports {
 		PageFactory.initElements(Browser.eDriver, this);
 		
 		SeleniumUtils.selectOption(bankAccountId, "  RKTsup2_bank  ");
-		SeleniumUtils.selectOption(dateOption, "This Year");
+		SeleniumUtils.selectOption(dateOption, "Last Year");
 		SeleniumUtils.click(run);
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, remAdvRepoTitle);
@@ -87,7 +87,7 @@ public class SuppModVerifyReports {
 	public void poReport() {
 		PageFactory.initElements(Browser.eDriver, this);
 		
-		SeleniumUtils.selectOption(dateOption, "This Year");
+		SeleniumUtils.selectOption(dateOption, "Last Year");
 		SeleniumUtils.click(run);
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, poRepoTitle);
@@ -98,7 +98,7 @@ public class SuppModVerifyReports {
 	public void creditMemoReport() {
 		PageFactory.initElements(Browser.eDriver, this);
 		
-		SeleniumUtils.selectOption(dateOption, "This Year");
+		SeleniumUtils.selectOption(dateOption, "Last Year");
 		SeleniumUtils.click(run);
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, creditMemoRepoTitle);
@@ -120,7 +120,7 @@ public class SuppModVerifyReports {
 	public void poNotificationReport() {
 		PageFactory.initElements(Browser.eDriver, this);
 		
-		SeleniumUtils.selectOption(dateOption, "This Year");
+		SeleniumUtils.selectOption(dateOption, "Last Year");
 		SeleniumUtils.click(run);
 		Synchronizer.implicitWait(10);
 		SeleniumUtils.switchToNewWindow(fbMainContainer, poNotificationReprt);

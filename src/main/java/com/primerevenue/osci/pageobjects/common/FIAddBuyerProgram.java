@@ -104,7 +104,7 @@ public class FIAddBuyerProgram {
 	public void fIPONotifReprots() throws Exception {
 
 		PageFactory.initElements(Browser.eDriver, this);
-		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(dateValue, "Last Year");
 		SeleniumUtils.selectOption(pocurrencyCode, "USD");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);
@@ -126,7 +126,7 @@ public class FIAddBuyerProgram {
 
 		PageFactory.initElements(Browser.eDriver, this);
 
-		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(dateValue, "Last Year");
 		SeleniumUtils.selectOption(rmcurrencyCode, "USD");
 
 		SeleniumUtils.click(run);
@@ -148,7 +148,7 @@ public class FIAddBuyerProgram {
 	public void fISummaryBookingReprots() throws Exception {
 
 		PageFactory.initElements(Browser.eDriver, this);
-		SeleniumUtils.selectOption(dateValue, "This Year");
+		SeleniumUtils.selectOption(dateValue, "Last Year");
 		SeleniumUtils.selectOption(pocurrencyCode, "USD");
 		SeleniumUtils.click(run);
 		Synchronizer.explicitWait(10);

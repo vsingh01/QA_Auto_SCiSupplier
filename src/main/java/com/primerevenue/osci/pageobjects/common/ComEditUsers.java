@@ -54,9 +54,9 @@ public class ComEditUsers {
 		}
 		try {
 			SeleniumUtils.clickCheckBox(chkBox, "ON");
-			logger.info("CheckBox selected for rohcom103_BP");
+			logger.info("CheckBox selected for smokeTest_BP");
 		} catch (Exception e) {
-			logger.error("Failed, CheckBox selection for rohcom103_BP");
+			logger.error("Failed, CheckBox selection for smokeTest_BP");
 		}
 		/*try {
 

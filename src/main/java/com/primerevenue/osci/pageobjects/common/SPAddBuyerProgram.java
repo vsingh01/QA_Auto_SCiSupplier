@@ -166,7 +166,6 @@ public class SPAddBuyerProgram {
 
 		try {
 			SeleniumUtils.clearWithBackSpace(buyerProgramName);
-			// SeleniumUtils.type(buyerProgramName, "rktcommunity_BP");
 			SeleniumUtils.type(buyerProgramName, "smokeTest_BP");
 			SeleniumUtils.selectOption(countryCode, "United States of America");
 			SeleniumUtils.selectOption(currencyCode, "USD");
@@ -238,7 +237,7 @@ public class SPAddBuyerProgram {
 	public void trackDocumentsSearch() {
 		PageFactory.initElements(Browser.eDriver, this);
 
-		SeleniumUtils.selectOption(dateOption, "This Year");
+		SeleniumUtils.selectOption(dateOption, "Last Year");
 		SeleniumUtils.selectOption(currencyCode1, "USD");
 		SeleniumUtils.click(search);
 

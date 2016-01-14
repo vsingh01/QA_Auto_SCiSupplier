@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,7 +24,7 @@ public class POUploadPerformTrade extends PRBase {
 	public WebElement createSellOfferBtn;
 
 	// RKTbuy2
-	@FindBy(xpath = "//a[contains(text(),'rohcom103_BP')]//..//..//td[12]//input[1]")
+	@FindBy(xpath = "//a[contains(text(),'smokeTest_BP')]//..//..//td[12]//input[1]")
 	public WebElement chkBox;
 
 	@FindBy(id = "_initiateFundingSubmit")
@@ -66,8 +67,11 @@ public class POUploadPerformTrade extends PRBase {
 
 	@FindBy(xpath = "//a[contains(text(),'Search')]")
 	public WebElement trackSearch;
-	
-	
+
+	// For if Logic
+	@FindBy(xpath = "//a[contains(text(),'roh com103')]")
+	public WebElement usrFLName;
+
 	public void copyFiles(String source, String destination) throws IOException {
 
 		// String source = "C:/Dir1";
@@ -90,9 +94,8 @@ public class POUploadPerformTrade extends PRBase {
 
 	public void bounceWFCServices() throws Exception {
 
-			
 		// run batch file here..
-		Runtime.getRuntime().exec("cmd /C start "+ RESTART_SERV);
+		Runtime.getRuntime().exec("cmd /C start " + RESTART_SERV);
 		logger.info("Restarting wfc services, scripts execution will wait for 420 minutes");
 
 	}
@@ -123,12 +126,27 @@ public class POUploadPerformTrade extends PRBase {
 		SCiSupplierCOMMenu objRef = PageFactory.initElements(Browser.eDriver, SCiSupplierCOMMenu.class);
 		objRef.menuToBOManualDist();
 
-		SeleniumUtils.selectOption(bPdropdownBox, "rohcom103_BP");
-		Synchronizer.explicitWait(10);
+		SeleniumUtils.selectOption(bPdropdownBox, "smokeTest_BP");
+		Synchronizer.explicitWait(40);
 		SeleniumUtils.click(_searchSubmit);
 
 		SeleniumUtils.clickCheckBox(distAttemptschkBox, "ON");
-		SeleniumUtils.selectOption(assignFI, "rohfi_com103");
+		// SeleniumUtils.selectOption(assignFI, "rohfi_com103");
+		
+		try {
+			String fL = usrFLName.getText();
+			logger.info(fL);
+			if (fL.equalsIgnoreCase("roh com103"))
+				SeleniumUtils.selectOption(assignFI, FI_USER);
+
+			else {
+				SeleniumUtils.selectOption(assignFI, UAT_FI_USER);
+			}
+			logger.info("Successful, assigned FI");
+		} catch (Exception e) {
+			logger.error("Failed, assigned FI");
+		}
+
 		SeleniumUtils.click(distBtn);
 
 	}

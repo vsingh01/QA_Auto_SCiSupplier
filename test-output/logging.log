@@ -21663,3 +21663,555 @@ Session ID: b5e7110a-239b-43a6-b9d0-2097d4c32462
 2016-01-11 10:21:22 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
 2016-01-11 10:21:22 INFO  PRBase:87 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
 2016-01-11 10:21:22 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 15:19:05 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 15:19:05 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 15:19:05 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 15:19:05 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 15:19:05 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 15:19:05 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 15:19:05 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2016-01-13 15:19:11 ERROR DatabaseUtil:675 - MySql execute statement: The statement did not return a result set.
+2016-01-13 15:19:11 INFO  DatabaseUtil:165 - MySql print results,The result set is closed.
+2016-01-13 15:19:11 INFO  DatabaseUtil:897 - Buyerprograme succesfully deleted and its buyerProgramID is ::null
+2016-01-13 15:19:11 ERROR DatabaseUtil:1031 - MySql execute statement: Error converting data type varchar to numeric.
+2016-01-13 15:19:11 INFO  DatabaseUtil:703 - Supplier username successfully deleted and its supplierID is ::null
+2016-01-13 15:19:11 ERROR DatabaseUtil:813 - MySql execute statement: Error converting data type varchar to numeric.
+2016-01-13 15:19:11 INFO  DatabaseUtil:842 - fileId::::22172
+2016-01-13 15:19:11 INFO  DatabaseUtil:848 - fieldID parameter value::22172
+2016-01-13 15:19:11 INFO  TesterListener:34 - testdb -- Test method successful.
+2016-01-13 15:19:11 INFO  PRBase:93 - EXECUTING after class
+2016-01-13 15:27:51 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 15:27:51 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 15:27:51 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 15:27:51 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 15:27:51 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 15:27:51 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 15:27:51 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2016-01-13 15:27:51 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 15:28:09 INFO  SeleniumUtils:312 - Typed text:  spaksh
+2016-01-13 15:28:12 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 15:28:14 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 15:28:24 INFO  SCiSupplierSPMenu:79 - Service Provider Home Title verified : : :true
+2016-01-13 15:28:40 INFO  SeleniumUtils:312 - Typed text:  smokeTest_BP
+2016-01-13 15:29:00 INFO  SeleniumUtils:312 - Typed text:  0001
+2016-01-13 15:29:03 INFO  SeleniumUtils:312 - Typed text:  2355
+2016-01-13 15:29:08 INFO  SeleniumUtils:312 - Typed text:  1
+2016-01-13 15:29:11 INFO  SeleniumUtils:312 - Typed text:  1
+2016-01-13 15:29:11 INFO  SPAddBuyerProgram:185 - 1
+2016-01-13 15:29:11 INFO  SPAddBuyerProgram:188 - false
+2016-01-13 15:29:11 INFO  SPAddBuyerProgram:190 - radion button by defalut not selected - valadiation passed
+2016-01-13 15:29:11 INFO  SPAddBuyerProgram:193 - true
+2016-01-13 15:29:11 INFO  SPAddBuyerProgram:195 - radion button by defalut selected - valadiation passed
+2016-01-13 15:29:11 INFO  SPAddBuyerProgram:199 - radion button by defalut selected - valadiation passed
+2016-01-13 15:29:11 INFO  SPAddBuyerProgram:203 - radion button by defalut selected - valadiation passed
+2016-01-13 15:29:12 INFO  SPAddBuyerProgram:208 - radion button by defalut selected - valadiation passed
+2016-01-13 15:29:12 INFO  SPAddBuyerProgram:212 - radion button by defalut selected - valadiation passed
+2016-01-13 15:29:12 INFO  SPAddBuyerProgram:217 - radion button by defalut selected - valadiation passed
+2016-01-13 15:29:24 INFO  SPAddBuyerProgram:231 - Successful, Community Buyers Tab click.
+2016-01-13 15:29:24 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2016-01-13 15:30:10 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 15:30:10 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 15:30:10 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 15:30:10 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 15:30:10 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 15:30:10 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 15:30:10 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 15:30:10 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 15:30:31 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 15:30:35 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 15:30:37 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 15:30:37 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 15:30:37 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 15:30:44 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 15:30:46 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 15:30:47 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 15:30:48 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 15:30:51 INFO  ComUsersPage:45 - Successful, edit link click.
+2016-01-13 15:30:53 INFO  ComEditUsers:51 - Successful, Add Btn click.
+2016-01-13 15:30:54 INFO  ComEditUsers:57 - CheckBox selected for smokeTest_BP
+2016-01-13 15:30:55 INFO  ComEditUsers:76 - Successful, Add Selected Btn click.
+2016-01-13 15:30:59 INFO  ComEditUsers:83 - Successful, Save Btn click.
+2016-01-13 15:31:05 INFO  ComEditUsers:94 - Successful, addPendingBP Btn click.
+2016-01-13 15:31:08 INFO  SeleniumUtils:338 - Typed text:  Sai
+2016-01-13 15:31:11 INFO  SeleniumUtils:338 - Typed text:  6785927880
+2016-01-13 15:31:14 INFO  SeleniumUtils:338 - Typed text:  primerevenueqa@hotmail.com
+2016-01-13 15:31:18 INFO  SeleniumUtils:312 - Typed text:  2000
+2016-01-13 15:31:21 INFO  SeleniumUtils:312 - Typed text:  1000
+2016-01-13 15:31:33 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-13 15:31:36 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2016-01-13 15:54:52 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 15:54:52 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 15:54:52 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 15:54:52 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 15:54:52 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 15:54:52 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 15:54:52 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 15:54:52 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 15:55:14 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 15:55:18 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 15:55:20 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 15:55:20 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 15:55:20 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 15:55:22 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2016-01-13 15:55:27 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 15:55:29 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 15:55:30 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 15:55:31 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 15:55:39 ERROR ComUsersPage:52 - Failed, edit link click
+2016-01-13 15:55:49 ERROR ComEditUsers:53 - Failed, Add Btn click
+2016-01-13 15:55:54 ERROR ComEditUsers:59 - Failed, CheckBox selection for smokeTest_BP
+2016-01-13 15:56:04 ERROR ComEditUsers:78 - Failed, Add Selected Btn click
+2016-01-13 15:56:14 ERROR ComEditUsers:85 - Failed, Save Btn click
+2016-01-13 15:56:28 ERROR ComEditUsers:96 - Failed, addPendingBP Btn click
+2016-01-13 15:56:34 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"contactPerson"}
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'T450SAmuluru', ip: '10.8.1.166', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b08d348-9f07-4114-b7f1-a2ee4056b845
+*** Element info: {Using=id, value=contactPerson}
+2016-01-13 15:56:34 ERROR TesterListener:20 - cmsmokeTest2 -- Test method failed !!
+2016-01-13 16:02:28 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 16:02:28 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:02:28 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 16:02:28 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:02:28 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 16:02:28 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 16:02:28 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 16:02:28 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 16:02:54 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 16:02:57 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 16:02:59 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 16:02:59 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 16:02:59 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 16:03:02 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2016-01-13 16:03:06 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 16:03:08 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 16:03:09 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 16:03:10 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 16:03:14 INFO  ComUsersPage:51 - Successful, edit link click.
+2016-01-13 16:03:15 INFO  ComEditUsers:51 - Successful, Add Btn click.
+2016-01-13 16:15:04 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 16:15:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:15:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 16:15:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:15:04 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 16:15:04 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 16:15:04 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2016-01-13 16:15:10 ERROR DatabaseUtil:675 - MySql execute statement: The statement did not return a result set.
+2016-01-13 16:15:10 INFO  DatabaseUtil:165 - MySql print results,The result set is closed.
+2016-01-13 16:15:10 INFO  DatabaseUtil:891 - buyerProgramId:::::1405
+2016-01-13 16:15:10 INFO  DatabaseUtil:897 - Buyerprograme succesfully deleted and its buyerProgramID is ::1405
+2016-01-13 16:15:14 ERROR DatabaseUtil:1031 - MySql execute statement: The statement did not return a result set.
+2016-01-13 16:15:14 INFO  DatabaseUtil:703 - Supplier username successfully deleted and its supplierID is ::null
+2016-01-13 16:15:14 ERROR DatabaseUtil:813 - MySql execute statement: Error converting data type varchar to numeric.
+2016-01-13 16:15:14 INFO  DatabaseUtil:842 - fileId::::22172
+2016-01-13 16:15:14 INFO  DatabaseUtil:848 - fieldID parameter value::22172
+2016-01-13 16:15:14 INFO  TesterListener:34 - testdb -- Test method successful.
+2016-01-13 16:15:14 INFO  PRBase:93 - EXECUTING after class
+2016-01-13 16:15:56 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 16:15:56 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:15:56 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 16:15:56 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:15:56 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 16:15:56 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 16:15:56 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2016-01-13 16:15:57 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 16:16:21 INFO  SeleniumUtils:312 - Typed text:  spaksh
+2016-01-13 16:16:25 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 16:16:27 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 16:16:36 INFO  SCiSupplierSPMenu:79 - Service Provider Home Title verified : : :true
+2016-01-13 16:16:51 INFO  SeleniumUtils:312 - Typed text:  smokeTest_BP
+2016-01-13 16:17:10 INFO  SeleniumUtils:312 - Typed text:  0001
+2016-01-13 16:17:13 INFO  SeleniumUtils:312 - Typed text:  2355
+2016-01-13 16:17:18 INFO  SeleniumUtils:312 - Typed text:  1
+2016-01-13 16:17:20 INFO  SeleniumUtils:312 - Typed text:  1
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:185 - 1
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:188 - false
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:190 - radion button by defalut not selected - valadiation passed
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:193 - true
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:195 - radion button by defalut selected - valadiation passed
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:199 - radion button by defalut selected - valadiation passed
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:203 - radion button by defalut selected - valadiation passed
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:208 - radion button by defalut selected - valadiation passed
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:212 - radion button by defalut selected - valadiation passed
+2016-01-13 16:17:21 INFO  SPAddBuyerProgram:217 - radion button by defalut selected - valadiation passed
+2016-01-13 16:17:33 INFO  SPAddBuyerProgram:231 - Successful, Community Buyers Tab click.
+2016-01-13 16:17:33 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2016-01-13 16:43:44 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 16:43:44 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:43:44 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 16:43:44 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:43:44 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 16:43:44 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 16:43:44 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2016-01-13 16:43:50 ERROR DatabaseUtil:675 - MySql execute statement: The statement did not return a result set.
+2016-01-13 16:43:50 INFO  DatabaseUtil:165 - MySql print results,The result set is closed.
+2016-01-13 16:43:50 INFO  DatabaseUtil:891 - buyerProgramId:::::1406
+2016-01-13 16:43:50 INFO  DatabaseUtil:897 - Buyerprograme succesfully deleted and its buyerProgramID is ::1406
+2016-01-13 16:43:55 ERROR DatabaseUtil:1031 - MySql execute statement: The statement did not return a result set.
+2016-01-13 16:43:55 INFO  DatabaseUtil:703 - Supplier username successfully deleted and its supplierID is ::null
+2016-01-13 16:43:55 ERROR DatabaseUtil:813 - MySql execute statement: Error converting data type varchar to numeric.
+2016-01-13 16:43:55 INFO  DatabaseUtil:842 - fileId::::22172
+2016-01-13 16:43:55 INFO  DatabaseUtil:848 - fieldID parameter value::22172
+2016-01-13 16:43:55 INFO  TesterListener:34 - testdb -- Test method successful.
+2016-01-13 16:43:55 INFO  PRBase:93 - EXECUTING after class
+2016-01-13 16:59:25 INFO  PRBase:197 - STARTING TEST SUITE: 'smokeTest'
+2016-01-13 16:59:25 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:59:25 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 16:59:25 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 16:59:25 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 16:59:25 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 16:59:25 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2016-01-13 16:59:25 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 16:59:45 INFO  SeleniumUtils:312 - Typed text:  spaksh
+2016-01-13 16:59:48 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 16:59:50 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 16:59:59 INFO  SCiSupplierSPMenu:79 - Service Provider Home Title verified : : :true
+2016-01-13 17:00:07 ERROR SPMaintainMembership:70 - Failed, edit link click
+2016-01-13 17:00:07 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, 'javascript: addBuyerProgram();')]"}
+Command duration or timeout: 52 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'T450SAmuluru', ip: '10.8.1.166', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1ef4e6e6-e1f7-40be-bc21-2e333026eaa6
+*** Element info: {Using=xpath, value=//a[contains(@href, 'javascript: addBuyerProgram();')]}
+2016-01-13 17:00:07 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2016-01-13 17:00:08 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, 'javascript: addBuyerProgram();')]"}
+Command duration or timeout: 52 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'T450SAmuluru', ip: '10.8.1.166', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 1ef4e6e6-e1f7-40be-bc21-2e333026eaa6
+*** Element info: {Using=xpath, value=//a[contains(@href, 'javascript: addBuyerProgram();')]}
+2016-01-13 17:00:08 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2016-01-13 17:00:11 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:00:11 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:00:11 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:00:27 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 17:00:30 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:00:32 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:00:32 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:00:32 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:00:32 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 17:00:37 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 17:00:38 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 17:00:39 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:00:40 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:00:47 ERROR ComUsersPage:52 - Failed, edit link click
+2016-01-13 17:00:57 ERROR ComEditUsers:53 - Failed, Add Btn click
+2016-01-13 17:01:02 ERROR ComEditUsers:59 - Failed, CheckBox selection for smokeTest_BP
+2016-01-13 17:04:54 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 17:04:54 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:04:54 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:04:54 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:04:54 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:04:54 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:04:54 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:04:54 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:05:21 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 17:05:25 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:05:27 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:05:27 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:05:27 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 17:05:28 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2016-01-13 17:05:33 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 17:05:35 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 17:05:36 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:05:37 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:05:39 INFO  ComUsersPage:45 - rohcom103
+2016-01-13 17:05:44 ERROR ComUsersPage:53 - Failed, edit link click
+2016-01-13 17:05:54 ERROR ComEditUsers:53 - Failed, Add Btn click
+2016-01-13 17:05:59 ERROR ComEditUsers:59 - Failed, CheckBox selection for smokeTest_BP
+2016-01-13 17:10:18 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 17:10:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:10:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:10:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:10:18 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:10:18 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:10:18 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:10:18 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:10:37 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 17:10:41 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:10:43 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:10:43 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:10:43 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 17:10:45 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2016-01-13 17:10:50 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 17:10:52 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 17:10:53 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:10:54 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:10:56 INFO  ComUsersPage:45 - rohcom103
+2016-01-13 17:11:01 ERROR ComUsersPage:53 - Failed, edit link click
+2016-01-13 17:11:11 ERROR ComEditUsers:53 - Failed, Add Btn click
+2016-01-13 17:11:16 ERROR ComEditUsers:59 - Failed, CheckBox selection for smokeTest_BP
+2016-01-13 17:11:27 ERROR ComEditUsers:78 - Failed, Add Selected Btn click
+2016-01-13 17:18:21 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 17:18:21 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:18:21 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:18:21 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:18:21 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:18:22 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:18:22 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:18:22 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:18:41 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 17:18:45 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:18:47 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:18:47 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:18:47 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 17:18:49 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2016-01-13 17:18:53 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 17:18:56 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 17:18:57 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:18:58 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:19:00 INFO  ComUsersPage:45 - rohcom103
+2016-01-13 17:19:01 INFO  ComUsersPage:51 - Successful, edit link click.
+2016-01-13 17:19:03 INFO  ComEditUsers:51 - Successful, Add Btn click.
+2016-01-13 17:19:08 ERROR ComEditUsers:59 - Failed, CheckBox selection for smokeTest_BP
+2016-01-13 17:19:09 INFO  ComEditUsers:76 - Successful, Add Selected Btn click.
+2016-01-13 17:19:13 INFO  ComEditUsers:83 - Successful, Save Btn click.
+2016-01-13 17:19:26 ERROR ComEditUsers:96 - Failed, addPendingBP Btn click
+2016-01-13 17:19:32 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"contactPerson"}
+Command duration or timeout: 5.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'T450SAmuluru', ip: '10.8.1.166', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fcfe1e21-535f-4ea4-8b5e-af725ac5bb8e
+*** Element info: {Using=id, value=contactPerson}
+2016-01-13 17:19:32 ERROR TesterListener:20 - cmsmokeTest2 -- Test method failed !!
+2016-01-13 17:20:15 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 17:20:15 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:20:15 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:20:15 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:20:15 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:20:15 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:20:15 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:20:15 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:20:34 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 17:20:37 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:20:39 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:20:39 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:20:39 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 17:20:43 ERROR SeleniumUtils:138 - EXCEPTION: Failed scrolling web element in focus, 
+2016-01-13 17:20:48 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 17:20:50 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 17:20:51 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:20:52 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:20:54 INFO  ComUsersPage:45 - rohcom103
+2016-01-13 17:20:56 INFO  ComUsersPage:51 - Successful, edit link click.
+2016-01-13 17:20:57 INFO  ComEditUsers:51 - Successful, Add Btn click.
+2016-01-13 17:27:11 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 17:27:11 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:27:11 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:27:11 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:27:11 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:27:11 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:27:11 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:27:11 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:27:38 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 17:27:41 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:27:43 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:27:43 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:27:43 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 17:27:50 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 17:27:52 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 17:27:53 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:27:54 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:27:56 INFO  ComUsersPage:45 - rohcom103
+2016-01-13 17:27:57 INFO  ComUsersPage:51 - Successful, edit link click.
+2016-01-13 17:27:59 INFO  ComEditUsers:51 - Successful, Add Btn click.
+2016-01-13 17:31:33 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 17:31:33 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:31:33 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:31:33 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:31:33 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:31:33 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:31:33 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2016-01-13 17:31:38 ERROR DatabaseUtil:675 - MySql execute statement: The statement did not return a result set.
+2016-01-13 17:31:38 INFO  DatabaseUtil:165 - MySql print results,The result set is closed.
+2016-01-13 17:31:38 INFO  DatabaseUtil:891 - buyerProgramId:::::1402
+2016-01-13 17:31:38 INFO  DatabaseUtil:897 - Buyerprograme succesfully deleted and its buyerProgramID is ::1402
+2016-01-13 17:31:42 ERROR DatabaseUtil:1031 - MySql execute statement: The statement did not return a result set.
+2016-01-13 17:31:42 INFO  DatabaseUtil:703 - Supplier username successfully deleted and its supplierID is ::null
+2016-01-13 17:31:42 ERROR DatabaseUtil:813 - MySql execute statement: Error converting data type varchar to numeric.
+2016-01-13 17:31:42 INFO  DatabaseUtil:842 - fileId::::22172
+2016-01-13 17:31:42 INFO  DatabaseUtil:848 - fieldID parameter value::22172
+2016-01-13 17:31:42 INFO  TesterListener:34 - testdb -- Test method successful.
+2016-01-13 17:31:42 INFO  PRBase:93 - EXECUTING after class
+2016-01-13 17:33:25 INFO  PRBase:197 - STARTING TEST SUITE: 'smokeTest'
+2016-01-13 17:33:25 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:33:25 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:33:25 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:33:25 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:33:25 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:33:25 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2016-01-13 17:33:25 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:33:44 INFO  SeleniumUtils:312 - Typed text:  spaksh
+2016-01-13 17:33:47 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:33:49 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:33:58 INFO  SCiSupplierSPMenu:79 - Service Provider Home Title verified : : :true
+2016-01-13 17:34:07 ERROR SPMaintainMembership:70 - Failed, edit link click
+2016-01-13 17:34:07 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, 'javascript: addBuyerProgram();')]"}
+Command duration or timeout: 33 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'T450SAmuluru', ip: '10.8.1.166', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2ce8db32-3567-4883-9fcf-b7bcae648f16
+*** Element info: {Using=xpath, value=//a[contains(@href, 'javascript: addBuyerProgram();')]}
+2016-01-13 17:34:07 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2016-01-13 17:34:07 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, 'javascript: addBuyerProgram();')]"}
+Command duration or timeout: 33 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'T450SAmuluru', ip: '10.8.1.166', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2ce8db32-3567-4883-9fcf-b7bcae648f16
+*** Element info: {Using=xpath, value=//a[contains(@href, 'javascript: addBuyerProgram();')]}
+2016-01-13 17:34:07 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2016-01-13 17:34:11 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:34:11 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:34:11 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:34:29 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 17:35:08 INFO  PRBase:197 - STARTING TEST SUITE: 'smokeTest'
+2016-01-13 17:35:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:35:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:35:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:35:08 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:35:08 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:35:08 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2016-01-13 17:35:08 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:35:25 INFO  SeleniumUtils:312 - Typed text:  spaksh
+2016-01-13 17:35:29 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:35:31 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:35:40 INFO  SCiSupplierSPMenu:79 - Service Provider Home Title verified : : :true
+2016-01-13 17:35:49 ERROR SPMaintainMembership:70 - Failed, edit link click
+2016-01-13 17:35:49 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, 'javascript: addBuyerProgram();')]"}
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'T450SAmuluru', ip: '10.8.1.166', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 50d2c97d-d4ec-4c1d-8ca1-598490604e95
+*** Element info: {Using=xpath, value=//a[contains(@href, 'javascript: addBuyerProgram();')]}
+2016-01-13 17:35:49 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2016-01-13 17:35:49 ERROR TesterListener:19 - org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, 'javascript: addBuyerProgram();')]"}
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'T450SAmuluru', ip: '10.8.1.166', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_66'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.4, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 50d2c97d-d4ec-4c1d-8ca1-598490604e95
+*** Element info: {Using=xpath, value=//a[contains(@href, 'javascript: addBuyerProgram();')]}
+2016-01-13 17:35:49 ERROR TesterListener:20 - smokeTest1 -- Test method failed !!
+2016-01-13 17:35:52 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:35:52 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:35:52 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:52:45 INFO  PRBase:197 - STARTING TEST SUITE: 'smokeTest'
+2016-01-13 17:52:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:52:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:52:45 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:52:45 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:52:45 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:52:45 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2016-01-13 17:52:45 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:53:31 INFO  PRBase:197 - STARTING TEST SUITE: 'smokeTest'
+2016-01-13 17:53:31 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:53:31 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 17:53:31 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 17:53:31 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 17:53:31 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:53:31 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1
+2016-01-13 17:53:31 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:53:53 INFO  SeleniumUtils:312 - Typed text:  spaksh
+2016-01-13 17:53:56 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:53:58 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:54:07 INFO  SCiSupplierSPMenu:79 - Service Provider Home Title verified : : :true
+2016-01-13 17:54:15 INFO  SPMaintainMembership:63 - rohbuy_com103
+2016-01-13 17:54:16 INFO  SPMaintainMembership:69 - Successful, edit link click.
+2016-01-13 17:54:21 INFO  SeleniumUtils:312 - Typed text:  smokeTest_BP
+2016-01-13 17:54:40 INFO  SeleniumUtils:312 - Typed text:  0001
+2016-01-13 17:54:46 INFO  SeleniumUtils:312 - Typed text:  2355
+2016-01-13 17:54:49 INFO  SeleniumUtils:312 - Typed text:  1
+2016-01-13 17:54:52 INFO  SeleniumUtils:312 - Typed text:  1
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:185 - 1
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:188 - false
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:190 - radion button by defalut not selected - valadiation passed
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:193 - true
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:195 - radion button by defalut selected - valadiation passed
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:199 - radion button by defalut selected - valadiation passed
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:203 - radion button by defalut selected - valadiation passed
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:208 - radion button by defalut selected - valadiation passed
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:212 - radion button by defalut selected - valadiation passed
+2016-01-13 17:54:52 INFO  SPAddBuyerProgram:217 - radion button by defalut selected - valadiation passed
+2016-01-13 17:55:04 INFO  SPAddBuyerProgram:231 - Successful, Community Buyers Tab click.
+2016-01-13 17:55:04 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2016-01-13 17:55:04 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2016-01-13 17:55:07 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:55:07 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1
+2016-01-13 17:55:07 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:55:27 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-13 17:55:30 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:55:32 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:55:32 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:55:32 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-13 17:55:32 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2
+2016-01-13 17:55:39 INFO  SeleniumUtils:312 - Typed text:  1000000000000.00
+2016-01-13 17:55:41 INFO  SCiSupplierCOMMenu:122 - Community Home Title verified : : :true
+2016-01-13 17:55:42 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:55:43 INFO  Synchronizer:26 - Waited for 5 sec implicity.
+2016-01-13 17:55:46 INFO  ComUsersPage:45 - rohcom103
+2016-01-13 17:55:47 INFO  ComUsersPage:51 - Successful, edit link click.
+2016-01-13 17:55:48 INFO  ComEditUsers:51 - Successful, Add Btn click.
+2016-01-13 17:55:49 INFO  ComEditUsers:57 - CheckBox selected for smokeTest_BP
+2016-01-13 17:55:50 INFO  ComEditUsers:76 - Successful, Add Selected Btn click.
+2016-01-13 17:55:54 INFO  ComEditUsers:83 - Successful, Save Btn click.
+2016-01-13 17:55:59 INFO  ComEditUsers:94 - Successful, addPendingBP Btn click.
+2016-01-13 17:56:02 INFO  SeleniumUtils:338 - Typed text:  Sai
+2016-01-13 17:56:05 INFO  SeleniumUtils:338 - Typed text:  6785927880
+2016-01-13 17:56:08 INFO  SeleniumUtils:338 - Typed text:  primerevenueqa@hotmail.com
+2016-01-13 17:56:13 INFO  SeleniumUtils:312 - Typed text:  2000
+2016-01-13 17:56:16 INFO  SeleniumUtils:312 - Typed text:  1000
+2016-01-13 17:56:29 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-13 17:56:32 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2016-01-13 17:56:32 INFO  TesterListener:34 - cmsmokeTest2 -- Test method successful.
+2016-01-13 17:56:33 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:56:33 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.FISmokeTestNG3.smokeTestfi1
+2016-01-13 17:56:33 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:56:54 INFO  SeleniumUtils:312 - Typed text:  rohfi_com103
+2016-01-13 17:56:57 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:56:59 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:57:02 INFO  SCiSupplierFIMenu:100 - Financial Institution Home Title verified : : :true
+2016-01-13 17:57:06 INFO  FIAddBuyerProgram:82 - 3
+2016-01-13 17:57:06 INFO  FIAddBuyerProgram:85 - Add
+2016-01-13 17:57:10 INFO  FIAddBuyerProgram:92 - false
+2016-01-13 17:57:10 INFO  FIAddBuyerProgram:94 - Auto Accept radion button by defalut not selected - valadiation passed
+2016-01-13 17:57:16 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-13 17:57:40 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2016-01-13 17:57:40 INFO  TesterListener:34 - smokeTestfi1 -- Test method successful.
+2016-01-13 17:57:40 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 17:57:40 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.SPSmokeTestNG4.smokeTest1
+2016-01-13 17:57:40 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-13 17:58:01 INFO  SeleniumUtils:312 - Typed text:  spaksh
+2016-01-13 17:58:04 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-13 17:58:06 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:58:14 INFO  SCiSupplierSPMenu:79 - Service Provider Home Title verified : : :true
+2016-01-13 17:58:23 INFO  SPMaintainMembership:112 - Buyer Name Found : : : : :rohbuy_com103
+2016-01-13 17:58:23 INFO  SPMaintainMembership:125 - Clicked Buyer Program View link : : : : :View
+2016-01-13 17:58:26 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-13 17:58:32 INFO  SeleniumUtils:312 - Typed text:  rohsup_com103
+2016-01-13 17:58:37 INFO  SeleniumUtils:312 - Typed text:  786
+2016-01-13 17:58:38 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2016-01-13 17:58:38 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
