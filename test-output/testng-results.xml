@@ -1,137 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="smokeTest" duration-ms="307417" started-at="2016-01-13T22:53:31Z" finished-at="2016-01-13T22:58:39Z">
+  <suite name="Default suite" duration-ms="9390" started-at="2016-01-14T02:19:48Z" finished-at="2016-01-14T02:19:58Z">
     <groups>
     </groups>
-    <test name="smokeTest" duration-ms="307417" started-at="2016-01-13T22:53:31Z" finished-at="2016-01-13T22:58:39Z">
-      <class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG4">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG4@23ceabc1]" name="beforeClass" is-config="true" duration-ms="1" started-at="2016-01-13T17:57:40Z" finished-at="2016-01-13T17:57:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG4@23ceabc1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-01-13T17:57:40Z" finished-at="2016-01-13T17:57:40Z">
+    <test name="Default test" duration-ms="9390" started-at="2016-01-14T02:19:48Z" finished-at="2016-01-14T02:19:58Z">
+      <class name="com.primerevenue.osci.test.smoke.DBRollBackTestNG14">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeSuite" is-config="true" duration-ms="18" started-at="2016-01-13T21:19:48Z" finished-at="2016-01-13T21:19:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.SPSmokeTestNG4.smokeTest1() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="smokeTest1()[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG4@23ceabc1]" name="smokeTest1" duration-ms="58263" started-at="2016-01-13T17:57:40Z" finished-at="2016-01-13T17:58:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smokeTest1 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG4@23ceabc1]" name="afterClass" is-config="true" duration-ms="443" started-at="2016-01-13T17:58:38Z" finished-at="2016-01-13T17:58:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.primerevenue.osci.test.smoke.SPSmokeTestNG4 -->
-      <class name="com.primerevenue.osci.test.smoke.CMSmokeTestNG2">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.CMSmokeTestNG2@4439f31e]" name="beforeClass" is-config="true" duration-ms="1" started-at="2016-01-13T17:55:07Z" finished-at="2016-01-13T17:55:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.CMSmokeTestNG2@4439f31e]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2016-01-13T17:55:07Z" finished-at="2016-01-13T17:55:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest1() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="cmsmokeTest1()[pri:0, instance:com.primerevenue.osci.test.smoke.CMSmokeTestNG2@4439f31e]" name="cmsmokeTest1" duration-ms="24695" started-at="2016-01-13T17:55:07Z" finished-at="2016-01-13T17:55:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cmsmokeTest1 -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.CMSmokeTestNG2@4439f31e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-01-13T17:55:32Z" finished-at="2016-01-13T17:55:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.CMSmokeTestNG2.cmsmokeTest2() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="cmsmokeTest2()[pri:0, instance:com.primerevenue.osci.test.smoke.CMSmokeTestNG2@4439f31e]" name="cmsmokeTest2" duration-ms="60214" started-at="2016-01-13T17:55:32Z" finished-at="2016-01-13T17:56:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cmsmokeTest2 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.CMSmokeTestNG2@4439f31e]" name="afterClass" is-config="true" duration-ms="412" started-at="2016-01-13T17:56:32Z" finished-at="2016-01-13T17:56:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.primerevenue.osci.test.smoke.CMSmokeTestNG2 -->
-      <class name="com.primerevenue.osci.test.smoke.FISmokeTestNG3">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.FISmokeTestNG3@5dfcfece]" name="beforeClass" is-config="true" duration-ms="1" started-at="2016-01-13T17:56:33Z" finished-at="2016-01-13T17:56:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.FISmokeTestNG3@5dfcfece]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-01-13T17:56:33Z" finished-at="2016-01-13T17:56:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.FISmokeTestNG3.smokeTestfi1() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="smokeTestfi1()[pri:0, instance:com.primerevenue.osci.test.smoke.FISmokeTestNG3@5dfcfece]" name="smokeTestfi1" duration-ms="66784" started-at="2016-01-13T17:56:33Z" finished-at="2016-01-13T17:57:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- smokeTestfi1 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.FISmokeTestNG3@5dfcfece]" name="afterClass" is-config="true" duration-ms="474" started-at="2016-01-13T17:57:40Z" finished-at="2016-01-13T17:57:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.primerevenue.osci.test.smoke.FISmokeTestNG3 -->
-      <class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG1">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG1@215be6bb]" name="beforeSuite" is-config="true" duration-ms="19" started-at="2016-01-13T17:53:31Z" finished-at="2016-01-13T17:53:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@44c79f32]]>
+                <![CDATA[org.testng.TestRunner@4ddced80]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG1@215be6bb]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-01-13T17:53:31Z" finished-at="2016-01-13T17:53:31Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-01-13T21:19:48Z" finished-at="2016-01-13T21:19:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG1@215be6bb]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-01-13T17:53:31Z" finished-at="2016-01-13T17:53:31Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-01-13T21:19:48Z" finished-at="2016-01-13T21:19:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.SPSmokeTestNG1.smokeTest1() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="smokeTest1()[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG1@215be6bb]" name="smokeTest1" duration-ms="92592" started-at="2016-01-13T17:53:31Z" finished-at="2016-01-13T17:55:04Z">
+        <test-method status="PASS" signature="testdb()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="testdb" duration-ms="9374" started-at="2016-01-13T21:19:48Z" finished-at="2016-01-13T21:19:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- smokeTest1 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.SPSmokeTestNG1@215be6bb]" name="afterClass" is-config="true" duration-ms="3488" started-at="2016-01-13T17:55:04Z" finished-at="2016-01-13T17:55:07Z">
+        </test-method> <!-- testdb -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-01-13T21:19:58Z" finished-at="2016-01-13T21:19:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.primerevenue.osci.test.smoke.SPSmokeTestNG1 -->
-    </test> <!-- smokeTest -->
-  </suite> <!-- smokeTest -->
+      </class> <!-- com.primerevenue.osci.test.smoke.DBRollBackTestNG14 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

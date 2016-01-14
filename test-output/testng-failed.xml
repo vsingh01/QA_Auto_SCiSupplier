@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [smokeTest]">
-  <listeners>
-    <listener class-name="com.primerevenue.osci.driver.TesterListener"/>
-  </listeners>
-  <test name="smokeTest">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG1"/>
-      <class name="com.primerevenue.osci.test.smoke.CMSmokeTestNG2"/>
-      <class name="com.primerevenue.osci.test.smoke.FISmokeTestNG3"/>
-      <class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG4"/>
+      <class name="com.primerevenue.osci.test.smoke.DBRollBackTestNG14"/>
     </classes>
-  </test> <!-- smokeTest -->
-</suite> <!-- Failed suite [smokeTest] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->

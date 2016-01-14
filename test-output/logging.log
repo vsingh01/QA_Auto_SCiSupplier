@@ -22215,3 +22215,22 @@ Session ID: 50d2c97d-d4ec-4c1d-8ca1-598490604e95
 2016-01-13 17:58:37 INFO  SeleniumUtils:312 - Typed text:  786
 2016-01-13 17:58:38 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
 2016-01-13 17:58:38 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
+2016-01-13 21:19:48 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-13 21:19:48 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-13 21:19:48 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-13 21:19:48 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-13 21:19:48 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-13 21:19:48 INFO  PRBase:87 - EXECUTING before class
+2016-01-13 21:19:48 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
+2016-01-13 21:19:54 ERROR DatabaseUtil:675 - MySql execute statement: The statement did not return a result set.
+2016-01-13 21:19:54 INFO  DatabaseUtil:165 - MySql print results,The result set is closed.
+2016-01-13 21:19:54 INFO  DatabaseUtil:891 - buyerProgramId:::::1407
+2016-01-13 21:19:54 INFO  DatabaseUtil:897 - Buyerprograme succesfully deleted and its buyerProgramID is ::1407
+2016-01-13 21:19:58 ERROR DatabaseUtil:1031 - MySql execute statement: The statement did not return a result set.
+2016-01-13 21:19:58 INFO  DatabaseUtil:703 - Supplier username successfully deleted and its supplierID is ::null
+2016-01-13 21:19:58 ERROR DatabaseUtil:813 - MySql execute statement: Error converting data type varchar to numeric.
+2016-01-13 21:19:58 INFO  DatabaseUtil:842 - fileId::::22173
+2016-01-13 21:19:58 INFO  DatabaseUtil:848 - fieldID parameter value::22173
+2016-01-13 21:19:58 INFO  DatabaseUtil:858 - processingStatus::30
+2016-01-13 21:19:58 INFO  TesterListener:34 - testdb -- Test method successful.
+2016-01-13 21:19:58 INFO  PRBase:93 - EXECUTING after class
