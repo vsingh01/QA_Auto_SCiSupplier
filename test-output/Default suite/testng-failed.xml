@@ -3,11 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
+<<<<<<< HEAD
       <class name="com.primerevenue.osci.test.smoke.CMModReportsTestNG10"/>
+=======
+      <class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG1"/>
+>>>>>>> branch 'master' of git@github.com:PrimeRevenue/QA_Auto_SCiSupplier.git
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.primerevenue.osci.test.smoke.CMModReportsTestNG10">
         <methods>
           <include name="beforeClass"/>
@@ -17,6 +22,17 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.primerevenue.osci.test.smoke.CMModReportsTestNG10 -->
+=======
+      <class name="com.primerevenue.osci.test.smoke.SPSmokeTestNG1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="smokeTest1"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.primerevenue.osci.test.smoke.SPSmokeTestNG1 -->
+>>>>>>> branch 'master' of git@github.com:PrimeRevenue/QA_Auto_SCiSupplier.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
