@@ -19,8 +19,10 @@ import java.util.regex.*;
  **/
 
 public class ComAddBuyerProgram extends PRBase	{
-
+	
+	
 	final static Logger logger = Logger.getLogger(ComAddBuyerProgram.class);
+	UserNameCheck UserN = new UserNameCheck();
 	// Add Buyer Program page
 	@FindBy(id = "contactPerson")
 	public WebElement contactPerson;
@@ -155,7 +157,8 @@ public class ComAddBuyerProgram extends PRBase	{
 		Synchronizer.explicitWait(8);
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		String username = System.getProperty("user.name");
+		String username = UserN.UserNameChecks();
+		System.out.println(username);
 		SeleniumUtils.deleteFile("C:/Users/" + username + "/Downloads", "PDF");
 
 	}

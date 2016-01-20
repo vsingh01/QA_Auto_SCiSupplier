@@ -82,6 +82,7 @@ public class Browser {
 		String browser = PRBase.setupProp.getProperty("browser");
 		String browserDriverDirectory = System.getProperty("user.dir")
 				+ File.separator + "Webdriver" + File.separator;
+		System.out.println(browserDriverDirectory);
 		switch (browser) {
 		case "firefox":
 			driver = getFirefoxDriver();
@@ -99,6 +100,8 @@ public class Browser {
 		default:
 			logger.info("Invalid browser " + browser);
 			System.exit(0);
+			
+			
 		}
 
 	}
@@ -166,18 +169,18 @@ public class Browser {
 			// set firefox profile
 			/*FirefoxProfile profile = new ProfilesIni()
 					.getProfile(FIREFOX_PROFILE);*/
-			//File file = new File("firebug-2.0.13-fx.xpi");
+			File file = new File("C:/apps/selenium/firebug-2.0.13-fx.xpi");
 			
 			FirefoxProfile profile = new FirefoxProfile();
 			
-			/*try {
+			try {
 				profile.addExtension(file);
 			} catch (IOException e) {
 				
 				e.printStackTrace();
 			}
 			
-			profile.setPreference("extensions.firebug.currentVersion", "2.0.13");*/
+			profile.setPreference("extensions.firebug.currentVersion", "2.0.13");
 			
 			profile.setPreference("browser.download.folderList", 2);
 			profile.setPreference("browser.download.manager.showWhenStarting", false);
@@ -253,18 +256,18 @@ public class Browser {
 		logger.info("Firefox profile: " + FIREFOX_PROFILE);
 		//FirefoxProfile profile = new ProfilesIni().getProfile(FIREFOX_PROFILE);
 		
-		//File file = new File("firebug-2.0.13-fx.xpi");
+		File file = new File("C:/apps/selenium/firebug-2.0.13-fx.xpi");
 		
 		FirefoxProfile profile = new FirefoxProfile();
 		
-		/*try {
+		try {
 			profile.addExtension(file);
 		} catch (IOException e) {
 			
 			e.printStackTrace();
 		}
 		
-		profile.setPreference("extensions.firebug.currentVersion", "2.0.13");*/
+		profile.setPreference("extensions.firebug.currentVersion", "2.0.13");
 		
 		profile.setPreference("browser.download.folderList", 2);
 		profile.setPreference("browser.download.manager.showWhenStarting", false);

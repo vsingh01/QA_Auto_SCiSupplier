@@ -35,7 +35,9 @@ public class PDFManager {
 		this.pdfStripper = null;
 		this.pdDoc = null;
 		this.cosDoc = null;
-		String username = System.getProperty("user.name");
+		UserNameCheck UserN = new UserNameCheck();
+		String username = UserN.UserNameChecks();
+		System.out.println(username);
 		File file = SeleniumUtils.getTheNewestFile(
 				"C:/Users/"+username+"/Downloads", "PDF");
 		// file = new File(file);

@@ -47,7 +47,7 @@ public class CMModReportsTestNG10 extends PRBase{
 	
 	@AfterClass
 	public void afterClass() {
-		           
+		      
 		Browser.close();
         }
 

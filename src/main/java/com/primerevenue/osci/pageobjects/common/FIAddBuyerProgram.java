@@ -26,6 +26,7 @@ import com.primerevenue.osci.utils.Synchronizer;
 public class FIAddBuyerProgram {
 
 	final static Logger logger = Logger.getLogger(FIAddBuyerProgram.class);
+	UserNameCheck UserN = new UserNameCheck();
 
 	// on Available Portfolios page
 
@@ -117,7 +118,8 @@ public class FIAddBuyerProgram {
 		Synchronizer.explicitWait(8);
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		String username = System.getProperty("user.name");
+		String username = UserN.UserNameChecks();
+		System.out.println(username);
 		SeleniumUtils.deleteFile("C:/Users/" + username + "/Downloads", "PDF");
 
 	}
@@ -140,7 +142,8 @@ public class FIAddBuyerProgram {
 		Synchronizer.explicitWait(8);
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		String username = System.getProperty("user.name");
+		String username = UserN.UserNameChecks();
+		System.out.println(username);
 		SeleniumUtils.deleteFile("C:/Users/" + username + "/Downloads", "PDF");
 
 	}
@@ -162,7 +165,8 @@ public class FIAddBuyerProgram {
 		Synchronizer.explicitWait(8);
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		String username = System.getProperty("user.name");
+		String username = UserN.UserNameChecks();
+		System.out.println(username);
 		SeleniumUtils.deleteFile("C:/Users/" + username + "/Downloads", "PDF");
 
 	}
