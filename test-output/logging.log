@@ -22215,22 +22215,99 @@ Session ID: 50d2c97d-d4ec-4c1d-8ca1-598490604e95
 2016-01-13 17:58:37 INFO  SeleniumUtils:312 - Typed text:  786
 2016-01-13 17:58:38 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
 2016-01-13 17:58:38 INFO  TesterListener:34 - smokeTest1 -- Test method successful.
-2016-01-13 21:19:48 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
-2016-01-13 21:19:48 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
-2016-01-13 21:19:48 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
-2016-01-13 21:19:48 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
-2016-01-13 21:19:48 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
-2016-01-13 21:19:48 INFO  PRBase:87 - EXECUTING before class
-2016-01-13 21:19:48 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb
-2016-01-13 21:19:54 ERROR DatabaseUtil:675 - MySql execute statement: The statement did not return a result set.
-2016-01-13 21:19:54 INFO  DatabaseUtil:165 - MySql print results,The result set is closed.
-2016-01-13 21:19:54 INFO  DatabaseUtil:891 - buyerProgramId:::::1407
-2016-01-13 21:19:54 INFO  DatabaseUtil:897 - Buyerprograme succesfully deleted and its buyerProgramID is ::1407
-2016-01-13 21:19:58 ERROR DatabaseUtil:1031 - MySql execute statement: The statement did not return a result set.
-2016-01-13 21:19:58 INFO  DatabaseUtil:703 - Supplier username successfully deleted and its supplierID is ::null
-2016-01-13 21:19:58 ERROR DatabaseUtil:813 - MySql execute statement: Error converting data type varchar to numeric.
-2016-01-13 21:19:58 INFO  DatabaseUtil:842 - fileId::::22173
-2016-01-13 21:19:58 INFO  DatabaseUtil:848 - fieldID parameter value::22173
-2016-01-13 21:19:58 INFO  DatabaseUtil:858 - processingStatus::30
-2016-01-13 21:19:58 INFO  TesterListener:34 - testdb -- Test method successful.
-2016-01-13 21:19:58 INFO  PRBase:93 - EXECUTING after class
+2016-01-20 23:13:04 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-20 23:13:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:13:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-20 23:13:04 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:13:04 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-20 23:13:04 INFO  PRBase:87 - EXECUTING before class
+2016-01-20 23:13:04 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest1
+2016-01-20 23:13:04 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-20 23:13:49 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-20 23:13:53 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-20 23:13:55 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-20 23:13:55 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-20 23:13:55 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest3
+2016-01-20 23:14:16 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:14:17 INFO  SeleniumUtils:722 - Main windowId :::::{84852ec3-88e9-417f-adcc-8e1d25ce7258}
+2016-01-20 23:14:17 INFO  SeleniumUtils:734 - Report windowId :::::{4898c2f1-e77b-4518-9ea8-87b9ef2dc221}
+2016-01-20 23:14:22 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:14:22 INFO  ComAddBuyerProgram:140 - Supplier Activity Report Title verified: : :true
+2016-01-20 23:14:24 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-20 23:15:02 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:15:10 INFO  Synchronizer:178 - Explicit wait 8 second
+2016-01-20 23:15:10 ERROR TesterListener:19 - java.lang.NullPointerException
+2016-01-20 23:15:10 ERROR TesterListener:20 - cmsmokeTest3 -- Test method failed !!
+2016-01-20 23:19:18 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-20 23:19:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:19:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-20 23:19:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:19:18 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-20 23:19:18 INFO  PRBase:87 - EXECUTING before class
+2016-01-20 23:19:18 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest1
+2016-01-20 23:19:18 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-20 23:19:51 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-20 23:19:55 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-20 23:19:57 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-20 23:19:57 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-20 23:19:57 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest3
+2016-01-20 23:20:16 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:20:16 INFO  SeleniumUtils:722 - Main windowId :::::{318f677e-14af-41fd-946a-6e154a03f52c}
+2016-01-20 23:20:16 INFO  SeleniumUtils:734 - Report windowId :::::{44d92093-da69-42a8-a03d-1362b4d69be7}
+2016-01-20 23:20:21 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:20:21 INFO  ComAddBuyerProgram:140 - Supplier Activity Report Title verified: : :true
+2016-01-20 23:20:23 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-20 23:20:37 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:20:45 INFO  Synchronizer:178 - Explicit wait 8 second
+2016-01-20 23:20:45 ERROR TesterListener:19 - java.lang.NullPointerException
+2016-01-20 23:20:45 ERROR TesterListener:20 - cmsmokeTest3 -- Test method failed !!
+2016-01-20 23:28:32 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-20 23:28:32 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:28:32 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-20 23:28:32 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:28:32 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-20 23:28:32 INFO  PRBase:87 - EXECUTING before class
+2016-01-20 23:28:32 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest1
+2016-01-20 23:28:32 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-20 23:28:46 ERROR Browser:57 - Failed to get browser URL: null
+2016-01-20 23:29:08 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-20 23:29:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:29:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-20 23:29:08 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:29:08 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-20 23:29:08 INFO  PRBase:87 - EXECUTING before class
+2016-01-20 23:29:08 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest1
+2016-01-20 23:29:08 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-20 23:36:18 INFO  PRBase:197 - STARTING TEST SUITE: 'Default test'
+2016-01-20 23:36:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'setup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:36:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'objectmap.properties' LOADED SUCCESSFULLY
+2016-01-20 23:36:18 INFO  PropertiesUtil:33 - PROPERTIES FILE 'uatsetup.properties' LOADED SUCCESSFULLY
+2016-01-20 23:36:18 INFO  PRBase:160 - INITIALIZING GLOBAL VARIABLES... 
+2016-01-20 23:36:18 INFO  PRBase:87 - EXECUTING before class
+2016-01-20 23:36:18 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest1
+2016-01-20 23:36:18 INFO  Browser:253 - Firefox profile: webdriver
+2016-01-20 23:36:54 INFO  SeleniumUtils:312 - Typed text:  rohcom103
+2016-01-20 23:36:57 INFO  Synchronizer:178 - Explicit wait 1 second
+2016-01-20 23:36:59 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-20 23:36:59 INFO  TesterListener:34 - cmsmokeTest1 -- Test method successful.
+2016-01-20 23:36:59 INFO  PRBase:99 - Running Test: com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest3
+2016-01-20 23:37:19 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:37:19 INFO  SeleniumUtils:722 - Main windowId :::::{16b046f6-6928-4d29-b1de-7adf368ded7c}
+2016-01-20 23:37:19 INFO  SeleniumUtils:734 - Report windowId :::::{6299cf78-8c15-43b8-a31c-0b2255dfb5ca}
+2016-01-20 23:37:24 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:37:24 INFO  ComAddBuyerProgram:140 - Supplier Activity Report Title verified: : :true
+2016-01-20 23:37:26 INFO  Synchronizer:178 - Explicit wait 2 second
+2016-01-20 23:37:36 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:37:44 INFO  Synchronizer:178 - Explicit wait 8 second
+2016-01-20 23:37:47 INFO  ComAddBuyerProgram:156 - No Records Found
+Buyer Maturing 
+Payment Forecast
+Jan 20, 2016
+01:08:09 PM
+Report Date :
+Report Time :
+No Records Found
+
+2016-01-20 23:37:52 INFO  Synchronizer:178 - Explicit wait 5 second
+2016-01-20 23:37:52 ERROR TesterListener:19 - java.lang.NullPointerException
+2016-01-20 23:37:52 ERROR TesterListener:20 - cmsmokeTest3 -- Test method failed !!

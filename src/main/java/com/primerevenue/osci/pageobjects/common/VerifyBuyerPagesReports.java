@@ -20,6 +20,7 @@ public class VerifyBuyerPagesReports {
 
 	final static Logger logger = Logger
 			.getLogger(VerifyBuyerPagesReports.class);
+	UserNameCheck UserN = new UserNameCheck();
 
 	@FindBy(xpath = "//div[text()='Payment Schedule']")
 	public WebElement paymentSchePageTitle;
@@ -130,7 +131,8 @@ public class VerifyBuyerPagesReports {
 		Synchronizer.explicitWait(10);
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		String username = System.getProperty("user.name");
+		String username = UserN.UserNameChecks();
+		System.out.println(username);
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 		
 
@@ -149,7 +151,8 @@ public class VerifyBuyerPagesReports {
 		Synchronizer.explicitWait(8);
 		logger.info(pdfManager.ToText());
 		Synchronizer.explicitWait(5);
-		String username = System.getProperty("user.name");
+		String username = UserN.UserNameChecks();
+		System.out.println(username);
 		SeleniumUtils.deleteFile("C:/Users/"+username+"/Downloads", "PDF");
 
 	}

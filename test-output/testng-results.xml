@@ -1,47 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[<a href=C:\LocalProject1\QA_Auto_SCiSupplier-master/target/surefire-reports/screen_shots/NHScreenShot_01-20-2016_11.37.52_CMModReportsTestNG10_cmsmokeTest3.png target='_blank' >01-20-2016_11.37.52_CMModReportsTestNG10_cmsmokeTest3.png</a>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9390" started-at="2016-01-14T02:19:48Z" finished-at="2016-01-14T02:19:58Z">
+  <suite name="Default suite" duration-ms="94946" started-at="2016-01-20T18:06:18Z" finished-at="2016-01-20T18:07:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9390" started-at="2016-01-14T02:19:48Z" finished-at="2016-01-14T02:19:58Z">
-      <class name="com.primerevenue.osci.test.smoke.DBRollBackTestNG14">
-        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeSuite" is-config="true" duration-ms="18" started-at="2016-01-13T21:19:48Z" finished-at="2016-01-13T21:19:48Z">
+    <test name="Default test" duration-ms="94946" started-at="2016-01-20T18:06:18Z" finished-at="2016-01-20T18:07:53Z">
+      <class name="com.primerevenue.osci.test.smoke.CMModReportsTestNG10">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.primerevenue.osci.test.smoke.CMModReportsTestNG10@402f32ff]" name="beforeSuite" is-config="true" duration-ms="15" started-at="2016-01-20T23:36:18Z" finished-at="2016-01-20T23:36:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4ddced80]]>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-01-13T21:19:48Z" finished-at="2016-01-13T21:19:48Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.primerevenue.osci.test.smoke.CMModReportsTestNG10@402f32ff]" name="beforeClass" is-config="true" duration-ms="1" started-at="2016-01-20T23:36:18Z" finished-at="2016-01-20T23:36:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-01-13T21:19:48Z" finished-at="2016-01-13T21:19:48Z">
+        <test-method status="PASS" signature="cmsmokeTest1()[pri:0, instance:com.primerevenue.osci.test.smoke.CMModReportsTestNG10@402f32ff]" name="cmsmokeTest1" duration-ms="40695" started-at="2016-01-20T23:36:18Z" finished-at="2016-01-20T23:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cmsmokeTest1 -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.CMModReportsTestNG10@402f32ff]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-01-20T23:36:18Z" finished-at="2016-01-20T23:36:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.primerevenue.osci.test.smoke.DBRollBackTestNG14.testdb()]]>
+                <![CDATA[public void com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest1() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testdb()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="testdb" duration-ms="9374" started-at="2016-01-13T21:19:48Z" finished-at="2016-01-13T21:19:58Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.primerevenue.osci.test.smoke.CMModReportsTestNG10@402f32ff]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2016-01-20T23:36:59Z" finished-at="2016-01-20T23:36:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest3() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testdb -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.DBRollBackTestNG14@6ea12c19]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-01-13T21:19:58Z" finished-at="2016-01-13T21:19:58Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="cmsmokeTest3()[pri:0, instance:com.primerevenue.osci.test.smoke.CMModReportsTestNG10@402f32ff]" name="cmsmokeTest3" duration-ms="52831" started-at="2016-01-20T23:36:59Z" finished-at="2016-01-20T23:37:52Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.primerevenue.osci.utils.SeleniumUtils.deleteFile(SeleniumUtils.java:775)
+	at com.primerevenue.osci.pageobjects.common.ComAddBuyerProgram.buyerMaturePayForcastReport(ComAddBuyerProgram.java:160)
+	at com.primerevenue.osci.test.smoke.CMModReportsTestNG10.cmsmokeTest3(CMModReportsTestNG10.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=C:\LocalProject1\QA_Auto_SCiSupplier-master/target/surefire-reports/screen_shots/NHScreenShot_01-20-2016_11.37.52_CMModReportsTestNG10_cmsmokeTest3.png target='_blank' >01-20-2016_11.37.52_CMModReportsTestNG10_cmsmokeTest3.png</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cmsmokeTest3 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.primerevenue.osci.test.smoke.CMModReportsTestNG10@402f32ff]" name="afterClass" is-config="true" duration-ms="1286" started-at="2016-01-20T23:37:52Z" finished-at="2016-01-20T23:37:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.primerevenue.osci.test.smoke.DBRollBackTestNG14 -->
+      </class> <!-- com.primerevenue.osci.test.smoke.CMModReportsTestNG10 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
