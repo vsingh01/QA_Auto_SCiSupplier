@@ -13,7 +13,7 @@ import com.primerevenue.osci.pageobjects.common.SPMaintainMembership;
 import com.primerevenue.osci.utils.Synchronizer;
 
 /**
- * @author Sai Amuluru;
+ * @author Sai;
  *
  **/
 

@@ -3,6 +3,8 @@ package com.primerevenue.osci.pageobjects.common;
 import org.apache.log4j.Logger;
 import java.io.File;
 
+		
+
 public class UserNameCheck {
 
 	final static Logger logger = Logger.getLogger(UserNameCheck.class);
